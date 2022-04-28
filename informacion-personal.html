@@ -5,54 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="informacion-personal.css">
-    <script src="https://kit.fontawesome.com/ce9bb4ca53.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-            <img src="img/LogoBlanco.png" alt="">
-    </header>
-
-    <div class="left-sidebar">
-        <ul class="task-list">
-            <li>
-                <i class="fa-regular fa-circle-check"></i>
-                <a id="selected-task" href="#">Información Personal</a>
-            </li>
-            <li>
-                <i class="fa-regular fa-circle"></i>
-                <a href="#">Información de Contacto</a>
-            </li>
-            <li>
-                <i class="fa-regular fa-circle"></i>
-                <a href="#">Sobre Mí</a>
-            </li>
-            <li>
-                <i class="fa-regular fa-circle"></i>
-                <a href="#">Experiencia Profesional</a>
-            </li>
-            <li>
-                <i class="fa-regular fa-circle"></i>
-                <a href="#">Formación Académica</a>
-            </li>
-            <li>
-                <i class="fa-regular fa-circle"></i>
-                <a href="#">Idiomas</a>
-            </li>
-            <li>
-                <i class="fa-regular fa-circle"></i>
-                <a href="#">Certificaciones</a>
-            </li>
-            <li>
-                <i class="fa-regular fa-circle"></i>
-                <a href="#">Enviar</a>
-            </li>
-        </ul>
-    </div>
-
-    <main>
-        <h1>Información Personal</h1>
+    <div class="body-container display-flex">
+        <div class="container">
+            <div class="nav-container display-flex">
+                <img src="img/LogoBlanco.png" alt="">
+            </div>
+            
+            <div class="main-container">
+                <div class="form-container">
+                    <div class="title-container">
+                        <h1>Información Personal</h1>
+                        <p>Ingresa los siguientes datos solicitados para poder dirigirte a la siguiente seccion.</p>
+                    </div>
+                    <form>
+                        <label for="foto">Foto de Perfil</label>
+                        <input type="file" id="foto" name="foto">
         
-    </main>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre">
+                        
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido">
+                        
+                        fecha de nacimiento (dd/mm/yyyy)
+
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido">
+                        
+                        <label for="nacionalidad">Nacionalidad</label>
+                        <input type="text" id="nacionalidad" name="nacionalidad">
+                        
+                        <label for="genero">Genero</label>
+                        <select id="genero" name="genero">
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                            <option value="hombre">Other</option>
+                        </select>
+
+                        <label for="estado civil">Estado Civil</label>
+                        <input type="text" id="estado civil" name="estado civil">
+                        
+                        <label for="perfil">Perfil</label>
+                        <input type="text" id="perfil" name="perfil">
+                    </form>
+                    <div class="button-container">
+                        <button class="next-button" type="button">Siguiente</button>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <ul class="task-list">
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            <a id="selected-task" href="#">Información Personal</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Información de Contacto</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Sobre Mí</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Experiencia Profesional</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Formación Académica</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Idiomas</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Certificaciones</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Enviar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-container">
+
+            </div>
+
+        </div>
+
+    </div>
     
 </body>
 </html>

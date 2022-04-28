@@ -1,47 +1,78 @@
-body {
-    display: grid;
-    height: 100vh;
-    grid-template: auto 1fr auto / 0.3fr 1fr auto;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
+
+    scroll-behavior: smooth;
+} 
+
+:root{
+    --fs-base: 1rem; /* 1rem -> 16px */
+
+
+
+
+
+    --primary-color: #0F0F0F;
+    --blue: #0596FF;
+    --teal: #3C64B1;
+    --input-gray: #737B7D;
+
+
 }
 
-header {
-    background: #0F0F0F;
-    grid-column: 1 / 4;
-    height: 10vh;
+
+p {
+    font-size: var(--fs-base);
+    font-size: 16px;
+}
+
+
+.display-flex{
     display: flex;
-    justify-content: start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-main {
-    background: #ffffff;
-    grid-column: 2 / 4;
+
+
+
+
+/* NAV */
+
+.nav-container{
+    background-color: #0F0F0F;
+    min-height: 10VH;
+
+
 }
 
-header img {
-    height: 50px;
-    padding-left: 100px;
+
+.body-container{
+    background-color: #0596FF;
+    min-width: 100vh;
+    min-height: 100vh;
 }
 
-.left-sidebar {
-    background: #C4C4C4;
-    grid-column: 1 / 2;
-    padding: 1rem;
-}
-  
-.task-list {
-    list-style: none;
-    
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: aliceblue;
+    min-width: 1400px;
 }
 
-.task-list a {
-    text-decoration: none;
-    color: gray;
-}
+.main-container{
 
-#selected-task {
-    color: #0596FF;
+    background-color: #737B7D;
+    min-width: 1400px;
+    min-height: 90vh;
+
+    margin: 0 auto;
 }
-  
