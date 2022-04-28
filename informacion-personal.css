@@ -1,0 +1,47 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / 0.3fr 1fr auto;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #0F0F0F;
+    grid-column: 1 / 4;
+    height: 10vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+main {
+    background: #ffffff;
+    grid-column: 2 / 4;
+}
+
+header img {
+    height: 50px;
+    padding-left: 100px;
+}
+
+.left-sidebar {
+    background: #C4C4C4;
+    grid-column: 1 / 2;
+    padding: 1rem;
+}
+  
+.task-list {
+    list-style: none;
+    
+}
+
+.task-list a {
+    text-decoration: none;
+    color: gray;
+}
+
+#selected-task {
+    color: #0596FF;
+}
+  
