@@ -15,57 +15,58 @@
                 </div>
             </nav>
         </header>
-        
-        <section class="page-section" id="home"></section>
-            <div class="container display-flex">
-                <div class="main-container">
-                    <div class="section-container">
-                        <div class="progress-container">
-                            <ul class="task-list">
-                            <li>
-                                <i class="fa-regular fa-circle-check"></i>
-                                <a id="selected-task" href="#">Información Personal</a>
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-circle"></i>
-                                <a href="#">Información de Contacto</a>
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-circle"></i>
-                                <a href="#">Sobre Mí</a>
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-circle"></i>
-                                <a href="#">Experiencia Profesional</a>
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-circle"></i>
-                                <a href="#">Formación Académica</a>
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-circle"></i>
-                                <a href="#">Idiomas</a>
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-circle"></i>
-                                <a href="#">Certificaciones</a>
-                            </li>
-                            <li>
-                                <i class="fa-regular fa-circle"></i>
-                                <a href="#">Enviar</a>
-                            </li>
-                            </ul>
+
+            <div class="main-container">
+                <div class="section-container">
+                    <div class="progress-container">
+                        <ul class="task-list">
+                        <li>
+                            <i class="fa-regular fa-circle-check"></i>
+                            <a id="selected-task" href="#">Información Personal</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Información de Contacto</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Sobre Mí</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Experiencia Profesional</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Formación Académica</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Idiomas</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Certificaciones</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Enviar</a>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="form-container">
+                        <div class="title-container">
+                            <h1>Información Personal</h1>
+                            <p>Ingresa los siguientes datos solicitados para poder dirigirte a la siguiente seccion.</p>
                         </div>
-                        <div class="form-container">
-                            <div class="title-container">
-                                <h1>Información Personal</h1>
-                                <p>Ingresa los siguientes datos solicitados para poder dirigirte a la siguiente seccion.</p>
-                            </div>
-                            <div class="fields-container">
+                        <div class="fields-container">
+                            <div class="line-container">
                                 <div class="input-box">
                                     <span class="details">Foto de Perfil</span>
-                                    <input type="file" id="foto" name="foto">
+                                    <input type="file" class="custom-file-input" id="foto" name="foto">
                                 </div>
+                            </div>
+                            <div class="line-container">
                                 <div class="input-box">
                                     <span class="details">Nombre</span>
                                     <input type="text" placeholder="Nombre" id="nombre" name="nombre">
@@ -74,17 +75,22 @@
                                     <span class="details">Apellido</span>
                                     <input type="text" placeholder="Apellido" id="apellido" name="nombre">
                                 </div>    
-                                <br>
+                            </div>
+                            <div class="line-container">
                                 <div class="input-box">
                                     <span class="details">Fecha de Nacimiento</span>
-                                    <input type="date" placeholder="Dia" id="fdn" name="fdn">
+                                    <input type="text" placeholder="Dia" id="fdn" name="fdn">
+                                    <input type="text" placeholder="Mes" id="fdn" name="fdn">
+                                    <input type="text" placeholder="Year" id="fdn" name="fdn">
                                 </div>
-                                <br>
+                            </div>
+                            <div class="line-container">
                                 <div class="input-box">
                                     <span class="details">Nacionalidad</span>
                                     <input type="text" placeholder="Nacionalidad" id="nacionalidad" name="nacionalidad">
                                 </div>
-                                <br>
+                            </div>
+                            <div class="line-container">
                                 <div class="input-box">
                                     <span class="details">Genero</span>
                                     <select id="genero" name="genero">
@@ -92,27 +98,26 @@
                                         <option value="2" name="genero">Mujer</option>
                                         <option value="3" name="genero">Otro</option>
                                     </select>
+                                    <div class="input-box">
+                                        <span class="details">Estado Civil</span>
+                                        <input type="text" placeholder="Estado civil" id="estado civil" name="estado civil">
+                                    </div>
                                 </div>
-                                <div class="input-box">
-                                    <span class="details">Estado Civil</span>
-                                    <input type="text" placeholder="Estado civil" id="estado civil" name="estado civil">
-                                </div>
-                                <br>
+                            </div>
+                            <div class="line-container">
                                 <div class="input-box">
                                     <span class="details">Perfil</span>
                                     <input type="text" placeholder="Perfil" id="Perfil" name="Perfil">
                                 </div>
                             </div>
-                            <div class="button-container">
-                                <button class="next-button" type="button">Siguiente</button>
-                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button class="next-button" type="button">Siguiente</button>
                         </div>
                     </div>
                 </div>
-                <div class="footer-container">
-
-                </div>
             </div>
+            <div class="footer-container">
         </div>
     </body>
 </html>
