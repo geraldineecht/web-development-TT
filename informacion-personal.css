@@ -12,25 +12,19 @@
 :root{
     --fs-base: 1rem; /* 1rem -> 16px */
 
-
-
-
-
     --primary-color: #0F0F0F;
     --blue: #0596FF;
     --teal: #3C64B1;
     --input-gray: #737B7D;
 
-
 }
 
-
-p {
-    font-size: var(--fs-base);
-    font-size: 16px;
+img{
+    max-width: 100%;
+    height: auto;
 }
 
-
+/* -------- HELPER FUNCTIONS -------- */
 .display-flex{
     display: flex;
     flex-direction: column;
@@ -39,19 +33,92 @@ p {
 }
 
 
+/*--------- IMAGE SECTION ---------*/
 
-
-
-/* NAV */
-
-.nav-container{
-    background-color: #0F0F0F;
-    min-height: 10VH;
-
-
+.img-attributes{
+    max-height: 32px;
 }
 
 
+/*--------- HEADER SECTION ---------*/
+
+.header-container{
+    background-color: var(--primary-color);
+
+    height: 10vh;
+    min-height: 80px;
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    /* transition: all 0.3s ease; */
+}
+
+/*--------- NAVBAR SECTION ---------*/
+.navbar{
+    /* background-color: #FF1493; */
+
+    font-size: var(--fs-base);
+
+    height: 10vh;
+    min-height: 80px;
+
+    min-width: 100vh;
+    margin: 0 auto;
+
+    padding-right: 4vw;
+    padding-left: 4vw;
+    box-sizing: content-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container{
+    /* background-color: coral; */
+    height: inherit;
+    min-height: 80px;
+
+    width: 100%;
+
+    padding: 0 1rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    z-index: 1;
+}
+
+#nav-logo{
+    /* background-color: crimson; */
+    
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.nav-menu{
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav-item{
+    height: 10vh;
+}
+
+.pd-r-0{
+    padding-right: 0;
+}
+
+/* ---------  BODY CONTAIONERS SECTION --------- */
 .body-container{
     background-color: #0596FF;
     min-width: 100vh;
@@ -64,15 +131,77 @@ p {
     justify-content: center;
     align-items: center;
 
-    background-color: aliceblue;
-    min-width: 1400px;
+/*    background-color: aliceblue; */
+    min-width: 100vh;
+}
+
+/* ---------  WEB PAGE SECTIONS --------- */
+
+.height-90{
+    height: 90vh;
+}
+
+.page-section {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-container{
-
     background-color: #737B7D;
-    min-width: 1400px;
+
+    min-width: 100vh;
     min-height: 90vh;
 
     margin: 0 auto;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.section-container{
+    display: grid;
+    padding: 0 1rem;
+    grid-template-columns: minmax(400px,25%)
+    1fr;
+}
+
+
+/* -------- Formulario -----------*/
+
+.form-container{
+    flex-grow: 2;
+    background-color: white;
+    min-height: 90vh;
+    padding: 32px;
+}
+
+.title-container{
+    padding: 1rem;
+}
+
+.input-box input{
+    
+    
+}
+
+.fields-container{
+    padding:1rem;
+}
+
+/* -------- Formulario -----------*/
+
+.progress-container{
+    background-color: #f3f3f3;
+    min-height: 90vh;
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-list{
+
+}
+
