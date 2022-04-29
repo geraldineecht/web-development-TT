@@ -170,15 +170,12 @@ img{
 
 .line-container{
     display:flex;
-    background-color: coral;
-    padding: 1rem;
 }
 
 .input-box {
     width:100%;
     font-size: 1rem;
-    padding: 8px;
-    background-color: #3C64B1;
+    padding: 1rem;
 }
 
 .input-box input{
@@ -186,31 +183,35 @@ img{
     display: flex;
     width: 100%;
     border: 1px solid;
-    border-radius: 4px;
+    border-radius: 5px;
     border-color: #0596FF;
     padding: 1rem;
-    margin-top:8px;
+    margin-top: 8px;
 }
 
 .input-box select{
     font-size: 1rem;
-    display: flex;
     width: 100%;
     border: 1px solid;
-    border-radius: 4px;
+    border-radius: 5px;
     border-color: #0596FF;
     padding: 1rem;
     margin-top:8px;
 }
 
-.fields-container{
-    padding: 2rem;
-    justify-content: center;
-    align-items: center;
-    background-color: crimson;
+.date-caption{
+    visibility: hidden;
 }
 
-/* -------- Formulario -----------*/
+
+.fields-container{
+    padding: 2rem 2rem 2rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* -------- FORMULARIO -----------*/
 
 .progress-container{
     background-color: #f3f3f3;
@@ -229,10 +230,9 @@ img{
 .task-list li{
     font-size: 1.5rem;
     text-decoration: none;
-    padding: 1rem;
     margin: 1rem;
     color: #373F41;
-    font-weight: 600;
+    font-weight: 700;
 
 }
 

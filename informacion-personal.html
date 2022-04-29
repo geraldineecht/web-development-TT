@@ -79,9 +79,39 @@
                             <div class="line-container">
                                 <div class="input-box">
                                     <span class="details">Fecha de Nacimiento</span>
-                                    <input type="text" placeholder="Dia" id="fdn" name="fdn">
-                                    <input type="text" placeholder="Mes" id="fdn" name="fdn">
-                                    <input type="text" placeholder="Year" id="fdn" name="fdn">
+                                    <select id="dia" name="dia">
+                                        <option value="" disabled selected>Dia</option>
+                                        <option value="1" name="dia">1</option>
+                                        <option value="2" name="dia">2</option>
+                                        <option value="3" name="dia">3</option>
+                                    </select>
+                                </div>
+                                <div class="input-box">
+                                    <span class="date-caption"> aaaa</span>
+                                    <select id="mes" name="mes">
+                                        <option value="" disabled selected>Mes</option>
+                                        <option value="1" >Enero</option>
+                                        <option value="2" >Febrero</option>
+                                        <option value="3" >Marzo</option>
+                                        <option value="1" >Abril</option>
+                                        <option value="2" >Mayo</option>
+                                        <option value="3" >Junio</option>
+                                        <option value="1" >Julio</option>
+                                        <option value="2" >Agosto</option>
+                                        <option value="3" >Septiembre</option>
+                                        <option value="1" >Octubre</option>
+                                        <option value="2" >Noviembre</option>
+                                        <option value="3" >Diciembre</option>
+                                    </select>
+                                </div>
+                                <div class="input-box">
+                                    <span class="date-caption"> bbb</span>
+                                    <select id="year" name="year">
+                                        <option value="" disabled selected>Año</option>
+                                        <option value="1" >1</option>
+                                        <option value="2" >2</option>
+                                        <option value="3" >3</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="line-container">
@@ -93,23 +123,33 @@
                             <div class="line-container">
                                 <div class="input-box">
                                     <span class="details">Genero</span>
-                                    <select id="genero" name="genero">
-                                        <option value="1" name="genero">Hombre</option>
-                                        <option value="2" name="genero">Mujer</option>
-                                        <option value="3" name="genero">Otro</option>
+                                    <select id="genero" name="genero" >
+                                        <option value="" disabled selected>Genero</option>
+                                        <option value="1" >Hombre</option>
+                                        <option value="2" >Mujer</option>
+                                        <option value="3" >Otro</option>
                                     </select>
+                                    </div>
+
                                     <div class="input-box">
                                         <span class="details">Estado Civil</span>
-                                        <input type="text" placeholder="Estado civil" id="estado civil" name="estado civil">
+                                        <select id="estadocivil"name="estadocivil">
+                                            <option value="" disabled selected>Estado Civil</option>
+                                            <option value="1" name="genero">Casado/a</option>
+                                            <option value="2" name="genero">Soltero/a</option>
+                                            <option value="3" name="genero">Divorciado/a</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                                <div class="line-container">
+                                    <div class="input-box">
+                                        <span class="details">Perfil</span>
+                                        <input type="text" placeholder="Perfil" id="Perfil" name="Perfil">
                                     </div>
                                 </div>
                             </div>
-                            <div class="line-container">
-                                <div class="input-box">
-                                    <span class="details">Perfil</span>
-                                    <input type="text" placeholder="Perfil" id="Perfil" name="Perfil">
-                                </div>
-                            </div>
+                            
                         </div>
                         <div class="button-container">
                             <button class="next-button" type="button">Siguiente</button>
