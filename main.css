@@ -12,11 +12,11 @@
 :root{
     --fs-base: 1rem; /* 1rem -> 16px */
 
-
     --primary-color: #0F0F0F;
     --blue: #0596FF;
     --teal: #3C64B1;
     --input-gray: #737B7D;
+
 }
 
 
@@ -27,13 +27,6 @@ img{
 }
 
 
-.body-container{
-    background-color: #0596FF;
-    min-width: 100vh;
-    min-height: 100vh;
-    flex: auto;
-}
-
 /* -------- HELPER FUNCTIONS -------- */
 .display-flex{
     display: flex;
@@ -41,6 +34,7 @@ img{
     justify-content: center;
     align-items: center;
 }
+
 
 /*--------- IMAGE SECTION ---------*/
 
@@ -147,48 +141,68 @@ img{
     padding-right: 0;
 }
 
-.start-session{
-    color: #ffff;
-    border: 2px solid #ffff;
-    background: none;
-    border-radius: 5px;
-    padding: 10px 25px;
+
+/* ---------  BODY CONTAIONERS SECTION --------- */
+
+.body-container{
+    background-color: #0596FF;
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: aliceblue;
+    min-width: 1400px;
+}
+
+/* --------- WEB PAGE SECTIONS ---------- */
+
+.height-90{
+    height: 90vh;
+}
+
+.page-section {
+    /* background-color:#b2b2b2; */
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing{
+    background-color: paleturquoise;
+
+    max-width: 1400px;
+    min-height: 90vh;
+    /* padding: 0 1rem; */
+}
+
+.main-container{
+    background-color: #737B7D;
+
+    margin: 0 auto;
+    
+    box-sizing: content-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     
 }
 
-.start-session:hover{
-    background: white;
-    color: black;
-} 
-
-
-/* MAIN */
-
-.main-container{
-
-    background-color: #737B7D;
-    min-width: 1400px;
-    min-height: 90vh;
-    margin: 0 auto;
-    grid-template-rows: auto;
-    color: white;
+.section-container{
+    padding: 0 1rem;
 }
 
-.landing-container{
-    background-image: url(img/space.png);
-    min-height: 90vh;
-    background-size: cover;
-}
 
-.landing-items{
 
-}
-
-/* INSTRUCTIONS */
-
-/* QUESTIONS */
-
-/* START */
 
 /* -------- FOOTER SECTION -------- */
 
@@ -207,3 +221,32 @@ img{
     overflow-y: hidden;
 }
 
+
+
+
+
+
+
+
+/* --------- MATERIAL ICONS --------- */
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+
+
+
+
+
+  /* --------- clases que explcian cosas --------- */
+  .colorsito-ejemplo{
+      background-color: bisque;
+  }
+  .COMENTAME{
+      background-color: beige;
+  }
