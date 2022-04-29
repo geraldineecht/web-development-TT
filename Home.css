@@ -178,10 +178,40 @@ img{
     background-image: url(img/space.png);
     min-height: 90vh;
     background-size: cover;
+    padding: 4rem 4rem;
+    width: 100%;
+    
 }
 
 .landing-items{
+    width: 45%;
+    padding-top: 4rem;
+    padding-right: 8rem;
+    min-height: 55vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    font-size: var(--fs-base);
+}
 
+.landing-items h1 {
+    font-size: 4rem;
+}
+
+/* --------- BUTTONS SECTION --------- */
+
+.btn-container{
+    background-color: var(--blue);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    margin-top: var(--fs-base);
+
+}
+
+
+.start-btn a{
+    color: white;
+    text-decoration: none;
 }
 
 /* INSTRUCTIONS */
