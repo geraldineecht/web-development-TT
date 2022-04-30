@@ -25,6 +25,7 @@ img{
 }
 
 /* -------- HELPER FUNCTIONS -------- */
+
 .display-flex{
     display: flex;
     flex-direction: column;
@@ -38,7 +39,6 @@ img{
 .img-attributes{
     max-height: 32px;
 }
-
 
 /*--------- HEADER SECTION ---------*/
 
@@ -131,27 +131,11 @@ img{
     height: 90vh;
 }
 
-/* .container{
-    min-width: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-container{
-    background-color: #3C64B1;
-
-    box-sizing:border-box;
-    justify-content: center;
-    align-items: center;
-} */
-
 .section-container{
     min-width: 100vh;
     
     display: grid;
-    grid-template-columns: minmax(350px,25%) 1fr;
+    grid-template-columns: minmax(375px,33%) 1fr;
 }
 
 
@@ -165,7 +149,14 @@ img{
 }
 
 .title-container{
-    padding: 1rem;
+    color:#373F41;
+    padding: 1rem 1rem 1rem 0;
+    line-height: 2.5rem;
+}
+
+.title-container p{
+    color: #737B7D;
+    font-size: 1rem;
 }
 
 .line-container{
@@ -175,7 +166,12 @@ img{
 .input-box {
     width:100%;
     font-size: 1rem;
-    padding: 1rem;
+    padding: 0 .5rem 2rem 0;
+}
+
+.input-box .details{
+    color: black;
+    font-weight: 500;
 }
 
 .input-box input{
@@ -183,29 +179,57 @@ img{
     display: flex;
     width: 100%;
     border: 1px solid;
-    border-radius: 5px;
-    border-color: #0596FF;
+    border-radius: 8px;
+    border-color: rgba(5, 150, 255, .2);
     padding: 1rem;
     margin-top: 8px;
 }
 
 .input-box select{
     font-size: 1rem;
+    display: flex;
     width: 100%;
     border: 1px solid;
-    border-radius: 5px;
-    border-color: #0596FF;
+    border-radius: 8px;
+    border-color: rgba(5, 150, 255, .2);
     padding: 1rem;
     margin-top:8px;
+}
+
+input[type="file"]{
+    display:none; 
+    background-color: #3C64B1;
+}
+
+
+.file-container{
+    width: fit-content;
+    
+    border: 1px solid;
+    padding: 1rem;
+    border-radius: 8px;
+    border-color: rgba(5, 150, 255, .2);
+    margin-top: 8px;
+
+}
+
+.foto-label{
+    color:#373F41;
+    padding-top: 2px;
+    padding-right: 2rem;
+}
+
+.custom-file-container{
+    text-align: center;
+    display: flex;
 }
 
 .date-caption{
     visibility: hidden;
 }
 
-
 .fields-container{
-    padding: 2rem 2rem 2rem 0;
+    padding: 0 2rem 2rem 0;
     justify-content: center;
     align-items: center;
 }
@@ -216,7 +240,7 @@ img{
 .progress-container{
     background-color: #f3f3f3;
     min-height: 90vh;
-    padding: 2rem;
+    padding: 6rem 0 4rem 4rem;
     
 }
 
@@ -235,4 +259,20 @@ img{
     font-weight: 700;
 
 }
+
+.button-container{
+    text-align: right;
+    margin: 0 .5rem 0 0;
+}
+
+.button-container .next-button{
+    background-color: #0596FF;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    color:white;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    
+}
+
 
