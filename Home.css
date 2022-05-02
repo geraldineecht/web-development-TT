@@ -326,16 +326,21 @@ button.accordion {
     
 }
 
-button.accordion:after {
-    /* Cambiar por flecha de fontawesome */
-    content: '˅';
+.fa-chevron-down {
     float: right;
 }
 
-button.accordion.is-open:after {
-    /* Cambiar por flecha de fontawesome */
-    content: '^';     
+
+/* button.accordion:after i{
+    #Cambiar por flecha de fontawesome 
+    content: '˅';
+    float: right; 
 }
+
+ button.accordion.is-open:after {
+ }
+         
+ */
 
 button.accordion:hover, button.accordion.is-open {
     background-color: #ddd;
