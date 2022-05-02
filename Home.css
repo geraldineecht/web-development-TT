@@ -232,7 +232,7 @@ img{
 }
 
 .instructions-text-container img{
-    max-height: 63vh;
+    max-height: 65vh;
 }
 
 .numbers-container{
@@ -307,7 +307,7 @@ img{
     width: 60%;
 }
 
-/*  */
+/* QUESTION DROPDOWN SECTION */
   
 button.accordion {
     width: 100%;
