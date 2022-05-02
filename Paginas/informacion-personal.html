@@ -1,0 +1,200 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="informacion-personal.css">
+    <script src="https://kit.fontawesome.com/ce9bb4ca53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="body-container">
+        <header class="header-container">
+            <nav class="navbar">
+                <div class="nav-container">
+                    <a href="#" id="nav-logo"><img class="img-attributes" src="/img/LogoBlanco.png" alt=""></a>
+                </div>
+            </nav>
+        </header>
+        <div class="main-container ">
+            <div class="section-container">
+                <div class="progress-container ">
+                    <ul class="task-list">
+                        <li>
+                            <i class="fa-regular fa-circle-check blue-color"></i>
+                            <a id="selected-task" href="#">Información Personal</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Información de Contacto</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Sobre Mí</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Experiencia Profesional</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Formación Académica</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Idiomas</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Certificaciones</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Enviar</a>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="form-container">
+                        <div class="title-container">
+                            <h1>Información Personal</h1>
+                            <p>Ingresa los siguientes datos solicitados para poder dirigirte a la siguiente seccion.</p>
+                        </div>
+                        <div class="fields-container">
+                            <div class="line-container">
+                                <div class="input-box">
+                                    <span class="details">Foto de Perfil</span>
+                                    <div class="file-container">
+                                        <input type="file" id="foto"   name="foto">
+                                        <div class="custom-file-container">
+                                            <label for="foto" class="foto-label">
+                                                Subir Imagen
+                                            </label>
+                                            <img src="img/Add_round_light.png" class="upload-icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line-container">
+                                <div class="input-box">
+                                    <span class="details">Nombre</span>
+                                    <input type="text" placeholder="Nombre" id="nombre" name="nombre">
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Apellido</span>
+                                    <input type="text" placeholder="Apellido" id="apellido" name="nombre">
+                                </div>    
+                            </div>
+                            <div class="line-container">
+                                <div class="input-box">
+                                    <span class="details">Fecha de Nacimiento</span>
+                                    <select id="dia" name="dia">
+                                        <option value="" disabled selected>Día</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </div>
+                                <div class="input-box">
+                                    <span class="date-caption"> aaa </span>
+                                    <select id="mes" name="mes">
+                                        <option value="" disabled selected>Mes</option>
+                                        <option value="1" >Enero</option>
+                                        <option value="2" >Febrero</option>
+                                        <option value="3" >Marzo</option>
+                                        <option value="4" >Abril</option>
+                                        <option value="5" >Mayo</option>
+                                        <option value="6" >Junio</option>
+                                        <option value="7" >Julio</option>
+                                        <option value="8" >Agosto</option>
+                                        <option value="9" >Septiembre</option>
+                                        <option value="10" >Octubre</option>
+                                        <option value="11" >Noviembre</option>
+                                        <option value="12" >Diciembre</option>
+                                    </select>
+                                </div>
+                                <div class="input-box">
+                                    <span class="date-caption"> bbb </span>
+                                    <select id="year" name="year">
+                                        <option value="" disabled selected>Año</option>
+                                        <option value="1" >1</option>
+                                        <option value="2" >2</option>
+                                        <option value="3" >3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="line-container">
+                                <div class="input-box">
+                                    <span class="details">Nacionalidad</span>
+                                    <input type="text" placeholder="Nacionalidad" id="nacionalidad" name="nacionalidad">
+                                </div>
+                            </div>
+                            <div class="line-container">
+                                <div class="input-box">
+                                    <span class="details">Género</span>
+                                    <select id="genero" name="genero" >
+                                        <option value="" disabled selected>Género</option>
+                                        <option value="1" >Hombre</option>
+                                        <option value="2" >Mujer</option>
+                                        <option value="3" >Otro</option>
+                                    </select>
+                                    </div>
+
+                                    <div class="input-box">
+                                        <span class="details">Estado Civil</span>
+                                        <select id="estadocivil"name="estadocivil">
+                                            <option value="" disabled selected>Estado Civil</option>
+                                            <option value="1" name="genero">Casado/a</option>
+                                            <option value="2" name="genero">Soltero/a</option>
+                                            <option value="3" name="genero">Divorciado/a</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                                <div class="line-container">
+                                    <div class="input-box">
+                                        <span class="details">Perfil</span>
+                                        <input type="text" placeholder="Perfil" id="Perfil" name="Perfil">
+                                    </div>
+                                </div>
+                                <div class="button-container">
+                                    <button class="next-button" type="button">Siguiente</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="footer-container"> </div>
+    </body>
+</html>
