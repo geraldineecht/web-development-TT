@@ -119,6 +119,7 @@ img{
 }
 
 /* ---------  BODY CONTAINERS SECTION --------- */
+
 .body-container{
     background-color: #0596FF;
     min-width: 100vh;
@@ -133,20 +134,13 @@ img{
 
 .section-container{
     min-width: 100vh;
-    
     display: grid;
-    grid-template-columns: minmax(375px,33%) 1fr;
+    grid-template-columns: minmax(33%,33%) 1fr;
 }
 
 
 /* -------- FORMULARIO -----------*/
 
-.form-container{
-    flex-wrap: wrap;
-    background-color: white;
-    min-height: 90vh;
-    padding: 3rem;
-}
 
 .title-container{
     color:#373F41;
@@ -234,36 +228,57 @@ input[type="file"]{
     align-items: center;
 }
 
+.form-container{
 
-/* -------- FORMULARIO -----------*/
+    background-color: white;
+    min-height: 90vh;
+    padding: 3rem;
+}
+
+/* -------- BARRA DE PROGRESO -----------*/
 
 .progress-container{
-    background-color: #f3f3f3;
+    background-color: #F2F2F2;
     min-height: 90vh;
-    padding: 6rem 0 4rem 4rem;
-    
+    padding: 4rem 0 2rem 2rem;
 }
 
 .task-list{
     margin: auto;
     text-decoration: none;
-    align-items: center;
-    margin: 2rem;
+    align-items: center; 
+    list-style: none;
+    margin: .5rem;
 }
 
 .task-list li{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-decoration: none;
-    margin: 1rem;
-    color: #373F41;
+    margin: 4rem;
+    color: #95999A;
     font-weight: 700;
-
 }
+
+.task-list a {
+    text-decoration: none;
+    color: #95999A;
+    font-size: 1.2rem;
+}
+
+#selected-task {
+    color: #0596FF;
+}
+
+.blue-color{
+    color:#0596FF;
+}
+
+/* -------- BOTÓN -----------*/
 
 .button-container{
     text-align: right;
     margin: 0 .5rem 0 0;
-}
+} 
 
 .button-container .next-button{
     background-color: #0596FF;
@@ -272,7 +287,7 @@ input[type="file"]{
     font-size: 1rem;
     color:white;
     padding: 1rem 2.5rem 1rem 2.5rem;
-    
+  
 }
 
 
