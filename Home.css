@@ -330,18 +330,10 @@ button.accordion {
     float: right;
 }
 
-
-/* button.accordion:after i{
-    #Cambiar por flecha de fontawesome 
-    content: '˅';
-    float: right; 
+.fa-chevron-up {
+    float: right;
 }
-
- button.accordion.is-open:after {
- }
          
- */
-
 button.accordion:hover, button.accordion.is-open {
     background-color: #ddd;
 }
@@ -374,6 +366,7 @@ button.accordion:hover, button.accordion.is-open {
     padding-top: 30px;
     padding-bottom: 40px;
 }
+
 
 
 /* -------- FOOTER SECTION -------- */
