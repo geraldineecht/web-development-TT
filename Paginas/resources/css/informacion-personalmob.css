@@ -91,13 +91,10 @@ img{
 
 /* ---------  WEB PAGE SECTIONS --------- */
 
-.section-container{
-    min-width: 100vh;
-    display: grid;
-    
-    grid-template-columns: minmax(33%,33%) 1fr;
+.section-container {
+    width: 100%;
+    display: grid; 
 }
-
 
 /* -------- FORMULARIO -----------*/
 
@@ -183,59 +180,70 @@ input[type="file"]{
 
 /* -------- BARRA DE PROGRESO -----------*/
 
-.section-container {
-    min-width: 100vh;
-    display: grid;
-    grid-template-columns: minmax(33%,33%) 1fr; 
-    
-}
 
 
 .progress-container{
     background-color: #F2F2F2;
-    min-height: 90vh;
-    padding: 4rem 0 2rem 2rem;
+    padding: 2rem 0 2rem 2rem;
+    width: 100%;
 }
 
 .task-list{
-    margin: auto;
     text-decoration: none;
     align-items: center; 
     list-style: none;
-}
-
-.task-list li:before{
-    background-color: #95999A;
-    width: 3px;
-    content: '';
-    position: absolute;
-    top: 60px;
-    bottom: -35px;
-    left: 28px;
-}
-
-.task-list li:last-child:before {
-    height: 0px;
+    flex: auto;
 }
 
 .task-list li{
-    position:relative;
-    font-size: 1.7rem;
-    text-decoration: none;
-    padding: 2rem 1rem 2rem 1rem;
+    list-style-type: none;
     color: #95999A;
-    font-weight: 700;
+    width: 20%;
+    display: inline-block;
+    font-size: .55rem;
+    position: relative;
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+    font-weight: 600; 
 }
 
+.task-list li:before{
+    position: relative;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    content: "";
+    display: block;
+    border: 2px solid #95999A;
+    border-radius: 50%;
+    left: 50px;
+    bottom: 10px;
+}
+
+.task-list li:after {
+    width: 100px;
+    height: 3px;
+    content: '';
+    position: absolute;
+    background-color: #95999A;
+    bottom: 65px;
+    left: 73px;
+}
+
+.task-list li:last-child:after, li:nth-child(4):after {
+    height: 0px;
+    
+}
 .task-list a {
     text-decoration: none;
     color: #95999A;
-    font-size: 1.3rem;
+
 }
 
-.task-list li:after{
-    width: 0;
+.fa-regular .fa-circle {
+    visibility: hidden;  
 }
+
 #selected-task {
     color: #0596FF;
 }
@@ -243,8 +251,6 @@ input[type="file"]{
 .blue-color{
     color:#0596FF;
 }
-
-
 
 /* -------- BOTÓN -----------*/
 
@@ -262,4 +268,5 @@ input[type="file"]{
     padding: 1rem 2.5rem 1rem 2.5rem;
   
 }
+
 

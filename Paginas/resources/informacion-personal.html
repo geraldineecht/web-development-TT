@@ -3,8 +3,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Información Personal</title>
     <link rel="stylesheet" href="css/informacion-personal.css">
+    <link rel="stylesheet" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="css/informacion-personalmob.css">
     <script src="https://kit.fontawesome.com/ce9bb4ca53.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -12,7 +13,7 @@
         <header class="header-container">
             <nav class="navbar">
                 <div class="nav-container">
-                    <a href="#" id="nav-logo"><img class="img-attributes" src="img/LogoBlanco.png" alt=""></a>
+                    <a href="#" id="nav-logo"><img class="img-attributes" src="images/LogoBlanco.png" alt=""></a>
                 </div>
             </nav>
         </header>
@@ -69,7 +70,7 @@
                                             <label for="foto" class="foto-label">
                                                 Subir Imagen
                                             </label>
-                                            <img src="img/Add_round_light.png" class="upload-icon">
+                                            <img src="images/Add_round_light.png" class="upload-icon">
                                         </div>
                                     </div>
                                 </div>
@@ -87,67 +88,15 @@
                             <div class="line-container">
                                 <div class="input-box">
                                     <span class="details">Fecha de Nacimiento</span>
-                                    <select id="dia" name="dia">
-                                        <option value="" disabled selected>Día</option>
-                                        <option value="01">01</option>
-                                        <option value="02">02</option>
-                                        <option value="03">03</option>
-                                        <option value="04">04</option>
-                                        <option value="05">05</option>
-                                        <option value="06">06</option>
-                                        <option value="07">07</option>
-                                        <option value="08">08</option>
-                                        <option value="09">09</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                        <option value="14">14</option>
-                                        <option value="15">15</option>
-                                        <option value="16">16</option>
-                                        <option value="17">17</option>
-                                        <option value="18">18</option>
-                                        <option value="19">19</option>
-                                        <option value="20">20</option>
-                                        <option value="21">21</option>
-                                        <option value="22">22</option>
-                                        <option value="23">23</option>
-                                        <option value="24">24</option>
-                                        <option value="25">25</option>
-                                        <option value="26">26</option>
-                                        <option value="27">27</option>
-                                        <option value="28">28</option>
-                                        <option value="29">29</option>
-                                        <option value="30">30</option>
-                                        <option value="31">31</option>
-                                    </select>
+                                    <input type="text" placeholder="Día" id="dia" name="dia">
                                 </div>
                                 <div class="input-box">
                                     <span class="date-caption"> aaa </span>
-                                    <select id="mes" name="mes">
-                                        <option value="" disabled selected>Mes</option>
-                                        <option value="1" >Enero</option>
-                                        <option value="2" >Febrero</option>
-                                        <option value="3" >Marzo</option>
-                                        <option value="4" >Abril</option>
-                                        <option value="5" >Mayo</option>
-                                        <option value="6" >Junio</option>
-                                        <option value="7" >Julio</option>
-                                        <option value="8" >Agosto</option>
-                                        <option value="9" >Septiembre</option>
-                                        <option value="10" >Octubre</option>
-                                        <option value="11" >Noviembre</option>
-                                        <option value="12" >Diciembre</option>
-                                    </select>
+                                    <input type="text" placeholder="Mes" id="mes" name="mes">
                                 </div>
                                 <div class="input-box">
                                     <span class="date-caption"> bbb </span>
-                                    <select id="year" name="year">
-                                        <option value="" disabled selected>Año</option>
-                                        <option value="1" >1</option>
-                                        <option value="2" >2</option>
-                                        <option value="3" >3</option>
-                                    </select>
+                                    <input type="text" placeholder="Año" id="mes" name="mes">
                                 </div>
                             </div>
                             <div class="line-container">
