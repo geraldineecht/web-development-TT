@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -19,25 +20,16 @@
 
 }
 
-img{
-    max-width: 100%;
-    height: auto;
-}
-
-/* -------- HELPER FUNCTIONS -------- */
-
-.display-flex{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 
 /*--------- IMAGE SECTION ---------*/
 
 .img-attributes{
     max-height: 32px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }
 
 /*--------- HEADER SECTION ---------*/
@@ -56,8 +48,6 @@ img{
 
 /*--------- NAVBAR SECTION ---------*/
 .navbar{
-    /* background-color: #FF1493; */
-
     font-size: var(--fs-base);
 
     height: 10vh;
@@ -76,22 +66,18 @@ img{
 }
 
 .nav-container{
-    /* background-color: coral; */
     height: inherit;
     min-height: 80px;
 
     width: 100%;
 
-    padding: 0 1rem;
 
     display: flex;
     justify-content: space-between;
-
     z-index: 1;
 }
 
 #nav-logo{
-    /* background-color: crimson; */
     
     font-size: 2rem;
     text-decoration: none;
@@ -103,41 +89,12 @@ img{
     cursor: pointer;
 }
 
-.nav-menu{
-    list-style: none;
-
-    display: flex;
-    align-items: center;
-}
-
-.nav-item{
-    height: 10vh;
-}
-
-.pd-r-0{
-    padding-right: 0;
-}
-
-/* ---------  BODY CONTAINERS SECTION --------- */
-
-.body-container{
-    background-color: #0596FF;
-    min-width: 100vh;
-    min-height: 100vh;
-}
-
 /* ---------  WEB PAGE SECTIONS --------- */
 
-.height-90{
-    height: 90vh;
+.section-container {
+    width: 100%;
+    display: grid; 
 }
-
-.section-container{
-    min-width: 100vh;
-    display: grid;
-    grid-template-columns: minmax(33%,33%) 1fr;
-}
-
 
 /* -------- FORMULARIO -----------*/
 
@@ -159,7 +116,7 @@ img{
 
 .input-box {
     width:100%;
-    font-size: 1rem;
+    flex: auto;
     padding: 0 .5rem 2rem 0;
 }
 
@@ -168,7 +125,8 @@ img{
     font-weight: 500;
 }
 
-.input-box input{
+.input-box input, select{
+    color:#737B7D;
     font-size: 1rem;
     display: flex;
     width: 100%;
@@ -179,36 +137,22 @@ img{
     margin-top: 8px;
 }
 
-.input-box select{
-    font-size: 1rem;
-    display: flex;
-    width: 100%;
-    border: 1px solid;
-    border-radius: 8px;
-    border-color: rgba(5, 150, 255, .2);
-    padding: 1rem;
-    margin-top:8px;
-}
-
 input[type="file"]{
-    display:none; 
-    background-color: #3C64B1;
+    display: none; 
 }
 
 
 .file-container{
     width: fit-content;
-    
     border: 1px solid;
     padding: 1rem;
     border-radius: 8px;
     border-color: rgba(5, 150, 255, .2);
     margin-top: 8px;
-
 }
 
 .foto-label{
-    color:#373F41;
+    color:#737B7D;
     padding-top: 2px;
     padding-right: 2rem;
 }
@@ -229,7 +173,6 @@ input[type="file"]{
 }
 
 .form-container{
-
     background-color: white;
     min-height: 90vh;
     padding: 3rem;
@@ -237,32 +180,68 @@ input[type="file"]{
 
 /* -------- BARRA DE PROGRESO -----------*/
 
+
+
 .progress-container{
     background-color: #F2F2F2;
-    min-height: 90vh;
-    padding: 4rem 0 2rem 2rem;
+    padding: 2rem 0 2rem 2rem;
+    width: 100%;
 }
 
 .task-list{
-    margin: auto;
     text-decoration: none;
     align-items: center; 
     list-style: none;
-    margin: .5rem;
+    flex: auto;
 }
 
 .task-list li{
-    font-size: 1.7rem;
-    text-decoration: none;
-    margin: 4rem;
+    list-style-type: none;
     color: #95999A;
-    font-weight: 700;
+    width: 20%;
+    display: inline-block;
+    font-size: .55rem;
+    position: relative;
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+    font-weight: 600; 
 }
 
+.task-list li:before{
+    position: relative;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    content: "";
+    display: block;
+    border: 2px solid #95999A;
+    border-radius: 50%;
+    left: 50px;
+    bottom: 10px;
+}
+
+.task-list li:after {
+    width: 100px;
+    height: 3px;
+    content: '';
+    position: absolute;
+    background-color: #95999A;
+    bottom: 65px;
+    left: 73px;
+}
+
+.task-list li:last-child:after, li:nth-child(4):after {
+    height: 0px;
+    
+}
 .task-list a {
     text-decoration: none;
     color: #95999A;
-    font-size: 1.2rem;
+
+}
+
+.fa-regular .fa-circle {
+    visibility: hidden;  
 }
 
 #selected-task {
