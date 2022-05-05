@@ -89,32 +89,163 @@ img{
     cursor: pointer;
 }
 
-/* ---------  WEB PAGE SECTIONS --------- */
+/* ----------- AUXILIARES ---------- */
 
-.main-container {
-    background-color: rgba(0, 0, 0, 0.121);
+.grid{
+    display: grid;
+}
 
-    max-width: 1400px;
+.flex-gap{
+    gap:1rem;
+}
+
+
+/* ----------- BODY ---------- */
+
+.body-container{
+    /* background-color: #0596FF; */
+    min-width: 100%;
+    min-height: 100%;
+
+}
+
+
+/* ----------- WEB PAGE ---------- */
+
+.section-2{
+    grid-template-columns: 35% 65%;
+    gap: 2rem;
     min-height: 90vh;
+}
 
-    margin: 0 auto;
-    /* padding: 0 1rem; */
+.right-section{
+    /* background-color: #3C64B1; */
 
     display: flex;
-    justify-content: center;
-    align-items: center;
-
     flex-direction: column;
-    
 }
 
+.left-section{
+    background-color: #F2F2F2;
 
-.section-container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.progress-container{
+    /* background-color: aquamarine; */
+
+    width: 80%;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    
+    
+
+    
+
+}
+
+.task-container{
+    /* background-color: aliceblue; */
+
     width: 100%;
-    display: grid;
-    
-    grid-template-columns: minmax(33%,33%) 1fr;
+    /* padding: 1rem; */
+
+    display: flex;
+    flex-direction: column;
 }
+
+
+
+
+.form-container{
+    /* background-color: aquamarine; */
+
+    width: 90%;
+    min-height: 90vh;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.box-container{
+    padding-right: 1rem;
+}
+
+
+
+/* ------------ TASK UL SECTION --------------*/
+
+
+.li-container{
+    display: flex;
+    align-items: center;
+    
+    gap: .8rem;
+}
+
+.task-list{
+    
+    /* margin: auto; */
+    text-decoration: none;
+    align-items: center; 
+    list-style: none;
+}
+
+/* .task-list li:before{
+    background-color: #95999A;
+    width: 3px;
+    content: '';
+    position: absolute;
+    top: 60px;
+    bottom: -35px;
+    left: 28px;
+} */
+
+.task-list li:first-child:before {
+    background-color:rgba(5, 150, 255, .2);
+}
+
+
+
+.task-list li:last-child:before {
+    height: 0px;
+}
+
+.task-list li{
+    position:relative;
+    font-size: 1.7rem;
+    text-decoration: none;
+    padding: 1rem;
+    color: #95999A;
+    font-weight: 700;
+}
+
+.task-list a {
+    text-decoration: none;
+    color: #95999A;
+    font-size: 1.3rem;
+    pointer-events: none;
+}
+
+.task-list li:after{
+    width: 0;
+}
+#selected-task, .selected-color {
+    color: #0596FF;
+    pointer-events:auto;
+}
+
+#finished-task, .finished-color {
+    color: rgba(5, 150, 255, .2);
+    pointer-events: auto;
+}
+
 
 
 /* -------- FORMULARIO -----------*/
@@ -138,7 +269,7 @@ img{
 .input-box {
     width:100%;
     flex: auto;
-    padding: 0 .5rem 2rem 0;
+    padding-bottom: 2rem;
 }
 
 .input-box .details{
@@ -188,91 +319,11 @@ input[type="file"]{
 }
 
 .fields-container{
-    padding: 0 2rem 2rem 0;
+    /* padding: 0 2rem 2rem 0; */
     justify-content: center;
     align-items: center;
 }
 
-.form-container{
-    background-color: white;
-    min-height: 90vh;
-    padding: 3rem;
-}
-
-/* -------- BARRA DE PROGRESO -----------*/
-
-.section-container {
-    min-width: 100vh;
-    display: grid;
-    grid-template-columns: minmax(33%,33%) 1fr; 
-    
-}
-
-
-.progress-container{
-    background-color: #F2F2F2;
-    min-height: 90vh;
-    padding: 4rem 0 2rem 2rem;
-}
-
-
-
-
-.task-list{
-    
-    margin: auto;
-    text-decoration: none;
-    align-items: center; 
-    list-style: none;
-}
-
-.task-list li:before{
-    background-color: #95999A;
-    width: 3px;
-    content: '';
-    position: absolute;
-    top: 60px;
-    bottom: -35px;
-    left: 28px;
-}
-.task-list li:first-child:before {
-    background-color:rgba(5, 150, 255, .2);
-}
-
-
-
-.task-list li:last-child:before {
-    height: 0px;
-}
-
-.task-list li{
-    position:relative;
-    font-size: 1.7rem;
-    text-decoration: none;
-    padding: 2rem 1rem 2rem 1rem;
-    color: #95999A;
-    font-weight: 700;
-}
-
-.task-list a {
-    text-decoration: none;
-    color: #95999A;
-    font-size: 1.3rem;
-    pointer-events: none;
-}
-
-.task-list li:after{
-    width: 0;
-}
-#selected-task, .selected-color {
-    color: #0596FF;
-    pointer-events:auto;
-}
-
-#finished-task, .finished-color {
-    color: rgba(5, 150, 255, .2);
-    pointer-events: auto;
-}
 
 /* -------- BOTÓN -----------*/
 
@@ -281,6 +332,8 @@ input[type="file"]{
     justify-content: space-between;
     margin: 0 .5rem 0 0;
     text-decoration: none;
+
+    padding-bottom: 1rem;
 
 } 
 
@@ -302,4 +355,3 @@ input[type="file"]{
     padding: 1rem .5rem 1rem .5rem;
     justify-content: center;
 }
-
