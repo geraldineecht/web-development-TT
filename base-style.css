@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+
+    scroll-behavior: smooth;
+} 
+
+:root{
+    --fs-base: 1rem; /* 1rem -> 16px */
+    --fs-medium: 2rem;
+
+    --primary-color: #0F0F0F;
+    --blue: #0596FF;
+    --teal: #3C64B1;
+    --input-gray: #737B7D;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* -------- HELPER FUNCTIONS -------- */
+.display-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*--------- IMAGE SECTION ---------*/
+
+.img-attributes{
+    max-height: 32px;
+}
+
+
+/*--------- HEADER SECTION ---------*/
+
+.header-container{
+    /* background-color: var(--primary-color); */
+
+    height: 10vh;
+    min-height: 80px;
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    /* transition: all 0.3s ease; */
+}
+
+
+
+/*--------- NAVBAR SECTION ---------*/
+.navbar{
+    /* background-color: #FF1493; */
+
+    font-size: var(--fs-base);
+
+    height: 10vh;
+    min-height: 80px;
+
+    max-width: 1400px;
+    margin: 0 auto;
+
+    padding-right: 4vw;
+    padding-left: 4vw;
+    box-sizing: content-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container{
+    /* background-color: coral; */
+    height: inherit;
+    min-height: 80px;
+
+    width: 100%;
+
+    padding: 0 1rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    z-index: 1;
+}
+
+#nav-logo{
+    /* background-color: crimson; */
+    
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.nav-menu{
+    /* background-color: cornflowerblue; */
+
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav-item{
+    height: 10vh;
+}
+
+.nav-links{
+    /* background-color: lawngreen; */
+
+    color: white;
+    text-decoration: none;
+
+    height: 100%;
+    padding: 0 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.3s ease;
+}
+
+.pd-r-0{
+    padding-right: 0;
+}
+
+
+/* ---------  BODY CONTAIONERS SECTION --------- */
+
+.body-container{
+    background-color: var(--primary-color);
+    min-width: 100vh;
+    min-height: 100vh;
+
+    overflow-y: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: aliceblue;
+    min-width: 1400px;
+}

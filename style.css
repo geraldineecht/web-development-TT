@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+
+    scroll-behavior: smooth;
+} 
+
+:root{
+    --fs-base: 1rem; /* 1rem -> 16px */
+    --fs-medium: 2rem;
+
+    --primary-color: #0F0F0F;
+    --blue: #0596FF;
+    --teal: #3C64B1;
+    --input-gray: #737B7D;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.main-container{
+    background-color: rgba(0, 0, 0, 0.121);
+
+    max-width: 1400px;
+    min-height: 90vh;
+    /* padding: 0 1rem; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.img-attributes{
+    max-height: 32px;
+}
+
+.btn-container{
+    background-color: var(--blue);
+
+    padding: 1.7rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    margin-top: var(--fs-base);
+
+}
+
+.sign-in-btn a{
+    color: white;
+}
+
+
+
+
+
+
+
+/*---------- CARDS SECTION ----------- */
+
+.cards-container{
+    /* background-color: #737B7D; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: 100%;
+    padding: 1.25rem;
+
+    background: linear-gradient(0deg, rgba(5, 150, 255, 0.05), rgba(5, 150, 255, 0.05)), #FFFFFF;
+    border: 1px solid rgba(5, 150, 255, 0.13);
+    box-sizing: border-box;
+    border-radius: .5rem;
+    
+}
+
+.title-container{
+    /* background-color: antiquewhite; */
+
+    display: flex;
+    justify-content: left;
+
+    width: 100%;
+
+}
+
+.title-text{
+    /* background-color: aliceblue; */
+
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+
+    width: inherit;
+    justify-content: space-between;
+
+}
+
+.card-text{
+    /* background-color: azure; */
+    display: flex;
+    flex-direction: column;
+
+    gap: .5rem;
+}
+
+.card-details{
+    display: flex;
+    gap: .25rem;
+}
+
+.location-style{
+    color: #737B7D;
+}
+
+.apply-btn{
+    background-color: var(--blue);
+
+    display: flex;
+    align-items: center;
+
+    padding: .6rem;
+
+    border-radius: 8px;
+
+
+}
+
+.btn-like-container{
+    /* background-color: bisque; */
+
+    width: inherit;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.like-btn{
+    display: flex;
+    align-items: center;
+}
+
+.like-btn a{
+    color: var(--input-gray);
+}
+
+.heart span {
+    color: red;
+}
+
+.heart{
+    animation: heart 0.5s linear;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 20
+}
