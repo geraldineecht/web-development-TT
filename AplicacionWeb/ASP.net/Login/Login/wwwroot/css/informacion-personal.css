@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+
+    scroll-behavior: smooth;
+} 
+
+:root{
+    --fs-base: 1rem; /* 1rem -> 16px */
+
+    --primary-color: #0F0F0F;
+    --blue: #0596FF;
+    --teal: #3C64B1;
+    --input-gray: #737B7D;
+
+}
+
+
+/*--------- IMAGE SECTION ---------*/
+
+.img-attributes{
+    max-height: 32px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*--------- HEADER SECTION ---------*/
+
+.header-container{
+    background-color: var(--primary-color);
+
+    height: 10vh;
+    min-height: 80px;
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    /* transition: all 0.3s ease; */
+}
+
+/*--------- NAVBAR SECTION ---------*/
+.navbar{
+    font-size: var(--fs-base);
+
+    height: 10vh;
+    min-height: 80px;
+
+    min-width: 100vh;
+    margin: 0 auto;
+
+    padding-right: 4vw;
+    padding-left: 4vw;
+    box-sizing: content-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container{
+    height: inherit;
+    min-height: 80px;
+
+    width: 100%;
+
+
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+#nav-logo{
+    
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+/* ---------  WEB PAGE SECTIONS --------- */
+
+.section-container{
+    min-width: 100vh;
+    display: grid;
+    
+    grid-template-columns: minmax(33%,33%) 1fr;
+}
+
+
+/* -------- FORMULARIO -----------*/
+
+
+.title-container{
+    color:#373F41;
+    padding: 1rem 1rem 1rem 0;
+    line-height: 2.5rem;
+}
+
+.title-container p{
+    color: #737B7D;
+    font-size: 1rem;
+}
+
+.line-container{
+    display:flex;
+}
+
+.input-box {
+    width:100%;
+    flex: auto;
+    padding: 0 .5rem 2rem 0;
+}
+
+.input-box .details{
+    color: black;
+    font-weight: 500;
+}
+
+.input-box input, select{
+    color:#737B7D;
+    font-size: 1rem;
+    display: flex;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 8px;
+    border-color: rgba(5, 150, 255, .2);
+    padding: 1rem;
+    margin-top: 8px;
+}
+
+input[type="file"]{
+    display: none; 
+}
+
+
+.file-container{
+    width: fit-content;
+    border: 1px solid;
+    padding: 1rem;
+    border-radius: 8px;
+    border-color: rgba(5, 150, 255, .2);
+    margin-top: 8px;
+}
+
+.foto-label{
+    color:#737B7D;
+    padding-top: 2px;
+    padding-right: 2rem;
+}
+
+.custom-file-container{
+    text-align: center;
+    display: flex;
+}
+
+.date-caption{
+    visibility: hidden;
+}
+
+.fields-container{
+    padding: 0 2rem 2rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    background-color: white;
+    min-height: 90vh;
+    padding: 3rem;
+}
+
+/* -------- BARRA DE PROGRESO -----------*/
+
+.section-container {
+    min-width: 100vh;
+    display: grid;
+    grid-template-columns: minmax(33%,33%) 1fr; 
+    
+}
+
+
+.progress-container{
+    background-color: #F2F2F2;
+    min-height: 90vh;
+    padding: 4rem 0 2rem 2rem;
+}
+
+.task-list{
+    margin: auto;
+    text-decoration: none;
+    align-items: center; 
+    list-style: none;
+}
+
+.task-list li:before{
+    background-color: #95999A;
+    width: 3px;
+    content: '';
+    position: absolute;
+    top: 60px;
+    bottom: -35px;
+    left: 28px;
+}
+
+.task-list li:last-child:before {
+    height: 0px;
+}
+
+.task-list li{
+    position:relative;
+    font-size: 1.7rem;
+    text-decoration: none;
+    padding: 2rem 1rem 2rem 1rem;
+    color: #95999A;
+    font-weight: 700;
+}
+
+.task-list a {
+    text-decoration: none;
+    color: #95999A;
+    font-size: 1.3rem;
+}
+
+.task-list li:after{
+    width: 0;
+}
+#selected-task {
+    color: #0596FF;
+}
+
+.blue-color{
+    color:#0596FF;
+}
+
+
+
+/* -------- BOTÓN -----------*/
+
+.button-container{
+    text-align: right;
+    margin: 0 .5rem 0 0;
+} 
+
+.button-container .next-button{
+    background-color: #0596FF;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    color:white;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+  
+}
+

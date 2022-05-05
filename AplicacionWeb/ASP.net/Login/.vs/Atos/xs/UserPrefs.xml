@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{1F23A056-76AD-4009-B3EF-7ADD32F66C64}|Login">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/informacion_personal.cshtml">
+    <Files>
+      <File FileName="Login/Pages/Index.cshtml" Line="48" Column="32" IsPinned="True" />
+      <File FileName="Login/Pages/Admin.cshtml" Line="76" Column="118" />
+      <File FileName="Login/Pages/User.cshtml" Line="73" Column="49" />
+      <File FileName="Login/Pages/informacion_personal.cshtml" Line="14" Column="34" />
+      <File FileName="Login/Pages/Informacion_de_contacto.cshtml" Line="14" Column="36" />
+      <File FileName="Login/Pages/Sobre_mi.cshtml" Line="125" Column="86" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Atos" expanded="True">
+            <Node name="Atos" expanded="True">
+              <Node name="Model" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Admin.cshtml" expanded="True" />
+                <Node name="Informacion_personal.cshtml" selected="True" />
+                <Node name="Sobre_mi.cshtml" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="img" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Atos PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

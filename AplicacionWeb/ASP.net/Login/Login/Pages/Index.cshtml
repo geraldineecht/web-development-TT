@@ -1,0 +1,176 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="~/css/Index.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/ce9bb4ca53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="body-container">
+        <header class="header-container">
+            <nav class="navbar">
+
+                <div class="nav-container">
+                    <a href="#" id="nav-logo"><img class="img-attributes" src="~/img/LogoBlanco.png" alt=""></a>
+
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">Industries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">Solutions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">Insights & News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links pd-r-0">
+                                <span class="material-symbols-outlined">
+                                    search
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-page="/Sign_in" class="nav-links"><button class="start-session">Inicia sesión</button></a>
+                            
+                        </li>
+                    </ul>
+
+                </div>
+
+            </nav>
+        </header>
+
+        <div class="main-container">
+            <div class="landing-container">
+                <div class="landing-items">
+                    <h1>¡Crea tu CV y aplica a vacantes!</h1>
+                    <p>
+                        ¿Quieres formar parte de la Comunidad Atos? Es muy facil! Inicia creando tu perfil para
+                        poder consultar las vacantes disponibles y ademas, tendrás una gran experiencia al realizar
+                        la entrevista por medio de nuestro videojuego!
+                    </p>
+                    <div class="start-btn">
+                        <a class="btn-container" asp-page="/User">¡Empieza ahora!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instructions-container">
+                <div class="instructions-text-container">
+                    <br />
+                    <br />
+                    <h1>¿Cómo funciona?</h1>
+
+                    <div class="numbers-container">
+                        <h3 id="numberone" class="number">
+                            1</h4>
+                            <h3 class="number">
+                                2</h4>
+                                <h3 class="number">3</h4>
+                    </div>
+
+                    <div class="instructions-text">
+                        <h4>Registrate</h4>
+                        <h4 id="datos-personales">Ingresa tus Datos Principales</h4>
+                        <h4>Aplica a Vacantes</h4>
+                    </div>
+
+                    <div class="instructions-description">
+                        <p>Regístrate con tu nombre completo y correo electrónico a la plataforma.</p>
+                        <p>Empieza por completar las secciones principales que componen tu CV.</p>
+                        <p>¡Aplica a las vacantes disponibles para tu perfil y habilidades!</p>
+                    </div>
+                    <br />
+
+                    <img class="img" src="~/img/personal_details.png" alt="">
+                    <br />
+                    <br />
+                    <br />
+                </div>
+            </div>
+
+            <div class="questions-container">
+
+                <div class="questions-container-title">
+                    <h1>Preguntas Frecuentes</h1>
+                </div>
+
+                <div class="questions-container-list">
+                    <button class="accordion">Pregunta 1<i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+                        </p>
+
+                    </div>
+
+                    <button class="accordion">Pregunta 2<i id="chevron-down" class="fa-solid fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+                        </p>
+                    </div>
+
+                    <button class="accordion">Pregunta 3<i id="chevron-down" class="fa-solid fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+                        </p>
+                    </div>
+
+                    <button class="accordion">Pregunta 4<i id="chevron-down" class="fa-solid fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+                        </p>
+                    </div>
+                    <br />
+                </div>
+
+            </div>
+
+            <div class="start-container">
+                <div class="start-container-title">
+                    <h1>¡Crea tu CV y aplica a vacantes!</h1>
+                </div>
+                <div class="start-container-description">
+                    <p>Se parte de Atos!</p>
+                    <p>Lleva tu vida profesional al siguiente nivel.</p>
+                </div>
+
+                <div class="start-btn">
+                    <a class="btn-container" asp-page="/User">¡Empieza ahora!</a>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
+
+        </div>
+
+        <footer class="footer-container display-flex">
+            <p>© Atos SE 2022 all rights reserved</p>
+        </footer>
+
+    </div>
+    <script src="~/js/Index.js"></script>
+</body>
+</html>
+
+

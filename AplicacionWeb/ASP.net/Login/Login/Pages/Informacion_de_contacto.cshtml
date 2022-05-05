@@ -1,0 +1,122 @@
+﻿@page
+@model Atos.Pages.Informacion_de_contactoModel
+@{
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Contacto</title>
+    <link rel="stylesheet" href="~/css/informacion-de-contacto.css">
+    <script src="https://kit.fontawesome.com/ce9bb4ca53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="body-container">
+        <header class="header-container">
+            <nav class="navbar">
+                <div class="nav-container">
+                    <a href="#" id="nav-logo"><img class="img-attributes" src="~/img/LogoBlanco.png" alt=""></a>
+                </div>
+            </nav>
+        </header>
+        <div class="main-container ">
+            <div class="section-container">
+                <div class="progress-container ">
+                    <ul class="task-list">
+                        <li>
+                            <i class="fa-regular fa-circle-check finished-color"></i>
+                            <a id="finished-task" asp-page="/informacion_personal">Información Personal</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle-check selected-color"></i>
+                            <a id="selected-task" href="#">Información de Contacto</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Sobre Mí</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Experiencia Profesional</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Formación Académica</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Idiomas</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Certificaciones</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-circle"></i>
+                            <a href="#">Enviar</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="form-container">
+                    <div class="title-container">
+                        <h1>Información de Contacto</h1>
+                        <p>Ingresa los siguientes datos solicitados para poder dirigirte a la siguiente seccion.</p>
+                    </div>
+                    <div class="fields-container">
+                        <div class="line-container">
+                            <div class="input-box">
+                                <span class="details">Teléfono</span>
+                                <input type="text" placeholder="Teléfono" id="telefono" name="telefono">
+                            </div>
+                        </div>
+                        <div class="line-container">
+                            <div class="input-box">
+                                <span class="details">Correo electrónico</span>
+                                <input type="text" placeholder="Correo electrónico" id="email" name="email">
+                            </div>
+                        </div>
+                        <div class="line-container">
+                            <div class="input-box">
+                                <span class="details">País</span>
+                                <input type="text" placeholder="País" id="pais" name="pais">
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Estado</span>
+                                <input type="text" placeholder="Estado" id="estado" name="estado">
+                            </div>
+                        </div>
+                        <div class="line-container">
+                            <div class="input-box">
+                                <span class="details">Ciudad</span>
+                                <input type="text" placeholder="Ciudad" id="ciudad" name="ciudad">
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Código Postal</span>
+                                <input type="text" placeholder="Código Postal" id="cp" name="cp">
+                            </div>
+                        </div>
+                        <div class="line-container">
+                            <div class="input-box">
+                                <span class="details">Dirección</span>
+                                <input type="text" placeholder="Dirección" id="direccion" name="direccion">
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <a class="back-button" asp-page="/Informacion_personal">🡨  Regresar</a>
+                            <a class="next-button" asp-page="/Sobre_mi">Siguiente</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer-container"> </div>
+</body>
+</html>
