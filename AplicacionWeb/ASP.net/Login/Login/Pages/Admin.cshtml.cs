@@ -27,6 +27,7 @@ namespace Login.Pages
             if (dr.Read())
             {
                 conexion.Close();
+
                 Response.Redirect("Entraste");
             }
             else

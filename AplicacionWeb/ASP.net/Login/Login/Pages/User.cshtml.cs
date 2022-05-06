@@ -19,10 +19,30 @@ namespace Login.Pages
             MySqlConnection conexion = new MySqlConnection(connectionString);
             conexion.Open();
             MySqlCommand cmd = new MySqlCommand();
+            MySqlDataReader dr;
             cmd.Connection = conexion;
-            cmd.CommandText = " Insert into Aplicante(Nombre,ApellidoP,ApellidoM,Correo) Values ('" + acc.NombreUsuario + "  ','" + acc.ApellidoPaterno + "' , '" + acc.ApellidoMaterno + "' , '" + acc.Correo + "')";
+            //cmd.CommandText = " Insert into Aplicante(Nombre,ApellidoP,ApellidoM,Correo) Values ('" + acc.NombreUsuario + "  ','" + acc.ApellidoPaterno + "' , '" + acc.ApellidoMaterno + "' , '" + acc.Correo + "')";
+            cmd.CommandText = " Select * from Aplicante where Nombre= '" + acc.NombreUsuario + "  'and ApellidoP= '" + acc.ApellidoPaterno + "'  and ApellidoM= '" + acc.ApellidoMaterno + "'  and Correo= '" + acc.Correo + "'";
             cmd.ExecuteNonQuery();
-            Response.Redirect("informacion_personal");
+            dr = cmd.ExecuteReader();
+            //Response.Redirect("informacion_personal");
+
+            if (dr.Read())
+            {
+                // Si el aplicante ya se encuentra en la base de datos
+                dr.Close();
+                conexion.Close();
+                Response.Redirect("User");
+            }
+            else
+            {
+                // Si el aplicante no se repite
+                dr.Close();
+                cmd.CommandText = " Insert into Aplicante(Nombre,ApellidoP,ApellidoM,Correo) Values ('" + acc.NombreUsuario + "  ','" + acc.ApellidoPaterno + "' , '" + acc.ApellidoMaterno + "' , '" + acc.Correo + "')";
+                cmd.ExecuteNonQuery();
+                conexion.Close();
+                Response.Redirect("informacion_personal");
+            }
         }
         private readonly ILogger<UserModel> _logger;
 

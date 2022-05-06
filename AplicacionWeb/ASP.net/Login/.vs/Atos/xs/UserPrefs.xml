@@ -1,12 +1,16 @@
 ﻿<Properties StartupConfiguration="{1F23A056-76AD-4009-B3EF-7ADD32F66C64}|Login">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/informacion_personal.cshtml">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Login/Pages/Index.cshtml" Line="48" Column="32" IsPinned="True" />
-      <File FileName="Login/Pages/Admin.cshtml" Line="76" Column="118" />
-      <File FileName="Login/Pages/User.cshtml" Line="73" Column="49" />
-      <File FileName="Login/Pages/informacion_personal.cshtml" Line="14" Column="34" />
-      <File FileName="Login/Pages/Informacion_de_contacto.cshtml" Line="14" Column="36" />
-      <File FileName="Login/Pages/Sobre_mi.cshtml" Line="125" Column="86" />
+      <File FileName="Login/Pages/Index.cshtml" IsPinned="True" />
+      <File FileName="Login/Pages/Admin.cshtml" />
+      <File FileName="Login/Pages/User.cshtml" />
+      <File FileName="Login/Pages/informacion_personal.cshtml" />
+      <File FileName="Login/Pages/Informacion_de_contacto.cshtml" />
+      <File FileName="Login/Pages/Sobre_mi.cshtml" />
+      <File FileName="Login/Pages/Admin.cshtml.cs" />
+      <File FileName="Login/Pages/Sign_in.cshtml" />
+      <File FileName="Login/Pages/Sobre_mi.cshtml.cs" />
+      <File FileName="Login/Pages/User.cshtml.cs" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,8 +20,10 @@
               <Node name="Model" expanded="True" />
               <Node name="Pages" expanded="True">
                 <Node name="Admin.cshtml" expanded="True" />
-                <Node name="Informacion_personal.cshtml" selected="True" />
                 <Node name="Sobre_mi.cshtml" expanded="True" />
+                <Node name="User.cshtml" expanded="True">
+                  <Node name="User.cshtml.cs" selected="True" />
+                </Node>
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="img" expanded="True" />
