@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Información Personal</title>
     <link rel="stylesheet" href="css/informacion-personal.css">
-    <link rel="stylesheet" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="css/informacion-personalmob.css">
     <script src="https://kit.fontawesome.com/ce9bb4ca53.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <div class="body-container">
         <header class="header-container">
             <nav class="navbar">
@@ -17,49 +17,73 @@
                 </div>
             </nav>
         </header>
-        <div class="main-container ">
-            <div class="section-container">
-                <div class="progress-container ">
-                    <ul class="task-list">
-                        <li>
-                            <i class="fa-regular fa-circle-check blue-color"></i>
-                            <a id="selected-task" href="#">Información Personal</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle"></i>
-                            <a href="#">Información de Contacto</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle"></i>
-                            <a href="#">Sobre Mí</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle"></i>
-                            <a href="#">Experiencia Profesional</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle"></i>
-                            <a href="#">Formación Académica</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle"></i>
-                            <a href="#">Idiomas</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle"></i>
-                            <a href="#">Certificaciones</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle"></i>
-                            <a href="#">Enviar</a>
-                        </li>
+
+        <div class="grid section-2">
+            <div class="left-section">
+                <div class="progress-container">
+                    <div class="task-container">
+                        <ul class="task-list">
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check blue-color"></i>
+                                    <a id="selected-task" href="#">Información Personal</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <a href="#">Información de Contacto</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <a href="#">Sobre Mí</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <a href="#">Experiencia Profesional</a>
+                                </div>                            
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <a href="#">Formación Académica</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <a href="#">Idiomas</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <a href="#">Certificaciones</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <a href="#">Enviar</a>
+                                </div>
+                            </li>
                         </ul>
                     </div>
-                    <div class="form-container">
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="form-container">
+                    <div class="box-container">
                         <div class="title-container">
                             <h1>Información Personal</h1>
                             <p>Ingresa los siguientes datos solicitados para poder dirigirte a la siguiente seccion.</p>
                         </div>
+                        
                         <div class="fields-container">
                             <div class="line-container">
                                 <div class="input-box">
@@ -75,7 +99,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="line-container">
+                            <div class="line-container flex-gap">
                                 <div class="input-box">
                                     <span class="details">Nombre</span>
                                     <input type="text" placeholder="Nombre" id="nombre" name="nombre">
@@ -85,7 +109,7 @@
                                     <input type="text" placeholder="Apellido" id="apellido" name="nombre">
                                 </div>    
                             </div>
-                            <div class="line-container">
+                            <div class="line-container flex-gap">
                                 <div class="input-box">
                                     <span class="details">Fecha de Nacimiento</span>
                                     <input type="text" placeholder="Día" id="dia" name="dia">
@@ -105,7 +129,7 @@
                                     <input type="text" placeholder="Nacionalidad" id="nacionalidad" name="nacionalidad">
                                 </div>
                             </div>
-                            <div class="line-container">
+                            <div class="line-container flex-gap">
                                 <div class="input-box">
                                     <span class="details">Género</span>
                                     <select id="genero" name="genero" >
@@ -115,40 +139,35 @@
                                         <option value="3" >Otro</option>
                                     </select>
                                     </div>
-
                                     <div class="input-box">
                                         <span class="details">Estado Civil</span>
                                         <select id="estadocivil"name="estadocivil">
                                             <option value="" disabled selected>Estado Civil</option>
-                                            <option value="1" name="genero">Casado/a</option>
-                                            <option value="2" name="genero">Soltero/a</option>
-                                            <option value="3" name="genero">Divorciado/a</option>
-                                        </select>
-
-                                    </div>
-                                </div>
-                                <div class="line-container">
-                                    <div class="input-box">
-                                        <span class="details">Perfil</span>
-                                        <select id="perfil" name="perfil" >
-                                            <option value="" disabled selected>Perfil</option>
-                                            <option value="1" >Perfil 1</option>
-                                            <option value="2" >Perfil 2</option>
-                                            <option value="3" >Perfil 3</option>
+                                            <option value="1" name="genero">Casado</option>
+                                            <option value="2" name="genero">Soltero</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="button-container">
-                                    <button class="next-button" type="button">Siguiente</button>
+                            <div class="line-container">
+                                <div class="input-box">
+                                    <span class="details">Perfil</span>
+                                    <select id="perfil" name="perfil" >
+                                        <option value="" disabled selected>Perfil</option>
+                                        <option value="1" >Perfil 1</option>
+                                        <option value="2" >Perfil 2</option>
+                                        <option value="3" >Perfil 3</option>
+                                    </select>
                                 </div>
                             </div>
-                            
+                            <div class="button-container">
+                                <button class="next-button" type="button">Siguiente</button>
+                            </div>
                         </div>
-                        
                     </div>
                 </div>
-            </div>  
-        </div>
-        <div class="footer-container"> </div>
+            </div> 
+        </div> 
+    </div>
+    <div class="footer-container"> </div>
     </body>
 </html>

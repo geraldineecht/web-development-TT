@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/ce9bb4ca53.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <div class="body-container">
         <header class="header-container">
             <nav class="navbar">
@@ -17,45 +18,68 @@
                 </div>
             </nav>
         </header>
-        <div class="main-container ">
-            <div class="section-container">
-                <div class="progress-container ">
-                    <ul class="task-list">
-                        <li>
-                            <i class="fa-regular fa-circle-check finished-color"></i>
-                            <a id="finished-task" href="#">Información Personal</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle-check finished-color"></i>
-                            <a id="finished-task" href="#">Información de Contacto</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle-check selected-color"></i>
-                            <a id="selected-task" href="#">Sobre Mí</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle"></i>
-                            <a href="#">Experiencia Profesional</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle"></i>
-                            <a href="#">Formación Académica</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle"></i>
-                            <a href="#">Idiomas</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle"></i>
-                            <a href="#">Certificaciones</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle"></i>
-                            <a href="#">Enviar</a>
-                        </li>
+
+        <div class="grid section-2">
+            <div class="left-section">
+                <div class="progress-container">
+                    <div class="task-container">
+                        <ul class="task-list">
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check finished-color"></i>
+                                    <a id="finished-task" href="#">Información Personal</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check finished-color"></i>
+                                    <a id="finished-task" href="#">Información de Contacto</a>
+                                </div>                    
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check selected-color"></i>
+                                    <a id="selected-task" href="#">Sobre Mí</a>
+                                </div>                            
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <a href="#">Experiencia Profesional</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <a href="#">Formación Académica</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <a href="#">Idiomas</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <a href="#">Certificaciones</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <a href="#">Enviar</a>
+                                </div>
+                            </li>
                         </ul>
                     </div>
-                    <div class="form-container">
+                </div>
+            </div>
+
+            <div class="right-section">            
+                <div class="form-container">
+                    <div class="box-container">
                         <div class="title-container">
                             <h1>Sobre Mí</h1>
                             <p>Ingresa los siguientes datos solicitados para poder dirigirte a la siguiente seccion.</p>
@@ -75,16 +99,15 @@
                                 <h1>Habilidades</h1>
                                 <p>Selecciona las habilidades que consideres más fuertes sobre ti.</p>
                             </div>
-                            <div class="line-container">
+                            <div class="line-container flex-gap">
                                 <div class="input-box">
-                                   
                                     <input type="text" placeholder="Habilidad 1" id="skill1" name="skill1">
                                 </div>   
                                 <div class="input-box">
                                     <input type="text" placeholder="Habilidad 2" id="skill2" name="skill2">
                                 </div>  
                             </div>
-                            <div class="line-container">
+                            <div class="line-container flex-gap">
                                 <div class="input-box">
                                     <input type="text" placeholder="Habilidad 3" id="skill3" name="skill3">
                                 </div> 
@@ -95,7 +118,7 @@
                                     <input type="text" placeholder="Habilidad 5" id="skill5" name="skill5">
                                 </div> 
                             </div>
-                            <div class="line-container">
+                            <div class="line-container flex-gap">
                                 <div class="input-box">
                                     <input type="text" placeholder="Habilidad 6" id="skill6" name="skill6">
                                 </div> 
@@ -103,7 +126,7 @@
                                     <input type="text" placeholder="Habilidad 7" id="skill7" name="skill7">
                                 </div> 
                             </div>
-                                <div class="line-container">
+                                <div class="line-container flex-gap">
                                     <div class="input-box">
                                         <input type="text" placeholder="Habilidad 8" id="skill8" name="skill8">
                                     </div> 
@@ -119,13 +142,11 @@
                                     <button class="next-button" type="button">Siguiente</button>
                                 </div>
                             </div>
-                            
                         </div>
-                        
                     </div>
                 </div>
             </div>  
         </div>
-        <div class="footer-container"> </div>
+        <div class="footer-container"></div>
     </body>
 </html>

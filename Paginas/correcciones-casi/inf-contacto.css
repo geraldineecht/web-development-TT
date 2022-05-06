@@ -142,10 +142,6 @@ img{
     flex-direction: column;
 
     justify-content: center;
-    
-    
-
-    
 
 }
 
@@ -158,9 +154,6 @@ img{
     display: flex;
     flex-direction: column;
 }
-
-
-
 
 .form-container{
     /* background-color: aquamarine; */
@@ -197,20 +190,19 @@ img{
     list-style: none;
 }
 
-/* .task-list li:before{
+.task-list li:before{
     background-color: #95999A;
     width: 3px;
     content: '';
     position: absolute;
-    top: 60px;
-    bottom: -35px;
+    top: 42px;
+    bottom: -18px;
     left: 28px;
-} */
+} 
 
 .task-list li:first-child:before {
     background-color:rgba(5, 150, 255, .2);
 }
-
 
 
 .task-list li:last-child:before {
