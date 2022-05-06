@@ -133,6 +133,7 @@ img{
 .progress-container{
     
     width: 80%;
+    height: 90vh;
     padding: 1rem;
 
     display: flex;
@@ -211,7 +212,7 @@ img{
 .task-list li:after{
     width: 0;
 }
-#selected-task .selected-color {
+#selected-task, .selected-color {
     color: #0596FF;
     pointer-events: auto;
 }

@@ -136,6 +136,8 @@ img{
     /* background-color: aquamarine; */
 
     width: 80%;
+    height: 90vh;
+    
     padding: 1rem;
 
     display: flex;
