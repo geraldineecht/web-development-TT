@@ -235,6 +235,10 @@ img {
     width: 100%;
 }
 
+.btn-container:hover {
+    background-color: #0597ffd0;
+}
+
 .teal-bg {
     background-color: var(--teal);
 }
@@ -294,14 +298,10 @@ img {
 }
 
 
-
-
-
-
 /* --------- MATERIAL ICONS --------- */
 
 .material-symbols-outlined {
-    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
 }
 
 

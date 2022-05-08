@@ -172,9 +172,9 @@ img {
     font-size: var(--fs-base);
 }
 
-    .landing-items h1 {
-        font-size: 3.5rem;
-    }
+.landing-items h1 {
+    font-size: 3.5rem;
+}
 
 /* --------- BUTTONS SECTION --------- */
 
@@ -184,10 +184,6 @@ img {
     border-radius: 8px;
     margin-top: var(--fs-base);
 }
-
-    .btn-container:hover {
-        background-color: #0597ffd0;
-    }
 
 
 .start-btn a {

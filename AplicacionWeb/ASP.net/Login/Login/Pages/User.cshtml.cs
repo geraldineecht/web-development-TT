@@ -12,7 +12,6 @@ namespace Login.Pages
 {
     public class UserModel : PageModel
     {
-
         public void OnPost(Usuarios acc)
         {
             string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos;Uid=root;password=;";
@@ -21,18 +20,18 @@ namespace Login.Pages
             MySqlCommand cmd = new MySqlCommand();
             MySqlDataReader dr;
             cmd.Connection = conexion;
-            //cmd.CommandText = " Insert into Aplicante(Nombre,ApellidoP,ApellidoM,Correo) Values ('" + acc.NombreUsuario + "  ','" + acc.ApellidoPaterno + "' , '" + acc.ApellidoMaterno + "' , '" + acc.Correo + "')";
             cmd.CommandText = " Select * from Aplicante where Nombre= '" + acc.NombreUsuario + "  'and ApellidoP= '" + acc.ApellidoPaterno + "'  and ApellidoM= '" + acc.ApellidoMaterno + "'  and Correo= '" + acc.Correo + "'";
             cmd.ExecuteNonQuery();
             dr = cmd.ExecuteReader();
-            //Response.Redirect("informacion_personal");
+
 
             if (dr.Read())
             {
                 // Si el aplicante ya se encuentra en la base de datos
                 dr.Close();
                 conexion.Close();
-                Response.Redirect("User");
+                ViewData["Error"] = "Este aplicante ya esta registrado!";
+
             }
             else
             {
@@ -42,6 +41,7 @@ namespace Login.Pages
                 cmd.ExecuteNonQuery();
                 conexion.Close();
                 Response.Redirect("informacion_personal");
+                
             }
         }
         private readonly ILogger<UserModel> _logger;

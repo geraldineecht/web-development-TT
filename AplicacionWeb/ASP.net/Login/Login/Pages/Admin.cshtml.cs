@@ -27,13 +27,12 @@ namespace Login.Pages
             if (dr.Read())
             {
                 conexion.Close();
-
                 Response.Redirect("Entraste");
             }
             else
             {
                 conexion.Close();
-                Response.Redirect("Admin");
+                ViewData["Error"] = "Usted no es administrador!";
             }
         }
         private readonly ILogger<AdminModel> _logger;
