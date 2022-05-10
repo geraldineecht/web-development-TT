@@ -54,3 +54,4 @@ C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\L
 C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\Login\obj\Debug\net5.0\ref\Atos.dll
 C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\Login\obj\Debug\net5.0\Atos.pdb
 C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\Login\obj\Debug\net5.0\Atos.genruntimeconfig.cache
+C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\Login\obj\Debug\net5.0\Razor\Pages\Habilidades.cshtml.g.cs
