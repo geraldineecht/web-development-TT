@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = Atos
-build_property.ProjectDir = /Users/carminalopez/Desktop/AplicacionWeb/Atos/Login/Login/
+build_property.ProjectDir = /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/

@@ -4,7 +4,6 @@
     Layout = "";
 }
 
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -16,6 +15,7 @@
     <script src="https://kit.fontawesome.com/ce9bb4ca53.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <div class="body-container">
         <header class="header-container">
             <nav class="navbar">
@@ -24,114 +24,135 @@
                 </div>
             </nav>
         </header>
-        <div class="main-container ">
-            <div class="section-container">
-                <div class="progress-container ">
-                    <ul class="task-list">
-                        <li>
-                            <i class="fa-regular fa-circle-check finished-color"></i>
-                            <a id="finished-task" asp-page="/Informacion_personal">Información Personal</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle-check finished-color"></i>
-                            <a id="finished-task" asp-page="/Informacion_de_contacto">Información de Contacto</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle-check selected-color"></i>
-                            <a id="selected-task" href="#">Sobre Mí</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle"></i>
-                            <a href="#">Experiencia Profesional</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle"></i>
-                            <a href="#">Formación Académica</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle"></i>
-                            <a href="#">Idiomas</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle"></i>
-                            <a href="#">Certificaciones</a>
-                        </li>
-                        <li>
-                            <i class="fa-regular fa-circle"></i>
-                            <a href="#">Enviar</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="form-container">
-                    <div class="title-container">
-                        <h1>Sobre Mí</h1>
-                        <p>Ingresa los siguientes datos solicitados para poder dirigirte a la siguiente seccion.</p>
+
+        <div class="grid section-2">
+            <div class="left-section">
+                <div class="progress-container">
+                    <div class="task-container">
+                        <ul class="task-list">
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check finished-color"></i>
+                                    <a id="finished-task" asp-page="/Informacion_personal">Información Personal</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check finished-color"></i>
+                                    <a id="finished-task" asp-page="/Informacion_de_contacto">Información de Contacto</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check selected-color"></i>
+                                    <a id="selected-task" href="#">Sobre Mí</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <a href="#">Experiencia Profesional</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <a href="#">Formación Académica</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <a href="#">Idiomas</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <a href="#">Certificaciones</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <a href="#">Enviar</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="fields-container">
-                        <div class="line-container">
-                            <div class="input-box">
-                                <span class="details">Acerca de Mí</span>
-                                <textarea class="about-input" id="about-input" rows="5" cols="50" placeholder="Acerca de Mí" maxlength="250" onfocus="countChar()" onkeydown="countChar()" onkeyup="countChar()"></textarea>
-                                <div id="word-count">
-                                    <span id="current">0</span>
-                                    <span id="maximum">/ 250</span>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="form-container">
+                    <div class="box-container">
+                        <div class="title-container">
+                            <h1>Sobre Mí</h1>
+                            <p>Ingresa los siguientes datos solicitados para poder dirigirte a la siguiente seccion.</p>
+                        </div>
+                        <div class="fields-container">
+                            <div class="line-container">
+                                <div class="input-box">
+                                    <span class="details">Acerca de Mí</span>
+                                    <textarea class="about-input" id="about-input" rows="5" cols="50" placeholder="Acerca de Mí" maxlength="250" onfocus="countChar()" onkeydown="countChar()" onkeyup="countChar()"></textarea>
+                                    <div id="word-count">
+                                        <span id="current">0</span>
+                                        <span id="maximum">/ 250</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="title-container">
-                            <h1>Habilidades</h1>
-                            <p>Selecciona las habilidades que consideres más fuertes sobre ti.</p>
-                        </div>
-                        <div class="line-container">
-                            <div class="input-box">
-
-                                <input type="text" placeholder="Habilidad 1" id="skill1" name="skill1">
+                            <div class="title-container">
+                                <h1>Habilidades</h1>
+                                <p>Selecciona las habilidades que consideres más fuertes sobre ti.</p>
                             </div>
-                            <div class="input-box">
-                                <input type="text" placeholder="Habilidad 2" id="skill2" name="skill2">
+                            <div class="line-container flex-gap">
+                                <div class="input-box">
+                                    <input type="text" placeholder="Habilidad 1" id="skill1" name="skill1">
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" placeholder="Habilidad 2" id="skill2" name="skill2">
+                                </div>
                             </div>
-                        </div>
-                        <div class="line-container">
-                            <div class="input-box">
-                                <input type="text" placeholder="Habilidad 3" id="skill3" name="skill3">
+                            <div class="line-container flex-gap">
+                                <div class="input-box">
+                                    <input type="text" placeholder="Habilidad 3" id="skill3" name="skill3">
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" placeholder="Habilidad 4" id="skill4" name="skill4">
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" placeholder="Habilidad 5" id="skill5" name="skill5">
+                                </div>
                             </div>
-                            <div class="input-box">
-                                <input type="text" placeholder="Habilidad 4" id="skill4" name="skill4">
+                            <div class="line-container flex-gap">
+                                <div class="input-box">
+                                    <input type="text" placeholder="Habilidad 6" id="skill6" name="skill6">
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" placeholder="Habilidad 7" id="skill7" name="skill7">
+                                </div>
                             </div>
-                            <div class="input-box">
-                                <input type="text" placeholder="Habilidad 5" id="skill5" name="skill5">
+                            <div class="line-container flex-gap">
+                                <div class="input-box">
+                                    <input type="text" placeholder="Habilidad 8" id="skill8" name="skill8">
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" placeholder="Habilidad 9" id="skill9" name="skill9">
+                                </div>
                             </div>
-                        </div>
-                        <div class="line-container">
-                            <div class="input-box">
-                                <input type="text" placeholder="Habilidad 6" id="skill6" name="skill6">
+                            <div class="line-container">
+                                <button class="add-button" type="">＋ Añadir</button>
                             </div>
-                            <div class="input-box">
-                                <input type="text" placeholder="Habilidad 7" id="skill7" name="skill7">
+                            <div class="button-container">
+                                <a class="back-button" asp-page="/Informacion_de_contacto">&larr; &nbsp; Regresar</a>
+                                <a class="next-button" asp-page="/Habilidades">Siguiente</a>
                             </div>
-                        </div>
-                        <div class="line-container">
-                            <div class="input-box">
-                                <input type="text" placeholder="Habilidad 8" id="skill8" name="skill8">
-                            </div>
-                            <div class="input-box">
-                                <input type="text" placeholder="Habilidad 9" id="skill9" name="skill9">
-                            </div>
-                        </div>
-                        <div class="line-container">
-                            <button class="add-button" type="">＋ Añadir</button>
-                        </div>
-                        <div class="button-container">
-                            <a class="back-button" asp-page="/Informacion_de_contacto">🡨  Regresar</a>
-                            <a class="next-button" asp-page="/Habilidades">Siguiente</a>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </div>
-    <div class="footer-container"> </div>
+    <div class="footer-container"></div>
 </body>
 </html>

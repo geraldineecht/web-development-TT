@@ -1,0 +1,116 @@
+﻿@page
+@model Atos.Pages.CertificacionesModel
+@{
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificaciones</title>
+    <link rel="stylesheet" href="~/css/certificaciones.css">
+    <script src="https://kit.fontawesome.com/ce9bb4ca53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="body-container">
+        <header class="header-container">
+            <nav class="navbar">
+                <div class="nav-container">
+                    <a href="#" id="nav-logo"><img class="img-attributes" src="~/img/LogoBlanco.png" alt=""></a>
+                </div>
+            </nav>
+        </header>
+
+        <div class="grid section-2">
+            <div class="left-section">
+                <div class="progress-container">
+                    <div class="task-container">
+                        <ul class="task-list">
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check finished-color"></i>
+                                    <a id="finished-task"asp-page="/Informacion_personal">Información Personal</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check finished-color"></i>
+                                    <a id="finished-task" asp-page="/Informacion_de_contacto">Información de Contacto</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check finished-color"></i>
+                                    <a id="finished-task" asp-page="/Sobre_mi">Sobre Mí</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check finished-color"></i>
+                                    <a id="finished-task" asp-page="/Experiencia_profesional">Experiencia Profesional</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check finished-color"></i>
+                                    <a id="finished-task" asp-page="/formacion_academica">Formación Académica</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check finished-color"></i>
+                                    <a id="finished-task" asp-page="/Idiomas">Idiomas</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check selected-color"></i>
+                                    <a id="selected-task" href="#">Certificaciones</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <a href="#">Enviar</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="form-container">
+                    <div class="box-container">
+                        <div class="fields-container">
+                            <div class="title-container">
+                                <h1>Certificaciones</h1>
+                                <p>Ingresa los siguientes datos solicitados para poder dirigirte a la siguiente seccion.</p>
+                            </div>
+                            <div class="line-container flex-gap">
+                                <div class="input-box input-size">
+                                    <input type="text" placeholder="Certificación" id="certi1" name="certi1">
+                                </div>
+                                <div class="input-box input-size2">
+                                    <input type="text" placeholder="Año" id="anio1" name="anio1">
+                                </div>
+                            </div>
+
+                            <div class="line-container">
+                                <button class="add-button" type="">＋ Añadir</button>
+                            </div>
+                            <div class="button-container">
+                                <a class="back-button" asp-page="/Idiomas">&larr; &nbsp; Regresar</a>
+                                <a class="next-button" asp-page="">Siguiente</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container"></div>
+</body>
+</html>
