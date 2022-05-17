@@ -364,6 +364,7 @@ input[type="file"]{
     font-size: 1rem;
     color:white;
     padding: 1rem 2.5rem 1rem 2.5rem;
+    text-decoration: none;
   
 }
 .button-container .back-button {

@@ -308,20 +308,21 @@ img {
     padding-bottom: 1rem;
 }
 
-    .button-container .next-button {
-        background-color: #0596FF;
-        border: none;
-        border-radius: 8px;
-        font-size: 1rem;
-        color: white;
-        padding: 1rem 2.5rem 1rem 2.5rem;
-    }
+.button-container .next-button {
+    background-color: #0596FF;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: white;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    text-decoration: none;
+}
 
-    .button-container .back-button {
-        text-decoration: none;
-        font-weight: 600;
-        color: #737B7D;
-        font-size: 1rem;
-        padding: 1rem .5rem 1rem .5rem;
-        justify-content: center;
-    }
+.button-container .back-button {
+    text-decoration: none;
+    font-weight: 600;
+    color: #737B7D;
+    font-size: 1rem;
+    padding: 1rem .5rem 1rem .5rem;
+    justify-content: center;
+}

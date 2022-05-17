@@ -60,3 +60,4 @@ C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\L
 C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\Login\obj\Debug\net5.0\Razor\Pages\formacion_academica.cshtml.g.cs
 C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\Login\obj\Debug\net5.0\Razor\Pages\Idiomas.cshtml.g.cs
 C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\Login\obj\Debug\net5.0\Razor\Pages\Informacion-publicada.cshtml.g.cs
+C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\Login\obj\Debug\net5.0\Razor\Pages\Vacantes.cshtml.g.cs

@@ -346,17 +346,18 @@ img{
     text-decoration: none;
 
     padding-bottom: 1rem;
-} 
+}
 
-.button-container .next-button{
+.button-container .next-button {
     background-color: #0596FF;
     border: none;
     border-radius: 8px;
     font-size: 1rem;
-    color:white;
+    color: white;
     padding: 1rem 2.5rem 1rem 2.5rem;
-  
+    text-decoration: none;
 }
+
 .button-container .back-button {
     text-decoration: none;
     font-weight: 600;
