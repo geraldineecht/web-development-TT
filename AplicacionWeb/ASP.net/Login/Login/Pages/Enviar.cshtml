@@ -1,5 +1,5 @@
 ﻿@page
-@model Atos.Pages.CertificacionesModel
+@model Atos.Pages.EnviarModel
 @{
     Layout = "";
 }
@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificaciones</title>
-    <link rel="stylesheet" href="~/css/certificaciones.css">
+    <link rel="stylesheet" href="~/css/Enviar.css">
     <script src="https://kit.fontawesome.com/ce9bb4ca53.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -32,49 +32,49 @@
                             <li>
                                 <div class="li-container">
                                     <i class="fa-regular fa-circle-check finished-color"></i>
-                                    <a id="finished-task"asp-page="/Informacion_personal">Información Personal</a>
+                                    <a id="finished-task" href="#">Información Personal</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="li-container">
                                     <i class="fa-regular fa-circle-check finished-color"></i>
-                                    <a id="finished-task" asp-page="/Informacion_de_contacto">Información de Contacto</a>
+                                    <a id="finished-task" href="#">Información de Contacto</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="li-container">
                                     <i class="fa-regular fa-circle-check finished-color"></i>
-                                    <a id="finished-task" asp-page="/Sobre_mi">Sobre Mí</a>
+                                    <a id="finished-task" href="#">Sobre Mí</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="li-container">
                                     <i class="fa-regular fa-circle-check finished-color"></i>
-                                    <a id="finished-task" asp-page="/Experiencia_profesional">Experiencia Profesional</a>
+                                    <a id="finished-task" href="#">Experiencia Profesional</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="li-container">
                                     <i class="fa-regular fa-circle-check finished-color"></i>
-                                    <a id="finished-task" asp-page="/formacion_academica">Formación Académica</a>
+                                    <a id="finished-task" href="#">Formación Académica</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="li-container">
                                     <i class="fa-regular fa-circle-check finished-color"></i>
-                                    <a id="finished-task" asp-page="/Idiomas">Idiomas</a>
+                                    <a id="finished-task" href="#">Idiomas</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check finished-color"></i>
+                                    <a id="finished-task" href="#">Certificaciones</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="li-container">
                                     <i class="fa-regular fa-circle-check selected-color"></i>
-                                    <a id="selected-task" href="#">Certificaciones</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li-container">
-                                    <i class="fa-regular fa-circle"></i>
-                                    <a href="#">Enviar</a>
+                                    <a id="selected-task" href="#">Enviar</a>
                                 </div>
                             </li>
                         </ul>
@@ -86,27 +86,20 @@
                 <div class="form-container">
                     <div class="box-container">
                         <div class="fields-container">
-                            <div class="title-container">
-                                <h1>Certificaciones</h1>
-                                <p>Ingresa los siguientes datos solicitados para poder dirigirte a la siguiente seccion.</p>
-                            </div>
                             <div class="line-container flex-gap">
-                                <div class="input-box input-size">
-                                    <input type="text" placeholder="Certificación" id="certi1" name="certi1">
-                                </div>
-                                <div class="input-box input-size2">
-                                    <input type="text" placeholder="Año" id="anio1" name="anio1">
-                                </div>
+                                <img class="img-enviar" src="~/img/enviar.png">
                             </div>
-
-                            <div class="line-container">
-                                <button class="add-button" type="">＋ Añadir</button>
-                            </div>
-                            <div class="button-container">
-                                <a class="back-button" asp-page="/Idiomas">&larr; &nbsp; Regresar</a>
-                                <a class="next-button" asp-page="/Enviar">Siguiente</a>
+                            <div class="line-container-send flex-gap">
+                                <div class="title-container">
+                                    <h1>Envía tu información</h1>
+                                    <p>Para poder acceder a la selección de vacantes es necesario enviar tu información.</p>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="button-container">
+                        <a class="back-button" asp-page="/Enviar">&larr; &nbsp; Regresar</a>
+                        <a class="next-button" asp-page="/Informacion-publicada">Enviar</a>
                     </div>
                 </div>
             </div>
