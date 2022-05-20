@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
 
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css" />
-    <link rel="stylesheet" href="style.css">
+    
 
 
     <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -18,40 +19,42 @@
 </head>
 <body>
 
-    <div class="-body-container bg-gray-900">
-        <nav class="bg-gray-900 border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800 flex md:h-20">
-            <div class="container flex flex-wrap justify-between items-center mx-auto">
-                <a href="https://flowbite.com" class="flex items-center">
-                    <img src="LogoBlanco.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
-                </a>
-                <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </button>
-                <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
-                    <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium align-middle">
-                        <li>
-                            <a href="#" class="block py-2 pr-4 pl-3 text-gray-200 border-b border-gray-200 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-200 md:p-0 dark:text-gray-200 md:dark:hover:text-white dark:hover:bg-gray-200 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-200" >Industries</a>
+    <div class="-body-container bg-primary bg-gray-900">
+        <header class="header-container headerScroll headerScrollTransparent header-bg bg-gray-900" id="header-id">
+            <nav class="navbar container mx-auto" id="navbar-id">
+    
+                <div class="nav-container">
+                    <a href="#" id="nav-logo"><img class="img-attributes" src="LogoBlanco.png" alt=""></a>
+    
+                    <div class="navbar-toggle" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar last-bar"></span>
+                    </div>
+    
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">Industries</a>
                         </li>
-                        <li>
-                            <a href="#" class="block py-2 pr-4 pl-3 text-gray-200 border-b border-gray-200 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-200 md:p-0 dark:text-gray-200 md:dark:hover:text-white dark:hover:bg-gray-200 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-200">Solutions</a>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">Solutions</a>
                         </li>
-                        <li>
-                            <a href="#" class="block py-2 pr-4 pl-3 text-gray-200 border-b border-gray-200 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-200 md:p-0 dark:text-gray-200 md:dark:hover:text-white dark:hover:bg-gray-200 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-200">Insights & News</a>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">Insights & News</a>
                         </li>
-                        <li>
-                            <a href="#" class="block py-2 pr-4 pl-3 text-gray-200 border-b border-gray-200 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-200 md:p-0 dark:text-gray-200 md:dark:hover:text-white dark:hover:bg-gray-200 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-200">About Us</a>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">About us</a>
                         </li>
-                        <li>
-                            <a href="#" class="block py-2 pr-4 pl-3 text-gray-200 border-b border-gray-200 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-200 md:p-0 dark:text-gray-200 md:dark:hover:text-white dark:hover:bg-gray-200 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-200"><span class="material-symbols-outlined">
+                        <li class="">
+                            <a href="#" class="nav-links pd-r-0"><span class="material-symbols-outlined">
                                 search
                                 </span></a>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+                
+            </nav>
+        </header>
 
 
 
@@ -357,6 +360,7 @@
 
 
     <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
+    <script src="app.js"></script>
     
 </body>
 </html>
