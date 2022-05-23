@@ -10,7 +10,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Mí</title>
-    <script src="js/sobre-mi.js"></script>
     <link rel="stylesheet" href="~/css/sobre-mi.css">
     <script src="https://kit.fontawesome.com/ce9bb4ca53.js" crossorigin="anonymous"></script>
 </head>
@@ -45,37 +44,37 @@
                             <li>
                                 <div class="li-container">
                                     <i class="fa-regular fa-circle-check selected-color"></i>
-                                    <a id="selected-task" href="#">Sobre Mí</a>
+                                    <a id="selected-task">Sobre Mí</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="li-container">
                                     <i class="fa-regular fa-circle"></i>
-                                    <a href="#">Experiencia Profesional</a>
+                                    <a>Experiencia Profesional</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="li-container">
                                     <i class="fa-regular fa-circle"></i>
-                                    <a href="#">Formación Académica</a>
+                                    <a>Formación Académica</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="li-container">
                                     <i class="fa-regular fa-circle"></i>
-                                    <a href="#">Idiomas</a>
+                                    <a>Idiomas</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="li-container">
                                     <i class="fa-regular fa-circle"></i>
-                                    <a href="#">Certificaciones</a>
+                                    <a>Certificaciones</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="li-container">
                                     <i class="fa-regular fa-circle"></i>
-                                    <a href="#">Enviar</a>
+                                    <a>Enviar</a>
                                 </div>
                             </li>
                         </ul>
@@ -94,10 +93,10 @@
                             <div class="line-container">
                                 <div class="input-box">
                                     <span class="details">Acerca de Mí</span>
-                                    <textarea class="about-input" id="about-input" rows="5" cols="50" placeholder="Acerca de Mí" maxlength="250" onfocus="countChar()" onkeydown="countChar()" onkeyup="countChar()"></textarea>
+                                    <textarea class="about-input" id="about-input" rows="5" cols="50" placeholder="Acerca de Mí" maxlength="350" onfocus="countChar()" onkeydown="countChar()" onkeyup="countChar()"></textarea>
                                     <div id="word-count">
                                         <span id="current">0</span>
-                                        <span id="maximum">/ 250</span>
+                                        <span id="maximum">/ 350</span>
                                     </div>
                                 </div>
                             </div>
@@ -141,7 +140,7 @@
                                 </div>
                             </div>
                             <div class="line-container">
-                                <button class="add-button" type="">＋ Añadir</button>
+                                <button class="add-button" type="button">＋ Añadir</button>
                             </div>
                             <div class="button-container">
                                 <a class="back-button" asp-page="/Informacion_de_contacto">&larr; &nbsp; Regresar</a>
@@ -154,5 +153,6 @@
         </div>
     </div>
     <div class="footer-container"></div>
+    <script src="~/js/Sobre_mi.js"></script>
 </body>
 </html>

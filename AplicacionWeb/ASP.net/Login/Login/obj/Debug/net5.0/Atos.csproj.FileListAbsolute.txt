@@ -34,7 +34,6 @@ C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\L
 C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\Login\obj\Debug\net5.0\Atos.TagHelpers.output.cache
 C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\Login\obj\Debug\net5.0\Atos.RazorCoreGenerate.cache
 C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\Login\obj\Debug\net5.0\Razor\Pages\Admin.cshtml.g.cs
-C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\Login\obj\Debug\net5.0\Razor\Pages\Entraste.cshtml.g.cs
 C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\Login\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
 C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\Login\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
 C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\Login\obj\Debug\net5.0\Razor\Pages\Informacion_de_contacto.cshtml.g.cs
