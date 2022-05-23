@@ -170,3 +170,7 @@
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Release/net5.0/Razor/Pages/Experiencia_profesional.cshtml.g.cs
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Release/net5.0/Razor/Pages/formacion_academica.cshtml.g.cs
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Release/net5.0/Razor/Pages/Idiomas.cshtml.g.cs
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Release/net5.0/Razor/Pages/Enviar.cshtml.g.cs
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Release/net5.0/Razor/Pages/Informacion-publicada.cshtml.g.cs
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Release/net5.0/Razor/Pages/Vacantes.cshtml.g.cs
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Release/net5.0/Razor/Pages/Admin_view.cshtml.g.cs
