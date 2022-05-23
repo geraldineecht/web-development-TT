@@ -8,6 +8,10 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Login
 {
@@ -23,6 +27,15 @@ namespace Login
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDistributedMemoryCache();// Se agrego
+
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(20);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            }); //Hasta aqui
+
             services.AddRazorPages();
         }
 
@@ -46,6 +59,8 @@ namespace Login
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSession(); //Se agrego
 
             app.UseEndpoints(endpoints =>
             {

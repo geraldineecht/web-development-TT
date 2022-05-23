@@ -9,4 +9,5 @@ namespace Login.Model
         public string Correo { get; set; }
         
     }
+
 }

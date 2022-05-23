@@ -7,11 +7,13 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using Login.Model;
 using MySql.Data.MySqlClient;
+using Microsoft.AspNetCore.Http;
 
 namespace Login.Pages
 {
     public class UserModel : PageModel
     {
+        
         public void OnPost(Usuarios acc)
         {
             string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos;Uid=root;password=;";
@@ -40,6 +42,8 @@ namespace Login.Pages
                 cmd.CommandText = " Insert into Aplicante(Nombre,ApellidoP,ApellidoM,Correo) Values ('" + acc.NombreUsuario + "  ','" + acc.ApellidoPaterno + "' , '" + acc.ApellidoMaterno + "' , '" + acc.Correo + "')";
                 cmd.ExecuteNonQuery();
                 conexion.Close();
+                // Para iniciar sesion y guardar el nombre del usuario
+                HttpContext.Session.SetString("username", acc.NombreUsuario);
                 Response.Redirect("informacion_personal");
                 
             }
@@ -51,9 +55,11 @@ namespace Login.Pages
             _logger = logger;
         }
 
-        public void OnGet()
+        public void OnGet(Usuarios acc)
         {
-
+            //string name = HttpContext.Request.Query["NombreUsuario"];
+            
+            
         }
     }
 }
