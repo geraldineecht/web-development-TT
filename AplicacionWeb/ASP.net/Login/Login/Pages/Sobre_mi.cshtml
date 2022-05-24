@@ -106,42 +106,48 @@
                             </div>
                             <div class="line-container flex-gap">
                                 <div class="input-box">
-                                    <input type="text" placeholder="Habilidad 1" id="skill1" name="skill1">
+                                    <input type="text" placeholder="Habilidad" id="skill1">
                                 </div>
                                 <div class="input-box">
-                                    <input type="text" placeholder="Habilidad 2" id="skill2" name="skill2">
+                                    <input type="text" placeholder="Habilidad" id="skill2">
                                 </div>
                             </div>
+
                             <div class="line-container flex-gap">
                                 <div class="input-box">
-                                    <input type="text" placeholder="Habilidad 3" id="skill3" name="skill3">
+                                    <input type="text" placeholder="Habilidad" id="skill3">
                                 </div>
                                 <div class="input-box">
-                                    <input type="text" placeholder="Habilidad 4" id="skill4" name="skill4">
-                                </div>
-                                <div class="input-box">
-                                    <input type="text" placeholder="Habilidad 5" id="skill5" name="skill5">
+                                    <input type="text" placeholder="Habilidad" id="skill4">
                                 </div>
                             </div>
-                            <div class="line-container flex-gap">
+
+                            <div class="line-container flex-gap" id="addAbility" style="display: none;">
                                 <div class="input-box">
-                                    <input type="text" placeholder="Habilidad 6" id="skill6" name="skill6">
+                                    <input type="text" placeholder="Habilidad" id="skill5">
                                 </div>
                                 <div class="input-box">
-                                    <input type="text" placeholder="Habilidad 7" id="skill7" name="skill7">
-                                </div>
-                            </div>
-                            <div class="line-container flex-gap">
-                                <div class="input-box">
-                                    <input type="text" placeholder="Habilidad 8" id="skill8" name="skill8">
-                                </div>
-                                <div class="input-box">
-                                    <input type="text" placeholder="Habilidad 9" id="skill9" name="skill9">
+                                    <input type="text" placeholder="Habilidad" id="skill6">
                                 </div>
                             </div>
-                            <div class="line-container">
-                                <button class="add-button" type="button">＋ Añadir</button>
+
+                            <div class="line-container flex-gap" id="addAbility2" style="display: none;">
+                                <div class="input-box">
+                                    <input type="text" placeholder="Habilidad" id="skill7">
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" placeholder="Habilidad" id="skill8">
+                                </div>
                             </div>
+
+                            <div class="line-container" id="remover">
+                                <button class="add-button" type="button" onclick="addAbility()">＋ Añadir</button>
+                            </div>
+
+                            <div class="line-container" id="last-button" style="display: none;">
+                                <button class="add-button" type="button" onclick="addAbility2()">＋ Añadir</button>
+                            </div>
+
                             <div class="button-container">
                                 <a class="back-button" asp-page="/Informacion_de_contacto">&larr; &nbsp; Regresar</a>
                                 <a class="next-button" asp-page="/Habilidades">Siguiente</a>
@@ -153,6 +159,6 @@
         </div>
     </div>
     <div class="footer-container"></div>
-    <script src="~/js/Sobre_mi.js"></script>
+    <script src="~/js/FuncionesCV.js"></script>
 </body>
 </html>
