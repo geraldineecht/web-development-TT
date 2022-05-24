@@ -106,22 +106,22 @@
                             <div class="line-container flex-gap">
                                 <div class="input-box">
                                     <span class="details">Fecha de inicio</span>
-                                    <input type="text" placeholder="Mes" id="mes" name="mes">
+                                    <input type="text" placeholder="Mes" id="InicioMes" name="mes">
                                 </div>
                                 <div class="input-box">
                                     <span class="date-caption"> aaa </span>
-                                    <input type="text" placeholder="Año" id="Año" name="Año">
+                                    <input type="text" placeholder="Año" id="InicioAnio" name="Año">
                                 </div>
                                 <div class="input-box">
                                     <span class="details">Fecha de salida</span>
-                                    <input type="text" placeholder="Mes" id="Mes" name="Mes">
+                                    <input type="text" placeholder="Mes" id="SalidaMes" name="Mes">
                                 </div>
                                 <div class="input-box">
                                     <span class="date-caption"> bbb </span>
-                                    <input type="text" placeholder="Año" id="Año" name="Año">
+                                    <input type="text" placeholder="Año" id="SalidaAnio" name="Año">
                                 </div>
                                 <div class="check-box">
-                                    <input type="checkbox" id="check" value="check"> <p>Aún trabajo aquí</p>
+                                    <input type="checkbox" id="check" value="check" onclick="checkBox()"> <p>Aún trabajo aquí</p>
                                 </div>
                             </div>
                             <div class="line-container">
@@ -134,9 +134,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="line-container">
-                                <button class="add-button">＋ Añadir</button>
-                            </div>
                         </div>
                         <div class="button-container">
                             <a class="back-button" asp-page="/Habilidades">&larr; &nbsp; Regresar</a>
@@ -148,6 +145,6 @@
         </div>
     </div>
     <div class="footer-container"> </div>
-    <script src="~/js/Sobre_mi.js"></script>
+    <script src="~/js/FuncionesCV.js"></script>
 </body>
 </html>
