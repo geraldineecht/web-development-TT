@@ -13,7 +13,7 @@ namespace Login.Pages
 {
     public class UserModel : PageModel
     {
-        
+
         public void OnPost(Usuarios acc)
         {
             string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos;Uid=root;password=;";
@@ -32,7 +32,7 @@ namespace Login.Pages
                 // Si el aplicante ya se encuentra en la base de datos
                 dr.Close();
                 conexion.Close();
-                ViewData["Error"] = "Este aplicante ya esta registrado!";
+                ViewData["Error"] = "¡Este aplicante ya esta registrado!";
 
             }
             else
@@ -41,11 +41,26 @@ namespace Login.Pages
                 dr.Close();
                 cmd.CommandText = " Insert into Aplicante(Nombre,ApellidoP,ApellidoM,Correo) Values ('" + acc.NombreUsuario + "  ','" + acc.ApellidoPaterno + "' , '" + acc.ApellidoMaterno + "' , '" + acc.Correo + "')";
                 cmd.ExecuteNonQuery();
+
+                // Se ejecuta query para almacenar el idAplicante
+                cmd.CommandText = " Select idAplicante from Aplicante where Nombre= '" + acc.NombreUsuario + "' and ApellidoP= '" + acc.ApellidoPaterno + "'  and ApellidoM= '" + acc.ApellidoMaterno + "'  and Correo= '" + acc.Correo + "'";
+                cmd.ExecuteNonQuery();
+
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        acc.idUser = Convert.ToInt32(reader["idAplicante"]);
+                    }
+                }
                 conexion.Close();
+
                 // Para iniciar sesion y guardar el nombre del usuario
                 HttpContext.Session.SetString("username", acc.NombreUsuario);
+
+                // Para iniciar sesion y guardar el id del usuario
+                HttpContext.Session.SetInt32("idUser", acc.idUser);
                 Response.Redirect("informacion_personal");
-                
             }
         }
         private readonly ILogger<UserModel> _logger;

@@ -145,7 +145,6 @@
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Release/net5.0/Atos.TagHelpers.output.cache
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Release/net5.0/Atos.RazorCoreGenerate.cache
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Release/net5.0/Razor/Pages/Admin.cshtml.g.cs
-/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Release/net5.0/Razor/Pages/Entraste.cshtml.g.cs
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Release/net5.0/Razor/Pages/Error.cshtml.g.cs
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Release/net5.0/Razor/Pages/Habilidades.cshtml.g.cs
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Release/net5.0/Razor/Pages/Index.cshtml.g.cs

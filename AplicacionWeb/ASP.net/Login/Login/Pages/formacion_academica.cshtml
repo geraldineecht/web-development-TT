@@ -10,12 +10,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formación Académica</title>
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css" />
+
     <link rel="stylesheet" href="~/css/formacion-academica.css">
     <script src="https://kit.fontawesome.com/ce9bb4ca53.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="body-container">
+    <div class="-body-container bg-primary bg-gray-900">
         <header class="header-container">
             <nav class="navbar">
                 <div class="nav-container">
@@ -23,8 +28,10 @@
                 </div>
             </nav>
         </header>
+    </div>
 
-        <div class="grid section-2">
+    <div class="grid xl:grid-cols-9  md:grid-cols-6 sm:grid-cols-1 xl:gap-8">
+        <div id="progress-bar" class="xl:col-span-3 md:col-span-2 bg-gray-atos">
             <div class="left-section">
                 <div class="progress-container">
                     <div class="task-container">
@@ -82,75 +89,113 @@
                 </div>
             </div>
 
-            <div class="right-section">
+        </div>
+
+        <div id="progress-bar-menu" class="mt-9 mx-4">
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 62.5%"> 62.5%</div>
+            </div>
+        </div>
+
+        <div class="xl:col-span-6 md:col-span-4 -bg-blue-400">
+            <div class="right-section -bg-gray-200 ">
                 <div class="form-container">
-                    <div class="box-container">
-                        <div class="title-container">
-                            <h1>Formación Académica</h1>
-                            <p>Ingresa los siguientes datos solicitados para poder dirigirte a la siguiente seccion.</p>
+                    <div class="title-container">
+                        <h1 class="text-3xl font-bold">Formación Académica</h1>
+                        <p>Ingresa los siguientes datos solicitados para poder dirigirte a la siguiente seccion.</p>
+                    </div>
+
+                    <form>
+
+                        <div class="mb-6">
+                            <div class="input-box ">
+                                <span class="details">Institución</span>
+                                <input type="text" placeholder="Institución" id="Institucion" name="Institucion">
+                            </div>
                         </div>
 
-                        <div class="fields-container">
-                            <div class="line-container">
-                                <div class="input-box">
-                                    <span class="details">Institución</span>
-                                    <input type="text" placeholder="Institución" id="Institucion" name="Institucion">
-                                </div>
-                            </div>
-                            <div class="line-container">
-                                <div class="input-box">
-                                    <span class="details">Carrera</span>
-                                    <input type="text" placeholder="Carrera" id="Carrera" name="Carrera">
-                                </div>
-                            </div>
-                            <div class="line-container flex-gap">
-                                <div class="input-box">
-                                    <span class="details">País</span>
-                                    <input type="text" placeholder="País" id="pais" name="pais">
-                                </div>
-                                <div class="input-box">
-                                    <span class="details">Estado</span>
-                                    <input type="text" placeholder="Estado" id="estado" name="estado">
-                                </div>
-                            </div>
-                            <div class="line-container">
-                                <div class="input-box">
-                                    <span class="details">Ciudad</span>
-                                    <input type="text" placeholder="Ciudad" id="ciudad" name="ciudad">
-                                </div>
-                            </div>
-                            <div class="line-container flex-gap">
-                                <div class="input-box">
-                                    <span class="details">Fecha de inicio</span>
-                                    <input type="text" placeholder="Mes" id="InicioMes" name="mes">
-                                </div>
-                                <div class="input-box">
-                                    <span class="date-caption"> aaa </span>
-                                    <input type="text" placeholder="Año" id="InicioAnio" name="Año">
-                                </div>
-                                <div class="input-box">
-                                    <span class="details">Fecha de salida</span>
-                                    <input type="text" placeholder="Mes" id="SalidaMes" name="Mes">
-                                </div>
-                                <div class="input-box">
-                                    <span class="date-caption"> bbb </span>
-                                    <input type="text" placeholder="Año" id="SalidaAnio" name="Año">
-                                </div>
-                                <div class="check-box">
-                                    <input type="checkbox" id="check" value="check" onclick="checkBox()"> <p>Aún estudio aquí</p>
-                                </div>
+                        <div class="mb-6">
+                            <div class="input-box">
+                                <span class="details">Carrera</span>
+                                <input type="text" placeholder="Carrera" id="Carrera" name="Carrera">
                             </div>
                         </div>
+
+
+                        <div class="grid gap-6 mb-6 lg:grid-cols-2">
+
+                            <div class="input-box ">
+                                <span class="details">País</span>
+                                <input type="text" placeholder="País" id="pais" name="pais">
+                            </div>
+
+                            <div class="input-box">
+                                <span class="details">Estado</span>
+                                <input type="text" placeholder="Estado" id="estado" name="estado">
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <div class="input-box">
+                                <span class="details">Ciudad</span>
+                                <input type="text" placeholder="Ciudad" id="ciudad" name="ciudad">
+                            </div>
+                        </div>
+
+                        <div class="grid gap-6 mb-6 lg:grid-cols-5">
+                            <div class="xl:col-span-2 md:col-span-2">
+                                <span class="Fecha de inicio">Fecha de inicio</span>
+                                <div class="grid gap-2 xl:gap-6 lg:grid-cols-2">
+                                    <div class="input-box ">
+                                        <input type="text" placeholder="Mes" id="mesInicio" name="MesInicio">
+                                    </div>
+
+                                    <div class="input-box">
+                                        <input type="text" placeholder="Año" id="añoInicio" name="AñoInicio">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="xl:col-span-2 md:col-span-2">
+                                <span class="Fecha de inicio">Fecha de salida</span>
+                                <div class="grid gap-2 xl:gap-6 lg:grid-cols-2">
+                                    <div class="input-box ">
+                                        <input type="text" placeholder="Mes" id="mesSalida" name="MesSalida">
+                                    </div>
+
+                                    <div class="input-box">
+                                        <input type="text" placeholder="Año" id="añoSalida" name="AñoSalida">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" id="check" value="check" onclick="checkBox()"> <p>Aún trabajo aquí</p>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
                         <div class="button-container">
                             <a class="back-button" asp-page="/Experiencia_profesional">&larr; &nbsp; Regresar</a>
                             <a class="next-button" asp-page="/Idiomas">Siguiente</a>
                         </div>
-                    </div>
+
+                    </form>
                 </div>
             </div>
         </div>
+
+
     </div>
-    <div class="footer-container"> </div>
-    <script src="~/js/FuncionesCV.js"></script>
+    <footer class="footer-container display-flex">
+        <p>© Atos SE 2022 all rights reserved</p>
+    </footer>
+
+    <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
+
 </body>
 </html>
