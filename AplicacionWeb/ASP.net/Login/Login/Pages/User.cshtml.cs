@@ -60,6 +60,7 @@ namespace Login.Pages
 
                 // Para iniciar sesion y guardar el id del usuario
                 HttpContext.Session.SetInt32("idUser", acc.idUser);
+
                 Response.Redirect("informacion_personal");
             }
         }
