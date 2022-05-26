@@ -7,15 +7,14 @@ function checkBox() {
     var checkBox = document.getElementById("check");
 
     if (checkBox.checked) {
-        document.getElementById('SalidaAnio').disabled = true;
-        document.getElementById('SalidaMes').disabled = true;
+        document.getElementById('AnioSalida').disabled = true;
+        document.getElementById('MesSalida').disabled = true;
     }
     else {
-        document.getElementById('SalidaAnio').disabled = false;
-        document.getElementById('SalidaMes').disabled = false;
+        document.getElementById('AnioSalida').disabled = false;
+        document.getElementById('MesSalida').disabled = false;
     }
 }
-
 
 function addAbility() {
     var elem = document.getElementById('remover');
