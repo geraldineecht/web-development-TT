@@ -13,7 +13,7 @@ namespace Atos.Pages
 {
     public class Informacion_de_contactoModel : PageModel
     {
-        public int? idUsuario { get; set; }
+        public int idUsuario { get; set; }
         public string Telefono { get; set; }
         public string Ciudad { get; set; }
         public int CodigoPostal { get; set; }
@@ -21,7 +21,7 @@ namespace Atos.Pages
 
         public void OnGet()
         {
-            idUsuario = HttpContext.Session.GetInt32("idUser");
+            idUsuario = (int)HttpContext.Session.GetInt32("idAplicante");
         }
 
       
