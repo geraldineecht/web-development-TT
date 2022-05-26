@@ -41,9 +41,17 @@ namespace Login.Pages
                 dr.Close();
                 cmd.CommandText = " Insert into Aplicante(Nombre,ApellidoP,ApellidoM,Correo) Values ('" + acc.NombreUsuario + "  ','" + acc.ApellidoPaterno + "' , '" + acc.ApellidoMaterno + "' , '" + acc.Correo + "')";
                 cmd.ExecuteNonQuery();
-                conexion.Close();
+                
                 // Para iniciar sesion y guardar el nombre del usuario
                 HttpContext.Session.SetString("username", acc.NombreUsuario);
+
+                // Para obtener el idAplicante
+                cmd.CommandText = " Select idAplicante from Aplicante where Nombre= '" + acc.NombreUsuario + "  'and ApellidoP= '" + acc.ApellidoPaterno + "'  and ApellidoM= '" + acc.ApellidoMaterno + "'  and Correo= '" + acc.Correo + "'";
+                object intAplicante = cmd.ExecuteScalar();
+                int idAplicante = Convert.ToInt32(intAplicante);
+                HttpContext.Session.SetInt32("idAplicante", idAplicante);
+
+                conexion.Close();
                 Response.Redirect("informacion_personal");
                 
             }
