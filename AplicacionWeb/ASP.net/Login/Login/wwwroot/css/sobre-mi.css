@@ -241,7 +241,7 @@ img {
 .input-box {
     width: 100%;
     flex: auto;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 }
 
     .input-box .details {
