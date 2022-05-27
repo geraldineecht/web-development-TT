@@ -1,8 +1,11 @@
 ﻿<Properties StartupConfiguration="{1F23A056-76AD-4009-B3EF-7ADD32F66C64}|Login">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/Idiomas.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/Informacion_personal.cshtml.cs">
     <Files>
-      <File FileName="Login/Pages/Idiomas.cshtml" Line="111" Column="77" />
-      <File FileName="Login/Pages/Experiencia_profesional.cshtml" Line="112" Column="33" />
+      <File FileName="Login/Pages/Informacion_de_contacto.cshtml" Line="115" Column="53" />
+      <File FileName="Login/Pages/Informacion_de_contacto.cshtml.cs" Line="9" Column="1" />
+      <File FileName="Login/Model/InfoPersonal.cs" Line="24" Column="1" />
+      <File FileName="Login/Pages/Informacion_personal.cshtml.cs" Line="42" Column="32" />
+      <File FileName="Login/Pages/Informacion_personal.cshtml" Line="151" Column="103" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,9 +16,10 @@
               <Node name="Pages" expanded="True">
                 <Node name="Admin.cshtml" expanded="True" />
                 <Node name="Admin_view.cshtml" expanded="True" />
-                <Node name="Idiomas.cshtml" selected="True" />
                 <Node name="Informacion_de_contacto.cshtml" expanded="True" />
-                <Node name="Informacion_personal.cshtml" expanded="True" />
+                <Node name="Informacion_personal.cshtml" expanded="True">
+                  <Node name="Informacion_personal.cshtml.cs" selected="True" />
+                </Node>
                 <Node name="User.cshtml" expanded="True" />
                 <Node name="Vacantes.cshtml" expanded="True" />
               </Node>
