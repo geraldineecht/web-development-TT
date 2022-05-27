@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{1F23A056-76AD-4009-B3EF-7ADD32F66C64}|Login">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/User.cshtml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/Informacion_de_contacto.cshtml">
     <Files>
-      <File FileName="Login/Pages/Informacion_de_contacto.cshtml" Line="1" Column="1" />
+      <File FileName="Login/Pages/Informacion_de_contacto.cshtml" Line="140" Column="35" />
       <File FileName="Login/Pages/Informacion_de_contacto.cshtml.cs" Line="48" Column="39" />
-      <File FileName="Login/Pages/Admin.cshtml.cs" Line="21" Column="51" />
+      <File FileName="Login/Pages/Admin.cshtml.cs" />
       <File FileName="Login/Pages/User.cshtml.cs" Line="19" Column="112" />
     </Files>
     <Pads>
@@ -15,10 +15,8 @@
               <Node name="Pages" expanded="True">
                 <Node name="Admin.cshtml" expanded="True" />
                 <Node name="Admin_view.cshtml" expanded="True" />
-                <Node name="Informacion_de_contacto.cshtml" expanded="True" />
-                <Node name="User.cshtml" expanded="True">
-                  <Node name="User.cshtml.cs" selected="True" />
-                </Node>
+                <Node name="Informacion_de_contacto.cshtml" expanded="True" selected="True" />
+                <Node name="User.cshtml" expanded="True" />
                 <Node name="Vacantes.cshtml" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
