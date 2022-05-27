@@ -9,10 +9,14 @@ function checkBox() {
     if (checkBox.checked) {
         document.getElementById('AnioSalida').disabled = true;
         document.getElementById('MesSalida').disabled = true;
+        document.getElementById('AnioSalida').style.backgroundColor = "#FAFAFA";
+        document.getElementById('MesSalida').style.backgroundColor = "#FAFAFA";
     }
     else {
         document.getElementById('AnioSalida').disabled = false;
         document.getElementById('MesSalida').disabled = false;
+        document.getElementById('AnioSalida').style.backgroundColor = "#FFFFFF";
+        document.getElementById('MesSalida').style.backgroundColor = "#FFFFFF";
     }
 }
 
