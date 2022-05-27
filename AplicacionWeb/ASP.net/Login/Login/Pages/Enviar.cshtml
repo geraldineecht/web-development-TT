@@ -10,12 +10,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificaciones</title>
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css" />
+
     <link rel="stylesheet" href="~/css/Enviar.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ce9bb4ca53.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="body-container">
+    <div class="-body-container bg-primary bg-gray-900">
         <header class="header-container">
             <nav class="navbar">
                 <div class="nav-container">
@@ -23,8 +29,10 @@
                 </div>
             </nav>
         </header>
+    </div>
 
-        <div class="grid section-2">
+    <div class="grid xl:grid-cols-9  md:grid-cols-6 sm:grid-cols-1 xl:gap-8">
+        <div id="progress-bar" class="xl:col-span-3 md:col-span-2 bg-gray-atos">
             <div class="left-section">
                 <div class="progress-container">
                     <div class="task-container">
@@ -82,28 +90,48 @@
                 </div>
             </div>
 
-            <div class="right-section">
+        </div>
+
+        <div id="progress-bar-menu" class="mt-9 mx-4">
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 100%"> 100%</div>
+            </div>
+        </div>
+
+        <div class="xl:col-span-6 md:col-span-4 -bg-blue-400">
+            <div class="right-section -bg-gray-200 ">
                 <div class="form-container">
-                    <div class="box-container">
-                        <div class="fields-container">
+                    <div class="max-w-4xl w-full mx-auto bg-white rounded-lg p-7 md:p-12 my-10 space-y-7 shadow-lg lg:shadow-none">
+                        <form class="space-y-6" action="#">
                             <div class="line-container flex-gap">
                                 <img class="img-enviar" src="~/img/enviar.png">
                             </div>
-                            <div class="line-container-send flex-gap">
-                                <div class="title-container">
-                                    <h1>Envía tu información</h1>
+                            <div class="flex flex-col gap-4">
+                                <div class="flex justify-center">
+                                    <h1 class="text-xl font-bold">Envía tu información</h1>
+                                </div>
+                                <div class="flex justify-center lg:mb-20">
                                     <p>Para poder acceder a la selección de vacantes es necesario enviar tu información.</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="button-container">
-                        <a class="back-button" asp-page="/Certificaciones">&larr; &nbsp; Regresar</a>
-                        <a class="next-button" asp-page="/Informacion-publicada">Enviar</a>
+                            <div class="button-container flex justify-between">
+                                <a class="back-button" asp-page="/Certificaciones">&larr; &nbsp; Regresar</a>
+                                <a class="next-button" asp-page="/Informacion-publicada">Enviar</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer-container"></div>
+
+
+    </div>
+    
+
+
+
+    <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
+    <script src="~/js/FuncionesCV.js"></script>
+
 </body>
 </html>

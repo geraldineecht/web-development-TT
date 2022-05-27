@@ -1,18 +1,20 @@
 ﻿<Properties StartupConfiguration="{1F23A056-76AD-4009-B3EF-7ADD32F66C64}|Login">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Login/wwwroot/css/certificaciones.css">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/Enviar.cshtml">
     <Files>
       <File FileName="Login/Pages/Informacion_de_contacto.cshtml" Line="140" Column="35" />
-      <File FileName="Login/Pages/Informacion_de_contacto.cshtml.cs" Line="48" Column="13" />
-      <File FileName="Login/Pages/Admin.cshtml.cs" Line="1" Column="1" />
-      <File FileName="Login/Pages/User.cshtml.cs" Line="19" Column="112" />
-      <File FileName="Login/Pages/Informacion_personal.cshtml" Line="1" Column="1" />
-      <File FileName="Login/Pages/Informacion_personal.cshtml.cs" Line="1" Column="1" />
-      <File FileName="Login/Pages/Sobre_mi.cshtml" Line="20" Column="1" />
-      <File FileName="Login/wwwroot/css/Habilidades.css" Line="415" Column="30" />
-      <File FileName="Login/wwwroot/css/sobre-mi.css" Line="397" Column="1" />
-      <File FileName="Login/Pages/Habilidades.cshtml" Line="1" Column="1" />
-      <File FileName="Login/Pages/Certificaciones.cshtml" Line="18" Column="61" />
+      <File FileName="Login/Pages/Informacion_de_contacto.cshtml.cs" />
+      <File FileName="Login/Pages/Admin.cshtml.cs" />
+      <File FileName="Login/Pages/User.cshtml.cs" />
+      <File FileName="Login/Pages/Informacion_personal.cshtml" />
+      <File FileName="Login/Pages/Informacion_personal.cshtml.cs" />
+      <File FileName="Login/Pages/Sobre_mi.cshtml" />
+      <File FileName="Login/wwwroot/css/Habilidades.css" />
+      <File FileName="Login/wwwroot/css/sobre-mi.css" />
+      <File FileName="Login/Pages/Habilidades.cshtml" />
+      <File FileName="Login/Pages/Certificaciones.cshtml" />
       <File FileName="Login/wwwroot/css/certificaciones.css" Line="354" Column="30" />
+      <File FileName="Login/wwwroot/css/Enviar.css" Line="410" Column="1" />
+      <File FileName="Login/Pages/Enviar.cshtml" Line="115" Column="39" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,15 +25,14 @@
               <Node name="Pages" expanded="True">
                 <Node name="Admin.cshtml" expanded="True" />
                 <Node name="Admin_view.cshtml" expanded="True" />
+                <Node name="Enviar.cshtml" selected="True" />
                 <Node name="Informacion_de_contacto.cshtml" expanded="True" />
                 <Node name="Informacion_personal.cshtml" expanded="True" />
                 <Node name="User.cshtml" expanded="True" />
                 <Node name="Vacantes.cshtml" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True">
-                  <Node name="certificaciones.css" selected="True" />
-                </Node>
+                <Node name="css" expanded="True" />
               </Node>
             </Node>
           </Node>
