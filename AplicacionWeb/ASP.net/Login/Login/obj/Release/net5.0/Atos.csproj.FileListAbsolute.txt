@@ -238,3 +238,4 @@
 /Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Release/net5.0/Atos.pdb
 /Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Release/net5.0/Atos.genruntimeconfig.cache
 /Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Release/net5.0/Razor/Pages/CV.cshtml.g.cs
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Release/net5.0/Razor/Pages/CV.cshtml.g.cs

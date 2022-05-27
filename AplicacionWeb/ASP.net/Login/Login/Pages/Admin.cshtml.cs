@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using Login.Model;
+using Atos.Model;
 using MySql.Data.MySqlClient;
 
 namespace Login.Pages
@@ -13,15 +13,15 @@ namespace Login.Pages
     public class AdminModel : PageModel
     {
 
-        public void OnPost(Usuarios acc)
+        public void OnPost(Admin adm)
         {
-            string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos;Uid=root;password=Gato1415*;";
+            string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos;Uid=root;password=;";
             MySqlConnection conexion = new MySqlConnection(connectionString);
             conexion.Open();
             MySqlCommand cmd = new MySqlCommand();
             MySqlDataReader dr;
             cmd.Connection = conexion;
-            cmd.CommandText = " Select * from Administrador where Nombre= '" + acc.NombreUsuario + "' and ApellidoP= '" + acc.ApellidoPaterno + "'  and ApellidoM= '" + acc.ApellidoMaterno + "'  and Correo= '" + acc.Correo + "'";
+            cmd.CommandText = " Select * from Administrador where Correo= '" + adm.Correo + "' and Contraseña= '" + adm.Contraseña + "'";
             dr = cmd.ExecuteReader();
 
             if (dr.Read())
@@ -32,7 +32,7 @@ namespace Login.Pages
             else
             {
                 conexion.Close();
-                ViewData["Error"] = "Usted no es administrador!";
+                ViewData["Error"] = "Datos inválidos";
             }
         }
         private readonly ILogger<AdminModel> _logger;
