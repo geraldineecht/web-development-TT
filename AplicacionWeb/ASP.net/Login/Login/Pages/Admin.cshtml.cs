@@ -15,13 +15,13 @@ namespace Login.Pages
 
         public void OnPost(Usuarios acc)
         {
-            string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos;Uid=root;password=;";
+            string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos;Uid=root;password=Gato1415*;";
             MySqlConnection conexion = new MySqlConnection(connectionString);
             conexion.Open();
             MySqlCommand cmd = new MySqlCommand();
             MySqlDataReader dr;
             cmd.Connection = conexion;
-            cmd.CommandText = " Select * from Administrador where Nombre= '" + acc.NombreUsuario + "  'and ApellidoP= '" + acc.ApellidoPaterno + "'  and ApellidoM= '" + acc.ApellidoMaterno + "'  and Correo= '" + acc.Correo + "'";
+            cmd.CommandText = " Select * from Administrador where Nombre= '" + acc.NombreUsuario + "' and ApellidoP= '" + acc.ApellidoPaterno + "'  and ApellidoM= '" + acc.ApellidoMaterno + "'  and Correo= '" + acc.Correo + "'";
             dr = cmd.ExecuteReader();
 
             if (dr.Read())

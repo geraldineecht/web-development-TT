@@ -1,14 +1,10 @@
 ﻿<Properties StartupConfiguration="{1F23A056-76AD-4009-B3EF-7ADD32F66C64}|Login">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/Informacion_de_contacto.cshtml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/User.cshtml.cs">
     <Files>
-      <File FileName="Login/Pages/Informacion_de_contacto.cshtml" Line="28" Column="1" />
-      <File FileName="Login/Pages/Informacion_de_contacto.cshtml.cs" Line="35" Column="32" />
-      <File FileName="Login/Pages/User.cshtml" Line="1" Column="1" />
-      <File FileName="Login/Pages/User.cshtml.cs" Line="56" Column="14" />
-      <File FileName="Login/Model/InfoContacto.cs" />
-      <File FileName="Login/Model/Usuarios.cs" />
-      <File FileName="Login/Pages/Admin.cshtml" />
-      <File FileName="Login/Pages/Vacantes.cshtml.cs" Line="18" Column="30" />
+      <File FileName="Login/Pages/Informacion_de_contacto.cshtml" Line="1" Column="1" />
+      <File FileName="Login/Pages/Informacion_de_contacto.cshtml.cs" Line="48" Column="39" />
+      <File FileName="Login/Pages/Admin.cshtml.cs" Line="21" Column="51" />
+      <File FileName="Login/Pages/User.cshtml.cs" Line="19" Column="112" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,19 +15,21 @@
               <Node name="Pages" expanded="True">
                 <Node name="Admin.cshtml" expanded="True" />
                 <Node name="Admin_view.cshtml" expanded="True" />
-                <Node name="Informacion_de_contacto.cshtml" expanded="True">
-                  <Node name="Informacion_de_contacto.cshtml.cs" selected="True" />
+                <Node name="Informacion_de_contacto.cshtml" expanded="True" />
+                <Node name="User.cshtml" expanded="True">
+                  <Node name="User.cshtml.cs" selected="True" />
                 </Node>
-                <Node name="User.cshtml" expanded="True" />
                 <Node name="Vacantes.cshtml" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
-                <Node name="img" expanded="True" />
               </Node>
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

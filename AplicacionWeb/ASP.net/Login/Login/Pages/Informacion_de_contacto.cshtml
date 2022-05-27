@@ -20,72 +20,75 @@
 </head>
 
 <body>
-    <div class="-body-container bg-primary bg-gray-900">
-        <header class="header-container">
-            <nav class="navbar">
-                <div class="nav-container">
-                    <a href="#" id="nav-logo"><img class="img-attributes" src="~/img/LogoBlanco.png" alt=""></a>
+    <form method="post">
+        <div class="-body-container bg-primary bg-gray-900">
+            <header class="header-container">
+                <nav class="navbar">
+                    <div class="nav-container">
+                        <a href="#" id="nav-logo"><img class="img-attributes" src="~/img/LogoBlanco.png" alt=""></a>
 
-                </div>
-            </nav>
-        </header>
-    </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
 
-    <div class="grid xl:grid-cols-9  md:grid-cols-6 sm:grid-cols-1 xl:gap-8">
-        <div id="progress-bar" class="xl:col-span-3 md:col-span-2 bg-gray-atos">
-            <div class="left-section">
-                <div class="progress-container">
-                    <div class="task-container">
-                        <ul class="task-list">
-                            <li>
-                                <div class="li-container">
-                                    <i class="fa-regular fa-circle-check finished-color"></i>
-                                    <a id="finished-task" asp-page="/informacion_personal">Información Personal</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li-container">
-                                    <i class="fa-regular fa-circle-check selected-color"></i>
-                                    <a id="selected-task" href="#">Información de Contacto</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li-container">
-                                    <i class="fa-regular fa-circle"></i>
-                                    <a href="#">Sobre Mí</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li-container">
-                                    <i class="fa-regular fa-circle"></i>
-                                    <a href="#">Experiencia Profesional</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li-container">
-                                    <i class="fa-regular fa-circle"></i>
-                                    <a href="#">Formación Académica</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li-container">
-                                    <i class="fa-regular fa-circle"></i>
-                                    <a href="#">Idiomas</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li-container">
-                                    <i class="fa-regular fa-circle"></i>
-                                    <a href="#">Certificaciones</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li-container">
-                                    <i class="fa-regular fa-circle"></i>
-                                    <a href="#">Enviar</a>
-                                </div>
-                            </li>
-                        </ul>
+        <div class="grid xl:grid-cols-9  md:grid-cols-6 sm:grid-cols-1 xl:gap-8">
+            <div id="progress-bar" class="xl:col-span-3 md:col-span-2 bg-gray-atos">
+                <div class="left-section">
+                    <div class="progress-container">
+                        <div class="task-container">
+                            <ul class="task-list">
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle-check finished-color"></i>
+                                        <a id="finished-task" asp-page="/informacion_personal">Información Personal</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle-check selected-color"></i>
+                                        <a id="selected-task" href="#">Información de Contacto</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a href="#">Sobre Mí</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a href="#">Experiencia Profesional</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a href="#">Formación Académica</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a href="#">Idiomas</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a href="#">Certificaciones</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a href="#">Enviar</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
 
                     </div>
 
@@ -93,23 +96,21 @@
 
             </div>
 
-        </div>
-
-        <div id="progress-bar-menu" class="mt-9 mx-4">
-            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 25%"> 25%</div>
+            <div id="progress-bar-menu" class="mt-9 mx-4">
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 25%"> 25%</div>
+                </div>
             </div>
-        </div>
 
-        <div class="xl:col-span-6 md:col-span-4 -bg-blue-400">
-            <div class="right-section -bg-gray-200 ">
-                <div class="form-container">
-                    <div class="title-container">
-                        <h1 class="text-3xl font-bold">Información de Contacto</h1>
-                        <p>Ingresa los siguientes datos solicitados para poder dirigirte a la siguiente sección.</p>
-                    </div>
+            <div class="xl:col-span-6 md:col-span-4 -bg-blue-400">
+                <div class="right-section -bg-gray-200 ">
+                    <div class="form-container">
+                        <div class="title-container">
+                            <h1 class="text-3xl font-bold">Información de Contacto</h1>
+                            <p>Ingresa los siguientes datos solicitados para poder dirigirte a la siguiente sección.</p>
+                        </div>
 
-                    <form method="post">
+
                         <div class="mb-6">
                             <div class="input-box ">
                                 <span class="details">Teléfono</span>
@@ -144,12 +145,12 @@
 
                             <div class="input-box ">
                                 <span class="details">Ciudad</span>
-                                <input asp-for="Ciudad" type="text" placeholder="Ciudad" id="Ciudad" name="Ciudad">
+                                <input asp-for="Ciudad" type="text" placeholder="Ciudad" id="Ciudad">
                             </div>
 
                             <div class="input-box">
                                 <span class="details">Código Postal</span>
-                                <input asp-for="CodigoPostal" type="text" placeholder="C.P." id="CP" name="CodigoPostal">
+                                <input asp-for="CodigoPostal" type="text" placeholder="C.P." id="CP">
                             </div>
                         </div>
 
@@ -157,22 +158,23 @@
                         <div class="mb-6">
                             <div class="input-box ">
                                 <span class="details">Dirección</span>
-                                <input asp-for="Direccion" type="text" placeholder="Dirección" id="direccion" name="Direccion">
+                                <input asp-for="Direccion" type="text" placeholder="Dirección" id="direccion">
                             </div>
                         </div>
 
                         <div class="button-container">
-                            <a class="back-button" asp-page="/Informacion_personal">&larr; &nbsp; Regresar</a> 
+                            <input id="Submit1" type="submit" class="back-button next-button" asp-page="#" value="Calcula"/>
                             <a class="next-button" asp-page="/Sobre_mi">Siguiente</a>
                         </div>
 
-                    </form>
+
+                    </div>
                 </div>
             </div>
+
+
         </div>
-
-
-    </div>
+    </form>
     <footer class="footer-container display-flex">
         <p>© Atos SE 2022 all rights reserved</p>
     </footer>
