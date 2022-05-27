@@ -852,24 +852,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/geraldine/.nuget/packages/": {}
+    "C:\\Users\\aleja\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/AplicacionWeb/ASP.net/Login/Login/Atos.csproj",
+      "projectUniqueName": "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\Login\\Atos.csproj",
       "projectName": "Atos",
-      "projectPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/AplicacionWeb/ASP.net/Login/Login/Atos.csproj",
-      "packagesPath": "/Users/geraldine/.nuget/packages/",
-      "outputPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/",
+      "projectPath": "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\Login\\Atos.csproj",
+      "packagesPath": "C:\\Users\\aleja\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\Login\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/geraldine/.config/NuGet/NuGet.Config"
+        "C:\\Users\\aleja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -903,6 +905,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.16, 5.0.16]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -911,7 +919,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.104/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
