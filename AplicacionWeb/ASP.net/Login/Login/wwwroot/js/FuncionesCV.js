@@ -25,9 +25,9 @@ function addAbility() {
     elem.parentNode.removeChild(elem);
 
     var x = document.getElementById("addAbility");
-    var z = document.getElementById("habilidad");
+    
     if (x.style.display === "none") {
-        x.style.display = "flex";
+        x.style.display = "";
     }
 
     var y = document.getElementById("last-button");
@@ -49,7 +49,7 @@ function addAbility2() {
 
     var x = document.getElementById("addAbility2");
     if (x.style.display === "none") {
-        x.style.display = "flex";
+        x.style.display = "";
     }
 
     var addAbility = document.getElementById("habilidad-7")
