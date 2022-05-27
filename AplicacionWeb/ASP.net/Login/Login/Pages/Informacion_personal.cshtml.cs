@@ -30,17 +30,6 @@ namespace Login.Pages
 
         public void OnPost()
         {
-
-            //string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos2;Uid=root;password=Gato1415*;";
-            //MySqlConnection conexion = new MySqlConnection(connectionString);
-            //conexion.Open();
-            //MySqlCommand cmd = new MySqlCommand();
-            //cmd.Connection = conexion;
-            //cmd.CommandText = "Insert into InfoPersonal (idAplicante,DiaNacimiento,MesNacimiento,AnioNacimiento,idNacionalidad,idGenero,idCivil) Values (" + idUsuario + ", '" + DiaNacimiento + ", '" + MesNacimiento + ", '" + AñoNacimiento + "' , (SELECT IdNacionalidad FROM Nacionalidad WHERE Nacionalidad = '" + Nacionalidad + "' )," + "' , (SELECT IdGenero FROM Genero WHERE Genero = '" + Genero + "' )," + "' , (SELECT IdCivil FROM EstadoCivil WHERE EstadoCivil = '" + Civil + "' )," + Perfil + "')";
-
-            //cmd.ExecuteNonQuery();
-            //conexion.Close();
-
             Console.WriteLine("Hola que tal");
             Console.WriteLine("IdUsuario ->" + idUsuario);
             Console.WriteLine("DiaNacimiento ->" + DiaNacimiento);
@@ -55,6 +44,22 @@ namespace Login.Pages
             Console.WriteLine(DiaNacimiento);
             Console.WriteLine(MesNacimiento);
             Console.WriteLine(AñoNacimiento);
+
+
+
+
+
+            //string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos2;Uid=root;password=Gato1415*;";
+            //MySqlConnection conexion = new MySqlConnection(connectionString);
+            //conexion.Open();
+            //MySqlCommand cmd = new MySqlCommand();
+            //cmd.Connection = conexion;
+            //cmd.CommandText = "Insert into InfoPersonal (idAplicante,DiaNacimiento,MesNacimiento,AnioNacimiento,idNacionalidad,idGenero,idCivil, idPerfil) Values (" + idUsuario + ", " + DiaNacimiento + ", " + MesNacimiento + ", " + AñoNacimiento + " , (SELECT IdNacionalidad FROM Nacionalidad WHERE Nacionalidad = '" + Nacionalidad + "' ), " + " (SELECT IdGenero FROM Genero WHERE Genero = '" + Genero + "' ), " + " (SELECT IdCivil FROM EstadoCivil WHERE EstadoCivil = '" + Civil + "' ), " + " (SELECT IdGenero FROM Genero WHERE Genero = '" + Genero + "' ), " + " (SELECT IdPerfil FROM Perfil WHERE TipoPerfil = '" + Perfil + "' )";
+
+            //cmd.ExecuteNonQuery();
+            //conexion.Close();
+
+
 
 
 

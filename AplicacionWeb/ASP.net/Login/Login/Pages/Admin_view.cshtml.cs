@@ -16,7 +16,7 @@ namespace Atos.Pages
         public void OnPost()
         {
 
-            string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos;Uid=root;password=Gato1415*;";
+            string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos2;Uid=root;password=Gato1415*;";
             MySqlConnection conexion = new MySqlConnection(connectionString);
             conexion.Open();
             MySqlCommand cmd = new MySqlCommand();

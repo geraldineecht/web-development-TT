@@ -1,11 +1,10 @@
 ﻿<Properties StartupConfiguration="{1F23A056-76AD-4009-B3EF-7ADD32F66C64}|Login">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/Informacion_personal.cshtml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/CV.cshtml">
     <Files>
-      <File FileName="Login/Pages/Informacion_de_contacto.cshtml" Line="115" Column="53" />
-      <File FileName="Login/Pages/Informacion_de_contacto.cshtml.cs" Line="9" Column="1" />
-      <File FileName="Login/Model/InfoPersonal.cs" Line="24" Column="1" />
-      <File FileName="Login/Pages/Informacion_personal.cshtml.cs" Line="42" Column="32" />
-      <File FileName="Login/Pages/Informacion_personal.cshtml" Line="151" Column="103" />
+      <File FileName="Login/Pages/CV.cshtml" Line="4" Column="17" />
+      <File FileName="Login/wwwroot/css/CV.css" Line="35" Column="1" />
+      <File FileName="Login/wwwroot/js/CVapp.js" Line="31" Column="53" />
+      <File FileName="Login/Pages/Idiomas.cshtml" Line="4" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,17 +13,13 @@
             <Node name="Atos" expanded="True">
               <Node name="Model" expanded="True" />
               <Node name="Pages" expanded="True">
-                <Node name="Admin.cshtml" expanded="True" />
-                <Node name="Admin_view.cshtml" expanded="True" />
+                <Node name="CV.cshtml" expanded="True" selected="True" />
                 <Node name="Informacion_de_contacto.cshtml" expanded="True" />
-                <Node name="Informacion_personal.cshtml" expanded="True">
-                  <Node name="Informacion_personal.cshtml.cs" selected="True" />
-                </Node>
-                <Node name="User.cshtml" expanded="True" />
-                <Node name="Vacantes.cshtml" expanded="True" />
+                <Node name="Informacion_personal.cshtml" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
               </Node>
             </Node>
           </Node>
