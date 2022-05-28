@@ -45,19 +45,19 @@ namespace Login.Pages
             Console.WriteLine(MesNacimiento);
             Console.WriteLine(AñoNacimiento);
 
+            Console.WriteLine("Insert into InfoPersonal (idAplicante,DiaNacimiento,MesNacimiento,AnioNacimiento,idNacionalidad,idGenero,idCivil, idPerfil) Values (" + idUsuario + ", " + DiaNacimiento + ", " + MesNacimiento + ", " + AñoNacimiento + " , (SELECT IdNacionalidad FROM Nacionalidad WHERE Nacionalidad = '" + Nacionalidad + "' ), " + " (SELECT IdGenero FROM Genero WHERE Genero = '" + Genero + "' ), " + " (SELECT IdCivil FROM EstadoCivil WHERE EstadoCivil = '" + Civil + "' ), " + " (SELECT IdPerfil FROM Perfil WHERE TipoPerfil = '" + Perfil + "' ))");
 
 
+            idUsuario = (int)HttpContext.Session.GetInt32("idAplicante");
+            string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos2;Uid=root;password=Gato1415*;";
+            MySqlConnection conexion = new MySqlConnection(connectionString);
+            conexion.Open();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conexion;
+            cmd.CommandText = "Insert into InfoPersonal (idAplicante,DiaNacimiento,MesNacimiento,AnioNacimiento,idNacionalidad,idGenero,idCivil, idPerfil) Values (" + idUsuario + ", " + DiaNacimiento + ", " + MesNacimiento + ", " + AñoNacimiento + " , (SELECT IdNacionalidad FROM Nacionalidad WHERE Nacionalidad = '" + Nacionalidad + "' ), " + " (SELECT IdGenero FROM Genero WHERE Genero = '" + Genero + "' ), " + " (SELECT IdCivil FROM EstadoCivil WHERE EstadoCivil = '" + Civil + "' ), " + " (SELECT IdPerfil FROM Perfil WHERE TipoPerfil = '" + Perfil + "' ))";
 
-
-            //string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos2;Uid=root;password=Gato1415*;";
-            //MySqlConnection conexion = new MySqlConnection(connectionString);
-            //conexion.Open();
-            //MySqlCommand cmd = new MySqlCommand();
-            //cmd.Connection = conexion;
-            //cmd.CommandText = "Insert into InfoPersonal (idAplicante,DiaNacimiento,MesNacimiento,AnioNacimiento,idNacionalidad,idGenero,idCivil, idPerfil) Values (" + idUsuario + ", " + DiaNacimiento + ", " + MesNacimiento + ", " + AñoNacimiento + " , (SELECT IdNacionalidad FROM Nacionalidad WHERE Nacionalidad = '" + Nacionalidad + "' ), " + " (SELECT IdGenero FROM Genero WHERE Genero = '" + Genero + "' ), " + " (SELECT IdCivil FROM EstadoCivil WHERE EstadoCivil = '" + Civil + "' ), " + " (SELECT IdGenero FROM Genero WHERE Genero = '" + Genero + "' ), " + " (SELECT IdPerfil FROM Perfil WHERE TipoPerfil = '" + Perfil + "' )";
-
-            //cmd.ExecuteNonQuery();
-            //conexion.Close();
+            cmd.ExecuteNonQuery();
+            conexion.Close();
 
 
 

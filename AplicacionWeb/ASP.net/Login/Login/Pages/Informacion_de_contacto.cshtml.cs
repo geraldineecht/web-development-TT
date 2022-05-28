@@ -45,6 +45,8 @@ namespace Atos.Pages
             Console.WriteLine(Direccion);
             Console.WriteLine("Fallé");
 
+            Console.WriteLine("Insert into InfoContacto (idAplicante,Telefono,idCiudad,CP,Direccion) Values (" + idUsuario + ", '" + Telefono + "' , (SELECT idCiudad FROM Ciudad WHERE NombreCiudad = '" + Ciudad + "' )," + CodigoPostal + ", '" + Direccion + "')");
+
             string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos2;Uid=root;password=Gato1415*;";
             MySqlConnection conexion = new MySqlConnection(connectionString);
             conexion.Open();
