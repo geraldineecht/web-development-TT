@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{1F23A056-76AD-4009-B3EF-7ADD32F66C64}|Login">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/Certificaciones.cshtml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/Admin.cshtml">
     <Files>
-      <File FileName="Login/Pages/Idiomas.cshtml" Line="237" Column="32" />
-      <File FileName="Login/Pages/Certificaciones.cshtml" Line="193" Column="31" />
-      <File FileName="Login/Pages/Certificaciones.cshtml.cs" Line="14" Column="2" />
-      <File FileName="Login/Pages/Idiomas.cshtml.cs" Line="16" Column="9" />
+      <File FileName="Login/Pages/Index.cshtml" Line="138" Column="106" />
+      <File FileName="Login/wwwroot/css/Index.css" Line="375" Column="47" />
+      <File FileName="Login/wwwroot/js/Index.js" Line="23" Column="31" />
+      <File FileName="Login/Pages/Admin.cshtml" Line="28" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,18 +13,19 @@
             <Node name="Atos" expanded="True">
               <Node name="Model" expanded="True" />
               <Node name="Pages" expanded="True">
-                <Node name="Admin.cshtml" expanded="True" />
+                <Node name="Admin.cshtml" expanded="True" selected="True" />
                 <Node name="Admin_view.cshtml" expanded="True" />
-                <Node name="Certificaciones.cshtml" expanded="True">
-                  <Node name="Certificaciones.cshtml.cs" selected="True" />
-                </Node>
+                <Node name="Certificaciones.cshtml" expanded="True" />
                 <Node name="CV.cshtml" expanded="True" />
                 <Node name="Idiomas.cshtml" expanded="True" />
                 <Node name="Informacion_de_contacto.cshtml" expanded="True" />
                 <Node name="User.cshtml" expanded="True" />
                 <Node name="Vacantes.cshtml" expanded="True" />
               </Node>
-              <Node name="wwwroot" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>

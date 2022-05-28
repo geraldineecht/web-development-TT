@@ -1,30 +1,34 @@
-﻿var accordions = document.getElementsByClassName("accordion");
+﻿const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.nav-menu');
+const navBar = document.querySelector('.nav-container');
+const navButton = document.querySelector('.nav-button');
 
-for (var i = 0; i < accordions.length; i++) {
-    accordions[i].onclick = function () {
-        this.classList.toggle('is-open');
-        const icon = this.querySelector('i');
+const navBackground = document.querySelector('.header-container');
 
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-            // accordion is currently open, so close it
-            content.style.maxHeight = null;
-        } else {
-            // accordion is currently closed, so open it
-            content.style.maxHeight = content.scrollHeight + "px";
 
-        }
+const mobileMenu = () => {
+    menu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+    navBar.classList.toggle('active');
+    navButton.classList.toggle('active');
 
-        if (icon.classList.contains('fa-chevron-down')) {
-            icon.classList.remove('fa-chevron-down');
-            icon.classList.add('fa-chevron-up');
-        } else {
-            icon.classList.remove('fa-chevron-up');
-            icon.classList.add('fa-chevron-down');
-        }
-
-    }
+    navBackground.classList.toggle('active');
 }
+
+menu.addEventListener('click', mobileMenu);
+
+
+
+/* ---------- CLOSE MOBILE MENU ---------- */
+const hideMobileMenu = () => {
+    const menuBars = document.querySelector('.is-active');
+    if (window.innerWidth <= 768 && menuBars) {
+        menu.classList.toggle('is-active');
+        menuLinks.classList.remove('active');
+    }
+};
+
+menuLinks.addEventListener('click', hideMobileMenu);
 
 
 
