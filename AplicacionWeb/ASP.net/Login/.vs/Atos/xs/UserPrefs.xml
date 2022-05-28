@@ -1,33 +1,30 @@
 ﻿<Properties StartupConfiguration="{1F23A056-76AD-4009-B3EF-7ADD32F66C64}|Login">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Model/Usuarios.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/Certificaciones.cshtml.cs">
     <Files>
-      <File FileName="Login/Pages/Idiomas.cshtml" Line="4" Column="5" />
-      <File FileName="Login/Pages/Informacion_de_contacto.cshtml" />
-      <File FileName="Login/Pages/Informacion_de_contacto.cshtml.cs" Line="58" Column="1" />
-      <File FileName="Login/Pages/Informacion_personal.cshtml.cs" />
-      <File FileName="Login/Pages/Admin_view.cshtml.cs" Line="19" Column="80" />
-      <File FileName="Login/Model/InfoPersonal.cs" Line="1" Column="1" />
-      <File FileName="Login/Model/Usuarios.cs" Line="6" Column="9" />
+      <File FileName="Login/Pages/Idiomas.cshtml" Line="237" Column="32" />
+      <File FileName="Login/Pages/Certificaciones.cshtml" Line="193" Column="31" />
+      <File FileName="Login/Pages/Certificaciones.cshtml.cs" Line="14" Column="2" />
+      <File FileName="Login/Pages/Idiomas.cshtml.cs" Line="16" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Atos" expanded="True">
             <Node name="Atos" expanded="True">
-              <Node name="Model" expanded="True">
-                <Node name="Usuarios.cs" selected="True" />
-              </Node>
+              <Node name="Model" expanded="True" />
               <Node name="Pages" expanded="True">
                 <Node name="Admin.cshtml" expanded="True" />
                 <Node name="Admin_view.cshtml" expanded="True" />
+                <Node name="Certificaciones.cshtml" expanded="True">
+                  <Node name="Certificaciones.cshtml.cs" selected="True" />
+                </Node>
                 <Node name="CV.cshtml" expanded="True" />
+                <Node name="Idiomas.cshtml" expanded="True" />
                 <Node name="Informacion_de_contacto.cshtml" expanded="True" />
-                <Node name="Informacion_personal.cshtml" expanded="True" />
                 <Node name="User.cshtml" expanded="True" />
+                <Node name="Vacantes.cshtml" expanded="True" />
               </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="js" expanded="True" />
-              </Node>
+              <Node name="wwwroot" expanded="True" />
             </Node>
           </Node>
         </State>
