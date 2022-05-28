@@ -4,13 +4,71 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Logging;
+using Atos.Model;
+using MySql.Data.MySqlClient;
+using Microsoft.AspNetCore.Http;
 
 namespace Atos.Pages
 {
     public class Experiencia_profesionalModel : PageModel
     {
-        public void OnGet()
+        public int idUsuario { get; set; }
+
+        [BindProperty]
+        public string PuestoExperiencia { get; set; }
+        [BindProperty]
+        public string EmpresaExperiencia { get; set; }
+        [BindProperty]
+        public int MesExperiencia { get; set; }
+        [BindProperty]
+        public int AnioExperiencia { get; set; }
+        [BindProperty]
+        public int MesExperienciaFin { get; set; }
+        [BindProperty]
+        public int AnioExperienciaFin { get; set; }
+        [BindProperty]
+        public string Actividades { get; set; }
+
+        public void OnPost()
         {
+            idUsuario = (int)HttpContext.Session.GetInt32("idAplicante");
+
+
+            Console.WriteLine("Hola que tal");
+            Console.WriteLine("IdUsuario ->" + idUsuario);
+            Console.WriteLine("PuestoExperiencia ->" + PuestoExperiencia);
+            Console.WriteLine("EmpresaExperiencia ->" + EmpresaExperiencia);
+            Console.WriteLine("MesExperiencia ->" + MesExperiencia);
+            Console.WriteLine("AnioExperiencia ->" + AnioExperiencia);
+            Console.WriteLine("MesExperienciaFin ->" + MesExperienciaFin);
+            Console.WriteLine("AnioExperienciaFin ->" + AnioExperienciaFin);
+            Console.WriteLine("Actividades ->" + Actividades);
+
+
+            Console.WriteLine("Insert into ExperienciaProfesional (idAplicante,PuestoExperiencia,EmpresaExperiencia,MesExperienciaInicio,AnioExperienciaInicio,MesExperienciaFin,AnioExperienciaFin,Actividades) VALUES (" + idUsuario + ", '" + PuestoExperiencia + "', '" + EmpresaExperiencia + "', " + MesExperiencia + ", " + AnioExperiencia + ", " + MesExperienciaFin + ", " + AnioExperienciaFin + ", '" + Actividades + "')");
+
+
+
+            string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos2;Uid=root;password=Gato1415*;";
+            MySqlConnection conexion = new MySqlConnection(connectionString);
+            conexion.Open();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conexion;
+
+            cmd.CommandText = "Insert into ExperienciaProfesional (idAplicante,PuestoExperiencia,EmpresaExperiencia,MesExperienciaInicio,AnioExperienciaInicio,MesExperienciaFin, AnioExperienciaFin,Actividades) VALUES (" + idUsuario + ", '" + PuestoExperiencia + "', '" + EmpresaExperiencia + "', " + MesExperiencia + ", " + AnioExperiencia + ", " + MesExperienciaFin + ", " + AnioExperienciaFin + ", '" + Actividades + "')";
+
+            //cmd.CommandText = "Insert into InfoContacto (idAplicante,Telefono,idCiudad,CP,Direccion) Values (" + idUsuario + ", '" + Telefono + "' , (SELECT idCiudad FROM Ciudad WHERE NombreCiudad = '" + Ciudad + "' )," + CodigoPostal + ", '" + Direccion + "')";
+            cmd.ExecuteNonQuery();
+            conexion.Close();
+
+            Console.WriteLine("Hola que tal");
+            Console.WriteLine(idUsuario);
+
+
+
+
+
         }
     }
 }

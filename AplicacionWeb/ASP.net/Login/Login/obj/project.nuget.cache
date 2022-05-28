@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4xkzMmSYYE9LD6gcyAas4zQ7Ib7UIiICkMzxj7ePWexhXymdjYpW8Yn74JaYt30QvCIx5Tfovl9IL9xeFwh1ng==",
+  "dgSpecHash": "tE4Ira1fTRI6RiG2u5q8yugNNwMTYRA5IqJHAxmfXXqFgWpt15ubc3VCqmxSzuddLaX8rf3xBYP61v1PgqROAQ==",
   "success": true,
-  "projectFilePath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/AplicacionWeb/ASP.net/Login/Login/Atos.csproj",
+  "projectFilePath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/Login/Atos.csproj",
   "expectedPackageFiles": [
     "/Users/geraldine/.nuget/packages/bouncycastle.netcore/1.8.5/bouncycastle.netcore.1.8.5.nupkg.sha512",
     "/Users/geraldine/.nuget/packages/google.protobuf/3.19.4/google.protobuf.3.19.4.nupkg.sha512",
