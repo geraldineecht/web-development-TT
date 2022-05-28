@@ -23,12 +23,29 @@ namespace Atos.Pages
         public int CodigoPostal { get; set; }
         [BindProperty]
         public string Direccion { get; set; }
-        
-      
+
+
+
+        //public string Telefono { get; set; }
+        //public string Ciudad { get; set; }
+        //public int CodigoPostal { get; set; }
+        //public string Direccion { get; set; }
+
+
+
+
         public void OnPost()
         {
             idUsuario = (int)HttpContext.Session.GetInt32("idAplicante");
-            string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos;Uid=root;password=Gato1415*;";
+            Console.WriteLine("Mi ID ES: " + idUsuario);
+            Console.WriteLine("Hola que tal");
+            Console.WriteLine(Telefono);
+            Console.WriteLine(Ciudad);
+            Console.WriteLine(CodigoPostal);
+            Console.WriteLine(Direccion);
+            Console.WriteLine("Fallé");
+
+            string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos2;Uid=root;password=Gato1415*;";
             MySqlConnection conexion = new MySqlConnection(connectionString);
             conexion.Open();
             MySqlCommand cmd = new MySqlCommand();
@@ -37,10 +54,13 @@ namespace Atos.Pages
             cmd.ExecuteNonQuery();
             conexion.Close();
 
-            Response.Redirect("Sobre_mi");
+            Console.WriteLine("Hola que tal");
+            Console.WriteLine(idUsuario);
+
+
 
         }
 
-        
+
     }
 }

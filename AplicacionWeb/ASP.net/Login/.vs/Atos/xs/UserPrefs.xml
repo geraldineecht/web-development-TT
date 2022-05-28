@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{1F23A056-76AD-4009-B3EF-7ADD32F66C64}|Login">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/Admin.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/Informacion_de_contacto.cshtml.cs">
     <Files>
-      <File FileName="Login/Pages/Index.cshtml" Line="138" Column="106" />
-      <File FileName="Login/wwwroot/css/Index.css" Line="375" Column="47" />
-      <File FileName="Login/wwwroot/js/Index.js" Line="23" Column="31" />
-      <File FileName="Login/Pages/Admin.cshtml" Line="28" Column="34" />
+      <File FileName="Login/Pages/Informacion_personal.cshtml" Line="1" Column="1" />
+      <File FileName="Login/Pages/Informacion_de_contacto.cshtml" />
+      <File FileName="Login/Pages/Informacion_de_contacto.cshtml.cs" Line="66" Column="2" />
+      <File FileName="Login/Pages/Informacion_personal.cshtml.cs" />
+      <File FileName="Login/Pages/Sobre_mi.cshtml" />
+      <File FileName="Login/Pages/Sobre_mi.cshtml.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,12 +15,12 @@
             <Node name="Atos" expanded="True">
               <Node name="Model" expanded="True" />
               <Node name="Pages" expanded="True">
-                <Node name="Admin.cshtml" expanded="True" selected="True" />
-                <Node name="Admin_view.cshtml" expanded="True" />
-                <Node name="Certificaciones.cshtml" expanded="True" />
-                <Node name="CV.cshtml" expanded="True" />
                 <Node name="Idiomas.cshtml" expanded="True" />
-                <Node name="Informacion_de_contacto.cshtml" expanded="True" />
+                <Node name="Informacion_de_contacto.cshtml" expanded="True">
+                  <Node name="Informacion_de_contacto.cshtml.cs" selected="True" />
+                </Node>
+                <Node name="Informacion_personal.cshtml" expanded="True" />
+                <Node name="Sobre_mi.cshtml" expanded="True" />
                 <Node name="User.cshtml" expanded="True" />
                 <Node name="Vacantes.cshtml" expanded="True" />
               </Node>

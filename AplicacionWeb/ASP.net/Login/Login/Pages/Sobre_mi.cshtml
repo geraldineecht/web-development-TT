@@ -358,8 +358,10 @@
                         </div>
 
 
-                        <div class="button-container">
-                            <a class="back-button" asp-page="/Sobre_mi">&larr; &nbsp; Regresar</a>
+                        <div class="button-container flex justify-between">
+                            @*<a class="back-button" asp-page="/Sobre_mi">&larr; &nbsp; Regresar</a>*@
+
+                            <input id="Submit1" type="submit" class="back-button next-button" asp-page="#" value="Calcula" />
                             <a class="next-button" asp-page="/Experiencia_profesional">Siguiente</a>
                         </div>
                     </div>
