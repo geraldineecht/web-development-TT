@@ -34,22 +34,6 @@ namespace Atos.Pages
         {
             idUsuario = (int)HttpContext.Session.GetInt32("idAplicante");
 
-
-            Console.WriteLine("Hola que tal");
-            Console.WriteLine("IdUsuario ->" + idUsuario);
-            Console.WriteLine("PuestoExperiencia ->" + PuestoExperiencia);
-            Console.WriteLine("EmpresaExperiencia ->" + EmpresaExperiencia);
-            Console.WriteLine("MesExperiencia ->" + MesExperiencia);
-            Console.WriteLine("AnioExperiencia ->" + AnioExperiencia);
-            Console.WriteLine("MesExperienciaFin ->" + MesExperienciaFin);
-            Console.WriteLine("AnioExperienciaFin ->" + AnioExperienciaFin);
-            Console.WriteLine("Actividades ->" + Actividades);
-
-
-            Console.WriteLine("Insert into ExperienciaProfesional (idAplicante,PuestoExperiencia,EmpresaExperiencia,MesExperienciaInicio,AnioExperienciaInicio,MesExperienciaFin,AnioExperienciaFin,Actividades) VALUES (" + idUsuario + ", '" + PuestoExperiencia + "', '" + EmpresaExperiencia + "', " + MesExperiencia + ", " + AnioExperiencia + ", " + MesExperienciaFin + ", " + AnioExperienciaFin + ", '" + Actividades + "')");
-
-
-
             string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos2;Uid=root;password=Gato1415*;";
             MySqlConnection conexion = new MySqlConnection(connectionString);
             conexion.Open();
@@ -58,16 +42,10 @@ namespace Atos.Pages
 
             cmd.CommandText = "Insert into ExperienciaProfesional (idAplicante,PuestoExperiencia,EmpresaExperiencia,MesExperienciaInicio,AnioExperienciaInicio,MesExperienciaFin, AnioExperienciaFin,Actividades) VALUES (" + idUsuario + ", '" + PuestoExperiencia + "', '" + EmpresaExperiencia + "', " + MesExperiencia + ", " + AnioExperiencia + ", " + MesExperienciaFin + ", " + AnioExperienciaFin + ", '" + Actividades + "')";
 
-            //cmd.CommandText = "Insert into InfoContacto (idAplicante,Telefono,idCiudad,CP,Direccion) Values (" + idUsuario + ", '" + Telefono + "' , (SELECT idCiudad FROM Ciudad WHERE NombreCiudad = '" + Ciudad + "' )," + CodigoPostal + ", '" + Direccion + "')";
             cmd.ExecuteNonQuery();
             conexion.Close();
 
-            Console.WriteLine("Hola que tal");
-            Console.WriteLine(idUsuario);
-
-
-
-
+            Response.Redirect("formacion_academica");
 
         }
     }

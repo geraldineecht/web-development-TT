@@ -37,15 +37,6 @@ namespace Atos.Pages
         public void OnPost()
         {
             idUsuario = (int)HttpContext.Session.GetInt32("idAplicante");
-            Console.WriteLine("Mi ID ES: " + idUsuario);
-            Console.WriteLine("Hola que tal");
-            Console.WriteLine(Telefono);
-            Console.WriteLine(Ciudad);
-            Console.WriteLine(CodigoPostal);
-            Console.WriteLine(Direccion);
-            Console.WriteLine("Fallé");
-
-            Console.WriteLine("Insert into InfoContacto (idAplicante,Telefono,idCiudad,CP,Direccion) Values (" + idUsuario + ", '" + Telefono + "' , (SELECT idCiudad FROM Ciudad WHERE NombreCiudad = '" + Ciudad + "' )," + CodigoPostal + ", '" + Direccion + "')");
 
             string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos2;Uid=root;password=Gato1415*;";
             MySqlConnection conexion = new MySqlConnection(connectionString);
@@ -56,10 +47,8 @@ namespace Atos.Pages
             cmd.ExecuteNonQuery();
             conexion.Close();
 
-            Console.WriteLine("Hola que tal");
-            Console.WriteLine(idUsuario);
 
-
+            Response.Redirect("Sobre_mi");
 
         }
 

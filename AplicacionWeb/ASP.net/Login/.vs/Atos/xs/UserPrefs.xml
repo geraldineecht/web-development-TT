@@ -1,10 +1,13 @@
 ﻿<Properties StartupConfiguration="{1F23A056-76AD-4009-B3EF-7ADD32F66C64}|Login">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/Informacion_personal.cshtml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/Certificaciones.cshtml">
     <Files>
-      <File FileName="Login/Pages/Informacion_personal.cshtml" Line="1" Column="1" />
-      <File FileName="Login/Pages/Informacion_personal.cshtml.cs" Line="25" Column="23" />
-      <File FileName="Login/Pages/Informacion_de_contacto.cshtml" Line="200" Column="8" />
-      <File FileName="Login/Pages/Informacion_de_contacto.cshtml.cs" Line="39" Column="13" />
+      <File FileName="Login/Pages/Informacion_personal.cshtml" Line="208" Column="70" />
+      <File FileName="Login/Pages/Informacion_de_contacto.cshtml" Line="183" Column="70" />
+      <File FileName="Login/Pages/Informacion_personal.cshtml.cs" Line="35" Column="70" />
+      <File FileName="Login/Pages/Informacion_de_contacto.cshtml.cs" Line="40" Column="1" />
+      <File FileName="Login/Pages/Experiencia_profesional.cshtml.cs" Line="38" Column="78" />
+      <File FileName="Login/Pages/Experiencia_profesional.cshtml" Line="166" Column="35" />
+      <File FileName="Login/Pages/Certificaciones.cshtml" Line="217" Column="55" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,12 +16,11 @@
             <Node name="Atos" expanded="True">
               <Node name="Model" expanded="True" />
               <Node name="Pages" expanded="True">
+                <Node name="Certificaciones.cshtml" expanded="True" selected="True" />
                 <Node name="Experiencia_profesional.cshtml" expanded="True" />
                 <Node name="Idiomas.cshtml" expanded="True" />
                 <Node name="Informacion_de_contacto.cshtml" expanded="True" />
-                <Node name="Informacion_personal.cshtml" expanded="True">
-                  <Node name="Informacion_personal.cshtml.cs" selected="True" />
-                </Node>
+                <Node name="Informacion_personal.cshtml" expanded="True" />
                 <Node name="Sobre_mi.cshtml" expanded="True" />
                 <Node name="User.cshtml" expanded="True" />
                 <Node name="Vacantes.cshtml" expanded="True" />
