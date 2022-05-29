@@ -52,6 +52,8 @@ namespace Atos.Pages
 
         public void OnPost()
         {
+            Console.WriteLine(Certi1);
+
             idUsuario = (int)HttpContext.Session.GetInt32("idAplicante");
             string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos;Uid=root;password=Gato1415*;";
             MySqlConnection conexion = new MySqlConnection(connectionString);

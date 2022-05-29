@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/Login/Atos.csproj": {}
+    "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/Atos.csproj": {}
   },
   "projects": {
-    "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/Login/Atos.csproj": {
+    "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/Atos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/Login/Atos.csproj",
+        "projectUniqueName": "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/Atos.csproj",
         "projectName": "Atos",
-        "projectPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/Login/Atos.csproj",
-        "packagesPath": "/Users/geraldine/.nuget/packages/",
-        "outputPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/Login/obj/",
+        "projectPath": "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/Atos.csproj",
+        "packagesPath": "/Users/carminalopez/.nuget/packages/",
+        "outputPath": "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/geraldine/.config/NuGet/NuGet.Config"
+          "/Users/carminalopez/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.104/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
         }
       }
     }
