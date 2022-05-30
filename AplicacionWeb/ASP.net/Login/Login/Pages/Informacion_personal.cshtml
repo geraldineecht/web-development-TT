@@ -122,16 +122,21 @@
                             </div>
                         </div>
 
-                        <div class="grid gap-6 mb-6 lg:grid-cols-2">
+                        <div class="grid gap-6 mb-6 lg:grid-cols-3">
 
                             <div class="input-box ">
                                 <span class="details">Nombre</span>
-                                <input type="text" placeholder="Nombre" id="nombre" name="nombre">
+                                <input type="text" value=@Model.NombreUsuario id="nombre" name="nombre" readonly style="font-weight: bold; background-color: #FAFAFA">
                             </div>
 
                             <div class="input-box">
-                                <span class="details">Apellido</span>
-                                <input type="text" placeholder="Apellido" id="apellido" name="nombre">
+                                <span class="details">Apellido Paterno</span>
+                                <input type="text" value=@Model.ApellidoUsuarioP id="apellidoP" name="apellidoP" readonly style="font-weight: bold; background-color: #FAFAFA">
+                            </div>
+                            
+                            <div class="input-box">
+                                <span class="details">Apellido Materno</span>
+                                <input type="text" value=@Model.ApellidoUsuarioM id="apellidoM" name="apellidoM" readonly style="font-weight: bold; background-color: #FAFAFA">
                             </div>
                         </div>
 
@@ -142,13 +147,13 @@
 
                         <div class="grid gap-2 xl:gap-6 mb-6 lg:grid-cols-3">
                             <div class="input-box">
-                                <input asp-for="DiaNacimiento" type="text" placeholder="Día" id="dia">
+                                <input asp-for="DiaNacimiento" type="number" placeholder="Día" id="dia" required min="1" max="31">
                             </div>
                             <div class="input-box">
-                                <input asp-for="MesNacimiento" type="text" placeholder="Mes" id="mes">
+                                <input asp-for="MesNacimiento" type="number" placeholder="Mes" id="mes" required min="1" max="12">
                             </div>
                             <div class="input-box">
-                                <input asp-for="AñoNacimiento" type="text" placeholder="Año" id="anio">
+                                <input asp-for="AñoNacimiento" type="number" placeholder="Año" id="anio" required min="1900" max="2022">
                             </div>
                         </div>
 

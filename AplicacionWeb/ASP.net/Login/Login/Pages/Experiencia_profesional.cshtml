@@ -128,11 +128,11 @@
                                 <span class="Fecha de inicio">Fecha de inicio</span>
                                 <div class="grid gap-2 xl:gap-6 lg:grid-cols-2">
                                     <div class="input-box ">
-                                        <input asp-for="MesExperiencia" type="text" placeholder="Mes" id="mesInicio">
+                                        <input asp-for="MesExperiencia" type="number" placeholder="Mes" id="mesInicio" required min="1" max="12">
                                     </div>
 
                                     <div class="input-box">
-                                        <input asp-for="AnioExperiencia" type="text" placeholder="Año" id="anioInicio">
+                                        <input asp-for="AnioExperiencia" type="number" placeholder="Año" id="anioInicio" required min="1900" max="2022">
                                     </div>
                                 </div>
                             </div>
@@ -140,11 +140,11 @@
                                 <span class="Fecha de inicio">Fecha de salida</span>
                                 <div class="grid gap-2 xl:gap-6 lg:grid-cols-2">
                                     <div class="input-box ">
-                                        <input asp-for="MesExperienciaFin" type="text" placeholder="Mes" id="MesSalida">
+                                        <input asp-for="MesExperienciaFin" type="number" placeholder="Mes" id="MesSalida" required min="1" max="12">
                                     </div>
 
                                     <div class="input-box">
-                                        <input asp-for="AnioExperienciaFin" type="text" placeholder="Año" id="AnioSalida">
+                                        <input asp-for="AnioExperienciaFin" type="number" placeholder="Año" id="AnioSalida" required min="1900" max="2022">
                                     </div>
                                 </div>
                             </div>

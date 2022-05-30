@@ -12,6 +12,9 @@ namespace Login.Pages
     public class informacion_personalModel : PageModel
     {
         public int idUsuario { get; set; }
+        public string NombreUsuario { get; set; }
+        public string ApellidoUsuarioP { get; set; }
+        public string ApellidoUsuarioM { get; set; }
         [BindProperty]
         public int DiaNacimiento { get; set; }
         [BindProperty]
@@ -27,6 +30,13 @@ namespace Login.Pages
         [BindProperty]
         public string Perfil { get; set; }
 
+        public void OnGet()
+        {
+            NombreUsuario = HttpContext.Session.GetString("username");
+            ApellidoUsuarioP = HttpContext.Session.GetString("lastnameP");
+            ApellidoUsuarioM = HttpContext.Session.GetString("lastnameM");
+            
+        }
 
         public void OnPost()
         {

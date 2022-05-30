@@ -44,6 +44,8 @@ namespace Login.Pages
 
                 // Para iniciar sesion y guardar el nombre del usuario
                 HttpContext.Session.SetString("username", acc.NombreUsuario);
+                HttpContext.Session.SetString("lastnameP", acc.ApellidoPaterno);
+                HttpContext.Session.SetString("lastnameM", acc.ApellidoMaterno);
 
                 // Para obtener el idAplicante
                 cmd.CommandText = " Select idAplicante from Aplicante where Nombre= '" + acc.NombreUsuario + "  'and ApellidoP= '" + acc.ApellidoPaterno + "'  and ApellidoM= '" + acc.ApellidoMaterno + "'  and Correo= '" + acc.Correo + "'";
