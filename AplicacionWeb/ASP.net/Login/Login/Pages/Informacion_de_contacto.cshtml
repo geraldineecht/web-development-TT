@@ -114,7 +114,7 @@
                         <div class="mb-6">
                             <div class="input-box ">
                                 <span class="details">Teléfono</span>
-                                <input asp-for="Telefono" type="text" placeholder="Teléfono" id="Telefono">
+                                <input asp-for="Telefono" type="text" placeholder="Teléfono" id="Telefono" required>
                             </div>
                         </div>
 
@@ -122,7 +122,7 @@
                         <div class="mb-6">
                             <div class="input-box ">
                                 <span class="details">Correo Electrónico</span>
-                                <input type="text" placeholder="Correo Electrónico" id="correoElectronico">
+                                <input type="text" placeholder="Correo Electrónico" id="correoElectronico" required>
                             </div>
                         </div>
 
@@ -131,7 +131,7 @@
 
                             <div class="input-box ">
                                 <span class="details">País</span>
-                                <select id="Genero" class="bg-gray-50 border -border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full px-4 py-4 mt-2.5 text-base text-gray-400 bg-transparent border-color-blue">
+                                <select id="Pais" class="bg-gray-50 border -border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full px-4 py-4 mt-2.5 text-base text-gray-400 bg-transparent border-color-blue" required>
                                     <option>--País--</option>
                                     <option>México</option>
                                 </select>
@@ -139,9 +139,9 @@
 
                             <div class="input-box ">
                                 <span class="details">Estado</span>
-                                <select id="Genero" class="bg-gray-50 border -border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full px-4 py-4 mt-2.5 text-base text-gray-400 bg-transparent border-color-blue">
-                                    <option>--Estado--</option>
-                                    <option>Aguascalientes</option>
+                                <select id="Estado" class="bg-gray-50 border -border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full px-4 py-4 mt-2.5 text-base text-gray-400 bg-transparent border-color-blue" required>
+                                    <option value="">--Estado--</option>
+                                    <option >Aguascalientes</option>
                                     <option>Chihuahua</option>
                                     <option>Tamaulipas</option>
                                 </select>
@@ -152,9 +152,9 @@
                         <div class="grid gap-6 mb-6 lg:grid-cols-2">
 
                             <div class="input-box ">
-                                <span class="details">Ciudad</span>
-                                <select asp-for="Ciudad" id="Genero" class="bg-gray-50 border -border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full px-4 py-4 mt-2.5 text-base text-gray-400 bg-transparent border-color-blue">
-                                    <option>--Ciudad--</option>
+                                <span class="Ciudad">Ciudad</span>
+                                <select asp-for="Ciudad" id="Genero" class="bg-gray-50 border -border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full px-4 py-4 mt-2.5 text-base text-gray-400 bg-transparent border-color-blue" required>
+                                    <option value="">--Ciudad--</option>
                                     <option>Aguascalientes</option>
                                     <option>Chihuahua</option>
                                     <option>Escárcega</option>
@@ -163,7 +163,7 @@
 
                             <div class="input-box">
                                 <span class="details">Código Postal</span>
-                                <input asp-for="CodigoPostal" type="text" placeholder="C.P." id="CP">
+                                <input asp-for="CodigoPostal" type="text" placeholder="C.P." id="CP" required>
                             </div>
                         </div>
 
@@ -171,7 +171,7 @@
                         <div class="mb-6">
                             <div class="input-box ">
                                 <span class="details">Dirección</span>
-                                <input asp-for="Direccion" type="text" placeholder="Dirección" id="direccion">
+                                <input asp-for="Direccion" type="text" placeholder="Dirección" id="direccion" required>
                             </div>
                         </div>
 

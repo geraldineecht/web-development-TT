@@ -1,11 +1,9 @@
 ﻿<Properties StartupConfiguration="{1F23A056-76AD-4009-B3EF-7ADD32F66C64}|Login">
   <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/Informacion_de_contacto.cshtml">
     <Files>
-      <File FileName="Login/Pages/Idiomas.cshtml" Line="108" Column="44" />
-      <File FileName="Login/Pages/Idiomas.cshtml.cs" Line="1" Column="1" />
-      <File FileName="Login/Pages/Certificaciones.cshtml.cs" Line="69" Column="19" NotebookId="1" />
-      <File FileName="Login/Pages/Certificaciones.cshtml" Line="109" Column="1" NotebookId="1" />
-      <File FileName="Login/Pages/Informacion_de_contacto.cshtml" Line="136" Column="60" NotebookId="1" />
+      <File FileName="Login/Pages/Idiomas.cshtml" Line="255" Column="71" />
+      <File FileName="Login/Pages/Admin.cshtml.cs" Line="10" Column="1" />
+      <File FileName="Login/Pages/Informacion_de_contacto.cshtml" Line="127" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,9 +12,16 @@
             <Node name="Atos" expanded="True">
               <Node name="Model" expanded="True" />
               <Node name="Pages" expanded="True">
-                <Node name="Informacion_de_contacto.cshtml" selected="True" />
+                <Node name="Admin.cshtml" expanded="True" />
+                <Node name="Admin_view.cshtml" expanded="True" />
+                <Node name="Certificaciones.cshtml" expanded="True" />
+                <Node name="Idiomas.cshtml" expanded="True" />
+                <Node name="Informacion_de_contacto.cshtml" expanded="True" selected="True" />
+                <Node name="User.cshtml" expanded="True" />
               </Node>
-              <Node name="wwwroot" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
