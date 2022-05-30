@@ -43,7 +43,7 @@ namespace Atos.Pages
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = conexion;
 
-            cmd.CommandText = "Insert into FormacionAcademica (idAplicante,Institucion,Carrera,Pais,Estado,Ciudad,MesInicioFormacion,AnioInicioFormacion, MesFinalFormacion,AnioFinalFormacion) VALUES (" + idUsuario + ", '" + Institucion + "', '" + Carrera + "', " + Pais + ", " + Estado + ", " + Ciudad + ", " + MesInicioFormacion + ", " + AnioInicioFormacion + ", " + MesFinalFormacion + ", '" + AnioFinalFormacion + "')";
+            cmd.CommandText = "Insert into FormacionAcademica (idAplicante,Institucion,Carrera,Pais,Estado,Ciudad,MesInicioFormacion,AnioInicioFormacion, MesFinalFormacion,AnioFinalFormacion) VALUES (" + idUsuario + ", '" + Institucion + "', '" + Carrera + "', '" + Pais + "', '" + Estado + "', '" + Ciudad + "', " + MesInicioFormacion + ", " + AnioInicioFormacion + ", " + MesFinalFormacion + ", '" + AnioFinalFormacion + "')";
 
             cmd.ExecuteNonQuery();
             conexion.Close();
