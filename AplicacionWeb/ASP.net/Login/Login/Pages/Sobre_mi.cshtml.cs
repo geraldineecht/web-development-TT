@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using Login.Model;
 using MySql.Data.MySqlClient;
 using Microsoft.AspNetCore.Http;
 
@@ -13,11 +12,13 @@ namespace Atos.Pages
 {
     public class Sobre_miModel : PageModel
     {
+        public int idUsuario { get; set; }
         [BindProperty]
         public string AcercaDeMi { get; set; }
-
         [BindProperty]
         public string Habilidad1 { get; set; }
+        [BindProperty]
+        public int PorcHabilidad1 { get; set; }
         [BindProperty]
         public string Habilidad2 { get; set; }
         [BindProperty]
@@ -39,17 +40,21 @@ namespace Atos.Pages
 
         public void OnPost()
         {
-            for(int i = 0; i < 9; i++)
-            {
-                Console.WriteLine(Skills[i]);
-            }
+            idUsuario = (int)HttpContext.Session.GetInt32("idAplicante");
+            string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos;Uid=root;password=Gato1415*;";
+            MySqlConnection conexion = new MySqlConnection(connectionString);
+            conexion.Open();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conexion;
+            cmd.CommandText = "Insert into SobreMi(idAplicante,AcercaDeMi,Habilidad,Porcentaje) Values ( " + idUsuario + " , '" + AcercaDeMi + "' ,'" + Habilidad1 + "' ," + PorcHabilidad1 + ")";
+            cmd.ExecuteNonQuery();
+
+
+            conexion.Close();
+            Response.Redirect("Experiencia_profesional");
 
 
         }
 
-
-        //public void OnGet()
-        //{
-        //}
     }
 }
