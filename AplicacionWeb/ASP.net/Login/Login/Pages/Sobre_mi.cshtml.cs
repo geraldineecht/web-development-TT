@@ -18,8 +18,6 @@ namespace Atos.Pages
         [BindProperty]
         public string Habilidad1 { get; set; }
         [BindProperty]
-        public int PorcHabilidad1 { get; set; }
-        [BindProperty]
         public string Habilidad2 { get; set; }
         [BindProperty]
         public string Habilidad3 { get; set; }
@@ -27,16 +25,7 @@ namespace Atos.Pages
         public string Habilidad4 { get; set; }
         [BindProperty]
         public string Habilidad5 { get; set; }
-        [BindProperty]
-        public string Habilidad6 { get; set; }
-        [BindProperty]
-        public string Habilidad7 { get; set; }
-        [BindProperty]
-        public string Habilidad8 { get; set; }
-        [BindProperty]
-        public string Habilidad9 { get; set; }
-
-        public string[] Skills = new string[5]{ "name1", "name2", "name3", "name4", "name5" };
+        
 
         public void OnPost()
         {
@@ -46,12 +35,18 @@ namespace Atos.Pages
             conexion.Open();
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = conexion;
-            cmd.CommandText = "Insert into SobreMi(idAplicante,AcercaDeMi,Habilidad,Porcentaje) Values ( " + idUsuario + " , '" + AcercaDeMi + "' ,'" + Habilidad1 + "' ," + PorcHabilidad1 + ")";
+            cmd.CommandText = "Insert into SobreMi(idAplicante,AcercaDeMi,Habilidad1,Habilidad2,Habilidad3,Habilidad4,Habilidad5) Values ( " + idUsuario + " , '" + AcercaDeMi + "' ,'" + Habilidad1 + "' ,'" + Habilidad2 + "' ,'" + Habilidad3 + "' ,'" + Habilidad4 + "' ,'" + Habilidad5   + "' )";
             cmd.ExecuteNonQuery();
+
+            HttpContext.Session.SetString("Habilidad1", Habilidad1);
+            HttpContext.Session.SetString("Habilidad2", Habilidad2);
+            HttpContext.Session.SetString("Habilidad3", Habilidad3);
+            HttpContext.Session.SetString("Habilidad4", Habilidad4);
+            HttpContext.Session.SetString("Habilidad5", Habilidad5);
 
 
             conexion.Close();
-            Response.Redirect("Experiencia_profesional");
+            Response.Redirect("Habilidades");
 
 
         }

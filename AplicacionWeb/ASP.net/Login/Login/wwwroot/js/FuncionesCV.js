@@ -43,24 +43,6 @@ function addAbility() {
 
 }
 
-function addAbility2() {
-    var elem = document.getElementById('last-button');
-    elem.parentNode.removeChild(elem);
-
-    var x = document.getElementById("addAbility2");
-    if (x.style.display === "none") {
-        x.style.display = "";
-    }
-
-    var addAbility = document.getElementById("habilidad-7")
-    addAbility.style.display = "";
-
-    var addAbility = document.getElementById("habilidad-8")
-    addAbility.style.display = "";
-
-
-}
-
 function habilidades() {
     var elem = document.getElementById("page1");
     elem.parentNode.removeChild(elem);

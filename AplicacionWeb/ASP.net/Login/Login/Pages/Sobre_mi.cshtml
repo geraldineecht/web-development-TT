@@ -123,7 +123,7 @@
 
                         <div class="title-container">
                             <h1 class="text-3xl font-bold">Habilidades</h1>
-                            <p>Selecciona las habilidades que consideres más fuertes sobre ti.</p>
+                            <p>Escribe las habilidades que consideres más fuertes sobre ti.</p>
                         </div>
 
                         <div>
@@ -132,241 +132,37 @@
 
                         <div class="grid gap-4 mb-4 lg:grid-cols-2">
                             <div class="input-box">
-                                <input asp-for="Habilidad1" type="text" placeholder="Habilidad" id="skill1">
+                                <input asp-for="Habilidad1" type="text" placeholder="Habilidad" id="skill1" required>
                             </div>
 
                             <div class="input-box">
-                                <input type="text" placeholder="Habilidad" id="skill2">
+                                <input asp-for="Habilidad2" type="text" placeholder="Habilidad" id="skill2" required>
                             </div>
                         </div>
                         <div class="grid gap-4 xl:mb-1 lg:grid-cols-3">
                             <div class="input-box">
-                                <input type="text" placeholder="Habilidad" id="skill3">
+                                <input asp-for="Habilidad3" type="text" placeholder="Habilidad" id="skill3" required>
                             </div>
 
                             <div class="input-box">
-                                <input type="text" placeholder="Habilidad" id="skill4">
+                                <input asp-for="Habilidad4" type="text" placeholder="Habilidad" id="skill4" required>
                             </div>
 
                             <div class="input-box">
-                                <input type="text" placeholder="Habilidad" id="skill5">
+                                <input asp-for="Habilidad5" type="text" placeholder="Habilidad" id="skill5" required>
                             </div>
-                        </div>
-
-                        <div class="grid gap-4 xl:mb-1 lg:grid-cols-2 pt-4" id="addAbility" style="display: none;">
-                            <div class="input-box">
-                                <input type="text" placeholder="Habilidad" id="skill6">
-                            </div>
-
-                            <div class="input-box">
-                                <input type="text" placeholder="Habilidad" id="skill7">
-                            </div>
-                        </div>
-                        <div class="grid gap-4 xl:mb-1 lg:grid-cols-2 py-4" id="addAbility2" style="display: none;">
-                            <div class="input-box">
-                                <input type="text" placeholder="Habilidad" id="skill8">
-                            </div>
-
-                            <div class="input-box">
-                                <input type="text" placeholder="Habilidad" id="skill9">
-                            </div>
-                        </div>
-
-
-                        <div class="line-container" id="remover">
-                            <button class="add-button" type="button" onclick="addAbility()">＋ Añadir</button>
-                        </div>
-
-                        <div class="line-container" id="last-button" style="display: none;">
-                            <button class="add-button" type="button" onclick="addAbility2()">＋ Añadir</button>
                         </div>
 
                         <div class="button-container">
                             <a class="back-button" asp-page="/Informacion_de_contacto">&larr; &nbsp; Regresar</a>
-                            <a class="next-button" onclick="habilidades()">Siguiente</a>
+                            <input id="Submit1" type="submit" class="next-button" value="Siguiente" />
                         </div>
 
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-
-        <div class="grid section-2" id="page2" style="display: none;">
-            <div class="left-section">
-                <div class="progress-container">
-                    <div class="task-container">
-                        <ul class="task-list">
-                            <li>
-                                <div class="li-container">
-                                    <i class="fa-regular fa-circle-check finished-color"></i>
-                                    <a id="finished-task" asp-page="/Informacion_personal">Información Personal</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li-container">
-                                    <i class="fa-regular fa-circle-check finished-color"></i>
-                                    <a id="finished-task" asp-page="/Informacion_de_contacto">Información de Contacto</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li-container">
-                                    <i class="fa-regular fa-circle-check selected-color"></i>
-                                    <a id="selected-task">Sobre Mí</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li-container">
-                                    <i class="fa-regular fa-circle"></i>
-                                    <a>Experiencia Profesional</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li-container">
-                                    <i class="fa-regular fa-circle"></i>
-                                    <a>Formación Académica</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li-container">
-                                    <i class="fa-regular fa-circle"></i>
-                                    <a>Idiomas</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li-container">
-                                    <i class="fa-regular fa-circle"></i>
-                                    <a>Certificaciones</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="li-container">
-                                    <i class="fa-regular fa-circle"></i>
-                                    <a>Enviar</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="right-section">
-                <div class="form-container">
-                    <div class="box-container">
-                        <div class="title-container">
-                            <h1>Habilidades</h1>
-                            <p>Ingresa los siguientes datos solicitados para poder dirigirte a la siguiente seccion.</p>
-                        </div>
-                        <div class="fields-container">
-                            <div class="hablidad-container">
-                                <div class="habilidad-container-titulo">
-                                    <p>Habilidad 1</p>
-                                </div>
-                                <div class="range-slider-container">
-                                    <div class="range-slider" style='--min:0; --max:100; --step:5; --value:70; --text-value:"70";'>
-                                        <input asp-for="PorcHabilidad1" type="range" min="0" max="100" step="5" value="70" oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
-                                        <output></output>
-                                        <div class='range-slider__progress'></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hablidad-container">
-                                <div class="habilidad-container-titulo">
-                                    <p>Habilidad 2</p>
-                                </div>
-                                <div class="range-slider-container">
-                                    <div class="range-slider" style='--min:0; --max:100; --step:5; --value:70; --text-value:"70";'>
-                                        <input type="range" min="0" max="100" step="5" value="70" oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
-                                        <output></output>
-                                        <div class='range-slider__progress'></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hablidad-container">
-                                <div class="habilidad-container-titulo">
-                                    <p>Habilidad 3</p>
-                                </div>
-                                <div class="range-slider-container">
-                                    <div class="range-slider" style='--min:0; --max:100; --step:5; --value:70; --text-value:"70";'>
-                                        <input type="range" min="0" max="100" step="5" value="70" oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
-                                        <output></output>
-                                        <div class='range-slider__progress'></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hablidad-container">
-                                <div class="habilidad-container-titulo">
-                                    <p>Habilidad 4</p>
-                                </div>
-                                <div class="range-slider-container">
-                                    <div class="range-slider" style='--min:0; --max:100; --step:5; --value:70; --text-value:"70";'>
-                                        <input type="range" min="0" max="100" step="5" value="70" oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
-                                        <output></output>
-                                        <div class='range-slider__progress'></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hablidad-container" id="habilidad-5" style="display: none;">
-                                <div class="habilidad-container-titulo">
-                                    <p>Habilidad 5</p>
-                                </div>
-                                <div class="range-slider-container">
-                                    <div class="range-slider" style='--min:0; --max:100; --step:5; --value:70; --text-value:"70";'>
-                                        <input type="range" min="0" max="100" step="5" value="70" oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
-                                        <output></output>
-                                        <div class='range-slider__progress'></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hablidad-container" id="habilidad-6" style="display: none;">
-                                <div class="habilidad-container-titulo">
-                                    <p>Habilidad 6</p>
-                                </div>
-                                <div class="range-slider-container">
-                                    <div class="range-slider" style='--min:0; --max:100; --step:5; --value:70; --text-value:"70";'>
-                                        <input type="range" min="0" max="100" step="5" value="70" oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
-                                        <output></output>
-                                        <div class='range-slider__progress'></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hablidad-container" id="habilidad-7" style="display: none;">
-                                <div class="habilidad-container-titulo">
-                                    <p>Habilidad 7</p>
-                                </div>
-                                <div class="range-slider-container">
-                                    <div class="range-slider" style='--min:0; --max:100; --step:5; --value:70; --text-value:"70";'>
-                                        <input type="range" min="0" max="100" step="5" value="70" oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
-                                        <output></output>
-                                        <div class='range-slider__progress'></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hablidad-container" id="habilidad-8" style="display: none;">
-                                <div class="habilidad-container-titulo">
-                                    <p>Habilidad 8</p>
-                                </div>
-                                <div class="range-slider-container">
-                                    <div class="range-slider" style='--min:0; --max:100; --step:5; --value:70; --text-value:"70";'>
-                                        <input type="range" min="0" max="100" step="5" value="70" oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))">
-                                        <output></output>
-                                        <div class='range-slider__progress'></div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="button-container flex justify-between">
-                                <a class="back-button" asp-page="/Informacion_de_contacto">&larr; &nbsp; Regresar</a>
-
-                                <input id="Submit1" type="submit" class="next-button" value="Siguiente" />
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </form>
 
     <footer class="footer-container display-flex">
