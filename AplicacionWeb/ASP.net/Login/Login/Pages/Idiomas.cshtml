@@ -39,31 +39,31 @@
                                 <li>
                                     <div class="li-container">
                                         <i class="fa-regular fa-circle-check finished-color"></i>
-                                        <a id="finished-task" asp-page="/Informacion_personal">Información Personal</a>
+                                        <a id="finished-task">Información Personal</a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="li-container">
                                         <i class="fa-regular fa-circle-check finished-color"></i>
-                                        <a id="finished-task" asp-page="/Informacion_de_contacto">Información de Contacto</a>
+                                        <a id="finished-task">Información de Contacto</a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="li-container">
                                         <i class="fa-regular fa-circle-check finished-color"></i>
-                                        <a id="finished-task" asp-page="/Sobre_mi">Sobre Mí</a>
+                                        <a id="finished-task">Sobre Mí</a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="li-container">
                                         <i class="fa-regular fa-circle-check finished-color" style="color: rgba(5, 150, 255, .2);"></i>
-                                        <a id="finished-task" asp-page="/Experiencia_profesional">Experiencia Profesional</a>
+                                        <a id="finished-task">Experiencia Profesional</a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="li-container">
                                         <i class="fa-regular fa-circle-check finished-color"></i>
-                                        <a id="finished-task" asp-page="/formacion_academica">Formación Académica</a>
+                                        <a id="finished-task">Formación Académica</a>
                                     </div>
                                 </li>
                                 <li>
@@ -110,18 +110,18 @@
 
                             <div class="grid gap-4 xl:mb-1 lg:grid-cols-3 pb-4">
                                 <div class="input-box xl:col-span-2">
-                                    <input asp-for="Idioma1" type="text" placeholder="Idioma" id="Idioma1" name="Idioma1">
+                                    <input asp-for="Idioma1" type="text" placeholder="Idioma" id="Idioma1" name="Idioma1" required>
                                 </div>
 
                                 <div class="input-box">
-                                    <select asp-for="Nivel1" id="Nivel" class="bg-gray-50 border text-gray-900 text-sm rounded-lg w-full px-4 py-4 text-base text-gray-400 border-color-blue" style="background-color: rgba(5, 150, 255, .05); color: #0596FF;">
-                                        <option>Nivel</option>
-                                        <option>A1</option>
-                                        <option>A2</option>
-                                        <option>B1</option>
-                                        <option>B2</option>
-                                        <option>C1</option>
-                                        <option>C2</option>
+                                    <select asp-for="Nivel1" id="Nivel" class="bg-gray-50 border text-gray-900 text-sm rounded-lg w-full px-4 py-4 text-base text-gray-400 border-color-blue" style="background-color: rgba(5, 150, 255, .05); color: #0596FF;" required>
+                                        <option value="">Nivel</option>
+                                        <option value="A1">A1</option>
+                                        <option value="A2">A2</option>
+                                        <option value="B1">B1</option>
+                                        <option value="B2">B2</option>
+                                        <option value="C1">C1</option>
+                                        <option value="C2">C2</option>
                                     </select>
                                 </div>
                             </div>
@@ -132,7 +132,7 @@
 
                                 <div class="input-box">
                                     <select asp-for="Nivel2" id="Nivel" class="bg-gray-50 border text-gray-900 text-sm rounded-lg w-full px-4 py-4 text-base text-gray-400 border-color-blue" style="background-color: rgba(5, 150, 255, .05); color: #0596FF;">
-                                        <option>Nivel</option>
+                                        <option value="">Nivel</option>
                                         <option>A1</option>
                                         <option>A2</option>
                                         <option>B1</option>
