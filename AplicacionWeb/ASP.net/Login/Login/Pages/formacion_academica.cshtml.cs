@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using Atos.Model;
 using MySql.Data.MySqlClient;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 
 namespace Atos.Pages
 {
@@ -33,11 +34,18 @@ namespace Atos.Pages
         [BindProperty]
         public int AnioFinalFormacion { get; set; }
 
+        private readonly IConfiguration _configuration;
+
+        public formacion_academicaModel(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
+
         public void OnPost()
         {
             idUsuario = (int)HttpContext.Session.GetInt32("idAplicante");
 
-            string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos;Uid=root;password=Gato1415*;";
+            string connectionString = _configuration.GetConnectionString("myDb1");
             MySqlConnection conexion = new MySqlConnection(connectionString);
             conexion.Open();
             MySqlCommand cmd = new MySqlCommand();

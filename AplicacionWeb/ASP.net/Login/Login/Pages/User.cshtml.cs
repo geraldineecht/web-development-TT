@@ -8,15 +8,23 @@ using Microsoft.Extensions.Logging;
 using Login.Model;
 using MySql.Data.MySqlClient;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
+
 
 namespace Login.Pages
 {
     public class UserModel : PageModel
     {
+        private readonly IConfiguration _configuration;
+
+        public UserModel(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
 
         public void OnPost(Usuarios acc)
         {
-            string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos;Uid=root;password=Gato1415*;";
+            string connectionString = _configuration.GetConnectionString("myDb1");
             MySqlConnection conexion = new MySqlConnection(connectionString);
             conexion.Open();
             MySqlCommand cmd = new MySqlCommand();
@@ -56,19 +64,6 @@ namespace Login.Pages
                 conexion.Close();
                 Response.Redirect("informacion_personal");
             }
-        }
-        private readonly ILogger<UserModel> _logger;
-
-        public UserModel(ILogger<UserModel> logger)
-        {
-            _logger = logger;
-        }
-
-        public void OnGet(Usuarios acc)
-        {
-            //string name = HttpContext.Request.Query["NombreUsuario"];
-            
-            
         }
     }
 }

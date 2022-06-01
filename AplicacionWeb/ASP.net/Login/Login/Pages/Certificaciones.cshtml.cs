@@ -7,8 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using MySql.Data.MySqlClient;
 using Microsoft.AspNetCore.Http;
-
-// ESTE TODAVÍA NO QUEDA
+using Microsoft.Extensions.Configuration;
 
 namespace Atos.Pages
 {
@@ -49,13 +48,20 @@ namespace Atos.Pages
         [BindProperty]
         public int Anio8 { get; set; }
 
+        private readonly IConfiguration _configuration;
+
+        public CertificacionesModel(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
+
 
         public void OnPost()
         {
             Console.WriteLine(Certi1);
 
             idUsuario = (int)HttpContext.Session.GetInt32("idAplicante");
-            string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos;Uid=root;password=Gato1415*;";
+            string connectionString = _configuration.GetConnectionString("myDb1");
             MySqlConnection conexion = new MySqlConnection(connectionString);
             conexion.Open();
             MySqlCommand cmd = new MySqlCommand();

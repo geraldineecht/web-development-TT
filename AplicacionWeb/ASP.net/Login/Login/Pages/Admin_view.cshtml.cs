@@ -6,17 +6,26 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Login.Model;
 using MySql.Data.MySqlClient;
+using Microsoft.Extensions.Configuration;
 
 namespace Atos.Pages
 {
     public class Admin_viewModel : PageModel
+
     {
+        private readonly IConfiguration _configuration;
+
+        public Admin_viewModel(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
+
         public IList<Usuarios> ListaUsuarios { get; set; }
 
         public void OnPost()
         {
 
-            string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos;Uid=root;password=Gato1415*;";
+            string connectionString = _configuration.GetConnectionString("myDb1");
             MySqlConnection conexion = new MySqlConnection(connectionString);
             conexion.Open();
             MySqlCommand cmd = new MySqlCommand();

@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MySql.Data.MySqlClient;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
+
 
 namespace Atos.Pages
 {
@@ -29,6 +31,13 @@ namespace Atos.Pages
         [BindProperty]
         public int PorcHabilidad5 { get; set; }
 
+        private readonly IConfiguration _configuration;
+
+        public HabilidadesModel(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
+
         public void OnGet()
         {
             Habilidad1 = HttpContext.Session.GetString("Habilidad1");
@@ -45,9 +54,8 @@ namespace Atos.Pages
             Habilidad2 = HttpContext.Session.GetString("Habilidad2");
             Habilidad3 = HttpContext.Session.GetString("Habilidad3");
             Habilidad4 = HttpContext.Session.GetString("Habilidad4");
-            Habilidad5 = HttpContext.Session.GetString("Habilidad5");
 
-            string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos;Uid=root;password=Gato1415*;";
+            string connectionString = _configuration.GetConnectionString("myDb1");
             MySqlConnection conexion = new MySqlConnection(connectionString);
             conexion.Open();
             MySqlCommand cmd = new MySqlCommand();

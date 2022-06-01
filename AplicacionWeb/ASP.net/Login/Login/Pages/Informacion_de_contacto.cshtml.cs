@@ -25,15 +25,6 @@ namespace Atos.Pages
         public string Direccion { get; set; }
 
 
-
-        //public string Telefono { get; set; }
-        //public string Ciudad { get; set; }
-        //public int CodigoPostal { get; set; }
-        //public string Direccion { get; set; }
-
-
-
-
         public void OnPost()
         {
             idUsuario = (int)HttpContext.Session.GetInt32("idAplicante");

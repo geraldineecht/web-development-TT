@@ -320,7 +320,7 @@ img {
 
 .button-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     /*    margin: 0 .5rem 0 0;*/
     text-decoration: none;
     padding-bottom: 1rem;

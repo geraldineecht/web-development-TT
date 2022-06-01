@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MySql.Data.MySqlClient;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
+
 
 namespace Login.Pages
 {
@@ -30,6 +32,13 @@ namespace Login.Pages
         [BindProperty]
         public string Perfil { get; set; }
 
+        private readonly IConfiguration _configuration;
+
+        public informacion_personalModel(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
+
         public void OnGet()
         {
             NombreUsuario = HttpContext.Session.GetString("username");
@@ -42,7 +51,7 @@ namespace Login.Pages
         {
             idUsuario = (int)HttpContext.Session.GetInt32("idAplicante");
 
-            string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos;Uid=root;password=Gato1415*;";
+            string connectionString = _configuration.GetConnectionString("myDb1");
             MySqlConnection conexion = new MySqlConnection(connectionString);
             conexion.Open();
             MySqlCommand cmd = new MySqlCommand();

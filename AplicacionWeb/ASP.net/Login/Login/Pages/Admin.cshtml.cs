@@ -7,21 +7,28 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using Atos.Model;
 using MySql.Data.MySqlClient;
+using Microsoft.Extensions.Configuration;
 
 namespace Login.Pages
 {
     public class AdminModel : PageModel
     {
+        private readonly IConfiguration _configuration;
 
-        public void OnPost(Admin adm)
+        public AdminModel(IConfiguration configuration)
         {
-            string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos;Uid=root;password=Gato1415*;";
+            _configuration = configuration;
+        }
+
+        public void OnPost(Admin Adm)
+        {
+            string connectionString = _configuration.GetConnectionString("myDb1");
             MySqlConnection conexion = new MySqlConnection(connectionString);
             conexion.Open();
             MySqlCommand cmd = new MySqlCommand();
             MySqlDataReader dr;
             cmd.Connection = conexion;
-            cmd.CommandText = " Select * from Administrador where Correo= '" + adm.Correo + "' and Contraseña= '" + adm.Contraseña + "'";
+            cmd.CommandText = " Select * from Administrador where Correo= '" + Adm.Correo + "' and Contraseña= '" + Adm.Contraseña + "'";
             dr = cmd.ExecuteReader();
 
             if (dr.Read())
@@ -35,16 +42,6 @@ namespace Login.Pages
                 ViewData["Error"] = "Datos inválidos";
             }
         }
-        private readonly ILogger<AdminModel> _logger;
 
-        public AdminModel(ILogger<AdminModel> logger)
-        {
-            _logger = logger;
-        }
-
-        public void OnGet()
-        {
-
-        }
     }
 }
