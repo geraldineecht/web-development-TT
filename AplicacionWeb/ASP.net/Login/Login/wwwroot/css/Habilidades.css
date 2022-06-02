@@ -523,3 +523,61 @@ label[dir=rtl] .range-slider {
     padding: 1rem .5rem 1rem .5rem;
     justify-content: center;
 }
+
+.height-90 {
+    min-height: 90vh;
+}
+
+#progress-bar-menu {
+    display: none;
+}
+
+
+@media screen and (max-width: 960px) {
+    .form-container {
+        width: 100%;
+        min-height: 90vh;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .height-90 {
+        height: auto;
+    }
+
+    #progress-bar-menu {
+        display: block;
+    }
+
+    #progress-bar {
+        display: none;
+    }
+}
+
+
+.border-color-blue {
+    border-color: rgba(5, 150, 255, .2);
+}
+
+.bg-gray-atos {
+    background-color: #F2F2F2;
+}
+
+.footer-container {
+    background-color: var(--primary-color);
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: var(--fs-base);
+    color: white;
+    overflow-y: hidden;
+}
+
+.display-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
