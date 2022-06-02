@@ -54,6 +54,8 @@ namespace Login.Pages
                 HttpContext.Session.SetString("username", acc.NombreUsuario);
                 HttpContext.Session.SetString("lastnameP", acc.ApellidoPaterno);
                 HttpContext.Session.SetString("lastnameM", acc.ApellidoMaterno);
+                HttpContext.Session.SetString("Correo", acc.Correo);
+
 
                 // Para obtener el idAplicante
                 cmd.CommandText = " Select idAplicante from Aplicante where Nombre= '" + acc.NombreUsuario + "  'and ApellidoP= '" + acc.ApellidoPaterno + "'  and ApellidoM= '" + acc.ApellidoMaterno + "'  and Correo= '" + acc.Correo + "'";

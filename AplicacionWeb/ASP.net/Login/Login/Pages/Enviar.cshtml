@@ -115,7 +115,7 @@
                                 </div>
                             </div>
                             <div class="button-container">
-                                <a class="next-button" asp-page="/Informacion-publicada">Enviar</a>
+                                <a class="next-button" asp-page="/Informacion-publicada" onclick="sendEmail()">Enviar</a>
                             </div>
                         </form>
                     </div>
@@ -125,12 +125,29 @@
 
 
     </div>
-    
+
 
 
 
     <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
     <script src="~/js/FuncionesCV.js"></script>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                SecureToken: "2acfd219-768c-48b5-b630-92a34b45f2fa",
+                To: "@Model.Email",
+                From: "atosinc12345@gmail.com",
+                Subject: "Application Confirmation",
+                Body: "<html><h1>Atos</h1><br><h2>Tu aplicación ha sido registrada!</h2><br><p>Una vez termines con la entrevista estaremos en contacto contigo.</p><br><h3>Gracias!</h3><br><br><p>© Atos SE 2022 all rights reserved</p></html>"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+
+
 </body>
 </html>
+
