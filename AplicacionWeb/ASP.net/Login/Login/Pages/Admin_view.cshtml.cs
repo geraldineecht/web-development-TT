@@ -25,6 +25,14 @@ namespace Atos.Pages
         public void OnPost()
         {
 
+            
+
+        }
+
+        public void OnGet()
+        {
+            ListaUsuarios = new List<Usuarios>();
+
             string connectionString = _configuration.GetConnectionString("myDb1");
             MySqlConnection conexion = new MySqlConnection(connectionString);
             conexion.Open();
@@ -49,12 +57,6 @@ namespace Atos.Pages
                 }
             }
             conexion.Dispose();
-
-        }
-
-        public void OnGet()
-        {
-            ListaUsuarios = new List<Usuarios>();
         }
     }
 }
