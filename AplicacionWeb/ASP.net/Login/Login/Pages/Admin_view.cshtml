@@ -172,9 +172,11 @@
                                 </td>
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
                                     @Html.DisplayFor(modelItem => item.NombreUsuario)
+                                    @Html.DisplayFor(modelItem => item.ApellidoPaterno)
+                                    @Html.DisplayFor(modelItem => item.ApellidoMaterno)
                                 </th>
                                 <td class="px-6 py-4">
-                                    Frontend
+                                    @Html.DisplayFor(modelItem => item.TipoPerfil)
                                 </td>
                                 <td class="px-6 py-4">
                                     100

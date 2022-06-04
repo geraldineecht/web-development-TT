@@ -39,7 +39,7 @@ namespace Atos.Pages
             MySqlCommand cmd = new MySqlCommand();
 
             cmd.Connection = conexion;
-            cmd.CommandText = "Select * from Aplicante";
+            cmd.CommandText = "SELECT u.idAplicante, a.Nombre, a.ApellidoP, a.ApellidoM , r.TipoPerfil FROM infopersonal u  JOIN  perfil r ON u.idPerfil = r.idPerfil JOIN aplicante a ON a.idAplicante = u.idAplicante group by idAplicante";
 
             Usuarios usr1 = new Usuarios();
             ListaUsuarios = new List<Usuarios>();
@@ -52,7 +52,7 @@ namespace Atos.Pages
                     usr1.NombreUsuario = reader["Nombre"].ToString();
                     usr1.ApellidoPaterno = reader["ApellidoP"].ToString();
                     usr1.ApellidoMaterno = reader["ApellidoM"].ToString();
-                    usr1.Correo = reader["Correo"].ToString();
+                    usr1.TipoPerfil = reader["TipoPerfil"].ToString();
                     ListaUsuarios.Add(usr1);
                 }
             }

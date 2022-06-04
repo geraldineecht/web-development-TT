@@ -8,6 +8,7 @@ namespace Login.Model
         public string ApellidoPaterno { get; set; }
         public string ApellidoMaterno { get; set; }
         public string Correo { get; set; }
+        public string TipoPerfil { get; set; }
         
     }
 
