@@ -651,324 +651,324 @@
         {
             "id": 1,
             "question": "What is automation testing?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "Process of automating the manual processes to test the application.",
+            "option1": "Process of using scripting for developing tools to create test cases.",
+            "option2": "Process of defining the test oracle.",
+            "option3": "Process of automating data for test cases."
         },
         {
             "id": 2,
             "question": "What is record and playback?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "Test automation approach where a tool capture the activity of the user and then imitates it.",
+            "option1": "Test automation type that allows the user to capture the activity and the time execution of a test case.",
+            "option2": "Functions in an automated framework for test case execution.",
+            "option3": "Testing time where the output is analyzed for quality process."
         },
         {
             "id": 3,
             "question": "Which of the following statements BEST captures the purpose of XPath in Selenium automation?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "To locate objects on a web page",
+            "option1": "To create XPath expressions",
+            "option2": "To describe the appearance of HTML on a screen",
+            "option3": "To describe a tree format"
         },
         {
             "id": 4,
             "question": "Under what conditions a test case must be automated?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "The test ensures the previous functionality didn’t break after a new change.",
+            "option1": "The software or the feature under the test changes frequently.",
+            "option2": "Exploratory testing is needed.",
+            "option3": "ROI takes more time than expected."
         },
         {
             "id": 5,
             "question": "What is not a type of locator in Selenium?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "Image recognition.",
+            "option1": "ID.",
+            "option2": "XPATH.",
+            "option3": "Text"
         },
         {
             "id": 6,
             "question": "What is the best definition for test case",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "Test Case is a set of actions executed to verify a particular feature or functionality of your software application.",
+            "option1": "Focused more “what to test” than “how to test”.",
+            "option2": "A test case contains high-level documentation which describes an end to end functionality to be tested",
+            "option3": "Are mostly single line statement that tells what should be tested"
         },
         {
             "id": 7,
             "question": "What is regression testing?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "Type of testing that is done to verify that a code change in the software does not impact the existing functionality of the product.",
+            "option1": "Type of testing that is done to verify that new functionalities does not impact the database.",
+            "option2": "Is a type of testing used used in waterfall model for test cases development.",
+            "option3": "Type of testing focused in finding new scenarios for test case development."
         },
         {
             "id": 8,
             "question": "Which of the following is the BEST approach for locating elements?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "Use IDs.",
+            "option1": "Use class names.",
+            "option2": "Use Xpath",
+            "option3": "Use the link text."
         },
         {
             "id": 9,
             "question": "What is not an advantage of page objects.",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "A Page Object does not need to cover the whole page or form. It may control a section or other specific part of it",
+            "option1": "It reduces cost and maintenance efforts for test automation scripts",
+            "option2": "It gives a clear separation between the business and the technical parts for the test automation design",
+            "option3": "It encapsulates all operations on the SUT’s GUI in one layer"
         },
         {
             "id": 10,
             "question": "What is the main advantage of locating web page elements by their ID?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "Because if a web page is valid XML, this attribute is unique, so element is found unambiguously",
+            "option1": "Because the method for finding elements by id has the shortest name.",
+            "option2": "Because all HTML tags have that attribute",
+            "option3": "Because this attribute can be used in all location strategies"
         },
         {
             "id": 11,
             "question": "What is page object model?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "Is a design pattern that creates an object repository for sorting all web elements.",
+            "option1": "Is an extenssion of an object in Automation Frameworks.",
+            "option2": "Is a design pattern for object classes in Object-oriented programmin.",
+            "option3": "Is a WebPage that contains all object elements in a module."
         },
         {
             "id": 12,
             "question": "Is not a type of automating testing?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "Architecture testing",
+            "option1": "Unit Testing",
+            "option2": "Integration Testing",
+            "option3": "Acceptance Testing"
         },
         {
             "id": 13,
             "question": "What is test suite?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "Set of tests which helps testers in executing and reporting the test execution status.",
+            "option1": "Set of instructions that testers uses for executing and reporting the test execution status.",
+            "option2": "Set of tests scenarios which helps testers in executing and reporting the test execution status.",
+            "option3": "Set of high level instructions for testers."
         },
         {
             "id": 14,
             "question": "When is feasible to automate?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "Repetitive tasks.",
+            "option1": "Tasks that require external hardware.",
+            "option2": "Task that require ET.",
+            "option3": "All must be automated."
         },
         {
             "id": 15,
             "question": "What is the first action to do in the STLC?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "Requirement analysis.",
+            "option1": "Test case design and development.",
+            "option2": "Test Plan",
+            "option3": "Test environment set up."
         },
         {
             "id": 16,
             "question": "Which is a way to use the css selector in selenium?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "All of avobe",
+            "option1": "Inline Style",
+            "option2": "External and internal style.",
+            "option3": "Browser default value."
         },
         {
             "id": 17,
             "question": "Which of the following XPATH expressions is valid relative xpath for a hyperlink tag in a HTML document?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "//*[@id='gb']/div/div[1]/div/div[1]/a",
+            "option1": "/html/body/div[1]/div[1]/div/div/div/div[1]/div/div[1]/a",
+            "option2": "/div/div/div/div[1]/div/div[1]/a",
+            "option3": "/[@id='gb']/div/div[1]/div/div[1]"
         },
         {
             "id": 18,
             "question": "You have to wait for the availability of an element where that is not time-dependant, which wait is the most suitable for this situation.",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "Explicit wait.",
+            "option1": "Implicit global wait.",
+            "option2": "Implicit wait.",
+            "option3": "None of avobe."
         },
         {
             "id": 19,
             "question": "How can the entire browser and all of its tabs be closed at once with Selenium when you have more than one tab opened?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "driver.quit()",
+            "option1": "driver.close('ALL')",
+            "option2": "driver.close()",
+            "option3": "driver.quit('ALL')"
         },
         {
             "id": 20,
             "question": "Which type of XPATH gives you the full path of an object?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "Absolute xpath",
+            "option1": "Relative xpath",
+            "option2": "a) and b)",
+            "option3": "None of them."
         }
     ],
     "Front_End": [
         {
             "id": 1,
             "question": "What is the main purpose of HTML?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "To display and structure the content inside of a web page",
+            "option1": "To write text inside of a web page",
+            "option2": "To create a likeable user interface",
+            "option3": "To give styles to the content of a web page"
         },
         {
             "id": 2,
             "question": "What is the main porpuse of CSS?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "To style and layout web using a family of standard properties for each Object",
+            "option1": "To create a likeable user interface",
+            "option2": "To display the content of a web page",
+            "option3": "To give responsiveness to a web page"
         },
         {
             "id": 3,
             "question": "What is a css preprocessor?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "A css preprocessor is a program that lets you generate css from the preprocessor's own unique syntax",
+            "option1": "Is the motor from a web browser that interprets the css and applies it to the html",
+            "option2": "Is a standard to write css",
+            "option3": "Is a css framework"
         },
         {
             "id": 4,
             "question": "What is JavaScript?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "JavaScript is a multi-paradigm scripting Language, that supports event-drive, functional, imperative, procedural, object-oriented programming",
+            "option1": "JavaScript is a Static Typed Object Oriented Programming Language",
+            "option2": "JavaScript is a Dynamic Functional Programming Language",
+            "option3": "avaScript is a procedural programming language"
         },
         {
             "id": 5,
             "question": "What is the DOM in Javascript?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "Is the Document Object Model, a programming web interface for web documents that a node for each element",
+            "option1": "Is a programming web interface that allows the developer to control the browser window native APIS",
+            "option2": "Is a programming web interface that allows the developer to control the css from the current document",
+            "option3": "None of above"
         },
         {
             "id": 6,
             "question": "Why do we use the DOM for?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "The DOM interface allows the developer to dynamically change the document object,  depending on events or http calls to a server, or only for mere user interaction",
+            "option1": "used to host styles",
+            "option2": "used to host javascript script files",
+            "option3": "used to host only html"
         },
         {
             "id": 7,
             "question": "What is a JavaScript Closure?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "is function enclosed with references to its surrounding state",
+            "option1": "is a class",
+            "option2": "is a design pattern",
+            "option3": "is javascript module"
         },
         {
             "id": 8,
             "question": "What is the difference between a regular function and an arrow function",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "the value of 'this' keyword",
+            "option1": "it's syntax",
+            "option2": "arrow function has implicit return",
+            "option3": "none"
         },
         {
             "id": 9,
             "question": "Difference between function.prototype.bind and function.prototype.call",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": ".bind adds a given value for  'this', and call does the same but also executes the function",
+            "option1": "both .bind and .call add a given value for 'this'",
+            "option2": ".bind executes the function with the given value for 'this' and call just gives a value to 'this'",
+            "option3": ".call does not add value for 'this', and .bind does add a value for 'this' but does not execute the function"
         },
         {
             "id": 10,
             "question": "What does the function addEventListener do?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "executes a piece of code once a specified event is triggered inside of a given DOM node",
+            "option1": "executes a piece of code once a event is triggered on the dom",
+            "option2": "executes a piece of code once a event is triggered on the window object",
+            "option3": "executes a piece of code once a button is clicked"
         },
         {
             "id": 11,
             "question": "Whats the difference between 'var' and 'let'?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "both are for variables but each one are permited and used depending of the execution context of a given scope",
+            "option1": "there is no difference",
+            "option2": "var is for variable and let for constant values",
+            "option3": "var and let are the same but let is newer, it was introduced in ES6"
         },
         {
             "id": 12,
             "question": "What is a JavaScript Front End Framework?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "Is a collection of JavaScript libraries",
+            "option1": "Is a code library",
+            "option2": "Is a design workflow",
+            "option3": "Is a CLI tool"
         },
         {
             "id": 13,
             "question": "Which ones of the next tools are JavaScript Front end frameworks?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "Angular, Vue, ReactJS",
+            "option1": "Spring, Hiberbate, Play.",
+            "option2": "Ktor, Kweb, Javalin",
+            "option3": "Meteor.js, Nest.js, Koa.js, express.js"
         },
         {
             "id": 14,
             "question": "Is inheritence possible on vanilla JavaScript?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "Yes",
+            "option1": "No",
+            "option2": "Maybe",
+            "option3": "Somehow"
         },
         {
             "id": 15,
             "question": "how can you inherit properties from a object to other without classes?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "Yes, you can inherit using the prototype chain",
+            "option1": "No, you need to use classes",
+            "option2": "Maybe",
+            "option3": "Somehow"
         },
         {
             "id": 16,
             "question": "what's the shadow DOM?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "Is a object that allows to Hidden DOM trees to be attached to elements in the regular DOM",
+            "option1": "Is the part of the DOM that is rendering but no visible yet",
+            "option2": "Is a object that allows to hide DOM elements",
+            "option3": "Is a object that allows to see all Hidden DOM Elements"
         },
         {
             "id": 17,
             "question": "what's the main use of the shadow DOM?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "controlling attaching, de-attaching, and encapsulate components inside of a web application",
+            "option1": "controlling html elements",
+            "option2": "controlling all properties surrounding html elements",
+            "option3": "creating declarative custom html elements"
         },
         {
             "id": 18,
             "question": "What is a spread operator and what is it used for?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "the spread operator allows to get the items from inside an array or a object and put them inside another object",
+            "option1": "the spred operator allows to concadenate various strings",
+            "option2": "the spread operator allows to increment the value of a numeric variable; using self reference",
+            "option3": "the spread operator allows to have infinite number of parameters inside of function and this parameters will be part of an array"
         },
         {
             "id": 19,
             "question": "What is a rest operator and thwat is it used for?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "the rest operator allows to have infinite number of parameters inside of function and this parameters will be part of an array",
+            "option1": "the rest operator allows to concadenate various strings",
+            "option2": "the rest operator allows to increment the value of a numeric variable; using self reference",
+            "option3": "the rest operator allows to get the items from inside an array or a object and put them inside another object"
         },
         {
             "id": 20,
             "question": "What is 'use strict' used for?",
-            "answer": "",
-            "option1": "",
-            "option2": "",
-            "option3": ""
+            "answer": "disables silent errors for stric errors, and enables code optimization for javascript engines, prohibits certain types of syntax",
+            "option1": "allows the use of types on vanilla javascript",
+            "option2": "allows a faster interpretation of our code",
+            "option3": "enables sloppy mode for the javascript engines"
         }
     ]
 }
