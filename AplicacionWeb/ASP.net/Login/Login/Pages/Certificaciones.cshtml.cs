@@ -58,45 +58,51 @@ namespace Atos.Pages
 
         public void OnPost()
         {
-            Console.WriteLine(Certi1);
-
             idUsuario = (int)HttpContext.Session.GetInt32("idAplicante");
             string connectionString = _configuration.GetConnectionString("myDb1");
             MySqlConnection conexion = new MySqlConnection(connectionString);
             conexion.Open();
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = conexion;
-            cmd.CommandText = "Insert into Certificacion(idAplicante,Certificacion,anio) Values ( " + idUsuario + " , '" + Certi1 + "' ," + Anio1 + ")";
-            cmd.ExecuteNonQuery();
 
-            if (!(string.IsNullOrEmpty(Certi2)))
+            if (Certi1 == "Certificación")
+            {
+                Response.Redirect("Enviar");
+            }
+            else
+            {
+                cmd.CommandText = "Insert into Certificacion(idAplicante,Certificacion,anio) Values ( " + idUsuario + " , '" + Certi1 + "' ," + Anio1 + ")";
+                cmd.ExecuteNonQuery();
+            }
+
+            if (Certi2 != "Certificación")
             {
                 cmd.CommandText = "Insert into Certificacion (idAplicante,Certificacion,anio) Values ( " + idUsuario + " , '" + Certi2 + "' ,  " + Anio2 + " )";
                 cmd.ExecuteNonQuery();
 
-                if (!(string.IsNullOrEmpty(Certi3)))
+                if (Certi3 != "Certificación")
                 {
                     cmd.CommandText = "Insert into Certificacion(idAplicante,Certificacion,anio) Values ( " + idUsuario + " , '" + Certi3 + "' ,  " + Anio3 + " )";
                     cmd.ExecuteNonQuery();
 
-                    if (!(string.IsNullOrEmpty(Certi4)))
+                    if (Certi4 != "Certificación")
                     {
                         cmd.CommandText = "Insert into Certificacion(idAplicante,Certificacion,anio) Values ( " + idUsuario + " , '" + Certi4 + "' ,  " + Anio4 + " )";
                         cmd.ExecuteNonQuery();
 
-                        if (!(string.IsNullOrEmpty(Certi5)))
+                        if (Certi5 != "Certificación")
                         {
                             cmd.CommandText = "Insert into Certificacion (idAplicante,Certificacion,anio) Values ( " + idUsuario + " , '" + Certi5 + "' ,  " + Anio5 + " )";
                             cmd.ExecuteNonQuery();
-                            if (!(string.IsNullOrEmpty(Certi6)))
+                            if (Certi6 != "Certificación")
                             {
                                 cmd.CommandText = "Insert into Certificacion (idAplicante,Certificacion,anio) Values ( " + idUsuario + " , '" + Certi6 + "' ,  " + Anio6 + " )";
                                 cmd.ExecuteNonQuery();
-                                if (!(string.IsNullOrEmpty(Certi7)))
+                                if (Certi7 != "Certificación")
                                 {
                                     cmd.CommandText = "Insert into Certificacion (idAplicante,Certificacion,anio) Values ( " + idUsuario + " , '" + Certi7 + "' ,  " + Anio7 + " )";
                                     cmd.ExecuteNonQuery();
-                                    if (!(string.IsNullOrEmpty(Certi8)))
+                                    if (Certi8 != "Certificación")
                                     {
                                         cmd.CommandText = "Insert into Certificacion (idAplicante,Certificacion,anio) Values ( " + idUsuario + " , '" + Certi8 + "' ,  " + Anio8 + " )";
                                         cmd.ExecuteNonQuery();
