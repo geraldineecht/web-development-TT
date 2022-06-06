@@ -8,11 +8,13 @@
   <ItemGroup>
     <None Remove="MySql.Data" />
     <None Remove="Model\" />
+    <None Remove="Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MySql.Data" Version="8.0.29" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
 </Project>

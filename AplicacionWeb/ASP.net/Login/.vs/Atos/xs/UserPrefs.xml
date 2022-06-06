@@ -1,25 +1,26 @@
 ﻿<Properties StartupConfiguration="{1F23A056-76AD-4009-B3EF-7ADD32F66C64}|Login">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/Certificaciones.cshtml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Controllers/LoginController.cs">
     <Files>
-      <File FileName="Login/Pages/Informacion_personal.cshtml" Line="156" Column="77" />
-      <File FileName="Login/Pages/Certificaciones.cshtml" Line="103" Column="50" />
-      <File FileName="Login/Pages/Certificaciones.cshtml.cs" Line="76" Column="14" />
-      <File FileName="Login/Pages/Admin.cshtml.cs" Line="1" Column="1" />
+      <File FileName="Login/Controllers/LoginController.cs" Line="13" Column="25" />
+      <File FileName="Login/Properties/launchSettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Atos" expanded="True">
             <Node name="Atos" expanded="True">
-              <Node name="Pages" expanded="True">
-                <Node name="Admin.cshtml" expanded="True" />
-                <Node name="Admin_view.cshtml" expanded="True" />
-                <Node name="Certificaciones.cshtml" expanded="True">
-                  <Node name="Certificaciones.cshtml.cs" selected="True" />
-                </Node>
-                <Node name="Idiomas.cshtml" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="LoginController.cs" selected="True" />
               </Node>
-              <Node name="wwwroot" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Admin_view.cshtml" expanded="True" />
+                <Node name="Informacion_de_contacto.cshtml" expanded="True" />
+                <Node name="Informacion_personal.cshtml" expanded="True" />
+                <Node name="User.cshtml" expanded="True" />
+                <Node name="Vacantes.cshtml" expanded="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>

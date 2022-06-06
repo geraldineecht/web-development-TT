@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Login.Model;
 using MySql.Data.MySqlClient;
 using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Http;
 
 namespace Atos.Pages
 {
@@ -22,11 +23,9 @@ namespace Atos.Pages
 
         public IList<Usuarios> ListaUsuarios { get; set; }
 
+
         public void OnPost()
         {
-
-            
-
         }
 
         public void OnGet()
