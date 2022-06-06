@@ -1,0 +1,175 @@
+﻿@page
+@model Atos.Pages.Sobre_miModel
+@{
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css" />
+
+     <link rel="stylesheet" href="~/css/sobre-mi.css"> 
+
+    <script src="https://kit.fontawesome.com/ce9bb4ca53.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <form method="post">
+        <div class="-body-container bg-primary bg-gray-900">
+            <header class="header-container">
+                <nav class="navbar">
+                    <div class="nav-container">
+                        <a href="#" id="nav-logo"><img class="img-attributes" src="~/img/LogoBlanco.png" alt=""></a>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <div class="grid xl:grid-cols-9  md:grid-cols-6 sm:grid-cols-1 xl:gap-8" id="page1">
+            <div id="progress-bar" class="xl:col-span-3 md:col-span-2 bg-gray-atos">
+                <div class="left-section">
+                    <div class="progress-container">
+                        <div class="task-container">
+                            <ul class="task-list">
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle-check finished-color"></i>
+                                        <a id="finished-task">Información Personal</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle-check finished-color"></i>
+                                        <a id="finished-task">Información de Contacto</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle-check selected-color"></i>
+                                        <a id="selected-task">Sobre Mí</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Experiencia Profesional</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Formación Académica</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Idiomas</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Certificaciones</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Enviar</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="progress-bar-menu" class="mt-9 mx-4">
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 37.5%"> 37.5%</div>
+                </div>
+            </div>
+
+            <div class="xl:col-span-6 md:col-span-4 -bg-blue-400">
+                <div class="right-section -bg-gray-200 ">
+                    <div class="form-container">
+                        <div class="title-container">
+                            <h1 class="text-3xl font-bold">Sobre Mí</h1>
+                            <p>Ingresa los siguientes datos solicitados para poder dirigirte a la siguiente seccion.</p>
+                        </div>
+
+                        <div class="fields-container">
+                            <div class="line-container">
+                                <div class="input-box">
+                                    <span class="details">Acerca de Mí</span>
+                                    <textarea asp-for="AcercaDeMi" class="about-input" id="about-input" rows="5" cols="50" placeholder="Acerca de Mí" maxlength="250" onfocus="countChar()" onkeydown="countChar()" onkeyup="countChar()"></textarea>
+                                    <div id="word-count">
+                                        <span id="current">0</span>
+                                        <span id="maximum">/ 250</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="title-container">
+                            <h1 class="text-3xl font-bold">Habilidades</h1>
+                            <p>Escribe las habilidades que consideres más fuertes sobre ti.</p>
+                        </div>
+
+                        <div>
+
+                        </div>
+
+                        <div class="grid gap-4 mb-4 lg:grid-cols-2">
+                            <div class="input-box">
+                                <input asp-for="Habilidad1" type="text" placeholder="Habilidad" id="skill1" required>
+                            </div>
+
+                            <div class="input-box">
+                                <input asp-for="Habilidad2" type="text" placeholder="Habilidad" id="skill2" required>
+                            </div>
+                        </div>
+                        <div class="grid gap-4 xl:mb-1 lg:grid-cols-3">
+                            <div class="input-box">
+                                <input asp-for="Habilidad3" type="text" placeholder="Habilidad" id="skill3" required>
+                            </div>
+
+                            <div class="input-box">
+                                <input asp-for="Habilidad4" type="text" placeholder="Habilidad" id="skill4" required>
+                            </div>
+
+                            <div class="input-box">
+                                <input asp-for="Habilidad5" type="text" placeholder="Habilidad" id="skill5" required>
+                            </div>
+                        </div>
+
+                        <div class="button-container">
+                            <input id="Submit1" type="submit" class="next-button" value="Siguiente" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+    <footer class="footer-container display-flex">
+        <p>© Atos SE 2022 all rights reserved</p>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
+    <script src="~/js/FuncionesCV.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+﻿@page
+@model Atos.Pages.EnviarModel
+@{
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css" />
+
+    <link rel="stylesheet" href="~/css/Enviar.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ce9bb4ca53.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="-body-container bg-primary bg-gray-900">
+        <header class="header-container">
+            <nav class="navbar">
+                <div class="nav-container">
+                    <a href="#" id="nav-logo"><img class="img-attributes" src="~/img/LogoBlanco.png" alt=""></a>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="grid xl:grid-cols-9  md:grid-cols-6 sm:grid-cols-1 xl:gap-8">
+        <div id="progress-bar" class="xl:col-span-3 md:col-span-2 bg-gray-atos">
+            <div class="left-section">
+                <div class="progress-container">
+                    <div class="task-container">
+                        <ul class="task-list">
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check finished-color"></i>
+                                    <a id="finished-task">Información Personal</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check finished-color"></i>
+                                    <a id="finished-task">Información de Contacto</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check finished-color"></i>
+                                    <a id="finished-task">Sobre Mí</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check finished-color"></i>
+                                    <a id="finished-task">Experiencia Profesional</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check finished-color"></i>
+                                    <a id="finished-task">Formación Académica</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check finished-color"></i>
+                                    <a id="finished-task">Idiomas</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check finished-color"></i>
+                                    <a id="finished-task">Certificaciones</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-container">
+                                    <i class="fa-regular fa-circle-check selected-color"></i>
+                                    <a id="selected-task">Enviar</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="progress-bar-menu" class="mt-9 mx-4">
+            <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 100%"> 100%</div>
+            </div>
+        </div>
+
+        <div class="xl:col-span-6 md:col-span-4 -bg-blue-400">
+            <div class="right-section -bg-gray-200 ">
+                <div class="form-container">
+                    <div class="max-w-4xl w-full mx-auto bg-white rounded-lg p-7 md:p-12 my-10 space-y-7 shadow-lg lg:shadow-none">
+                        <form class="space-y-6" action="#">
+                            <div class="line-container flex-gap">
+                                <img class="img-enviar" src="~/img/enviar.png">
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <div class="flex justify-center">
+                                    <h1 class="text-xl font-bold">Envía tu información</h1>
+                                </div>
+                                <div class="flex justify-center lg:mb-20">
+                                    <p>Para poder acceder a la selección de vacantes es necesario enviar tu información.</p>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <a class="next-button" asp-page="/Informacion-publicada" onclick="sendEmail()">Enviar</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
+    <script src="~/js/FuncionesCV.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                SecureToken: "2acfd219-768c-48b5-b630-92a34b45f2fa",
+                To: "@Model.Email",
+                From: "atosinc12345@gmail.com",
+                Subject: "Application Confirmation",
+                Body: "<html><h1>Atos</h1><br><h2>Tu aplicación ha sido registrada!</h2><br><p>Una vez termines con la entrevista estaremos en contacto contigo.</p><br><h3>Gracias!</h3><br><br><p>© Atos SE 2022 all rights reserved</p></html>"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+
+
+</body>
+</html>
+

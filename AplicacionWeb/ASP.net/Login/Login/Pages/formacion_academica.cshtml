@@ -1,0 +1,198 @@
+﻿@page
+@model Atos.Pages.formacion_academicaModel
+@{
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css" />
+
+    <link rel="stylesheet" href="~/css/formacion-academica.css">
+    <script src="https://kit.fontawesome.com/ce9bb4ca53.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <form method="post">
+        <div class="-body-container bg-primary bg-gray-900">
+            <header class="header-container">
+                <nav class="navbar">
+                    <div class="nav-container">
+                        <a href="#" id="nav-logo"><img class="img-attributes" src="~/img/LogoBlanco.png" alt=""></a>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <div class="grid xl:grid-cols-9  md:grid-cols-6 sm:grid-cols-1 xl:gap-8">
+            <div id="progress-bar" class="xl:col-span-3 md:col-span-2 bg-gray-atos">
+                <div class="left-section">
+                    <div class="progress-container">
+                        <div class="task-container">
+                            <ul class="task-list">
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle-check finished-color"></i>
+                                        <a id="finished-task">Información Personal</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle-check finished-color"></i>
+                                        <a id="finished-task">Información de Contacto</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle-check finished-color"></i>
+                                        <a id="finished-task">Sobre Mí</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle-check finished-color"></i>
+                                        <a id="finished-task">Experiencia Profesional</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle-check selected-color"></i>
+                                        <a id="selected-task">Formación Académica</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Idiomas</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Certificaciones</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Enviar</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="progress-bar-menu" class="mt-9 mx-4">
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 62.5%"> 62.5%</div>
+                </div>
+            </div>
+
+            <div class="xl:col-span-6 md:col-span-4 -bg-blue-400">
+                <div class="right-section -bg-gray-200 ">
+                    <div class="form-container">
+                        <div class="title-container">
+                            <h1 class="text-3xl font-bold">Formación Académica</h1>
+                            <p>Ingresa los siguientes datos solicitados para poder dirigirte a la siguiente seccion.</p>
+                        </div>
+
+                        <div class="mb-6">
+                            <div class="input-box ">
+                                <span class="details">Institución</span>
+                                <input asp-for="Institucion" type="text" placeholder="Institución" id="Institucion" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <div class="input-box">
+                                <span class="details">Carrera</span>
+                                <input asp-for="Carrera" type="text" placeholder="Carrera" id="Carrera" required>
+                            </div>
+                        </div>
+
+
+                        <div class="grid gap-6 mb-6 lg:grid-cols-2">
+
+                            <div class="input-box ">
+                                <span class="details">País</span>
+                                <input asp-for="Pais" type="text" placeholder="País" id="pais" required>
+                            </div>
+
+                            <div class="input-box">
+                                <span class="details">Estado</span>
+                                <input asp-for="Estado" type="text" placeholder="Estado" id="estado" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <div class="input-box">
+                                <span class="details">Ciudad</span>
+                                <input asp-for="Ciudad" type="text" placeholder="Ciudad" id="ciudad" required>
+                            </div>
+                        </div>
+
+                        <div class="grid gap-6 mb-6 lg:grid-cols-5">
+                            <div class="xl:col-span-2 md:col-span-2">
+                                <span class="Fecha de inicio">Fecha de inicio</span>
+                                <div class="grid gap-2 xl:gap-6 lg:grid-cols-2">
+                                    <div class="input-box ">
+                                        <input asp-for="MesInicioFormacion" type="number" placeholder="Mes" id="mesInicio" required min="1" max="12">
+                                    </div>
+
+                                    <div class="input-box">
+                                        <input asp-for="AnioInicioFormacion" type="number" placeholder="Año" id="anioInicio" required min="1900" max="2022">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="xl:col-span-2 md:col-span-2">
+                                <span class="Fecha de inicio">Fecha de salida</span>
+                                <div class="grid gap-2 xl:gap-6 lg:grid-cols-2">
+                                    <div class="input-box ">
+                                        <input asp-for="MesFinalFormacion" type="number" placeholder="Mes" id="MesSalida" required min="1" max="12">
+                                    </div>
+
+                                    <div class="input-box">
+                                        <input asp-for="AnioFinalFormacion" type="number" placeholder="Año" id="AnioSalida" required min="1900" max="2022">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" id="check" value="check" onclick="checkBox()"> <p>Aún trabajo aquí</p>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                        <div class="button-container">
+                            <input id="Submit1" type="submit" class="next-button" value="Siguiente" />
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <footer class="footer-container display-flex">
+        <p>© Atos SE 2022 all rights reserved</p>
+    </footer>
+
+    <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
+    <script src="~/js/FuncionesCV.js"></script>
+</body>
+</html>

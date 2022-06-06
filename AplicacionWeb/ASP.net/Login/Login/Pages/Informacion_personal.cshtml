@@ -1,0 +1,231 @@
+﻿@page
+@model Login.Pages.informacion_personalModel
+@{
+    Layout = "";
+    
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css" />
+
+    <link rel="stylesheet" href = "~/css/informacion-personal.css">
+    <script src="https://kit.fontawesome.com/ce9bb4ca53.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <form method="post">
+        <div class="-body-container bg-primary bg-gray-900">
+            <header class="header-container">
+                <nav class="navbar">
+                    <div class="nav-container">
+                        <a href="#" id="nav-logo"><img class="img-attributes" src="~/img/LogoBlanco.png" alt=""></a>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <div class="grid xl:grid-cols-9  md:grid-cols-6 sm:grid-cols-1 xl:gap-8">
+            <div id="progress-bar" class="xl:col-span-3 md:col-span-2 bg-gray-atos">
+                <div class="left-section ">
+                    <div class="progress-container">
+                        <div class="task-container">
+                            <ul class="task-list">
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle-check selected-color"></i>
+                                        <a id="selected-task">Información Personal</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Información de Contacto</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Sobre Mí</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Experiencia Profesional</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Formación Académica</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Idiomas</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Certificaciones</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Enviar</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="progress-bar-menu" class="mt-9 mx-4">
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 12.5%"> 12.5%</div>
+                </div>
+            </div>
+
+            <div class="xl:col-span-6 md:col-span-4 -bg-blue-400">
+                <div class="right-section -bg-gray-200 ">
+                    <div class="form-container">
+                        <div class="title-container">
+                            <h1 class="text-3xl font-bold">Información Personal</h1>
+                            <p>Ingresa los siguientes datos solicitados para poder dirigirte a la siguiente sección.</p>
+                        </div>
+
+
+                        <div class="mb-6 input-box">
+                            <span class="details">Foto de Perfil</span>
+                            <div class="file-container">
+                                <input type="file" id="foto" name="foto">
+                                <div class="custom-file-container">
+                                    <label for="foto" class="foto-label">
+                                        Subir Imagen
+                                    </label>
+                                    <img src="~/img/Add_round_light.png" class="upload-icon">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid gap-6 mb-6 lg:grid-cols-3">
+
+                            <div class="input-box ">
+                                <span class="details">Nombre</span>
+                                <input type="text" value=@Model.NombreUsuario id="nombre" name="nombre" readonly style="font-weight: bold; background-color: #FAFAFA">
+                            </div>
+
+                            <div class="input-box">
+                                <span class="details">Apellido Paterno</span>
+                                <input type="text" value=@Model.ApellidoUsuarioP id="apellidoP" name="apellidoP" readonly style="font-weight: bold; background-color: #FAFAFA">
+                            </div>
+                            
+                            <div class="input-box">
+                                <span class="details">Apellido Materno</span>
+                                <input type="text" value=@Model.ApellidoUsuarioM id="apellidoM" name="apellidoM" readonly style="font-weight: bold; background-color: #FAFAFA">
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details ">Fecha de Nacimiento</span>
+                        </div>
+
+
+                        <div class="grid gap-2 xl:gap-6 mb-6 lg:grid-cols-3">
+                            <div class="input-box">
+                                <input asp-for="DiaNacimiento" type="number" placeholder="Día" id="dia" required min="1" max="31" value="1">
+                            </div>
+                            <div class="input-box">
+                                <input asp-for="MesNacimiento" type="number" placeholder="Mes" id="mes" required min="1" max="12" value="1">
+                            </div>
+                            <div class="input-box">
+                                <input asp-for="AñoNacimiento" type="number" placeholder="Año" id="anio" required min="1900" max="2022">
+                            </div>
+                        </div>
+
+
+
+                        <div class="mb-6">
+                            <div class="input-box ">
+                                <span class="details">Nacionalidad</span>
+                                <select asp-for="Nacionalidad" id="Nacionalidad" class="bg-gray-50 border -border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full px-4 py-4 mt-2.5 text-base text-gray-400 bg-transparent border-color-blue" required>
+                                    <option value="">--Nacionalidad--</option>
+                                    <option>Mexicana</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid gap-6 mb-6 lg:grid-cols-2">
+
+                            <div class="input-box ">
+                                <span class="details">Género</span>
+                                <select asp-for="Genero" id="Genero" class="bg-gray-50 border -border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full px-4 py-4 mt-2.5 text-base text-gray-400 bg-transparent border-color-blue" required>
+                                    <option value="">--Género--</option>
+                                    <option>Mujer</option>
+                                    <option>Hombre</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+
+                            <div class="input-box">
+                                <span class="details">Estado Civil</span>
+                                <select asp-for="Civil" id="Dia" class="bg-gray-50 border -border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full px-4 py-4 mt-2.5 text-base text-gray-400 bg-transparent border-color-blue" required>
+                                    <option value="">--Estado Civil--</option>
+                                    <option>Soltero/a</option>
+                                    <option>Casado/a</option>
+                                    <option>Divorciado/a</option>
+                                    <option>Viudo/a</option>
+                                    <option>Concubinato</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <div class="input-box">
+                                <span class="details">Perfil</span>
+                                <select asp-for="Perfil" id="Perfil" class="bg-gray-50 border -border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full px-4 py-4 mt-2.5 text-base text-gray-400 bg-transparent border-color-blue" required>
+                                    <option value="">--Perfil--</option>
+                                    <option>Data Scientist</option>
+                                    <option>Data Engineer</option>
+                                    <option>.Net Developer</option>
+                                    <option>Java Developer</option>
+                                    <option>QA Automation</option>
+                                    <option>Front End Developer</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="button-container">
+                            <input id="Submit1" type="submit" class="next-button" value="Siguiente" />
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </form>
+    <footer class="footer-container display-flex">
+        <p>© Atos SE 2022 all rights reserved</p>
+    </footer>
+
+    <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
+
+</body>
+</html>

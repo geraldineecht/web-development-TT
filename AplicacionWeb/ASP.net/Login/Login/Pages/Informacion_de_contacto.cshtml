@@ -1,0 +1,197 @@
+﻿@page
+@model Atos.Pages.Informacion_de_contactoModel
+@{
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css" />
+
+    <link rel="stylesheet" href="~/css/informacion-de-contacto.css">
+    <script src="https://kit.fontawesome.com/ce9bb4ca53.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <form method="post">
+        <div class="-body-container bg-primary bg-gray-900">
+            <header class="header-container">
+                <nav class="navbar">
+                    <div class="nav-container">
+                        <a href="#" id="nav-logo"><img class="img-attributes" src="~/img/LogoBlanco.png" alt=""></a>
+
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <div class="grid xl:grid-cols-9  md:grid-cols-6 sm:grid-cols-1 xl:gap-8">
+            <div id="progress-bar" class="xl:col-span-3 md:col-span-2 bg-gray-atos">
+                <div class="left-section">
+                    <div class="progress-container">
+                        <div class="task-container">
+                            <ul class="task-list">
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle-check finished-color"></i>
+                                        <a id="finished-task">Información Personal</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle-check selected-color"></i>
+                                        <a id="selected-task">Información de Contacto</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Sobre Mí</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Experiencia Profesional</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Formación Académica</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Idiomas</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Certificaciones</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Enviar</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="progress-bar-menu" class="mt-9 mx-4">
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 25%"> 25%</div>
+                </div>
+            </div>
+
+            <div class="xl:col-span-6 md:col-span-4 -bg-blue-400">
+                <div class="right-section -bg-gray-200 ">
+                    <div class="form-container">
+                        <div class="title-container">
+                            <h1 class="text-3xl font-bold">Información de Contacto</h1>
+                            <p>Ingresa los siguientes datos solicitados para poder dirigirte a la siguiente sección.</p>
+                        </div>
+
+
+                        <div class="mb-6">
+                            <div class="input-box ">
+                                <span class="details">Teléfono</span>
+                                <input asp-for="Telefono" type="text" placeholder="Teléfono" id="Telefono" required>
+                            </div>
+                        </div>
+
+
+                        <div class="mb-6">
+                            <div class="input-box ">
+                                <span class="details">Correo Electrónico</span>
+                                <input type="text" placeholder="Correo Electrónico" id="correoElectronico" required>
+                            </div>
+                        </div>
+
+
+                        <div class="grid gap-6 mb-6 lg:grid-cols-2">
+
+                            <div class="input-box ">
+                                <span class="details">País</span>
+                                <select id="Pais" class="bg-gray-50 border -border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full px-4 py-4 mt-2.5 text-base text-gray-400 bg-transparent border-color-blue" required>
+                                    <option>--País--</option>
+                                    <option>México</option>
+                                </select>
+                            </div>
+
+                            <div class="input-box ">
+                                <span class="details">Estado</span>
+                                <select id="Estado" class="bg-gray-50 border -border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full px-4 py-4 mt-2.5 text-base text-gray-400 bg-transparent border-color-blue" required>
+                                    <option value="">--Estado--</option>
+                                    <option >Aguascalientes</option>
+                                    <option>Chihuahua</option>
+                                    <option>Tamaulipas</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="grid gap-6 mb-6 lg:grid-cols-2">
+
+                            <div class="input-box ">
+                                <span class="Ciudad">Ciudad</span>
+                                <select asp-for="Ciudad" id="Genero" class="bg-gray-50 border -border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full px-4 py-4 mt-2.5 text-base text-gray-400 bg-transparent border-color-blue" required>
+                                    <option value="">--Ciudad--</option>
+                                    <option>Aguascalientes</option>
+                                    <option>Chihuahua</option>
+                                    <option>Escárcega</option>
+                                </select>
+                            </div>
+
+                            <div class="input-box">
+                                <span class="details">Código Postal</span>
+                                <input asp-for="CodigoPostal" type="text" placeholder="C.P." id="CP" required>
+                            </div>
+                        </div>
+
+
+                        <div class="mb-6">
+                            <div class="input-box ">
+                                <span class="details">Dirección</span>
+                                <input asp-for="Direccion" type="text" placeholder="Dirección" id="direccion" required>
+                            </div>
+                        </div>
+
+                        <div class="button-container">
+                            <input id="Submit1" type="submit" class="next-button" asp-page="#" value="Siguiente" />
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </form>
+    <footer class="footer-container display-flex">
+        <p>© Atos SE 2022 all rights reserved</p>
+    </footer>
+
+    <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
+
+</body>
+</html>

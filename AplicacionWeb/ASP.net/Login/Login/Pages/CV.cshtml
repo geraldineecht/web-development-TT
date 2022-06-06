@@ -1,0 +1,375 @@
+﻿@page
+@model Atos.Pages.CVModel
+@{
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css" />
+
+
+    <link rel="stylesheet" href="~/css/CV.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+</head>
+<body>
+
+    <div class="-body-container bg-primary bg-gray-900">
+        <header class="header-container headerScroll headerScrollTransparent header-bg bg-gray-900" id="header-id">
+            <nav class="navbar container mx-auto" id="navbar-id">
+
+                <div class="nav-container">
+                    <a href="#" id="nav-logo"><img class="img-attributes" src="~/img/LogoBlanco.png" alt=""></a>
+
+                    <div class="navbar-toggle" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar last-bar"></span>
+                    </div>
+
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">Industries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">Solutions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">Insights & News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">About us</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="nav-links pd-r-0">
+                                <span class="material-symbols-outlined">
+                                    search
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+
+
+
+
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-3 md:gap-2 mx-4">
+                <div class="grid  grid-rows-auto md:grid-rows-auto bg-white rounded-lg border border-gray-200 shadow-md">
+                    <div class="bg-white rounded-lg border border-gray-200 shadow-md">
+                        <div class="max-w-full  dark:bg-gray-800 dark:bg-gray-800 dark:border-gray-700 pt-4   ">
+
+                            <div class="flex flex-col items-center pb-4 pt-4">
+                                <img class="mb-3 w-60 h-60 rounded-full shadow-lg" src="~/img/avatar2.png" alt="Bonnie image">
+
+                                <h5 class="mb-1 text-4xl font-semibold text-gray-900 dark:text-white">Bonnie Green</h5>
+
+                                <span class="text-xl text-gray-500 dark:text-gray-400">Visual Designer</span>
+                            </div>
+
+
+                            <div class="p-4 max-w-full  sm:p-8 dark:bg-gray-800">
+
+                                <div class="flex justify-between items-center">
+                                    <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Información de Personal</h5>
+                                </div>
+                                <div>
+                                    <div class="pt-4">
+                                        <div class="relative overflow-x-auto">
+                                            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                                                <tbody>
+                                                    <tr class="">
+                                                        <th scope="row" class="py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                                            Nacimiento
+                                                        </th>
+                                                        <td class="px-6 py-4">
+                                                            Monterrey, Nuevo León
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <th scope="row" class="py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                                            Nacionalidad
+                                                        </th>
+                                                        <td class="px-6 py-4">
+                                                            Mexicana
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <th scope="row" class="pt-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                                            Estado Civil
+                                                        </th>
+                                                        <td class="px-6 pt-4">
+                                                            Soltero
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="p-4 max-w-full sm:p-8 dark:bg-gray-800">
+
+                                <div class="flex justify-between items-center">
+                                    <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Información de Contacto</h5>
+                                </div>
+                                <div>
+                                    <div class="pt-4">
+                                        <div class="relative overflow-x-auto">
+                                            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                                                <tbody>
+                                                    <tr class="">
+                                                        <th scope="row" class="py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                                            Teléfono
+                                                        </th>
+                                                        <td class="px-6 py-4">
+                                                            800-000-000-000
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <th scope="row" class="py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                                            Email
+                                                        </th>
+                                                        <td class="px-6 py-4">
+                                                            aplicante@aplicante.com
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <th scope="row" class="py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                                            Pais
+                                                        </th>
+                                                        <td class="px-6 py-4">
+                                                            Mexico
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <th scope="row" class="py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                                            Estado
+                                                        </th>
+                                                        <td class="px-6 py-4">
+                                                            Nuevo León
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <th scope="row" class="py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                                            Ciudad
+                                                        </th>
+                                                        <td class="px-6 py-4">
+                                                            Monterrey
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <th scope="row" class="py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                                            Dirección
+                                                        </th>
+                                                        <td class="px-6 py-4">
+                                                            Tu dirección
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <th scope="row" class="py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                                            Código Postal
+                                                        </th>
+                                                        <td class="py-6 p-4">
+                                                            64849
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="grid sm:grid-cols-1 md:col-span-2">
+
+                    <div class="grid grid-rows-auto md:gap-2 gap-4">
+                        <div class="p-4 max-w-full bg-sky-50 sm:p-8 dark:bg-gray-800 divide-y    bg-white rounded-lg border border-gray-200 shadow-md ">
+                            <div class="flex justify-between items-center mb-4">
+                                <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white ">Mi Perfil</h5>
+                            </div>
+                            <div class="mt-4">
+                                <p class="font-normal text-gray-700 dark:text-gray-400 my-4">Phasellus posuere id neque ac semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis iaculis dictum odio dapibus ultrices. Proin fringilla interdum finibus. Aliquam ut laoreet ex, in vestibulum dui. Donec et massa non risus pharetra imperdiet. Nam auctor iaculis dolor, sit amet interdum purus convallis lobortis. Phasellus vitae interdum sem.</p>
+                                <div class="grid grid-cols-2 gap-2 sm:grid-cols-2 md:grid-cols-3 md:gap-4">
+                                    <div class="">
+                                        <div class="mb-1 text-base font-medium text-blue-700">Habilidad</div>
+                                        <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 h-6 align-middle">
+                                            <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center  p-0.5 leading-none rounded-full  h-6" style="width: 55%"> 65%</div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="mb-1 text-base font-medium text-blue-700">Habilidad</div>
+                                        <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 h-6 align-middle">
+                                            <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center  p-0.5 leading-none rounded-full  h-6" style="width: 55%"> 65%</div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="mb-1 text-base font-medium text-blue-700">Habilidad</div>
+                                        <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 h-6 align-middle">
+                                            <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center  p-0.5 leading-none rounded-full  h-6" style="width: 55%"> 65%</div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="mb-1 text-base font-medium text-blue-700">Habilidad</div>
+                                        <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 h-6 align-middle">
+                                            <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center  p-0.5 leading-none rounded-full  h-6" style="width: 55%"> 65%</div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="mb-1 text-base font-medium text-blue-700">Habilidad</div>
+                                        <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 h-6 align-middle">
+                                            <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center  p-0.5 leading-none rounded-full  h-6" style="width: 55%"> 65%</div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="mb-1 text-base font-medium text-blue-700">Habilidad</div>
+                                        <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 h-6 align-middle">
+                                            <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center  p-0.5 leading-none rounded-full  h-6" style="width: 55%"> 65%</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="">
+                            <div class=" sm:grid-cols-1 md:col-span-2">
+                                <div class="p-4 max-w-full bg-sky-50 sm:p-8 dark:bg-gray-800 divide-y   bg-white rounded-lg border border-gray-200 shadow-md">
+                                    <div class="flex justify-between items-center mb-4">
+                                        <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Experiencia Profesional</h5>
+                                    </div>
+                                    <div>
+                                        <div class="pt-4">
+                                            <div class="flex space-x-4">
+                                                <div class="flex-1 min-w-0">
+                                                    <p class="text-base font-medium text-blue-700 truncate dark:text-white">
+                                                        Puesto Desempeñado
+                                                    </p>
+                                                    <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                                        Empresa
+                                                    </p>
+                                                </div>
+                                                <p class="text-base font-medium text-gray-900  dark:text-white">
+                                                    Agosto 2020 - Agosto 2021
+                                                </p>
+                                            </div>
+                                            <p class="font-normal text-gray-700 dark:text-gray-400 mt-4">Phasellus posuere id neque ac semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis iaculis dictum odio dapibus ultrices. Proin fringilla interdum finibus. Aliquam ut laoreet ex, in vestibulum dui. Donec et massa non risus pharetra imperdiet. Nam auctor iaculis dolor, sit amet interdum purus convallis lobortis. Phasellus vitae interdum sem.</p>
+                                        </div>
+
+                                        <div class="pt-4">
+                                            <div class="flex space-x-4">
+                                                <div class="flex-1 min-w-0">
+                                                    <p class="text-base font-medium text-blue-700 truncate dark:text-white">
+                                                        Puesto Desempeñado
+                                                    </p>
+                                                    <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                                        Empresa
+                                                    </p>
+                                                </div>
+                                                <p class="text-base font-medium text-gray-900  dark:text-white">
+                                                    Agosto 2020 - Agosto 2021
+                                                </p>
+                                            </div>
+                                            <p class="font-normal text-gray-700 dark:text-gray-400 mt-4">Phasellus posuere id neque ac semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis iaculis dictum odio dapibus ultrices. Proin fringilla interdum finibus. Aliquam ut laoreet ex, in vestibulum dui. Donec et massa non risus pharetra imperdiet. Nam auctor iaculis dolor, sit amet interdum purus convallis lobortis. Phasellus vitae interdum sem.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="sm:grid-cols-1 md:col-span-2">
+                                <div class="p-4 max-w-full bg-sky-50 sm:p-8 dark:bg-gray-800 divide-y  bg-white rounded-lg border border-gray-200 shadow-md">
+
+                                    <div class="flex justify-between items-center mb-4">
+                                        <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Formación Académica</h5>
+                                    </div>
+                                    <div>
+                                        <div class="pt-4">
+                                            <div class="flex space-x-4">
+                                                <div class="flex-1 min-w-0">
+                                                    <p class="text-base font-medium text-blue-700 truncate dark:text-white">
+                                                        Nombre Carrera
+                                                    </p>
+                                                    <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                                        Nombre Universidad
+                                                    </p>
+                                                </div>
+                                                <p class="text-base font-medium text-gray-900  dark:text-white">
+                                                    Agosto 2018 - Junio 2024
+                                                </p>
+                                            </div>
+                                            <p class="font-normal text-gray-700 dark:text-gray-400 mt-4">Phasellus posuere id neque ac semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis iaculis dictum odio dapibus ultrices. Proin fringilla interdum finibus. Aliquam ut laoreet ex, in vestibulum dui. Donec et massa non risus pharetra imperdiet. Nam auctor iaculis dolor, sit amet interdum purus convallis lobortis. Phasellus vitae interdum sem.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <footer class="p-4 bg-gray-900 md:flex md:items-center md:justify-center md:p-6 dark:bg-gray-900   flex justify-center">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+                Atos SE 2022 all rights reserved
+            </span>
+
+        </footer>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
+    <script src="~/js/CVapp.js"></script>
+
+</body>
+</html>

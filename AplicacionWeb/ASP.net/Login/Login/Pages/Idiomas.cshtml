@@ -1,0 +1,258 @@
+﻿@page
+@model Atos.Pages.IdiomasModel
+@{
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css" />
+
+    <link rel="stylesheet" href="~/css/idiomas.css">
+    <script src="https://kit.fontawesome.com/ce9bb4ca53.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+        <div class="-body-container bg-primary bg-gray-900">
+            <header class="header-container">
+                <nav class="navbar">
+                    <div class="nav-container">
+                        <a href="#" id="nav-logo"><img class="img-attributes" src="~/img/LogoBlanco.png" alt=""></a>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <div class="grid xl:grid-cols-9  md:grid-cols-6 sm:grid-cols-1 xl:gap-8">
+            <div id="progress-bar" class="xl:col-span-3 md:col-span-2 bg-gray-atos">
+                <div class="left-section">
+                    <div class="progress-container">
+                        <div class="task-container">
+                            <ul class="task-list">
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle-check finished-color"></i>
+                                        <a id="finished-task">Información Personal</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle-check finished-color"></i>
+                                        <a id="finished-task">Información de Contacto</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle-check finished-color"></i>
+                                        <a id="finished-task">Sobre Mí</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle-check finished-color" style="color: rgba(5, 150, 255, .2);"></i>
+                                        <a id="finished-task">Experiencia Profesional</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle-check finished-color"></i>
+                                        <a id="finished-task">Formación Académica</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle-check selected-color"></i>
+                                        <a id="selected-task">Idiomas</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Certificaciones</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-container">
+                                        <i class="fa-regular fa-circle"></i>
+                                        <a>Enviar</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="progress-bar-menu" class="mt-9 mx-4">
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 75%"> 75%</div>
+                </div>
+            </div>
+
+            <div class="xl:col-span-6 md:col-span-4 -bg-blue-400">
+                <div class="right-section -bg-gray-200 ">
+                    <div class="form-container">
+                        <div class="title-container">
+                            <h1 class="text-3xl font-bold">Idiomas</h1>
+                            <p>Ingresa los idiomas que mejor domines.</p>
+                        </div>
+
+                        <form method="post">
+
+
+                            <div class="grid gap-4 xl:mb-1 lg:grid-cols-3 pb-4">
+                                <div class="input-box xl:col-span-2">
+                                    <input asp-for="Idioma1" type="text" placeholder="Idioma" id="Idioma1" name="Idioma1" required>
+                                </div>
+
+                                <div class="input-box">
+                                    <select asp-for="Nivel1" id="Nivel" class="bg-gray-50 border text-gray-900 text-sm rounded-lg w-full px-4 py-4 text-base text-gray-400 border-color-blue" style="background-color: rgba(5, 150, 255, .05); color: #0596FF;" required>
+                                        <option value="">Nivel</option>
+                                        <option value="A1">A1</option>
+                                        <option value="A2">A2</option>
+                                        <option value="B1">B1</option>
+                                        <option value="B2">B2</option>
+                                        <option value="C1">C1</option>
+                                        <option value="C2">C2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="grid gap-4 mb-4 xl:mb-1 lg:grid-cols-3 pb-4" id="addLanguage2" style="display: none;">
+                                <div class="input-box xl:col-span-2">
+                                    <input  asp-for="Idioma2" type="text" placeholder="Idioma" id="Idioma2" name="Idioma2">
+                                </div>
+
+                                <div class="input-box">
+                                    <select asp-for="Nivel2" id="Nivel" class="bg-gray-50 border text-gray-900 text-sm rounded-lg w-full px-4 py-4 text-base text-gray-400 border-color-blue" style="background-color: rgba(5, 150, 255, .05); color: #0596FF;">
+                                        <option value="">Nivel</option>
+                                        <option>A1</option>
+                                        <option>A2</option>
+                                        <option>B1</option>
+                                        <option>B2</option>
+                                        <option>C1</option>
+                                        <option>C2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="grid gap-4 mb-4 xl:mb-1 lg:grid-cols-3 pb-4" id="addLanguage3" style="display: none;">
+                                <div class="input-box xl:col-span-2">
+                                    <input asp-for="Idioma3" type="text" placeholder="Idioma" id="Idioma3" name="Idioma3">
+                                </div>
+
+                                <div class="input-box">
+                                    <select asp-for="Nivel3" id="Nivel" class="bg-gray-50 border text-gray-900 text-sm rounded-lg w-full px-4 py-4 text-base text-gray-400 border-color-blue" style="background-color: rgba(5, 150, 255, .05); color: #0596FF;">
+                                        <option>Nivel</option>
+                                        <option>A1</option>
+                                        <option>A2</option>
+                                        <option>B1</option>
+                                        <option>B2</option>
+                                        <option>C1</option>
+                                        <option>C2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="grid gap-4 mb-4 xl:mb-1 lg:grid-cols-3 pb-4" id="addLanguage4" style="display: none;">
+                                <div class="input-box xl:col-span-2">
+                                    <input asp-for="Idioma4" type="text" placeholder="Idioma" id="Idioma4" name="Idioma4">
+                                </div>
+
+                                <div class="input-box">
+                                    <select asp-for="Nivel4" id="Nivel" class="bg-gray-50 border text-gray-900 text-sm rounded-lg w-full px-4 py-4 text-base text-gray-400 border-color-blue" style="background-color: rgba(5, 150, 255, .05); color: #0596FF;">
+                                        <option>Nivel</option>
+                                        <option>A1</option>
+                                        <option>A2</option>
+                                        <option>B1</option>
+                                        <option>B2</option>
+                                        <option>C1</option>
+                                        <option>C2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="grid gap-4 mb-4 xl:mb-1 lg:grid-cols-3 pb-4" id="addLanguage5" style="display: none;">
+                                <div class="input-box xl:col-span-2">
+                                    <input asp-for="Idioma5" type="text" placeholder="Idioma" id="Idioma5" name="Idioma5">
+                                </div>
+
+                                <div class="input-box">
+                                    <select asp-for="Nivel5" id="Nivel" class="bg-gray-50 border text-gray-900 text-sm rounded-lg w-full px-4 py-4 text-base text-gray-400 border-color-blue" style="background-color: rgba(5, 150, 255, .05); color: #0596FF;">
+                                        <option>Nivel</option>
+                                        <option>A1</option>
+                                        <option>A2</option>
+                                        <option>B1</option>
+                                        <option>B2</option>
+                                        <option>C1</option>
+                                        <option>C2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="grid gap-4 mb-4 xl:mb-1 lg:grid-cols-3 pb-4" id="addLanguage6" style="display: none;">
+                                <div class="input-box xl:col-span-2">
+                                    <input asp-for="Idioma6" type="text" placeholder="Idioma" id="Idioma6" name="Idioma6">
+                                </div>
+
+                                <div class="input-box">
+                                    <select asp-for="Nivel6"  id="Nivel" class="bg-gray-50 border text-gray-900 text-sm rounded-lg w-full px-4 py-4 text-base text-gray-400 border-color-blue" style="background-color: rgba(5, 150, 255, .05); color: #0596FF;">
+                                        <option>Nivel</option>
+                                        <option>A1</option>
+                                        <option>A2</option>
+                                        <option>B1</option>
+                                        <option>B2</option>
+                                        <option>C1</option>
+                                        <option>C2</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+
+                            <div class="line-container" id="remover">
+                                <button class="add-button" type="button" onclick="addIdioma2()">＋ Añadir</button>
+                            </div>
+
+                            <div class="line-container" id="button2" style="display: none;">
+                                <button class="add-button" type="button" onclick="addIdioma3()">＋ Añadir</button>
+                            </div>
+
+                            <div class="line-container" id="button3" style="display: none;">
+                                <button class="add-button" type="button" onclick="addIdioma4()">＋ Añadir</button>
+                            </div>
+
+                            <div class="line-container" id="button4" style="display: none;">
+                                <button class="add-button" type="button" onclick="addIdioma5()">＋ Añadir</button>
+                            </div>
+
+                            <div class="line-container" id="button5" style="display: none;">
+                                <button class="add-button" type="button" onclick="addIdioma6()">＋ Añadir</button>
+                            </div>
+
+                            <div class="button-container">
+                                <input id="Submit1" type="submit" class="next-button" value="Siguiente"/>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <footer class="footer-container display-flex">
+            <p>© Atos SE 2022 all rights reserved</p>
+        </footer>
+
+
+
+        <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
+        <script src="~/js/Idiomas.js" type="text/javascript"></script>
+
+</body>
+</html>
