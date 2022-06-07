@@ -32,7 +32,6 @@ namespace Atos.Pages
 
         public void OnGet()
         {
-            ListaUsuarios = new List<Usuarios>();
 
             string connectionString = _configuration.GetConnectionString("myDb1");
             MySqlConnection conexion = new MySqlConnection(connectionString);
