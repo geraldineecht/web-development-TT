@@ -53,6 +53,20 @@ namespace Atos.Pages
         public string NombreEstado { get; set; }
         [BindProperty]
         public string NombrePais { get; set; }
+        [BindProperty]
+        public string Correo { get; set; }
+        [BindProperty]
+        public string AcercaDeMi { get; set; }
+        [BindProperty]
+        public string Habilidad1 { get; set; }
+        [BindProperty]
+        public string Habilidad2 { get; set; }
+        [BindProperty]
+        public string Habilidad3 { get; set; }
+        [BindProperty]
+        public string Habilidad4 { get; set; }
+        [BindProperty]
+        public string Habilidad5 { get; set; }
 
 
 
@@ -91,7 +105,7 @@ namespace Atos.Pages
 
             reader2.Close();
 
-            cmd.CommandText = "SELECT u.idAplicante, u.Telefono, u.CP, u.Direccion, r.NombreCiudad, z.NombreEstado, p.NombrePais FROM infocontacto u JOIN ciudad r ON u.idCiudad = r.idCiudad JOIN estado z ON r.idEstado = z.idEstado JOIN pais p ON z.idPais = p.idPais where u.idAplicante = " + idAplicante;
+            cmd.CommandText = "SELECT u.idAplicante, u.Telefono, u.CP, u.Direccion, r.NombreCiudad, z.NombreEstado, p.NombrePais, a.Correo FROM infocontacto u JOIN  ciudad r ON u.idCiudad = r.idCiudad JOIN  estado z ON r.idEstado = z.idEstado JOIN pais p ON z.idPais = p.idPais JOIN aplicante a ON a.idAplicante = u.idAplicante where u.idAplicante = " + idAplicante;
             var reader3 = cmd.ExecuteReader();
             reader3.Read();
 
@@ -101,8 +115,25 @@ namespace Atos.Pages
             NombreCiudad = reader3["NombreCiudad"].ToString();
             NombreEstado = reader3["NombreEstado"].ToString();
             NombrePais = reader3["NombrePais"].ToString();
+            Correo = reader3["Correo"].ToString();
 
             reader3.Close();
+            
+            cmd.CommandText = "SELECT * FROM sobremi where idAplicante = " + idAplicante;
+            var reader4 = cmd.ExecuteReader();
+            reader4.Read();
+
+            AcercaDeMi = reader4["AcercaDeMi"].ToString();
+            Habilidad1 = reader4["Habilidad1"].ToString();
+            Habilidad2 = reader4["Habilidad2"].ToString();
+            Habilidad3 = reader4["Habilidad3"].ToString();
+            Habilidad4 = reader4["Habilidad4"].ToString();
+            Habilidad5 = reader4["Habilidad5"].ToString();
+            
+
+            reader3.Close();
+
+
 
             conexion.Dispose();
 
