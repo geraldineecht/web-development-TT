@@ -185,15 +185,24 @@
                                     30:16 min
                                 </td>
                                 <td class="px-6 py-4">
-                                    <a href="https://www.goodreads.com/" target="_blank">
-                                        <span class="material-symbols-outlined pt-1">
-                                            file_open
-                                        </span>
-                                    </a>
-                                    <form method="post">
-                                        <p>@Html.DisplayFor(modelItem => item.idUser)</p>
-                                        <input type="submit" />
+                                    @*
+                                        <a href="https://www.goodreads.com/" target="_blank">
+                                            <span class="material-symbols-outlined pt-1">
+                                                file_open
+                                            </span>
+                                        </a>
+
+                                        @Html.DisplayFor(modelItem => item.idUser)
+                                    *@
+                                    <form method="get">
+
+                                        <label asp-for="idAdmin">@Html.DisplayFor(modelItem => item.idUser)</label>
+                                        
+                                        
+                                        <button type="submit">Submit</button>
                                     </form>
+                                    
+
                                 </td>
                                 <td class="px-6 py-4 text-right">
                                     <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline" target="_blank">Edit</a>
@@ -204,6 +213,7 @@
 
                     </tbody>
                 </table>
+                
             </div>
 
         </div>

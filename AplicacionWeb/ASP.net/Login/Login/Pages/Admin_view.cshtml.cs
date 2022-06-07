@@ -22,10 +22,12 @@ namespace Atos.Pages
         }
 
         public IList<Usuarios> ListaUsuarios { get; set; }
-
-
+        [BindProperty]
+        public string idAdmin { get; set; }
+        
         public void OnPost()
         {
+            Response.Redirect("CV?idAdmin=" + idAdmin);
         }
 
         public void OnGet()
@@ -52,11 +54,15 @@ namespace Atos.Pages
                     usr1.ApellidoPaterno = reader["ApellidoP"].ToString();
                     usr1.ApellidoMaterno = reader["ApellidoM"].ToString();
                     usr1.TipoPerfil = reader["TipoPerfil"].ToString();
-                    usr1.idUser = reader["idAplicante"].GetHashCode();
+                    usr1.idUser = reader.GetInt32(reader.GetOrdinal("idAplicante"));
                     ListaUsuarios.Add(usr1);
                 }
             }
             conexion.Dispose();
+
+            
+
+
         }
     }
 }

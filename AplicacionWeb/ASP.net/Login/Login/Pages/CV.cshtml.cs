@@ -10,9 +10,11 @@ namespace Atos.Pages
 {
     public class CVModel : PageModel
     {
+        
 
-        public void OnGet()
-        {   
+        public void OnGet(string idAdmin)
+        {
+            ViewData["idAdmin"] = idAdmin;
         }
     }
 }
