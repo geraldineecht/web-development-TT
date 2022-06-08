@@ -1,0 +1,974 @@
+﻿{
+  "Data_Engineering": [
+    {
+      "id": 1,
+      "question": " It's a collection of data items organized as a set of tables with columns and rows with pre-defined relationships between them",
+      "answer": "Relational database",
+      "option1": "Structured Query Language",
+      "option2": "Data warehouse",
+      "option3": "Non-relational database"
+    },
+    {
+      "id": 2,
+      "question": "Instead of the tabular schema of rows and columns, it uses a storage model that is optimized for the specific requirements of the data being stored",
+      "answer": "Non-relational database",
+      "option1": "Structured Query Language",
+      "option2": "Relational database",
+      "option3": "Data warehouse"
+    },
+    {
+      "id": 3,
+      "question": "What are the four popular types of relational databases?",
+      "answer": "Document data store, column-oriented database, key-value store and graph database",
+      "option1": "Document data store, Oracle Database, key-value store and IBM DB2",
+      "option2": "Microsoft SQL Server, column-oriented database, MySQL and graph database",
+      "option3": "Microsoft SQL Server, Oracle Database, MySQL and IBM DB2"
+    },
+    {
+      "id": 4,
+      "question": "Is it NOT a brand of non-relational databases",
+      "answer": "PostgreSQL",
+      "option1": "MongoDB",
+      "option2": "Cassandra",
+      "option3": "Neo4j"
+    },
+    {
+      "id": 5,
+      "question": "It's a central repository of integrated data from one or more disparate sources designed to enable and support data analysis activities ",
+      "answer": "Data warehouse",
+      "option1": "Relational database",
+      "option2": "Structured Query Language",
+      "option3": "Non-relational database"
+    },
+    {
+      "id": 6,
+      "question": "It is NOT related to big data",
+      "answer": "It cannot be analyzed for insights that improve decisions and give confidence for making strategic business moves",
+      "option1": "It's data that is so large, fast or complex that it’s difficult or impossible to process using traditional methods",
+      "option2": "You can extract great value for companies and organisations by analysing it",
+      "option3": "Its characteristics are defined by the four Vs"
+    },
+    {
+      "id": 7,
+      "question": "It's NOT a type of big data",
+      "answer": "Infrastructure data",
+      "option1": "Unstrucutred data",
+      "option2": "Semi-structured data",
+      "option3": "Structured data"
+    },
+    {
+      "id": 8,
+      "question": "These are the 4 Vs of data",
+      "answer": "Volume, velocity, variety and veracity",
+      "option1": "Vacousity, versatility, viability and verticality",
+      "option2": "Vigorousity, velocity, versatility and veracity",
+      "option3": "Visuality, virtuosity, vacousity and verticality"
+    },
+    {
+      "id": 9,
+      "question": "It is NOT a characteristic of OLTP systems",
+      "answer": "Supports extraction of data from the database for further analysis and the tables are not normalized",
+      "option1": "Supports insert, update and delete transformations on the database",
+      "option2": "OLTP systems generally have simpler queries that require less transactional time",
+      "option3": "It's a system for modification of online databases where the tables are normalized"
+    },
+    {
+      "id": 10,
+      "question": "It is NOT a characteristic of OLAP systems",
+      "answer": "OLAP systems generally have simpler queries that require less transactional time and the tables are normalized",
+      "option1": "OLAP queries generally have more complex queries which require more transactional time",
+      "option2": "Supports extraction of data from the database for further analysis and the tables are not normalized",
+      "option3": "It's a system for querying online databases"
+    },
+    {
+      "id": 11,
+      "question": "It refers to identifying and selecting only the features relevant to the prediction variable or desired output for the model creation",
+      "answer": "Feature selection",
+      "option1": "Feature engineering",
+      "option2": "Cross-validation",
+      "option3": "Synthetic feature"
+    },
+    {
+      "id": 12,
+      "question": "It is NOT a way to handle missing values in big data",
+      "answer": "Using the mean for categorical variables or always keeping the missing data",
+      "option1": "Using  imputation method for categorical data or Last Observation Carried Forward (LOCF) method",
+      "option2": "Predicting missing values or using algorithms that support missing values",
+      "option3": "Deleting rows with missing values or using Mean/Medians to fill missing values"
+    },
+    {
+      "id": 13,
+      "question": "Is is NOT a category of missing data",
+      "answer": "Missing Partly at Random (MPAR)",
+      "option1": "Missing Completely at Random (MCAR)",
+      "option2": "Missing at Random (MAR)",
+      "option3": "Missing Not at Random (MNAR)"
+    },
+    {
+      "id": 14,
+      "question": "It is not a built-in data sctructure in Python",
+      "answer": "Arrays",
+      "option1": "Dictionaries",
+      "option2": "Sets",
+      "option3": "Lists"
+    },
+    {
+      "id": 15,
+      "question": "It is a Python library used to manipulate data in objects called dataframes",
+      "answer": "Pandas",
+      "option1": "Numpy",
+      "option2": "Matplotlib",
+      "option3": "Scikit-learn"
+    },
+    {
+      "id": 16,
+      "question": "Whats is Hadoop?",
+      "answer": "A framework that specializes in big data and that can be used by professionals to analyze big data and help businesses to make decisions",
+      "option1": "A Python library used for machine learning tasks which features various classification, regression and clustering algorithms",
+      "option2": "A computer or system that provides resources, data, services, or programs to other computers, known as clients, over a network",
+      "option3": "A network management protocol used for automatically assigning IP addresses and other parameters to devices connected to the network"
+    },
+    {
+      "id": 17,
+      "question": "Which of the following statements about the differences between Apache Spark and MapReduce is NOT true?",
+      "answer": "MapReduce can process the data both in real-time and in batches",
+      "option1": "Spark stores data in memory (RAM) which makes it easier and faster to retrieve data when needed",
+      "option2": "MapReduce requires an external scheduler for jobs",
+      "option3": "Apache Spark runs approximately 100 times faster than MapReduce for big data processing"
+    },
+    {
+      "id": 18,
+      "question": "Which of the following is NOT one of the three APIs for manipulating and processing data in Spark?",
+      "answer": "Dictionaries",
+      "option1": "Datasets",
+      "option2": "DataFrames",
+      "option3": "RDDs"
+    },
+    {
+      "id": 19,
+      "question": "It is NOT one of the three main categories that comprise the Spark ecosystem",
+      "answer": "Internal packages",
+      "option1": "Core components",
+      "option2": "Language support",
+      "option3": "Cluster management"
+    },
+    {
+      "id": 20,
+      "question": "It's a type of architecture in which several processors simultaneously execute multiple, small calculations broken down from a larger, complex problem",
+      "answer": "Parallel computing",
+      "option1": "Vertical processing",
+      "option2": "Cloud computing",
+      "option3": "Scalable processing"
+    }
+  ],
+  "Data_Science": [
+    {
+      "id": 1,
+      "question": "What are the two types of learning in Machine Learning?",
+      "answer": "Supervised and unsupervised learning",
+      "option1": "Dependent and independent learning",
+      "option2": "Authorised and unathorised learning",
+      "option3": "Linear and non-linear learning"
+    },
+    {
+      "id": 2,
+      "question": "Which of the following Python libraries is used to create machine learning models?",
+      "answer": "Scikit-learn",
+      "option1": "Pandas",
+      "option2": "Matplotlib",
+      "option3": "Numpy"
+    },
+    {
+      "id": 3,
+      "question": "It refers to a model that performs well for very specific data but underperforms for new data",
+      "answer": "Overfitting ",
+      "option1": "Underfitting",
+      "option2": "Crossfitting",
+      "option3": "Superfitting"
+    },
+    {
+      "id": 4,
+      "question": "What are the two main types of supervised learning?",
+      "answer": "Regression and classification",
+      "option1": "Regression and clustering",
+      "option2": "Classification and clustering",
+      "option3": "Clustering and association"
+    },
+    {
+      "id": 5,
+      "question": "It's a machine learning technique used to find patterns (relations, structures etc.) in datasets",
+      "answer": "Association rule",
+      "option1": "Classification",
+      "option2": "Regression",
+      "option3": "Clustering"
+    },
+    {
+      "id": 6,
+      "question": "It's a predictive modeling problem where a class label is predicted for a given example of input data",
+      "answer": "Classification",
+      "option1": "Regression",
+      "option2": "Clustering",
+      "option3": "Association rule"
+    },
+    {
+      "id": 7,
+      "question": "It's an unsupervised machine learning task that involves automatically discovering natural grouping in data ",
+      "answer": "Clustering",
+      "option1": "Classification",
+      "option2": "Regression",
+      "option3": "Association rule"
+    },
+    {
+      "id": 8,
+      "question": "It's a supervised machine learning technique which is used to predict continuous values",
+      "answer": "Regression",
+      "option1": "Classification",
+      "option2": "Clustering",
+      "option3": "Association rule"
+    },
+    {
+      "id": 9,
+      "question": "It is NOT a filter method for feature selection",
+      "answer": "Forward selection",
+      "option1": "Linear discrimination analysis",
+      "option2": "ANOVA",
+      "option3": " Chi-Square"
+    },
+    {
+      "id": 10,
+      "question": "It is NOT a wrapper method for feature selection",
+      "answer": "Linear discrimination analysis",
+      "option1": "Forward selection",
+      "option2": "Backward selection",
+      "option3": "Recursive feature elimination"
+    },
+    {
+      "id": 11,
+      "question": "How would you calculate the Euclidean distance in Python for the points plot1 = [1,3] and plot2 = [2,5]?",
+      "answer": "euclidean_distance = sqrt( (plot1[0]-plot2[0])**2 + (plot1[1]-plot2[1])**2 )",
+      "option1": "euclidean_distance = sqrt( (plot1[1]-plot2[0])**2 + (plot1[0]-plot2[1])**2 )",
+      "option2": "euclidean_distance = sqrt( (plot1[1]-plot2[1])**2 + (plot1[0]-plot2[0])**2 )",
+      "option3": "euclidean_distance = sqrt( (plot1[0]-plot2[1])**2 + (plot1[1]-plot2[0])**2 )"
+    },
+    {
+      "id": 12,
+      "question": "Which algorithm can be used for inputting missing values of both categorical and continuous variables?",
+      "answer": " K-nearest neighbour (K-NN)",
+      "option1": "Linear regression",
+      "option2": "K-means clustering",
+      "option3": "Decision trees "
+    },
+    {
+      "id": 13,
+      "question": "What is the most appropriate algorithm to predict the probability of death from heart disease based on age, gender, and blood cholesterol level?",
+      "answer": "Logistic Regression",
+      "option1": "Linear regression ",
+      "option2": "K-means clustering",
+      "option3": "Apriori algorithm"
+    },
+    {
+      "id": 14,
+      "question": "It is NOT a type of bias that can occur during sampling",
+      "answer": "Climate bias",
+      "option1": "Selection bias",
+      "option2": "Undercoverage bias",
+      "option3": "Survivorship bias"
+    },
+    {
+      "id": 15,
+      "question": "It's the difference between the arithmetic mean of a group of values and the observed group of values",
+      "answer": "Residual Error",
+      "option1": "Root Mean Squared Error",
+      "option2": "Mean Absolute Error",
+      "option3": "Mean Squared Error"
+    },
+    {
+      "id": 16,
+      "question": "It's the difference between the actual value and the predicted value",
+      "answer": "Error",
+      "option1": "Residual error",
+      "option2": "Selection error",
+      "option3": "Undercoverage error"
+    },
+    {
+      "id": 17,
+      "question": "What are the three main methods to avoid overfitting?",
+      "answer": " Keep the model simple, use cross-validation techniques and use regularisation techniques",
+      "option1": "Make a complicated model, use a lot of features and increase validation loss",
+      "option2": "Avoid regularisation techniques, avoid feature engineering and keep the model simple",
+      "option3": "Make a complicated model,  avoid cross-validation techniques and increase training loss"
+    },
+    {
+      "id": 18,
+      "question": "It's the technique of converting data in such a way that it is normally distributed and has a standard deviation of 1 and a mean of 0",
+      "answer": "Standardization",
+      "option1": "Regularisation",
+      "option2": "Normalization",
+      "option3": "Cross-validation"
+    },
+    {
+      "id": 19,
+      "question": "It's the technique of converting all data values to lie between 1 and 0, also known as min-max scaling",
+      "answer": "Normalization",
+      "option1": "Standardization",
+      "option2": "Regularisation",
+      "option3": "Cross-validation"
+    },
+    {
+      "id": 20,
+      "question": "It's any of various model validation techniques for assessing how the results of a statistical analysis will generalize to an independent data set",
+      "answer": "Cross-validation",
+      "option1": "Normalization",
+      "option2": "Standardization",
+      "option3": "Regularisation"
+    }
+  ],
+  "Java_Developer": [
+    {
+      "id": 1,
+      "question": "What are constructors in Java",
+      "answer": "Refers to a block of code used to initialize an object. ",
+      "option1": "It’s a method itss called when the objects ends",
+      "option2": "It's  an object",
+      "option3": "It's called when  some method or attribute inside a class "
+    },
+    {
+      "id": 2,
+      "question": "What is the difference between equals() and == in Java?",
+      "answer": "Equals is a method provided by Object class and implements  operator == on this implementation, equals operator is for primitives and objects",
+      "option1": "Equals are for objects only and operator == are for primitives only",
+      "option2": "Equals are for primitives only, and operator == are for objects only",
+      "option3": "== are for objects and for primitives"
+    },
+    {
+      "id": 3,
+      "question": "When can you use the super keyword?",
+      "answer": "On a child class",
+      "option1": "On any class",
+      "option2": "On superclass",
+      "option3": "Only in a constructor"
+    },
+    {
+      "id": 4,
+      "question": "What is the importance of reflection in Java?",
+      "answer": "Is a runtime API for inspecting and changing the behavior of methods, classes, and interfaces.",
+      "option1": "Methods can see inside his metadata ",
+      "option2": "Is a method change methods",
+      "option3": "Is all about interfaces "
+    },
+    {
+      "id": 5,
+      "question": "Can you call a constructor of a class inside another constructor?",
+      "answer": "Yes this  call has the name of constructor chaining",
+      "option1": "Yes it's possible in java ",
+      "option2": "No, java  doesn't not provide any mechanism",
+      "option3": "No"
+    },
+    {
+      "id": 6,
+      "question": "What is a package in Java?",
+      "answer": "Are the collection of related classes and interfaces which are bundled together",
+      "option1": "A collection of Attributes and methods",
+      "option2": "Are the collection of related interfaces which are bundled together",
+      "option3": "It's a set of clases called by a name"
+    },
+    {
+      "id": 7,
+      "question": "what's a pointer on java",
+      "answer": "Java doesn't have pointers, JVM is responsible for implicit memory allocation ",
+      "option1": "It's a concept inherited from   language C for memory allocation",
+      "option2": "It’s a java keyword for handling memory",
+      "option3": "It's a concept inherited from language C for controlling memory leaks"
+    },
+    {
+      "id": 8,
+      "question": "What are access modifiers in Java?",
+      "answer": "Are special keywords that are used to restrict the access of a class, data member, and method from  another class or from packages and child classes",
+      "option1": "Are special directives for restric acces to clases ",
+      "option2": "Restricts classes and attributes   to be  accessed from other class",
+      "option3": "Give access to attributes from other classes or child classes"
+    },
+    {
+      "id": 9,
+      "question": "Define a Java Class.",
+      "answer": "A class in Java is a blueprint that contains  methods and attributes, and interfaces",
+      "option1": "A class in Java is a blueprint that contains  methods that describes  an object",
+      "option2": "A class in Java is a blueprint that contains  methods and interfaces",
+      "option3": "A class in Java is a blueprint that contains  methods and attributes"
+    },
+    {
+      "id": 10,
+      "question": "What is final keyword in Java?",
+      "answer": "Can be used in different context for attributes, methods and classes ",
+      "option1": "Only with variables to define constant",
+      "option2": "Only whit methods to preveen overriding",
+      "option3": "Only  in a class to prevent from extending  to other class"
+    },
+    {
+      "id": 11,
+      "question": "What is Java String Pool?",
+      "answer": "Refers to a collection of Strings which are stored in heap memory",
+      "option1": "A set of strings stored in memory",
+      "option2": "Collection of string on the stack memory",
+      "option3": "It's a data structure  like Arraylist for store a collection of strings"
+    },
+    {
+      "id": 12,
+      "question": "What is a Map in Java?",
+      "answer": "Data structure to save a key -value pairs  bounded to a hash code",
+      "option1": "Data structure to save values that gets a hash code from this value",
+      "option2": "Data structure to save keys that gets a hash code from this value",
+      "option3": "It generates a hash code for any type of objets stored on a map "
+    },
+    {
+      "id": 13,
+      "question": "What is runtime polymorphism or dynamic method dispatch?",
+      "answer": "Is a process in which a call to an overridden method is resolved at runtime rather than at compile-time",
+      "option1": "When you use a method a on runtime",
+      "option2": "When you use polymorphism in a couple of classes",
+      "option3": "Is a process in which a call to an overridden method is resolved in compilation time"
+    },
+    {
+      "id": 14,
+      "question": "What are the different types of inheritance in Java?",
+      "answer": "All the above",
+      "option1": "Single Inheritance",
+      "option2": "Multilevel Inheritance",
+      "option3": "Hierarchical Inheritance"
+    },
+    {
+      "id": 15,
+      "question": "Can you override a private or static method in Java?",
+      "answer": "You cannot override a private or static method in Java. ",
+      "option1": "Using the keyword override on a method",
+      "option2": "Its possible  thought overloading ",
+      "option3": "You can use inherance for override"
+    },
+    {
+      "id": 16,
+      "question": "Multiple inheritances is supported by Java?",
+      "answer": "No, an alternative its implementing classes ",
+      "option1": "Yes it's possible in java ",
+      "option2": "Yes using extends keyword followed by the list of super classes",
+      "option3": "No you can't extends form multiple classes"
+    },
+    {
+      "id": 17,
+      "question": "What is object cloning in Java?",
+      "answer": "Create a copy of an object  with the same state",
+      "option1": "Only using clone method",
+      "option2": "Copy some state of an object",
+      "option3": "Only manual"
+    },
+    {
+      "id": 18,
+      "question": "What's JDK?",
+      "answer": "It is the tool necessary to compile, document, and package Java programs.",
+      "option1": "Refers to a runtime environment in which Java bytecode can be executed.",
+      "option2": "It is an abstract machine. It is a specification that provides a run-time environment in which Java bytecode can be executed.",
+      "option3": "All the above"
+    },
+    {
+      "id": 19,
+      "question": "What's JVM ?",
+      "answer": "It is an abstract machine. It is a specification that provides a run-time environment in which Java bytecode can be executed.",
+      "option1": "It is the tool necessary to compile, document, and package Java programs.",
+      "option2": "Refers to a runtime environment in which Java bytecode can be executed.",
+      "option3": "All the above"
+    },
+    {
+      "id": 20,
+      "question": "What's JRE ?",
+      "answer": "Refers to a runtime environment in which Java bytecode can be executed.",
+      "option1": "It is the tool necessary to compile, document, and package Java programs.",
+      "option2": "It is an abstract machine. It is a specification that provides a run-time environment in which Java bytecode can be executed.",
+      "option3": "All the above"
+    }
+  ],
+  ".Net_Developer": [
+    {
+      "id": 1,
+      "question": "Mechanism in which one object acquires all the properties and behaviors of a parent object.",
+      "answer": "Inheritance",
+      "option1": "Abstraction",
+      "option2": "Polymorphism",
+      "option3": "Encapsulation"
+    },
+    {
+      "id": 2,
+      "question": "Ability of an object to take many forms. This helps us perform the same action in different ways.",
+      "answer": "Polymorphism",
+      "option1": "Encapsulation",
+      "option2": "Abstraction",
+      "option3": "Inheritance"
+    },
+    {
+      "id": 3,
+      "question": "Mechanism to wrap up variables(data) and methods(code) together as a single unit. It is the process of hiding information details and protecting data and behavior of the object.",
+      "answer": "Encapsulation",
+      "option1": "Abstraction",
+      "option2": "Polymorphism",
+      "option3": "Inheritance"
+    },
+    {
+      "id": 4,
+      "question": "Process of hiding certain details and showing only essential information to the user",
+      "answer": "Abstraction",
+      "option1": "Inheritance",
+      "option2": "Polymorphism",
+      "option3": "Encapsulation"
+    },
+    {
+      "id": 5,
+      "question": "What is overloading?",
+      "answer": "When two or more methods in the same class have the same name but different parameters.",
+      "option1": "When two or more methods in the same class have the same parameters but different name.",
+      "option2": "When the method signature (name and parameters) are the same in the superclass and the child class",
+      "option3": "When the method signature (name and parameters) are different in the superclass and the child class"
+    },
+    {
+      "id": 6,
+      "question": "What is overriding?",
+      "answer": "When the method signature (name and parameters) are the same in the superclass and the child class",
+      "option1": "When two or more methods in the same class have the same name but different parameters",
+      "option2": "When the method signature (name and parameters) are different in the superclass and the child class",
+      "option3": "When two or more methods in the same class have the same paramters but different name."
+    },
+    {
+      "id": 7,
+      "question": "Contains definitions for a group of related functionalities that a non-abstract class or a struct must implement.",
+      "answer": "Interface",
+      "option1": "Abstract class",
+      "option2": "Interface",
+      "option3": "Sealed class"
+    },
+    {
+      "id": 8,
+      "question": "Indicate that a class is intended only to be a base class of other classes, not instantiated on its own",
+      "answer": "Abstract class",
+      "option1": "Interface",
+      "option2": "Interface",
+      "option3": "Sealed class"
+    },
+    {
+      "id": 9,
+      "question": "What are unit tests?",
+      "answer": "focus on a single part of a whole application in total isolation, usually, a single class or function.",
+      "option1": "functions that runs on the central processing unit.",
+      "option2": "list of actions or event steps typically defining the interactions between a role.",
+      "option3": "test parts of the application to work together as a whole."
+    },
+    {
+      "id": 10,
+      "question": "What is integration test?",
+      "answer": "test parts of the application to work together as a whole.",
+      "option1": "list of actions or event steps typically defining the interactions between a role.",
+      "option2": "focus on a single part of a whole application in total isolation, usually, a single class or function.",
+      "option3": "functions that runs on the central processing unit"
+    },
+    {
+      "id": 11,
+      "question": "What is public modifier?",
+      "answer": "means that it can be accessed by any class in any assembly, which includes the class itself.",
+      "option1": "means it can only be accessed by the class itself, or accessed by a class that inherits it and that class can be in any assembly",
+      "option2": "means it can be accessed by the class itself or by any class in the assembly but can't be accessed at all outside of the assembly unless by the class itself (i.e. it is a partial class)",
+      "option3": "means that it can only be accessed by the class itself"
+    },
+    {
+      "id": 12,
+      "question": "What is protected modifier?",
+      "answer": "means it can only be accessed by the class itself, or accessed by a class that inherits it and that class can be in any assembly",
+      "option1": "means that it can be accessed by any class in any assembly, which includes the class itself.",
+      "option2": "means it can be accessed by the class itself or by any class in the assembly but can't be accessed at all outside of the assembly unless by the class itself (i.e. it is a partial class)",
+      "option3": "means that it can only be accessed by the class itself"
+    },
+    {
+      "id": 13,
+      "question": "What is internal modifier?",
+      "answer": "means it can be accessed by the class itself or by any class in the assembly but can't be accessed at all outside of the assembly unless by the class itself ",
+      "option1": "means that it can be accessed by any class in any assembly, which includes the class itself.",
+      "option2": "means it can only be accessed by the class itself, or accessed by a class that inherits it and that class can be in any assembly",
+      "option3": "means that it can only be accessed by the class itself"
+    },
+    {
+      "id": 14,
+      "question": "What is private modifier?",
+      "answer": "means that it can only be accessed by the class itself",
+      "option1": "means it can only be accessed by the class itself, or accessed by a class that inherits it and that class can be in any assembly",
+      "option2": "means it can be accessed by the class itself or by any class in the assembly but can't be accessed at all outside of the assembly unless by the class itself (i.e. it is a partial class",
+      "option3": "means that it can be accessed by any class in any assembly, which includes the class itself."
+    },
+    {
+      "id": 15,
+      "question": "What is IEnumerable?",
+      "answer": "is a list or a container which can hold some items. You can iterate through each element. You can not edit the items like adding, deleting, updating, etc. instead you just use a container to contain a list of items. It is the most basic type of list container",
+      "option1": "derives from IEnumerable and extends it’s functionality to add, remove, update element in the list. ICollection also holds the count of elements in it and we does not need to iterate over all elements to get total number of elements",
+      "option2": "extends ICollection. An IList can perform all operations combined from IEnumerable and ICollection, and some more operations like inserting or removing an element in the middle of a list.",
+      "option3": "generates a LINQ to SQL expression that is executed over the database layer. Instead of the generating a Func<T, bool> like the ones above, IQueryable generates an expression tree and gives Expression<Func<T, bool>> that is executed over the database layer to get data set."
+    },
+    {
+      "id": 16,
+      "question": "What is ICollection?",
+      "answer": "derives from IEnumerable and extends it’s functionality to add, remove, update element in the list. ICollection also holds the count of elements in it and we does not need to iterate over all elements to get total number of elements",
+      "option1": "is a list or a container which can hold some items. You can iterate through each element. You can not edit the items like adding, deleting, updating, etc. instead you just use a container to contain a list of items. It is the most basic type of list container",
+      "option2": "extends ICollection. An IList can perform all operations combined from IEnumerable and ICollection, and some more operations like inserting or removing an element in the middle of a list.",
+      "option3": "generates a LINQ to SQL expression that is executed over the database layer. Instead of the generating a Func<T, bool> like the ones above, IQueryable generates an expression tree and gives Expression<Func<T, bool>> that is executed over the database layer to get data set."
+    },
+    {
+      "id": 17,
+      "question": "What is IList?",
+      "answer": "extends ICollection. An IList can perform all operations combined from IEnumerable and ICollection, and some more operations like inserting or removing an element in the middle of a list.",
+      "option1": "is a list or a container which can hold some items. You can iterate through each element. You can not edit the items like adding, deleting, updating, etc. instead you just use a container to contain a list of items. It is the most basic type of list container",
+      "option2": "derives from IEnumerable and extends it’s functionality to add, remove, update element in the list. ICollection also holds the count of elements in it and we does not need to iterate over all elements to get total number of elements",
+      "option3": "generates a LINQ to SQL expression that is executed over the database layer. Instead of the generating a Func<T, bool> like the ones above, IQueryable generates an expression tree and gives Expression<Func<T, bool>> that is executed over the database layer to get data set."
+    },
+    {
+      "id": 18,
+      "question": "What is IQueryable?",
+      "answer": "generates a LINQ to SQL expression that is executed over the database layer. Instead of the generating a Func<T, bool> like the ones above, IQueryable generates an expression tree and gives Expression<Func<T, bool>> that is executed over the database layer to get data set.",
+      "option1": "is a list or a container which can hold some items. You can iterate through each element. You can not edit the items like adding, deleting, updating, etc. instead you just use a container to contain a list of items. It is the most basic type of list container",
+      "option2": "extends ICollection. An IList can perform all operations combined from IEnumerable and ICollection, and some more operations like inserting or removing an element in the middle of a list.",
+      "option3": "derives from IEnumerable and extends it’s functionality to add, remove, update element in the list. ICollection also holds the count of elements in it and we does not need to iterate over all elements to get total number of elements"
+    },
+    {
+      "id": 19,
+      "question": " How can we sort the elements of the Array in descending order?",
+      "answer": "Sort()",
+      "option1": "Order()",
+      "option2": "OrderBy()",
+      "option3": "OrderDesc()"
+    },
+    {
+      "id": 20,
+      "question": "The correct way of incrementing the operators are:",
+      "answer": "d+=1",
+      "option1": "d++1",
+      "option2": "d=+1",
+      "option3": "++d++"
+    }
+  ],
+  "QA_Automation": [
+    {
+      "id": 1,
+      "question": "What is automation testing?",
+      "answer": "Process of automating the manual processes to test the application.",
+      "option1": "Process of using scripting for developing tools to create test cases.",
+      "option2": "Process of defining the test oracle.",
+      "option3": "Process of automating data for test cases."
+    },
+    {
+      "id": 2,
+      "question": "What is record and playback?",
+      "answer": "Test automation approach where a tool capture the activity of the user and then imitates it.",
+      "option1": "Test automation type that allows the user to capture the activity and the time execution of a test case.",
+      "option2": "Functions in an automated framework for test case execution.",
+      "option3": "Testing time where the output is analyzed for quality process."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following statements BEST captures the purpose of XPath in Selenium automation?",
+      "answer": "To locate objects on a web page",
+      "option1": "To create XPath expressions",
+      "option2": "To describe the appearance of HTML on a screen",
+      "option3": "To describe a tree format"
+    },
+    {
+      "id": 4,
+      "question": "Under what conditions a test case must be automated?",
+      "answer": "The test ensures the previous functionality didn’t break after a new change.",
+      "option1": "The software or the feature under the test changes frequently.",
+      "option2": "Exploratory testing is needed.",
+      "option3": "ROI takes more time than expected."
+    },
+    {
+      "id": 5,
+      "question": "What is not a type of locator in Selenium?",
+      "answer": "Image recognition.",
+      "option1": "ID.",
+      "option2": "XPATH.",
+      "option3": "Text"
+    },
+    {
+      "id": 6,
+      "question": "What is the best definition for test case",
+      "answer": "Test Case is a set of actions executed to verify a particular feature or functionality of your software application.",
+      "option1": "Focused more “what to test” than “how to test”.",
+      "option2": "A test case contains high-level documentation which describes an end to end functionality to be tested",
+      "option3": "Are mostly single line statement that tells what should be tested"
+    },
+    {
+      "id": 7,
+      "question": "What is regression testing?",
+      "answer": "Type of testing that is done to verify that a code change in the software does not impact the existing functionality of the product.",
+      "option1": "Type of testing that is done to verify that new functionalities does not impact the database.",
+      "option2": "Is a type of testing used used in waterfall model for test cases development.",
+      "option3": "Type of testing focused in finding new scenarios for test case development."
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is the BEST approach for locating elements?",
+      "answer": "Use IDs.",
+      "option1": "Use class names.",
+      "option2": "Use Xpath",
+      "option3": "Use the link text."
+    },
+    {
+      "id": 9,
+      "question": "What is not an advantage of page objects.",
+      "answer": "A Page Object does not need to cover the whole page or form. It may control a section or other specific part of it",
+      "option1": "It reduces cost and maintenance efforts for test automation scripts",
+      "option2": "It gives a clear separation between the business and the technical parts for the test automation design",
+      "option3": "It encapsulates all operations on the SUT’s GUI in one layer"
+    },
+    {
+      "id": 10,
+      "question": "What is the main advantage of locating web page elements by their ID?",
+      "answer": "Because if a web page is valid XML, this attribute is unique, so element is found unambiguously",
+      "option1": "Because the method for finding elements by id has the shortest name.",
+      "option2": "Because all HTML tags have that attribute",
+      "option3": "Because this attribute can be used in all location strategies"
+    },
+    {
+      "id": 11,
+      "question": "What is page object model?",
+      "answer": "Is a design pattern that creates an object repository for sorting all web elements.",
+      "option1": "Is an extenssion of an object in Automation Frameworks.",
+      "option2": "Is a design pattern for object classes in Object-oriented programmin.",
+      "option3": "Is a WebPage that contains all object elements in a module."
+    },
+    {
+      "id": 12,
+      "question": "Is not a type of automating testing?",
+      "answer": "Architecture testing",
+      "option1": "Unit Testing",
+      "option2": "Integration Testing",
+      "option3": "Acceptance Testing"
+    },
+    {
+      "id": 13,
+      "question": "What is test suite?",
+      "answer": "Set of tests which helps testers in executing and reporting the test execution status.",
+      "option1": "Set of instructions that testers uses for executing and reporting the test execution status.",
+      "option2": "Set of tests scenarios which helps testers in executing and reporting the test execution status.",
+      "option3": "Set of high level instructions for testers."
+    },
+    {
+      "id": 14,
+      "question": "When is feasible to automate?",
+      "answer": "Repetitive tasks.",
+      "option1": "Tasks that require external hardware.",
+      "option2": "Task that require ET.",
+      "option3": "All must be automated."
+    },
+    {
+      "id": 15,
+      "question": "What is the first action to do in the STLC?",
+      "answer": "Requirement analysis.",
+      "option1": "Test case design and development.",
+      "option2": "Test Plan",
+      "option3": "Test environment set up."
+    },
+    {
+      "id": 16,
+      "question": "Which is a way to use the css selector in selenium?",
+      "answer": "All of avobe",
+      "option1": "Inline Style",
+      "option2": "External and internal style.",
+      "option3": "Browser default value."
+    },
+    {
+      "id": 17,
+      "question": "Which of the following XPATH expressions is valid relative xpath for a hyperlink tag in a HTML document?",
+      "answer": "//*[@id='gb']/div/div[1]/div/div[1]/a",
+      "option1": "/html/body/div[1]/div[1]/div/div/div/div[1]/div/div[1]/a",
+      "option2": "/div/div/div/div[1]/div/div[1]/a",
+      "option3": "/[@id='gb']/div/div[1]/div/div[1]"
+    },
+    {
+      "id": 18,
+      "question": "You have to wait for the availability of an element where that is not time-dependant, which wait is the most suitable for this situation.",
+      "answer": "Explicit wait.",
+      "option1": "Implicit global wait.",
+      "option2": "Implicit wait.",
+      "option3": "None of avobe."
+    },
+    {
+      "id": 19,
+      "question": "How can the entire browser and all of its tabs be closed at once with Selenium when you have more than one tab opened?",
+      "answer": "driver.quit()",
+      "option1": "driver.close('ALL')",
+      "option2": "driver.close()",
+      "option3": "driver.quit('ALL')"
+    },
+    {
+      "id": 20,
+      "question": "Which type of XPATH gives you the full path of an object?",
+      "answer": "Absolute xpath",
+      "option1": "Relative xpath",
+      "option2": "a) and b)",
+      "option3": "None of them."
+    }
+  ],
+  "Front_End": [
+    {
+      "id": 1,
+      "question": "What is the main purpose of HTML?",
+      "answer": "To display and structure the content inside of a web page",
+      "option1": "To write text inside of a web page",
+      "option2": "To create a likeable user interface",
+      "option3": "To give styles to the content of a web page"
+    },
+    {
+      "id": 2,
+      "question": "What is the main porpuse of CSS?",
+      "answer": "To style and layout web using a family of standard properties for each Object",
+      "option1": "To create a likeable user interface",
+      "option2": "To display the content of a web page",
+      "option3": "To give responsiveness to a web page"
+    },
+    {
+      "id": 3,
+      "question": "What is a css preprocessor?",
+      "answer": "A css preprocessor is a program that lets you generate css from the preprocessor's own unique syntax",
+      "option1": "Is the motor from a web browser that interprets the css and applies it to the html",
+      "option2": "Is a standard to write css",
+      "option3": "Is a css framework"
+    },
+    {
+      "id": 4,
+      "question": "What is JavaScript?",
+      "answer": "JavaScript is a multi-paradigm scripting Language, that supports event-drive, functional, imperative, procedural, object-oriented programming",
+      "option1": "JavaScript is a Static Typed Object Oriented Programming Language",
+      "option2": "JavaScript is a Dynamic Functional Programming Language",
+      "option3": "avaScript is a procedural programming language"
+    },
+    {
+      "id": 5,
+      "question": "What is the DOM in Javascript?",
+      "answer": "Is the Document Object Model, a programming web interface for web documents that a node for each element",
+      "option1": "Is a programming web interface that allows the developer to control the browser window native APIS",
+      "option2": "Is a programming web interface that allows the developer to control the css from the current document",
+      "option3": "None of above"
+    },
+    {
+      "id": 6,
+      "question": "Why do we use the DOM for?",
+      "answer": "The DOM interface allows the developer to dynamically change the document object,  depending on events or http calls to a server, or only for mere user interaction",
+      "option1": "used to host styles",
+      "option2": "used to host javascript script files",
+      "option3": "used to host only html"
+    },
+    {
+      "id": 7,
+      "question": "What is a JavaScript Closure?",
+      "answer": "is function enclosed with references to its surrounding state",
+      "option1": "is a class",
+      "option2": "is a design pattern",
+      "option3": "is javascript module"
+    },
+    {
+      "id": 8,
+      "question": "What is the difference between a regular function and an arrow function",
+      "answer": "the value of 'this' keyword",
+      "option1": "it's syntax",
+      "option2": "arrow function has implicit return",
+      "option3": "none"
+    },
+    {
+      "id": 9,
+      "question": "Difference between function.prototype.bind and function.prototype.call",
+      "answer": ".bind adds a given value for  'this', and call does the same but also executes the function",
+      "option1": "both .bind and .call add a given value for 'this'",
+      "option2": ".bind executes the function with the given value for 'this' and call just gives a value to 'this'",
+      "option3": ".call does not add value for 'this', and .bind does add a value for 'this' but does not execute the function"
+    },
+    {
+      "id": 10,
+      "question": "What does the function addEventListener do?",
+      "answer": "executes a piece of code once a specified event is triggered inside of a given DOM node",
+      "option1": "executes a piece of code once a event is triggered on the dom",
+      "option2": "executes a piece of code once a event is triggered on the window object",
+      "option3": "executes a piece of code once a button is clicked"
+    },
+    {
+      "id": 11,
+      "question": "Whats the difference between 'var' and 'let'?",
+      "answer": "both are for variables but each one are permited and used depending of the execution context of a given scope",
+      "option1": "there is no difference",
+      "option2": "var is for variable and let for constant values",
+      "option3": "var and let are the same but let is newer, it was introduced in ES6"
+    },
+    {
+      "id": 12,
+      "question": "What is a JavaScript Front End Framework?",
+      "answer": "Is a collection of JavaScript libraries",
+      "option1": "Is a code library",
+      "option2": "Is a design workflow",
+      "option3": "Is a CLI tool"
+    },
+    {
+      "id": 13,
+      "question": "Which ones of the next tools are JavaScript Front end frameworks?",
+      "answer": "Angular, Vue, ReactJS",
+      "option1": "Spring, Hiberbate, Play.",
+      "option2": "Ktor, Kweb, Javalin",
+      "option3": "Meteor.js, Nest.js, Koa.js, express.js"
+    },
+    {
+      "id": 14,
+      "question": "Is inheritence possible on vanilla JavaScript?",
+      "answer": "Yes",
+      "option1": "No",
+      "option2": "Maybe",
+      "option3": "Somehow"
+    },
+    {
+      "id": 15,
+      "question": "how can you inherit properties from a object to other without classes?",
+      "answer": "Yes, you can inherit using the prototype chain",
+      "option1": "No, you need to use classes",
+      "option2": "Maybe",
+      "option3": "Somehow"
+    },
+    {
+      "id": 16,
+      "question": "what's the shadow DOM?",
+      "answer": "Is a object that allows to Hidden DOM trees to be attached to elements in the regular DOM",
+      "option1": "Is the part of the DOM that is rendering but no visible yet",
+      "option2": "Is a object that allows to hide DOM elements",
+      "option3": "Is a object that allows to see all Hidden DOM Elements"
+    },
+    {
+      "id": 17,
+      "question": "what's the main use of the shadow DOM?",
+      "answer": "controlling attaching, de-attaching, and encapsulate components inside of a web application",
+      "option1": "controlling html elements",
+      "option2": "controlling all properties surrounding html elements",
+      "option3": "creating declarative custom html elements"
+    },
+    {
+      "id": 18,
+      "question": "What is a spread operator and what is it used for?",
+      "answer": "the spread operator allows to get the items from inside an array or a object and put them inside another object",
+      "option1": "the spred operator allows to concadenate various strings",
+      "option2": "the spread operator allows to increment the value of a numeric variable; using self reference",
+      "option3": "the spread operator allows to have infinite number of parameters inside of function and this parameters will be part of an array"
+    },
+    {
+      "id": 19,
+      "question": "What is a rest operator and thwat is it used for?",
+      "answer": "the rest operator allows to have infinite number of parameters inside of function and this parameters will be part of an array",
+      "option1": "the rest operator allows to concadenate various strings",
+      "option2": "the rest operator allows to increment the value of a numeric variable; using self reference",
+      "option3": "the rest operator allows to get the items from inside an array or a object and put them inside another object"
+    },
+    {
+      "id": 20,
+      "question": "What is 'use strict' used for?",
+      "answer": "disables silent errors for stric errors, and enables code optimization for javascript engines, prohibits certain types of syntax",
+      "option1": "allows the use of types on vanilla javascript",
+      "option2": "allows a faster interpretation of our code",
+      "option3": "enables sloppy mode for the javascript engines"
+    }
+  ]
+}
