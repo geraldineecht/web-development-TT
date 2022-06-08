@@ -53,7 +53,7 @@ namespace Atos.Pages
                     usr1.ApellidoPaterno = reader["ApellidoP"].ToString();
                     usr1.ApellidoMaterno = reader["ApellidoM"].ToString();
                     usr1.TipoPerfil = reader["TipoPerfil"].ToString();
-                    usr1.idUser = reader.GetInt32(reader.GetOrdinal("idAplicante"));
+                    usr1.idUser = Convert.ToInt32(reader["idAplicante"].ToString());
                     ListaUsuarios.Add(usr1);
                 }
             }

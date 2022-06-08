@@ -14,7 +14,7 @@ namespace Atos.Pages
 {
     public class CVModel : PageModel
     {
-        
+        int idAplicante = 1;
 
         private readonly IConfiguration _configuration;
         public CVModel(IConfiguration configuration)
@@ -125,10 +125,7 @@ namespace Atos.Pages
 
         
 
-
-
-
-        public void OnGet(int idAplicante = 9)
+        public void OnGet(int idAplicante = 1)
         {
             
             string connectionString = _configuration.GetConnectionString("myDb1");
