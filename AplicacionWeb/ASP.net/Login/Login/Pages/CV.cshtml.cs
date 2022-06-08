@@ -14,7 +14,7 @@ namespace Atos.Pages
 {
     public class CVModel : PageModel
     {
-        int idAplicante = 9;
+        
 
         private readonly IConfiguration _configuration;
         public CVModel(IConfiguration configuration)
@@ -123,13 +123,14 @@ namespace Atos.Pages
         public IList<Certificaciones> ListaCertificaciones { get; set; }
         public IList<Idiomas> ListaIdiomas { get; set; }
 
+        
 
 
 
 
-
-        public void OnGet()
+        public void OnGet(int idAplicante = 9)
         {
+            
             string connectionString = _configuration.GetConnectionString("myDb1");
             MySqlConnection conexion = new MySqlConnection(connectionString);
             conexion.Open();

@@ -27,7 +27,7 @@ namespace Atos.Pages
         
         public void OnPost()
         {
-            Response.Redirect("CV?idAdmin=" + idAdmin);
+            
         }
 
         public void OnGet()
