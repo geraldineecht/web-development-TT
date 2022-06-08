@@ -9,9 +9,11 @@
     <None Remove="MySql.Data" />
     <None Remove="Model\" />
     <None Remove="Controllers\" />
+    <None Remove="Newtonsoft.Json" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MySql.Data" Version="8.0.29" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
