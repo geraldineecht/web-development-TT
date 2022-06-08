@@ -231,31 +231,31 @@
                                     <div class="">
                                         <div class="mb-1 text-base font-medium text-blue-700">@Model.Habilidad1</div>
                                         <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 h-6 align-middle">
-                                            <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center  p-0.5 leading-none rounded-full  h-6" style="width: 55%"> 65%</div>
+                                            <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center  p-0.5 leading-none rounded-full  h-6" style="width: @Model.PorcHabilidad1_"> @Model.PorcHabilidad1%</div>
                                         </div>
                                     </div>
                                     <div class="">
                                         <div class="mb-1 text-base font-medium text-blue-700">@Model.Habilidad2</div>
                                         <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 h-6 align-middle">
-                                            <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center  p-0.5 leading-none rounded-full  h-6" style="width: 55%"> 65%</div>
+                                            <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center  p-0.5 leading-none rounded-full  h-6" style="width: @Model.PorcHabilidad2_"> @Model.PorcHabilidad2%</div>
                                         </div>
                                     </div>
                                     <div class="">
                                         <div class="mb-1 text-base font-medium text-blue-700">@Model.Habilidad3</div>
                                         <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 h-6 align-middle">
-                                            <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center  p-0.5 leading-none rounded-full  h-6" style="width: 40%"> 65%</div>
+                                            <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center  p-0.5 leading-none rounded-full  h-6" style="width: @Model.PorcHabilidad3_"> @Model.PorcHabilidad3%</div>
                                         </div>
                                     </div>
                                     <div class="">
                                         <div class="mb-1 text-base font-medium text-blue-700">@Model.Habilidad4</div>
                                         <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 h-6 align-middle">
-                                            <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center  p-0.5 leading-none rounded-full  h-6" style="width: 55%"> 65%</div>
+                                            <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center  p-0.5 leading-none rounded-full  h-6" style="width: @Model.PorcHabilidad4_"> @Model.PorcHabilidad4%</div>
                                         </div>
                                     </div>
                                     <div class="">
                                         <div class="mb-1 text-base font-medium text-blue-700">@Model.Habilidad5</div>
                                         <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700 h-6 align-middle">
-                                            <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center  p-0.5 leading-none rounded-full  h-6" style="width: 55%"> 65%</div>
+                                            <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center  p-0.5 leading-none rounded-full  h-6" style="width: @Model.PorcHabilidad5_"> @Model.PorcHabilidad5%</div>
                                         </div>
                                     </div>
 
@@ -275,35 +275,21 @@
                                             <div class="flex space-x-4">
                                                 <div class="flex-1 min-w-0">
                                                     <p class="text-base font-medium text-blue-700 truncate dark:text-white">
-                                                        Puesto Desempeñado
+                                                        @Model.PuestoExperiencia
                                                     </p>
                                                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                                                        Empresa
+                                                        @Model.EmpresaExperiencia
                                                     </p>
                                                 </div>
                                                 <p class="text-base font-medium text-gray-900  dark:text-white">
-                                                    Agosto 2020 - Agosto 2021
+                                                    @Model.MesExperienciaInicio @Model.AnioExperienciaInicio - @Model.MesExperienciaFin @Model.AnioExperienciaFin
                                                 </p>
                                             </div>
-                                            <p class="font-normal text-gray-700 dark:text-gray-400 mt-4">Phasellus posuere id neque ac semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis iaculis dictum odio dapibus ultrices. Proin fringilla interdum finibus. Aliquam ut laoreet ex, in vestibulum dui. Donec et massa non risus pharetra imperdiet. Nam auctor iaculis dolor, sit amet interdum purus convallis lobortis. Phasellus vitae interdum sem.</p>
+                                            <div style="word-break: break-all;">
+                                                <p class="font-normal text-gray-700 dark:text-gray-400 mt-4">@Model.Actividades</p>
+                                            </div>
                                         </div>
 
-                                        <div class="pt-4">
-                                            <div class="flex space-x-4">
-                                                <div class="flex-1 min-w-0">
-                                                    <p class="text-base font-medium text-blue-700 truncate dark:text-white">
-                                                        Puesto Desempeñado
-                                                    </p>
-                                                    <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                                                        Empresa
-                                                    </p>
-                                                </div>
-                                                <p class="text-base font-medium text-gray-900  dark:text-white">
-                                                    Agosto 2020 - Agosto 2021
-                                                </p>
-                                            </div>
-                                            <p class="font-normal text-gray-700 dark:text-gray-400 mt-4">Phasellus posuere id neque ac semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis iaculis dictum odio dapibus ultrices. Proin fringilla interdum finibus. Aliquam ut laoreet ex, in vestibulum dui. Donec et massa non risus pharetra imperdiet. Nam auctor iaculis dolor, sit amet interdum purus convallis lobortis. Phasellus vitae interdum sem.</p>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -320,23 +306,94 @@
                                             <div class="flex space-x-4">
                                                 <div class="flex-1 min-w-0">
                                                     <p class="text-base font-medium text-blue-700 truncate dark:text-white">
-                                                        Nombre Carrera
+                                                        @Model.Carrera
                                                     </p>
                                                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                                                        Nombre Universidad
+                                                        @Model.Institucion
                                                     </p>
                                                 </div>
                                                 <p class="text-base font-medium text-gray-900  dark:text-white">
-                                                    Agosto 2018 - Junio 2024
+                                                    @Model.MesInicioFormacion @Model.AnioInicioFormacion - @Model.MesFinalFormacion @Model.AnioFinalFormacion
                                                 </p>
                                             </div>
-                                            <p class="font-normal text-gray-700 dark:text-gray-400 mt-4">Phasellus posuere id neque ac semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis iaculis dictum odio dapibus ultrices. Proin fringilla interdum finibus. Aliquam ut laoreet ex, in vestibulum dui. Donec et massa non risus pharetra imperdiet. Nam auctor iaculis dolor, sit amet interdum purus convallis lobortis. Phasellus vitae interdum sem.</p>
+                                            <p class="font-normal text-gray-700 dark:text-gray-400 mt-4">
+                                                @Model.CiudadFormacion, @Model.EstadoFormacion @Model.PaisFormacion
+                                            </p>
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="">
+                            <div class="sm:grid-cols-1 md:col-span-2">
+                                <div class="grid grid-rows-auto h2 grid-flow-col gap-4">
+
+                                    <div class="p-4 max-w-full bg-sky-50 sm:p-8 dark:bg-gray-800 divide-y  bg-white rounded-lg border border-gray-200 shadow-md">
+
+                                        <div class="flex justify-between items-center mb-4">
+                                            <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Idiomas</h5>
+                                        </div>
+
+                                        <div class="pt-4">
+                                            <div class="relative overflow-x-auto">
+                                                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                                                    <tbody>
+                                                        @foreach (var item in Model.ListaIdiomas)
+                                                        {
+                                                            <tr class="">
+                                                                <th scope="row" class="py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                                                    @Html.DisplayFor(modelItem => item.Idioma)
+                                                                </th>
+                                                                <td class="px-6 py-4">
+                                                                    @Html.DisplayFor(modelItem => item.Nivel)
+                                                                </td>
+                                                            </tr>
+                                                        }
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="p-4 max-w-full bg-sky-50 sm:p-8 dark:bg-gray-800 divide-y  bg-white rounded-lg border border-gray-200 shadow-md">
+
+                                        <div class="flex justify-between items-center mb-4">
+                                            <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Certificaciones</h5>
+                                        </div>
+                                        <div>
+
+                                            <div class="pt-4">
+                                                <div class="relative overflow-x-auto">
+                                                    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                                                        <tbody>
+                                                            @foreach (var item in Model.ListaCertificaciones)
+                                                            {
+                                                                <tr class="">
+                                                                    <th scope="row" class="py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                                                                        @Html.DisplayFor(modelItem => item.Certi)
+                                                                    </th>
+                                                                    <td class="px-6 py-4">
+                                                                        @Html.DisplayFor(modelItem => item.Anio)
+                                                                    </td>
+                                                                </tr>
+                                                            }
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
                     </div>
 
 
