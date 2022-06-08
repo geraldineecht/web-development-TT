@@ -14,7 +14,7 @@ namespace Atos.Pages
 {
     public class CVModel : PageModel
     {
-        int idAplicante = 7;
+        int idAplicante = 9;
 
         private readonly IConfiguration _configuration;
         public CVModel(IConfiguration configuration)
