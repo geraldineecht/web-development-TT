@@ -20,7 +20,8 @@ namespace Atos.Pages
         {
             _configuration = configuration;
         }
-
+        [BindProperty(SupportsGet = true)]
+        public string SearchTerm { get; set; }
         public IList<Usuarios> ListaUsuarios { get; set; }
         [BindProperty]
         public string idAdmin { get; set; }
@@ -39,22 +40,44 @@ namespace Atos.Pages
             MySqlCommand cmd = new MySqlCommand();
 
             cmd.Connection = conexion;
-            cmd.CommandText = "SELECT u.idAplicante, a.Nombre, a.ApellidoP, a.ApellidoM , r.TipoPerfil FROM infopersonal u  JOIN  perfil r ON u.idPerfil = r.idPerfil JOIN aplicante a ON a.idAplicante = u.idAplicante group by idAplicante";
-
+            
             Usuarios usr1 = new Usuarios();
             ListaUsuarios = new List<Usuarios>();
 
-            using (var reader = cmd.ExecuteReader())
+            if(string.IsNullOrEmpty(SearchTerm))
             {
-                while (reader.Read())
+                cmd.CommandText = "SELECT u.idAplicante, a.Nombre, a.ApellidoP, a.ApellidoM , r.TipoPerfil FROM infopersonal u  JOIN  perfil r ON u.idPerfil = r.idPerfil JOIN aplicante a ON a.idAplicante = u.idAplicante group by idAplicante";
+
+                using (var reader = cmd.ExecuteReader())
                 {
-                    usr1 = new Usuarios();
-                    usr1.NombreUsuario = reader["Nombre"].ToString();
-                    usr1.ApellidoPaterno = reader["ApellidoP"].ToString();
-                    usr1.ApellidoMaterno = reader["ApellidoM"].ToString();
-                    usr1.TipoPerfil = reader["TipoPerfil"].ToString();
-                    usr1.idUser = Convert.ToInt32(reader["idAplicante"].ToString());
-                    ListaUsuarios.Add(usr1);
+                    while (reader.Read())
+                    {
+                        usr1 = new Usuarios();
+                        usr1.NombreUsuario = reader["Nombre"].ToString();
+                        usr1.ApellidoPaterno = reader["ApellidoP"].ToString();
+                        usr1.ApellidoMaterno = reader["ApellidoM"].ToString();
+                        usr1.TipoPerfil = reader["TipoPerfil"].ToString();
+                        usr1.idUser = Convert.ToInt32(reader["idAplicante"].ToString());
+                        ListaUsuarios.Add(usr1);
+                    }
+                }
+            }
+            else
+            {
+                cmd.CommandText = "SELECT u.idAplicante, a.Nombre, a.ApellidoP, a.ApellidoM , r.TipoPerfil FROM infopersonal u  JOIN  perfil r ON u.idPerfil = r.idPerfil JOIN aplicante a ON a.idAplicante = u.idAplicante where TipoPerfil = '"+ SearchTerm + "'group by idAplicante";
+
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        usr1 = new Usuarios();
+                        usr1.NombreUsuario = reader["Nombre"].ToString();
+                        usr1.ApellidoPaterno = reader["ApellidoP"].ToString();
+                        usr1.ApellidoMaterno = reader["ApellidoM"].ToString();
+                        usr1.TipoPerfil = reader["TipoPerfil"].ToString();
+                        usr1.idUser = Convert.ToInt32(reader["idAplicante"].ToString());
+                        ListaUsuarios.Add(usr1);
+                    }
                 }
             }
             conexion.Dispose();
