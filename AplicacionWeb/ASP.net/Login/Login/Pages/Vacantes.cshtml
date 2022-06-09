@@ -142,13 +142,9 @@
 
                                             <div class="button-container">
                                                 <a class="" href="#">
-
                                                     <form asp-page-handler="pick1" method="post">
-                                                        <div class="apply-btn">
-                                                            <input asp-for="Perfil" type="hidden" value="Data Scientist" />
-
-                                                            <input id="Submit" name="submit" type="submit" class="next-button" value="Aplicar" />
-                                                        </div>
+                                                        <input asp-for="Perfil" type="hidden" value="Data Scientist" />
+                                                        <input id="Submit" name="submit" type="submit" class="apply-btn" value="Aplicar" style="border: none; padding: 1rem; color: white; font-size: 1rem; cursor: pointer"/>
                                                     </form>
                                                 </a>
                                             </div>
@@ -183,14 +179,12 @@
 
                                         <div class="btn-like-container">
 
-                                            <div class="sign-in-btn">
+                                            <div class="button-container">
                                                 <a class="" href="#">
-                                                    <div class="apply-btn">
-                                                        <form method="post" asp-page-handler="pick2">
-                                                            <input asp-for="Perfil" type="hidden" value="Data Engineer" />
-                                                            <input id="Submit1" type="submit" class="sign-in-btn text-color" value="Aplicar" />
-                                                        </form>
-                                                    </div>
+                                                    <form method="post" asp-page-handler="pick2">
+                                                        <input asp-for="Perfil" type="hidden" value="Data Engineer" />
+                                                        <input id="Submit1" type="submit" class="apply-btn" value="Aplicar" style="border: none; padding: 1rem; color: white; font-size: 1rem; cursor: pointer;"/>
+                                                    </form>
                                                 </a>
                                             </div>
 
@@ -227,10 +221,10 @@
 
                                             <div>
 
-                                                <div>
+                                                <div class="button-container">
                                                     <form method="post" asp-page-handler="pick3">
                                                         <input asp-for="Perfil" type="hidden" value="Java Developer" />
-                                                        <input id="Submit1" name="submit3" type="submit" class="apply-btn" value="Aplicar" />
+                                                        <input id="Submit1" name="submit3" type="submit" class="apply-btn" value="Aplicar" style="border: none; padding: 1rem; color: white; font-size: 1rem; cursor: pointer;"/>
                                                     </form>
                                                 </div>
 
