@@ -1,19 +1,16 @@
 ﻿<Properties StartupConfiguration="{1F23A056-76AD-4009-B3EF-7ADD32F66C64}|Login">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Controllers/PreguntasController.cs">
-    <Files>
-      <File FileName="Login/Controllers/LoginController.cs" Line="21" Column="1" />
-      <File FileName="Login/Properties/launchSettings.json" />
-      <File FileName="Login/Controllers/PreguntasController.cs" Line="102" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Atos" expanded="True">
             <Node name="Atos" expanded="True">
               <Node name="Controllers" expanded="True">
-                <Node name="PreguntasController.cs" selected="True" />
+                <Node name="FrontEndController.cs" selected="True" />
               </Node>
-              <Node name="Pages" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Admin_view.cshtml" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
