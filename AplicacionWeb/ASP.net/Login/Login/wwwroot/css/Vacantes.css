@@ -70,8 +70,6 @@
 
 
 
-
-
 /* --------- BUTTONS SECTION --------- */
 
 .btn-container {
@@ -89,8 +87,11 @@
     background-color: var(--teal);
 }
 
-.sign-in-btn a {
+.sign-in-btn {
     color: white;
+    background: none;
+    border: none;
+
 }
 
 /* -------- FOOTER SECTION -------- */
@@ -145,14 +146,11 @@
 
 
 
-
-
-
 /* --------- MATERIAL ICONS --------- */
 
-.material-symbols-outlined {
+/*.material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48
-}
+}*/
 
 
 
@@ -198,10 +196,6 @@
 .bg-purple {
     background-color: var(--pink-pink);
 }
-
-
-
-
 
 
 
@@ -333,8 +327,6 @@
 
 
 
-
-
 .width-100 {
     width: 100%;
 }
@@ -359,10 +351,6 @@
 
 
 /* cards cards cards cards cards*/
-
-
-
-
 
 
 
@@ -436,11 +424,23 @@
 }
 
 .apply-btn {
+    color:white;
+    display: none;
+    text-decoration: none;
     background-color: var(--blue);
     display: flex;
     align-items: center;
     padding: .6rem;
     border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-container {
+    background-color: var(--blue);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    margin-top: var(--fs-base);
 }
 
 .btn-like-container {
@@ -457,9 +457,9 @@
     align-items: center;
 }
 
-.material-symbols-outlined {
+/*.material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 20
-}
+}*/
 
 
 .white-bg {
@@ -469,4 +469,10 @@
 
 .mg-top {
     margin-top: 1rem;
+}
+
+
+input#Submit1 {
+    color: white;
+    border: none;
 }

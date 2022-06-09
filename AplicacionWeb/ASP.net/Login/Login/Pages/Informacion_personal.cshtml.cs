@@ -44,6 +44,8 @@ namespace Login.Pages
             NombreUsuario = HttpContext.Session.GetString("username");
             ApellidoUsuarioP = HttpContext.Session.GetString("lastnameP");
             ApellidoUsuarioM = HttpContext.Session.GetString("lastnameM");
+            Perfil = HttpContext.Session.GetString("Perfil");
+
             
         }
 
@@ -56,7 +58,9 @@ namespace Login.Pages
             conexion.Open();
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = conexion;
-            cmd.CommandText = "Insert into InfoPersonal (idAplicante,DiaNacimiento,MesNacimiento,AnioNacimiento,idNacionalidad,idGenero,idCivil, idPerfil) Values (" + idUsuario + ", " + DiaNacimiento + ", " + MesNacimiento + ", " + AñoNacimiento + " , (SELECT IdNacionalidad FROM Nacionalidad WHERE Nacionalidad = '" + Nacionalidad + "' ), " + " (SELECT IdGenero FROM Genero WHERE Genero = '" + Genero + "' ), " + " (SELECT IdCivil FROM EstadoCivil WHERE EstadoCivil = '" + Civil + "' ), " + " (SELECT IdPerfil FROM Perfil WHERE TipoPerfil = '" + Perfil + "' ))";
+
+            cmd.CommandText = "Insert into InfoPersonal (idAplicante,DiaNacimiento,MesNacimiento,AnioNacimiento,idNacionalidad,idGenero,idCivil) Values (" + idUsuario + ", " + DiaNacimiento + ", " + MesNacimiento + ", " + AñoNacimiento + " , (SELECT IdNacionalidad FROM Nacionalidad WHERE Nacionalidad = '" + Nacionalidad + "' ), " + " (SELECT IdGenero FROM Genero WHERE Genero = '" + Genero + "' ), " + " (SELECT IdCivil FROM EstadoCivil WHERE EstadoCivil = '" + Civil + "' ))";
+
 
             cmd.ExecuteNonQuery();
             conexion.Close();

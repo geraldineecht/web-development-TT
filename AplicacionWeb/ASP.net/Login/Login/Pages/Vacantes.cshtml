@@ -23,7 +23,6 @@
     <div class="body-container">
         <header class="header-container">
             <nav class="navbar">
-
                 <div class="nav-container">
                     <a href="#" id="nav-logo"><img class="img-attributes" src="/img/LogoBlanco.png" alt=""></a>
 
@@ -59,203 +58,200 @@
         <section class="page-section height-40 odd-container bg-image-jobs justify-c" id="home">
 
             <h1 class="h1-style">Vacantes</h1>
+            <h1 class="h1-style">@Model.Msg</h1>
 
         </section>
 
         <section class="page-section white-bg">
             <div class="main-container">
-                <form class="width-100" action="post">
-                    <div class="grid grid-col-2 mg-top">
-                        <div class="filters-container">
+                <div class="width-100" >
+                    <div class="width-100">
+                        <div class="grid grid-col-2 mg-top">
+                            <div class="filters-container">
 
-                            <div class="flex filters-section">
-                                <div class="flex gap-12">
-                                    <h4>Filtros</h4>
-                                    <div class="ui radio checkbox">
-                                        <input type="radio" name="radio" checked="checked">
-                                        <label>Todas las vacantes</label>
+                                <div class="flex filters-section">
+                                    <div class="flex gap-12">
+                                        <h4>Filtros</h4>
+                                        <div class="ui radio checkbox">
+                                            <input type="radio" name="radio" checked="checked">
+                                            <label>Todas las vacantes</label>
+                                        </div>
+                                        <div class="ui radio checkbox">
+                                            <input type="radio" name="radio" checked="checked">
+                                            <label>Mas recientes</label>
+                                        </div>
+                                        <div class="ui radio checkbox">
+                                            <input type="radio" name="radio" checked="checked">
+                                            <label>Recomendadas</label>
+                                        </div>
                                     </div>
-                                    <div class="ui radio checkbox">
-                                        <input type="radio" name="radio" checked="checked">
-                                        <label>Mas recientes</label>
+
+                                    <div class="flex gap-12">
+                                        <h4>Ubicación</h4>
+                                        <div class="input-box-2 width-100">
+                                            <input class="input-container" type="text" placeholder="Ubicación...">
+                                        </div>
                                     </div>
-                                    <div class="ui radio checkbox">
-                                        <input type="radio" name="radio" checked="checked">
-                                        <label>Recomendadas</label>
+
+                                    <div class="flex gap-12">
+                                        <h4>Industrias</h4>
+                                        <select class="input-container padding-r width-100">
+                                            <option value="">Todas las Industrias</option>
+                                            <option value="1">Male</option>
+                                            <option value="0">Female</option>
+                                        </select>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="flex gap-12">
-                                    <h4>Ubicación</h4>
+
+                            <div class="flex job-cards-container">
+                                <div class="grid search-container">
                                     <div class="input-box-2 width-100">
-                                        <input class="input-container" type="text" placeholder="Ubicación..." required>
+                                        <input class="input-container" type="text" placeholder="Search...">
                                     </div>
-                                </div>
-
-                                <div class="flex gap-12">
-                                    <h4>Industrias</h4>
                                     <select class="input-container padding-r width-100">
-                                        <option value="">Todas las Industrias</option>
+                                        <option value="">Filtrar por: Recientes</option>
                                         <option value="1">Male</option>
                                         <option value="0">Female</option>
                                     </select>
                                 </div>
+
+                                <div class="flex gap-16">
+                                    <div class="cards-container">
+                                        <div class="title-container">
+                                            <div class="title-img">
+                                                <img class="img-attributes" src="atosLogoCircular.png" alt="">
+                                            </div>
+                                            <div class="title-text">
+                                                <h3>Data Scientist</h3>
+                                                <p>New</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-text">
+                                            <div class="card-details">
+                                                <p>$000</p>
+                                                <p class="location-style">•</p>
+                                                <p class="location-style">London, London, GB-United Kingdom</p>
+                                            </div>
+                                            <p>Como Consultor de Transformación Digital en nuestro Programa de Graduados, desarrollará y compartirá su experiencia y conocimientos con una amplia cartera de clientes, para apoyar a algunas de las empresas líderes del mundo en su proceso de transformación digital.</p>
+                                        </div>
+
+                                        <div class="btn-like-container">
+
+                                            <div class="button-container">
+                                                <a class="" href="#">
+                                                    
+                                                    <form asp-page-handler="pick1" method="post">
+                                                        <div class="apply-btn">
+                                                            <input asp-for="Perfil" type="hidden" value="Data Scientist" />
+
+                                                            <input id="Submit" name="submit" type="submit" class="next-button" value="Aplicar" />
+                                                        </div>
+                                                    </form>
+                                                </a>
+                                            </div>
+
+                                            <div class="like-btn">
+                                                <span class="material-symbols-outlined">
+                                                    favorite
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cards-container">
+                                        <div class="title-container">
+                                            <div class="title-img">
+                                                <img class="img-attributes" src="atosLogoCircular.png" alt="">
+                                            </div>
+                                            <div class="title-text">
+                                                <h3>Data Engineer</h3>
+                                                <p>New</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-text">
+                                            <div class="card-details">
+                                                <p>$000</p>
+                                                <p class="location-style">•</p>
+                                                <p class="location-style">London, London, GB-United Kingdom</p>
+                                            </div>
+                                            <p>Como Consultor de Transformación Digital en nuestro Programa de Graduados, desarrollará y compartirá su experiencia y conocimientos con una amplia cartera de clientes, para apoyar a algunas de las empresas líderes del mundo en su proceso de transformación digital.</p>
+                                        </div>
+
+                                        <div class="btn-like-container">
+
+                                            <div class="sign-in-btn">
+                                                <a class="" href="#"> 
+                                                    <div class="apply-btn">
+                                                        <form method="post" asp-page-handler="pick2">
+                                                            <input asp-for="Perfil" type="hidden" value="Data Engineer" />
+                                                            <input id="Submit1" type="submit" class="sign-in-btn text-color" value="Aplicar" />
+                                                         </form>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="like-btn">
+                                                <span class="material-symbols-outlined">
+                                                    favorite
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="cards-container">
+                                        <div class="title-container">
+                                            <div class="title-img">
+                                                <img class="img-attributes" src="atosLogoCircular.png" alt="">
+                                            </div>
+                                            <div class="title-text">
+                                                <h3>Java Developer</h3>
+                                                <p>New</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-text">
+                                            <div class="card-details">
+                                                <p>$000</p>
+                                                <p class="location-style">•</p>
+                                                <p class="location-style">London, London, GB-United Kingdom</p>
+                                            </div>
+                                            <p>Como Consultor de Transformación Digital en nuestro Programa de Graduados, desarrollará y compartirá su experiencia y conocimientos con una amplia cartera de clientes, para apoyar a algunas de las empresas líderes del mundo en su proceso de transformación digital.</p>
+                                        </div>
+
+                                        <div class="btn-like-container">
+
+                                            <div>
+                                                
+                                                    <div>
+                                                        <form method="post" asp-page-handler="pick3">
+                                                            <input asp-for="Perfil" type="hidden" value="Java Developer" />
+                                                            <input id="Submit1" name="submit3" type="submit" class="apply-btn" value="Aplicar" />
+                                                        </form>
+                                                    </div>
+                                                
+                                            </div>
+
+                                            <div class="like-btn">
+                                                <span class="material-symbols-outlined">
+                                                    favorite
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
                             </div>
-                        </div>
-
-
-                        <div class="flex job-cards-container">
-                            <div class="grid search-container">
-                                <div class="input-box-2 width-100">
-                                    <input class="input-container" type="text" placeholder="Search..." required>
-                                </div>
-                                <select class="input-container padding-r width-100">
-                                    <option value="">Filtrar por: Recientes</option>
-                                    <option value="1">Male</option>
-                                    <option value="0">Female</option>
-                                </select>
-                            </div>
-
-                            <div class="flex gap-16">
-                                <div class="cards-container">
-                                    <div class="title-container">
-                                        <div class="title-img">
-                                            <img class="img-attributes" src="atosLogoCircular.png" alt="">
-                                        </div>
-                                        <div class="title-text">
-                                            <h3>Consultor de Transformación Digital, Graduado</h3>
-                                            <p>New</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="card-text">
-                                        <div class="card-details">
-                                            <p>$000</p>
-                                            <p class="location-style">•</p>
-                                            <p class="location-style">London, London, GB-United Kingdom</p>
-                                        </div>
-                                        <p>Como Consultor de Transformación Digital en nuestro Programa de Graduados, desarrollará y compartirá su experiencia y conocimientos con una amplia cartera de clientes, para apoyar a algunas de las empresas líderes del mundo en su proceso de transformación digital.</p>
-                                    </div>
-
-                                    <div class="btn-like-container">
-
-                                        <div class="sign-in-btn">
-                                            <a class="" href="#">
-                                                <div class="apply-btn">
-                                                    <span class="material-symbols-outlined ">
-                                                        add
-                                                    </span>
-                                                    <p>Aplicar</p>
-                                                </div>
-                                            </a>
-                                        </div>
-
-                                        <div class="like-btn">
-                                            <span class="material-symbols-outlined">
-                                                favorite
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="cards-container">
-                                    <div class="title-container">
-                                        <div class="title-img">
-                                            <img class="img-attributes" src="atosLogoCircular.png" alt="">
-                                        </div>
-                                        <div class="title-text">
-                                            <h3>Consultor de Transformación Digital, Graduado</h3>
-                                            <p>New</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="card-text">
-                                        <div class="card-details">
-                                            <p>$000</p>
-                                            <p class="location-style">•</p>
-                                            <p class="location-style">London, London, GB-United Kingdom</p>
-                                        </div>
-                                        <p>Como Consultor de Transformación Digital en nuestro Programa de Graduados, desarrollará y compartirá su experiencia y conocimientos con una amplia cartera de clientes, para apoyar a algunas de las empresas líderes del mundo en su proceso de transformación digital.</p>
-                                    </div>
-
-                                    <div class="btn-like-container">
-
-                                        <div class="sign-in-btn">
-                                            <a class="" href="#">
-                                                <div class="apply-btn">
-                                                    <span class="material-symbols-outlined ">
-                                                        add
-                                                    </span>
-                                                    <p>Aplicar</p>
-                                                </div>
-                                            </a>
-                                        </div>
-
-                                        <div class="like-btn">
-                                            <span class="material-symbols-outlined">
-                                                favorite
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="cards-container">
-                                    <div class="title-container">
-                                        <div class="title-img">
-                                            <img class="img-attributes" src="atosLogoCircular.png" alt="">
-                                        </div>
-                                        <div class="title-text">
-                                            <h3>Consultor de Transformación Digital, Graduado</h3>
-                                            <p>New</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="card-text">
-                                        <div class="card-details">
-                                            <p>$000</p>
-                                            <p class="location-style">•</p>
-                                            <p class="location-style">London, London, GB-United Kingdom</p>
-                                        </div>
-                                        <p>Como Consultor de Transformación Digital en nuestro Programa de Graduados, desarrollará y compartirá su experiencia y conocimientos con una amplia cartera de clientes, para apoyar a algunas de las empresas líderes del mundo en su proceso de transformación digital.</p>
-                                    </div>
-
-                                    <div class="btn-like-container">
-
-                                        <div class="sign-in-btn">
-                                            <a class="" href="#">
-                                                <div class="apply-btn">
-                                                    <span class="material-symbols-outlined ">
-                                                        add
-                                                    </span>
-                                                    <p>Aplicar</p>
-                                                </div>
-                                            </a>
-                                        </div>
-
-                                        <div class="like-btn">
-                                            <span class="material-symbols-outlined">
-                                                favorite
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
 
                         </div>
-
                     </div>
-
-
-
-
-
-
-
-                </form>
-
-
-
+                </div>
             </div>
 
 

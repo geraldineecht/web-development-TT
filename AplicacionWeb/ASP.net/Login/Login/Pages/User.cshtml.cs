@@ -64,7 +64,8 @@ namespace Login.Pages
                 HttpContext.Session.SetInt32("idAplicante", idAplicante);
 
                 conexion.Close();
-                Response.Redirect("informacion_personal");
+                // Response.Redirect("informacion_personal");
+                Response.Redirect("Vacantes");
             }
         }
     }

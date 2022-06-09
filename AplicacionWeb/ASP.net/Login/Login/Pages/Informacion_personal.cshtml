@@ -197,15 +197,9 @@
                         <div class="mb-6">
                             <div class="input-box">
                                 <span class="details">Perfil</span>
-                                <select asp-for="Perfil" id="Perfil" class="bg-gray-50 border -border-blue-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full px-4 py-4 mt-2.5 text-base text-gray-400 bg-transparent border-color-blue" required>
-                                    <option value="">--Perfil--</option>
-                                    <option>Data Scientist</option>
-                                    <option>Data Engineer</option>
-                                    <option>.Net Developer</option>
-                                    <option>Java Developer</option>
-                                    <option>QA Automation</option>
-                                    <option>Front End Developer</option>
-                                </select>
+                                    <select id="Perfil" readonly style="font-weight: bold; background-color: #FAFAFA" class=" border -border-blue-200 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  w-full px-4 py-4 mt-2.5 text-base text-gray-400 bg-transparent border-color-blue" required>
+                                        <option value="">@Model.Perfil</option>
+                                    </select>
                             </div>
                         </div>
 
