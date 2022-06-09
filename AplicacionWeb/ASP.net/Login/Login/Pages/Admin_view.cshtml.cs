@@ -46,7 +46,7 @@ namespace Atos.Pages
 
             if(string.IsNullOrEmpty(SearchTerm))
             {
-                cmd.CommandText = "SELECT u.idAplicante, a.Nombre, a.ApellidoP, a.ApellidoM , r.TipoPerfil FROM infopersonal u  JOIN  perfil r ON u.idPerfil = r.idPerfil JOIN aplicante a ON a.idAplicante = u.idAplicante group by idAplicante";
+                cmd.CommandText = "SELECT u.idAplicante, a.Nombre, a.ApellidoP, a.ApellidoM , p.TipoPerfil FROM infopersonal u JOIN aplicante a ON a.idAplicante = u.idAplicante JOIN vacante v ON u.idAplicante = v.idAplicante JOIN perfil p ON p.idPerfil = v.idPerfil group by idAplicante";
 
                 using (var reader = cmd.ExecuteReader())
                 {
@@ -64,7 +64,7 @@ namespace Atos.Pages
             }
             else
             {
-                cmd.CommandText = "SELECT u.idAplicante, a.Nombre, a.ApellidoP, a.ApellidoM , r.TipoPerfil FROM infopersonal u  JOIN  perfil r ON u.idPerfil = r.idPerfil JOIN aplicante a ON a.idAplicante = u.idAplicante where TipoPerfil = '"+ SearchTerm + "'group by idAplicante";
+                cmd.CommandText = "SELECT u.idAplicante, a.Nombre, a.ApellidoP, a.ApellidoM , p.TipoPerfil FROM infopersonal u JOIN aplicante a ON a.idAplicante = u.idAplicante JOIN vacante v ON u.idAplicante = v.idAplicante JOIN perfil p ON p.idPerfil = v.idPerfil where TipoPerfil = '" + SearchTerm + "'group by idAplicante";
 
                 using (var reader = cmd.ExecuteReader())
                 {

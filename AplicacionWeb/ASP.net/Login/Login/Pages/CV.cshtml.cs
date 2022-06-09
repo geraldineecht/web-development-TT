@@ -134,7 +134,10 @@ namespace Atos.Pages
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = conexion;
 
-            cmd.CommandText = "SELECT u.idAplicante, a.Nombre, a.ApellidoP, a.ApellidoM , r.TipoPerfil FROM infopersonal u  JOIN  perfil r ON u.idPerfil = r.idPerfil JOIN aplicante a ON a.idAplicante = u.idAplicante where a.idAplicante = "+ idAplicante + " group by idAplicante";
+            cmd.CommandText = "SELECT u.idAplicante, a.Nombre, a.ApellidoP, a.ApellidoM, y.TipoPerfil FROM infopersonal u  JOIN aplicante a ON a.idAplicante = u.idAplicante JOIN vacante r ON u.idAplicante = r.idAplicante JOIN perfil y ON y.idPerfil = r.idPerfil where a.idAplicante = " + idAplicante + " group by idAplicante";
+            
+
+
             var reader = cmd.ExecuteReader();
             reader.Read();
            
