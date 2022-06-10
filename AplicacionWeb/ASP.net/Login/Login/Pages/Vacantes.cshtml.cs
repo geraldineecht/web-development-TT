@@ -52,7 +52,7 @@ namespace Atos.Pages
             conexion.Close();
             Response.Redirect("Informacion_personal");
         }
-        public void OnPostPick1()
+        public void OnPostPick()
         {
 
             HttpContext.Session.SetString("Perfil", Perfil);
@@ -75,50 +75,7 @@ namespace Atos.Pages
             Response.Redirect("Informacion_personal");
         }
 
-        public void OnPostPick2()
-        {
-
-            HttpContext.Session.SetString("Perfil", Perfil);
-
-            idUsuario = (int)HttpContext.Session.GetInt32("idAplicante");
-
-            string connectionString = _configuration.GetConnectionString("myDb1");
-            MySqlConnection conexion = new MySqlConnection(connectionString);
-            conexion.Open();
-            MySqlCommand cmd = new MySqlCommand();
-            cmd.Connection = conexion;
-
-            cmd.CommandText = "Insert into Vacante (idAplicante,idPerfil) Values (" + idUsuario + ", (SELECT IdPerfil FROM Perfil WHERE TipoPerfil = '" + Perfil + "' ))";
-
-
-            cmd.ExecuteNonQuery();
-
-
-            conexion.Close();
-            Response.Redirect("Informacion_personal");
-        }
-
-        public void OnPostPick3()
-        {
-            HttpContext.Session.SetString("Perfil", Perfil);
-
-            idUsuario = (int)HttpContext.Session.GetInt32("idAplicante");
-
-            string connectionString = _configuration.GetConnectionString("myDb1");
-            MySqlConnection conexion = new MySqlConnection(connectionString);
-            conexion.Open();
-            MySqlCommand cmd = new MySqlCommand();
-            cmd.Connection = conexion;
-
-            cmd.CommandText = "Insert into Vacante (idAplicante,idPerfil) Values (" + idUsuario + ", (SELECT IdPerfil FROM Perfil WHERE TipoPerfil = '" + Perfil + "' ))";
-
-
-            cmd.ExecuteNonQuery();
-
-
-            conexion.Close();
-            Response.Redirect("Informacion_personal");
-        }
+        
 
     }
 }
