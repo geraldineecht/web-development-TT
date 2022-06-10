@@ -51,6 +51,12 @@ namespace Atos.Pages
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = conexion;
 
+            if (MesFinalFormacion == 0 && AnioFinalFormacion == 0)
+            {
+                MesFinalFormacion = 6;
+                AnioFinalFormacion = 2022;
+            }
+
             cmd.CommandText = "Insert into FormacionAcademica (idAplicante,Institucion,Carrera,Pais,Estado,Ciudad,MesInicioFormacion,AnioInicioFormacion, MesFinalFormacion,AnioFinalFormacion) VALUES (" + idUsuario + ", '" + Institucion + "', '" + Carrera + "', '" + Pais + "', '" + Estado + "', '" + Ciudad + "', " + MesInicioFormacion + ", " + AnioInicioFormacion + ", " + MesFinalFormacion + ", '" + AnioFinalFormacion + "')";
 
             cmd.ExecuteNonQuery();

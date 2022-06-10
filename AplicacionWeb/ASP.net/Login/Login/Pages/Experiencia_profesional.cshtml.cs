@@ -48,6 +48,11 @@ namespace Atos.Pages
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = conexion;
 
+            if (MesExperienciaFin == 0 && AnioExperienciaFin == 0) {
+                MesExperienciaFin = 6;
+                AnioExperienciaFin = 2022;
+            }
+
             cmd.CommandText = "Insert into ExperienciaProfesional (idAplicante,PuestoExperiencia,EmpresaExperiencia,MesExperienciaInicio,AnioExperienciaInicio,MesExperienciaFin, AnioExperienciaFin,Actividades) VALUES (" + idUsuario + ", '" + PuestoExperiencia + "', '" + EmpresaExperiencia + "', " + MesExperiencia + ", " + AnioExperiencia + ", " + MesExperienciaFin + ", " + AnioExperienciaFin + ", '" + Actividades + "')";
 
             cmd.ExecuteNonQuery();
