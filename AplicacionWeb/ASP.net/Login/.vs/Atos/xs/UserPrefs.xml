@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{1F23A056-76AD-4009-B3EF-7ADD32F66C64}|Login">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/Index.cshtml">
+    <Files>
+      <File FileName="Login/Pages/Index.cshtml" Line="216" Column="49" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Atos" expanded="True">
             <Node name="Atos" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="FrontEndController.cs" selected="True" />
-              </Node>
               <Node name="Pages" expanded="True">
-                <Node name="Admin_view.cshtml" expanded="True" />
+                <Node name="Index.cshtml" selected="True" />
               </Node>
             </Node>
           </Node>

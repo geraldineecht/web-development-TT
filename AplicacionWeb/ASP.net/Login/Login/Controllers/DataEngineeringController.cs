@@ -18,7 +18,7 @@ namespace Atos.Controllers
     public class DataEngineeringController : ControllerBase
     {
         [HttpGet]
-        public object Get (int idUnity)
+        public object Get(int idUnity)
         {
             string allText = System.IO.File.ReadAllText("Preguntas.json");
             Root jsonObject = JsonConvert.DeserializeObject<Root>(allText);
