@@ -306,3 +306,5 @@
 /Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/Login/obj/Release/net5.0/Atos.genruntimeconfig.cache
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/bin/Release/net5.0/Preguntas.json
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/bin/Release/net5.0/Newtonsoft.Json.dll
+/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/Login/bin/Release/net5.0/Preguntas.json
+/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/Login/bin/Release/net5.0/Newtonsoft.Json.dll
