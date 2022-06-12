@@ -37,7 +37,7 @@ namespace Atos.Controllers
         
         [HttpPost]
         //public void Post([FromBody] string value)
-        public void Post(int scoreEntrevista)
+        public void Post([FromBody] int scoreEntrevista)
         {
             idUsuario = (int)HttpContext.Session.GetInt32("idAplicante");
 
@@ -46,7 +46,7 @@ namespace Atos.Controllers
             conexion.Open();
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = conexion;
-            cmd.CommandText = "INSERT INTO entrevista(idAplicante, fecha, puntaje) VALUES (" + idUsuario + ", " + scoreEntrevista + ", CURDATE());";
+            cmd.CommandText = "INSERT INTO entrevista(idAplicante, fecha, puntaje) VALUES (" + idUsuario + ", CURDATE(), " + scoreEntrevista + ");";
 
             cmd.ExecuteNonQuery();
             conexion.Close();

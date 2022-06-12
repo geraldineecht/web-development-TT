@@ -12,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using APIMySQL.Data.Repositories;
 
 namespace Login
 {
@@ -27,6 +28,17 @@ namespace Login
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            /* Se agregó lo siguiente */
+
+            var mySQLConnectionConfig = new APIMySQL.Data.MySQLConfiguration(Configuration.GetConnectionString("myDb1"));
+            services.AddSingleton(mySQLConnectionConfig);
+
+
+
+            services.AddScoped<AplicanteInterface, AplicanteRepository>();
+
+            /* fin de la linea que se agregó */
+
             services.AddDistributedMemoryCache();// Se agrego
 
             services.AddSession(options =>

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "dwT//scEPKeSXo524gg/oFwLFB6AAGK6BfyBJKLnTSlFMamQSCB57CMW/P8jWnzu5Z99HvpTCxgitMSN9mARzA==",
+  "dgSpecHash": "NxvOr4JnQ6N64LnMZOA393CRBDrkMoZQ6iqYjUnNR78tpPJi9ftwFy6GrjmBzS/CAr79CgJ2aQMsn/nDnQaoBQ==",
   "success": true,
   "projectFilePath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/Login/Atos.csproj",
   "expectedPackageFiles": [
     "/Users/geraldine/.nuget/packages/bouncycastle.netcore/1.8.5/bouncycastle.netcore.1.8.5.nupkg.sha512",
+    "/Users/geraldine/.nuget/packages/dapper/2.0.123/dapper.2.0.123.nupkg.sha512",
     "/Users/geraldine/.nuget/packages/google.protobuf/3.19.4/google.protobuf.3.19.4.nupkg.sha512",
     "/Users/geraldine/.nuget/packages/k4os.compression.lz4/1.2.6/k4os.compression.lz4.1.2.6.nupkg.sha512",
     "/Users/geraldine/.nuget/packages/k4os.compression.lz4.streams/1.2.6/k4os.compression.lz4.streams.1.2.6.nupkg.sha512",

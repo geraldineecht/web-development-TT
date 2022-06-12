@@ -11,6 +11,15 @@
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
         }
       },
+      "Dapper/2.0.123": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Dapper.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Dapper.dll": {}
+        }
+      },
       "Google.Protobuf/3.19.4": {
         "type": "package",
         "compile": {
@@ -279,6 +288,31 @@
             "rid": "win"
           }
         }
+      },
+      "APIMySQL.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "APIMySQL.Model": "1.0.0",
+          "Dapper": "2.0.123",
+          "MySql.Data": "8.0.29"
+        },
+        "compile": {
+          "bin/placeholder/APIMySQL.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/APIMySQL.Data.dll": {}
+        }
+      },
+      "APIMySQL.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/APIMySQL.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/APIMySQL.Model.dll": {}
+        }
       }
     }
   },
@@ -306,6 +340,24 @@
         "lib/netstandard2.0/BouncyCastle.Crypto.xml",
         "lib/xamarinios/BouncyCastle.Crypto.dll",
         "lib/xamarinios/BouncyCastle.Crypto.xml"
+      ]
+    },
+    "Dapper/2.0.123": {
+      "sha512": "RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
+      "type": "package",
+      "path": "dapper/2.0.123",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.0.123.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net5.0/Dapper.dll",
+        "lib/net5.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml"
       ]
     },
     "Google.Protobuf/3.19.4": {
@@ -880,10 +932,22 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "APIMySQL.Data/1.0.0": {
+      "type": "project",
+      "path": "../APIMySQL.Data/APIMySQL.Data.csproj",
+      "msbuildProject": "../APIMySQL.Data/APIMySQL.Data.csproj"
+    },
+    "APIMySQL.Model/1.0.0": {
+      "type": "project",
+      "path": "../APIMySQL.Model/APIMySQL.Model.csproj",
+      "msbuildProject": "../APIMySQL.Model/APIMySQL.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "APIMySQL.Data >= 1.0.0",
+      "APIMySQL.Model >= 1.0.0",
       "MySql.Data >= 8.0.29",
       "Newtonsoft.Json >= 13.0.1"
     ]
@@ -912,7 +976,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Data/APIMySQL.Data.csproj": {
+              "projectPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Data/APIMySQL.Data.csproj"
+            },
+            "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj": {
+              "projectPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
