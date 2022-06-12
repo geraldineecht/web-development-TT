@@ -34,9 +34,9 @@ namespace APIMySQL.Data.Repositories
         {
             var db = dbConnection();
 
-            var sql = @"SELECT * FROM Aplicante WHERE idAplicante = @idUser";
+            var sql = @"SELECT * FROM Aplicante WHERE idAplicante = @idAplicante";
 
-            return await db.QueryFirstOrDefaultAsync<Aplicante>(sql, new { idAplicante = @id });
+            return await db.QueryFirstOrDefaultAsync<Aplicante>(sql, new { idAplicante = id });
         }
 
         public async Task<bool> InsertAplicante(Aplicante aplicante)
