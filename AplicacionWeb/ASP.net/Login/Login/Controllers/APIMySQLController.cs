@@ -32,21 +32,21 @@ namespace Atos.Controllers
             return Ok(await _aplicanteInterface.GetAplicante(id));
         }
 
-        [HttpPost]
-        public async Task<IActionResult> PostAplicante([FromBody] Aplicante aplicante)
-        {
-            if(aplicante == null)
-            {
-                return BadRequest();
-            }
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+        //[HttpPost]
+        //public async Task<IActionResult> PostAplicante([FromBody] Aplicante aplicante)
+        //{
+        //    if(aplicante == null)
+        //    {
+        //        return BadRequest();
+        //    }
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
 
-            var created = await _aplicanteInterface.InsertAplicante(aplicante);
+        //    var created = await _aplicanteInterface.InsertAplicante(aplicante);
 
-            return Created("created", created);
-        }
+        //    return Created("created", created);
+        //}
     }
 }
