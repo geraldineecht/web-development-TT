@@ -17,8 +17,7 @@ namespace Atos.Controllers
     public class ApplicantScoreController : ControllerBase
     {
         [HttpPost]
-        //public void Post([FromBody] string value) [FromQuery] int scoreEntrevista
-        public int Post([FromQuery] int scoreEntrevista, int idUsuario)
+        public void Post([FromQuery] int scoreEntrevista, int idUsuario)
         {
             string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos;Uid=root;password=Gato1415*;";
             MySqlConnection conexion = new MySqlConnection(connectionString);
@@ -29,8 +28,6 @@ namespace Atos.Controllers
 
             cmd.ExecuteNonQuery();
             conexion.Close();
-
-            return scoreEntrevista + idUsuario;
 
         }
 
