@@ -1,0 +1,11 @@
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/bin/Debug/net5.0/APIMySQL.Model.deps.json
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/bin/Debug/net5.0/APIMySQL.Model.dll
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/bin/Debug/net5.0/ref/APIMySQL.Model.dll
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/bin/Debug/net5.0/APIMySQL.Model.pdb
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.GeneratedMSBuildEditorConfig.editorconfig
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.AssemblyInfoInputs.cache
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.AssemblyInfo.cs
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.csproj.CoreCompileInputs.cache
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.dll
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/ref/APIMySQL.Model.dll
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.pdb

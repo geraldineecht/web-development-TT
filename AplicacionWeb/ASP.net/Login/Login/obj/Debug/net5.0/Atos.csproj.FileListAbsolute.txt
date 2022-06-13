@@ -132,3 +132,8 @@ C:/Users/aleja/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/L
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Debug/net5.0/ref/Atos.dll
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Debug/net5.0/Atos.pdb
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Debug/net5.0/Atos.genruntimeconfig.cache
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/bin/Debug/net5.0/Dapper.dll
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/bin/Debug/net5.0/APIMySQL.Data.dll
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/bin/Debug/net5.0/APIMySQL.Model.dll
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/bin/Debug/net5.0/APIMySQL.Data.pdb
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/bin/Debug/net5.0/APIMySQL.Model.pdb

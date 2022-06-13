@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Data/APIMySQL.Data.csproj": {}
+    "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Data/APIMySQL.Data.csproj": {}
   },
   "projects": {
-    "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Data/APIMySQL.Data.csproj": {
+    "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Data/APIMySQL.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Data/APIMySQL.Data.csproj",
+        "projectUniqueName": "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Data/APIMySQL.Data.csproj",
         "projectName": "APIMySQL.Data",
-        "projectPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Data/APIMySQL.Data.csproj",
-        "packagesPath": "/Users/geraldine/.nuget/packages/",
-        "outputPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Data/obj/",
+        "projectPath": "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Data/APIMySQL.Data.csproj",
+        "packagesPath": "/Users/carminalopez/.nuget/packages/",
+        "outputPath": "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/geraldine/.config/NuGet/NuGet.Config"
+          "/Users/carminalopez/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -26,8 +26,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj": {
-                "projectPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj"
+              "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj": {
+                "projectPath": "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj"
               }
             }
           }
@@ -66,21 +66,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.104/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj": {
+    "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj",
+        "projectUniqueName": "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj",
         "projectName": "APIMySQL.Model",
-        "projectPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj",
-        "packagesPath": "/Users/geraldine/.nuget/packages/",
-        "outputPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/",
+        "projectPath": "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj",
+        "packagesPath": "/Users/carminalopez/.nuget/packages/",
+        "outputPath": "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/geraldine/.config/NuGet/NuGet.Config"
+          "/Users/carminalopez/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -118,7 +118,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.104/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
         }
       }
     }
