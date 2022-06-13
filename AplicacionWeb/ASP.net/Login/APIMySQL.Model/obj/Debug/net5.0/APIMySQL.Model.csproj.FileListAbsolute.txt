@@ -9,3 +9,4 @@
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.dll
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/ref/APIMySQL.Model.dll
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.pdb
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.csproj.AssemblyReference.cache

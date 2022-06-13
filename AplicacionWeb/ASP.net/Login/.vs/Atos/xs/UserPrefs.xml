@@ -3,9 +3,8 @@
     <Files>
       <File FileName="Login/Controllers/DataEngineeringController.cs" Line="24" Column="32" />
       <File FileName="Login/Controllers/DataScienceController.cs" />
-      <File FileName="Login/Controllers/ApplicantScoreController.cs" />
-      <File FileName="Login/Controllers/idController.cs" Line="1" Column="1" />
-      <File FileName="Login/Pages/Informacion_de_contacto.cshtml.cs" Line="29" Column="44" />
+      <File FileName="Login/Controllers/ApplicantScoreController.cs" Line="14" Column="2" />
+      <File FileName="Login/Pages/Informacion_de_contacto.cshtml.cs" Line="11" Column="1" />
       <File FileName="Login/Pages/Experiencia_profesional.cshtml.cs" Line="45" Column="13" />
     </Files>
     <Pads>
@@ -13,6 +12,7 @@
         <State name="__root__">
           <Node name="Atos" expanded="True">
             <Node name="Atos" expanded="True">
+              <Node name="Controllers" expanded="True" />
               <Node name="Pages" expanded="True">
                 <Node name="Informacion_de_contacto.cshtml" expanded="True">
                   <Node name="Informacion_de_contacto.cshtml.cs" selected="True" />

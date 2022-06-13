@@ -5,52 +5,37 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
+
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Atos.Controllers
 {
+
     [ApiController]
-    [Route("api/entrevista/resultados")]
-
-
+    [Route("api/entrevista")]
     public class ApplicantScoreController : ControllerBase
     {
-        public int idUsuario { get; set; }
-        public string scoreAplicante { get; set; }
+        private readonly IConfiguration _configuration;
 
-
-        //// GET: api/values
-        //[HttpGet]
-        //public IEnumerable<string> Get()
-        //{
-        //    return new string[] { "value1", "value2" };
-        //}
-
-        //// GET api/values/5
-        //[HttpGet("{id}")]
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
-
-        
-        [HttpPost]
-        //public void Post([FromBody] string value)
-        public void Post([FromBody] int scoreEntrevista)
+        public ApplicantScoreController(IConfiguration configuration)
         {
-            idUsuario = (int)HttpContext.Session.GetInt32("idAplicante");
+            _configuration = configuration;
+        }
 
-            string connectionString = "Server=127.0.0.1;Port=3306;Database=Atos;Uid=root;password=Gato1415*;";
+        [HttpPost]
+        public void Post([FromQuery] int scoreEntrevista, int idUsuario)
+        {
+            string connectionString = _configuration.GetConnectionString("myDb1");
             MySqlConnection conexion = new MySqlConnection(connectionString);
             conexion.Open();
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = conexion;
-            cmd.CommandText = "INSERT INTO entrevista(idAplicante, fecha, puntaje) VALUES (" + idUsuario + ", CURDATE(), " + scoreEntrevista + ");";
+            cmd.CommandText = "INSERT INTO Entrevista(idAplicante, fecha, puntaje) VALUES (" + idUsuario + ", CURDATE()," + scoreEntrevista + ");";
 
             cmd.ExecuteNonQuery();
             conexion.Close();
-
 
         }
 
