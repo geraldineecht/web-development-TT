@@ -137,3 +137,4 @@ C:/Users/aleja/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/L
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/bin/Debug/net5.0/APIMySQL.Model.dll
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/bin/Debug/net5.0/APIMySQL.Data.pdb
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/bin/Debug/net5.0/APIMySQL.Model.pdb
+/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/Login/obj/Debug/net5.0/Razor/Pages/Entrevista.cshtml.g.cs

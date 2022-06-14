@@ -32,7 +32,7 @@ namespace Atos.Controllers
             conexion.Open();
             MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = conexion;
-            cmd.CommandText = "INSERT INTO Entrevista(idAplicante, fecha, puntaje) VALUES (" + idUsuario + ", CURDATE()," + scoreEntrevista + ");";
+            cmd.CommandText = "INSERT INTO Entrevista(idAplicante, fecha, puntaje) VALUES (" + idUsuario + ", CURRENT_TIMESTAMP()," + scoreEntrevista + ");";
 
             cmd.ExecuteNonQuery();
             conexion.Close();
