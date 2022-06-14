@@ -10,3 +10,15 @@
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/ref/APIMySQL.Model.dll
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.pdb
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.csproj.AssemblyReference.cache
+C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\bin\Debug\net5.0\APIMySQL.Model.deps.json
+C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\bin\Debug\net5.0\APIMySQL.Model.dll
+C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\bin\Debug\net5.0\ref\APIMySQL.Model.dll
+C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\bin\Debug\net5.0\APIMySQL.Model.pdb
+C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.csproj.AssemblyReference.cache
+C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.AssemblyInfoInputs.cache
+C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.AssemblyInfo.cs
+C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.csproj.CoreCompileInputs.cache
+C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.dll
+C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\ref\APIMySQL.Model.dll
+C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.pdb

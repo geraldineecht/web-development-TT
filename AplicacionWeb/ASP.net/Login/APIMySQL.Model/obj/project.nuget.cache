@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SwXApe0Qi3doXKjW1kR1Ahh4naeJNfjHLCyt/HVnF9SksGzWgpbsaRD6fJDNRR61+bjA5xUMQvTXKa2YdUY3hw==",
+  "dgSpecHash": "nM9d7n+rOItWUexire71E+nxc212zDZYCEQBn0/Mb/GGwSkQFSW6Vyo+2vrpYyTCBL1iSlYvz11/hiJPCsksNQ==",
   "success": true,
-  "projectFilePath": "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj",
+  "projectFilePath": "C:\\Users\\Raul\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Model\\APIMySQL.Model.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
