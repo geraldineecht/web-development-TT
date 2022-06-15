@@ -10,27 +10,39 @@
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/ref/APIMySQL.Model.dll
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.pdb
 /Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.csproj.AssemblyReference.cache
-C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\bin\Debug\net5.0\APIMySQL.Model.deps.json
-C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\bin\Debug\net5.0\APIMySQL.Model.dll
-C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\bin\Debug\net5.0\ref\APIMySQL.Model.dll
-C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\bin\Debug\net5.0\APIMySQL.Model.pdb
-C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.csproj.AssemblyReference.cache
-C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.AssemblyInfoInputs.cache
-C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.AssemblyInfo.cs
-C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.csproj.CoreCompileInputs.cache
-C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.dll
-C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\ref\APIMySQL.Model.dll
-C:\Users\Raul\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.pdb
-C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\bin\Debug\net5.0\APIMySQL.Model.deps.json
-C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\bin\Debug\net5.0\APIMySQL.Model.dll
-C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\bin\Debug\net5.0\ref\APIMySQL.Model.dll
-C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\bin\Debug\net5.0\APIMySQL.Model.pdb
-C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.csproj.AssemblyReference.cache
-C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.AssemblyInfoInputs.cache
-C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.AssemblyInfo.cs
-C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.csproj.CoreCompileInputs.cache
-C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.dll
-C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\ref\APIMySQL.Model.dll
-C:\Users\aleja\Documents\GitHub\web-development-TT\AplicacionWeb\ASP.net\Login\APIMySQL.Model\obj\Debug\net5.0\APIMySQL.Model.pdb
+C:/Users/Raul/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/bin/Debug/net5.0/APIMySQL.Model.deps.json
+C:/Users/Raul/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/bin/Debug/net5.0/APIMySQL.Model.dll
+C:/Users/Raul/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/bin/Debug/net5.0/ref/APIMySQL.Model.dll
+C:/Users/Raul/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/bin/Debug/net5.0/APIMySQL.Model.pdb
+C:/Users/Raul/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.csproj.AssemblyReference.cache
+C:/Users/Raul/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Raul/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.AssemblyInfoInputs.cache
+C:/Users/Raul/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.AssemblyInfo.cs
+C:/Users/Raul/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.csproj.CoreCompileInputs.cache
+C:/Users/Raul/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.dll
+C:/Users/Raul/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/ref/APIMySQL.Model.dll
+C:/Users/Raul/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.pdb
+C:/Users/aleja/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/bin/Debug/net5.0/APIMySQL.Model.deps.json
+C:/Users/aleja/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/bin/Debug/net5.0/APIMySQL.Model.dll
+C:/Users/aleja/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/bin/Debug/net5.0/ref/APIMySQL.Model.dll
+C:/Users/aleja/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/bin/Debug/net5.0/APIMySQL.Model.pdb
+C:/Users/aleja/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.csproj.AssemblyReference.cache
+C:/Users/aleja/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/aleja/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.AssemblyInfoInputs.cache
+C:/Users/aleja/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.AssemblyInfo.cs
+C:/Users/aleja/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.csproj.CoreCompileInputs.cache
+C:/Users/aleja/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.dll
+C:/Users/aleja/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/ref/APIMySQL.Model.dll
+C:/Users/aleja/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.pdb
+/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/bin/Debug/net5.0/APIMySQL.Model.deps.json
+/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/bin/Debug/net5.0/APIMySQL.Model.dll
+/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/bin/Debug/net5.0/ref/APIMySQL.Model.dll
+/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/bin/Debug/net5.0/APIMySQL.Model.pdb
+/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.csproj.AssemblyReference.cache
+/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.GeneratedMSBuildEditorConfig.editorconfig
+/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.AssemblyInfoInputs.cache
+/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.AssemblyInfo.cs
+/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.csproj.CoreCompileInputs.cache
+/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.dll
+/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/ref/APIMySQL.Model.dll
+/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/Debug/net5.0/APIMySQL.Model.pdb

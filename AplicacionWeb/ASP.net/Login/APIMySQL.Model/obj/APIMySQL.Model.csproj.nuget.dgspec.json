@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj": {}
+    "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj": {}
   },
   "projects": {
-    "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj": {
+    "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj",
+        "projectUniqueName": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj",
         "projectName": "APIMySQL.Model",
-        "projectPath": "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj",
-        "packagesPath": "/Users/carminalopez/.nuget/packages/",
-        "outputPath": "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/",
+        "projectPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj",
+        "packagesPath": "/Users/geraldine/.nuget/packages/",
+        "outputPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/carminalopez/.config/NuGet/NuGet.Config"
+          "/Users/geraldine/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.104/RuntimeIdentifierGraph.json"
         }
       }
     }

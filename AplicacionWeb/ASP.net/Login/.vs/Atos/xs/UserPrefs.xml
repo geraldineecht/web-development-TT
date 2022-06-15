@@ -1,24 +1,28 @@
 ﻿<Properties StartupConfiguration="{1F23A056-76AD-4009-B3EF-7ADD32F66C64}|Login">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Controllers/FrontEndController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/Admin_view.cshtml.cs">
     <Files>
-      <File FileName="Login/Controllers/APIMySQLController.cs" Line="1" Column="1" />
-      <File FileName="APIMySQL.Model/Aplicante.cs" Line="1" Column="1" />
-      <File FileName="Login/Controllers/ApplicantScoreController.cs" Line="25" Column="10" />
-      <File FileName="Login/Controllers/DataEngineeringController.cs" Line="16" Column="42" />
-      <File FileName="Login/Controllers/DataScienceController.cs" Line="15" Column="38" />
-      <File FileName="Login/Controllers/FrontEndController.cs" Line="19" Column="6" />
-      <File FileName="Login/Controllers/JavaDeveloperController.cs" Line="16" Column="33" />
-      <File FileName="Login/Controllers/NetDeveloperController.cs" Line="1" Column="1" />
-      <File FileName="Login/Controllers/QAAutomationController.cs" Line="1" Column="1" />
+      <File FileName="Login/Pages/Admin_view.cshtml" Line="173" Column="46" />
+      <File FileName="Login/Pages/Admin_view.cshtml.cs" Line="51" Column="28" />
+      <File FileName="Login/Model/Usuarios.cs" Line="12" Column="44" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Atos" expanded="True">
+            <Node name="APIMySQL.Data" expanded="True">
+              <Node name="Repositories" expanded="True" />
+            </Node>
+            <Node name="APIMySQL.Model" expanded="True" />
             <Node name="Atos" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="FrontEndController.cs" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Model" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Admin_view.cshtml" expanded="True">
+                  <Node name="Admin_view.cshtml.cs" selected="True" />
+                </Node>
+                <Node name="Vacantes.cshtml" expanded="True" />
               </Node>
+              <Node name="wwwroot" expanded="True" />
             </Node>
           </Node>
         </State>

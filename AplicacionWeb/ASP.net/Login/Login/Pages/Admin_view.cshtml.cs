@@ -46,7 +46,7 @@ namespace Atos.Pages
 
             if(string.IsNullOrEmpty(SearchTerm))
             {
-                cmd.CommandText = "SELECT u.idAplicante, a.Nombre, a.ApellidoP, a.ApellidoM , p.TipoPerfil FROM infopersonal u JOIN aplicante a ON a.idAplicante = u.idAplicante JOIN vacante v ON u.idAplicante = v.idAplicante JOIN perfil p ON p.idPerfil = v.idPerfil group by idAplicante";
+                cmd.CommandText = "SELECT u.idAplicante, a.Nombre, a.ApellidoP, a.ApellidoM , p.TipoPerfil, r.puntaje FROM infopersonal u JOIN aplicante a ON a.idAplicante = u.idAplicante JOIN vacante v ON u.idAplicante = v.idAplicante JOIN perfil p ON p.idPerfil = v.idPerfil JOIN entrevista r ON u.idAplicante = r.idAplicante group by idAplicante";
 
                 using (var reader = cmd.ExecuteReader())
                 {
@@ -58,13 +58,14 @@ namespace Atos.Pages
                         usr1.ApellidoMaterno = reader["ApellidoM"].ToString();
                         usr1.TipoPerfil = reader["TipoPerfil"].ToString();
                         usr1.idUser = Convert.ToInt32(reader["idAplicante"].ToString());
+                        usr1.puntaje = reader["puntaje"].ToString();
                         ListaUsuarios.Add(usr1);
                     }
                 }
             }
             else
             {
-                cmd.CommandText = "SELECT u.idAplicante, a.Nombre, a.ApellidoP, a.ApellidoM , p.TipoPerfil FROM infopersonal u JOIN aplicante a ON a.idAplicante = u.idAplicante JOIN vacante v ON u.idAplicante = v.idAplicante JOIN perfil p ON p.idPerfil = v.idPerfil where TipoPerfil = '" + SearchTerm + "'group by idAplicante";
+                cmd.CommandText = "SELECT u.idAplicante, a.Nombre, a.ApellidoP, a.ApellidoM , p.TipoPerfil, r.puntaje FROM infopersonal u JOIN aplicante a ON a.idAplicante = u.idAplicante JOIN vacante v ON u.idAplicante = v.idAplicante JOIN perfil p ON p.idPerfil = v.idPerfil JOIN entrevista r ON u.idAplicante = r.idAplicante where TipoPerfil = '" + SearchTerm + "' group by idAplicante";
 
                 using (var reader = cmd.ExecuteReader())
                 {
@@ -76,6 +77,7 @@ namespace Atos.Pages
                         usr1.ApellidoMaterno = reader["ApellidoM"].ToString();
                         usr1.TipoPerfil = reader["TipoPerfil"].ToString();
                         usr1.idUser = Convert.ToInt32(reader["idAplicante"].ToString());
+                        usr1.puntaje = reader["puntaje"].ToString();
                         ListaUsuarios.Add(usr1);
                     }
                 }
