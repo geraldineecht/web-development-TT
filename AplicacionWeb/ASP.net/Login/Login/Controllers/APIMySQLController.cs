@@ -26,10 +26,10 @@ namespace Atos.Controllers
             return Ok(await _aplicanteInterface.GetAplicantes());
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetAplicante(int id)
+        [HttpGet("{correo}")]
+        public async Task<IActionResult> GetAplicante(string correo)
         {
-            return Ok(await _aplicanteInterface.GetAplicante(id));
+            return Ok(await _aplicanteInterface.GetAplicante(correo));
         }
 
         //[HttpPost]

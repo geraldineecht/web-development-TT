@@ -30,13 +30,13 @@ namespace APIMySQL.Data.Repositories
             return await db.QueryAsync<Aplicante>(sql, new { });
         }
 
-        public async Task<Aplicante> GetAplicante(int id)
+        public async Task<Aplicante> GetAplicante(string correo)
         {
             var db = dbConnection();
 
-            var sql = @"SELECT * FROM Aplicante WHERE idAplicante = @idAplicante";
+            var sql = @"SELECT * FROM Aplicante WHERE Correo = @Correo";
 
-            return await db.QueryFirstOrDefaultAsync<Aplicante>(sql, new { idAplicante = id });
+            return await db.QueryFirstOrDefaultAsync<Aplicante>(sql, new { Correo = correo });
         }
 
         public async Task<bool> InsertAplicante(Aplicante aplicante)

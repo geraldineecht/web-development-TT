@@ -9,7 +9,7 @@ namespace APIMySQL.Data.Repositories
     public interface AplicanteInterface
     {
         Task<IEnumerable<Aplicante>> GetAplicantes();
-        Task<Aplicante> GetAplicante(int id);
+        Task<Aplicante> GetAplicante(string correo);
         Task<bool> InsertAplicante(Aplicante aplicante);
     }
 }
