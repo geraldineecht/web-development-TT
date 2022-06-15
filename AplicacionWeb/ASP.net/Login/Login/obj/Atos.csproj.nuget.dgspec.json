@@ -1,35 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\Login\\Atos.csproj": {}
+    "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/Login/Atos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Data\\APIMySQL.Data.csproj": {
+    "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Data/APIMySQL.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Data\\APIMySQL.Data.csproj",
+        "projectUniqueName": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Data/APIMySQL.Data.csproj",
         "projectName": "APIMySQL.Data",
-        "projectPath": "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Data\\APIMySQL.Data.csproj",
-        "packagesPath": "C:\\Users\\aleja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Data\\obj\\",
+        "projectPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Data/APIMySQL.Data.csproj",
+        "packagesPath": "/Users/geraldine/.nuget/packages/",
+        "outputPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\aleja\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/geraldine/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Model\\APIMySQL.Model.csproj": {
-                "projectPath": "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Model\\APIMySQL.Model.csproj"
+              "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj": {
+                "projectPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj"
               }
             }
           }
@@ -68,28 +66,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.104/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Model\\APIMySQL.Model.csproj": {
+    "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Model\\APIMySQL.Model.csproj",
+        "projectUniqueName": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj",
         "projectName": "APIMySQL.Model",
-        "projectPath": "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Model\\APIMySQL.Model.csproj",
-        "packagesPath": "C:\\Users\\aleja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Model\\obj\\",
+        "projectPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj",
+        "packagesPath": "/Users/geraldine/.nuget/packages/",
+        "outputPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\aleja\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/geraldine/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -122,39 +118,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.104/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\Login\\Atos.csproj": {
+    "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/Login/Atos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\Login\\Atos.csproj",
+        "projectUniqueName": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/Login/Atos.csproj",
         "projectName": "Atos",
-        "projectPath": "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\Login\\Atos.csproj",
-        "packagesPath": "C:\\Users\\aleja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\Login\\obj\\",
+        "projectPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/Login/Atos.csproj",
+        "packagesPath": "/Users/geraldine/.nuget/packages/",
+        "outputPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/Login/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\aleja\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/geraldine/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Data\\APIMySQL.Data.csproj": {
-                "projectPath": "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Data\\APIMySQL.Data.csproj"
+              "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Data/APIMySQL.Data.csproj": {
+                "projectPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Data/APIMySQL.Data.csproj"
               },
-              "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Model\\APIMySQL.Model.csproj": {
-                "projectPath": "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Model\\APIMySQL.Model.csproj"
+              "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj": {
+                "projectPath": "/Users/geraldine/Documents/1 Escuela/Desarrollo de Software/Web-TT/web-development-TT/Web-TT/Untitled/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj"
               }
             }
           }
@@ -188,12 +182,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.16, 5.0.16]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -202,7 +190,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.104/RuntimeIdentifierGraph.json"
         }
       }
     }

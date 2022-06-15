@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{1F23A056-76AD-4009-B3EF-7ADD32F66C64}|Login">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Login/Pages/Admin_view.cshtml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Login/wwwroot/css/Index.css">
     <Files>
       <File FileName="Login/Pages/Admin_view.cshtml" Line="173" Column="46" />
-      <File FileName="Login/Pages/Admin_view.cshtml.cs" Line="51" Column="28" />
-      <File FileName="Login/Model/Usuarios.cs" Line="12" Column="44" />
+      <File FileName="Login/Pages/Admin_view.cshtml.cs" Line="47" Column="46" />
+      <File FileName="Login/Model/Usuarios.cs" Line="12" Column="41" />
+      <File FileName="Login/Pages/Index.cshtml" Line="43" Column="76" />
+      <File FileName="Login/wwwroot/css/Index.css" Line="228" Column="20" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,12 +19,14 @@
               <Node name="Controllers" expanded="True" />
               <Node name="Model" expanded="True" />
               <Node name="Pages" expanded="True">
-                <Node name="Admin_view.cshtml" expanded="True">
-                  <Node name="Admin_view.cshtml.cs" selected="True" />
-                </Node>
+                <Node name="Admin_view.cshtml" expanded="True" />
                 <Node name="Vacantes.cshtml" expanded="True" />
               </Node>
-              <Node name="wwwroot" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True">
+                  <Node name="Index.css" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>

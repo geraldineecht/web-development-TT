@@ -225,7 +225,7 @@ img {
 }
 
 .nav-links:hover {
-    color: var(--neon-green);
+    color: #0596ff;
     transition: all 0.3s ease;
     /* background: black; */
 }
