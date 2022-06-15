@@ -13,7 +13,7 @@ using Newtonsoft.Json.Linq;
 namespace Atos.Controllers
 {
     [ApiController]
-    [Route("api/preguntas/QAAutomation")]
+    [Route("api/preguntas/FrontEnd")]
 
     public class FrontEndController : ControllerBase
     {

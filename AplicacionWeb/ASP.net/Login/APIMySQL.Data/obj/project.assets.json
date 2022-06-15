@@ -896,34 +896,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\crist\\.nuget\\packages\\": {}
+    "/Users/carminalopez/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\crist\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Data\\APIMySQL.Data.csproj",
+      "projectUniqueName": "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Data/APIMySQL.Data.csproj",
       "projectName": "APIMySQL.Data",
-      "projectPath": "C:\\Users\\crist\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Data\\APIMySQL.Data.csproj",
-      "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\crist\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Data\\obj\\",
+      "projectPath": "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Data/APIMySQL.Data.csproj",
+      "packagesPath": "/Users/carminalopez/.nuget/packages/",
+      "outputPath": "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Data/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/carminalopez/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\crist\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Model\\APIMySQL.Model.csproj": {
-              "projectPath": "C:\\Users\\crist\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Model\\APIMySQL.Model.csproj"
+            "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj": {
+              "projectPath": "/Users/carminalopez/Documents/GitHub/web-development-TT/AplicacionWeb/ASP.net/Login/APIMySQL.Model/APIMySQL.Model.csproj"
             }
           }
         }
@@ -962,7 +960,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
       }
     }
   }
