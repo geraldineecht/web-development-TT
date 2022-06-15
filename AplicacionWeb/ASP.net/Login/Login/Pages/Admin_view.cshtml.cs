@@ -58,7 +58,7 @@ namespace Atos.Pages
                         usr1.ApellidoMaterno = reader["ApellidoM"].ToString();
                         usr1.TipoPerfil = reader["TipoPerfil"].ToString();
                         usr1.idUser = Convert.ToInt32(reader["idAplicante"].ToString());
-                        usr1.puntaje = reader["puntaje"].ToString();
+                        usr1.Puntaje = Convert.ToInt32(reader["puntaje"].ToString());
                         ListaUsuarios.Add(usr1);
                     }
                 }
@@ -77,7 +77,7 @@ namespace Atos.Pages
                         usr1.ApellidoMaterno = reader["ApellidoM"].ToString();
                         usr1.TipoPerfil = reader["TipoPerfil"].ToString();
                         usr1.idUser = Convert.ToInt32(reader["idAplicante"].ToString());
-                        usr1.puntaje = reader["puntaje"].ToString();
+                        usr1.Puntaje = Convert.ToInt32(reader["puntaje"].ToString());
                         ListaUsuarios.Add(usr1);
                     }
                 }
