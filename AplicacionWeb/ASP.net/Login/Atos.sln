@@ -5,6 +5,13 @@ VisualStudioVersion = 16.0.810.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atos", "Login\Atos.csproj", "{1F23A056-76AD-4009-B3EF-7ADD32F66C64}"
 EndProject
+<<<<<<< Updated upstream
+=======
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIMySQL.Data", "APIMySQL.Data\APIMySQL.Data.csproj", "{75784401-A398-4A6A-81C8-84680C97C3A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIMySQL.Model", "APIMySQL.Model\APIMySQL.Model.csproj", "{09F09039-7280-4006-80C9-C1C4E782B091}"
+EndProject
+>>>>>>> Stashed changes
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

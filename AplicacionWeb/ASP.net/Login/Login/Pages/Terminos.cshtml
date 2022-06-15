@@ -1,0 +1,150 @@
+﻿@page
+@model Atos.Pages.TerminosModel
+@{
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    @*<link rel="stylesheet" href="style.css">*@
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css" />
+
+    <link rel="stylesheet" href="~/css/Terminos.css">
+
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    <div class="-body-container bg-primary -bg-gray-900 bg-white">
+        <header class="header-container headerScroll headerScrollTransparent header-bg primary-color" id="header-id">
+            <nav class="navbar container mx-auto" id="navbar-id">
+
+                <div class="nav-container">
+
+                    <a asp-page="/Index" id="nav-logo"><img class="img-attributes" src="~/img/LogoBlanco.png" alt=""></a>
+
+                    <div class="navbar-toggle" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar last-bar"></span>
+                    </div>
+
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="https://atos.net/en/portfolio" class="nav-links">Industries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://atos.net/en/portfolio" class="nav-links">Solutions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">Insights & News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-page="/Terminos" class="nav-links">Terms and conditions</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="nav-links pd-r-0">
+                                <span class="material-symbols-outlined">
+                                    search
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-page="/Sign_in" class="nav-links"><button class="start-session ">Inicia sesión</button></a>
+
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+
+
+        <div class="bg-black" style="background: var(--primary-color);">
+            <div class="container mx-auto -bg-gray-200">
+                <div class="col-span-1 -bg-blue-600">
+                    <div class="flex flex-col justify-center">
+                        <div class="paragraph-container">
+                                <h3 class="font-bold">TÉRMINOS Y CONDICIONES DE LICENCIA DE SOFTWARE</h3>
+                                    <p>Los presentes Términos y Condiciones de Licencia de Software son de aplicación a una orden que incorpore estos términos y condiciones mediante una referencia a los mismos celebrada por 	Teen Titans A.C de C.V y la entidad especificada en la orden que adquiera productos o servicios bajo el término de cliente.
+                                    </p>
+                                    <h2>1. Objeto.</h2>
+                                    <p>
+                                        El objeto del presente Acuerdo es la adquisición por parte del Cliente de las licencias de Producto y los servicios relacionados con las mismas listados en una orden y la entrega de dichas licencias de producto y la prestación de dichos servicios por Teen Titans, de conformidad con los términos de este Acuerdo y los de la orden correspondiente.
+                                        </p>
+                                    <h2>2. Concesión de Licencia.</h2>
+                                    <p>
+                                        2.1 Teen Titans concede al Cliente, durante la vigencia del presente Acuerdo, una licencia no exclusiva e intransferible, según los términos y condiciones de este Acuerdo y de conformidad con la ley aplicable, para:
+                                        Instalar el producto de software de Teen Titans en servidores y estaciones de trabajo bajo el control del Cliente en el país en el que los Productos sean entregados.
+                                        Usar los Productos (incluyendo los manuales de usuario que normalmente se ponen a disposición o se distribuyen como parte de los Productos) para las operaciones de negocio internas del Cliente, en ambos casos de acuerdo con el tipo de licencia y los términos especificados en una orden.<br />
+                                        2.2 “Uso” significa conceder acceso a los Productos a Usuarios Nominales ubicados en cualquier parte del mundo. El Uso de un Producto por parte del Cliente se hará bajo un tipo de licencia por Usuario Nominal o por CPU, según se especifique en una orden. “Usuario Nominal” significa un único individuo designado por el Cliente como un usuario de un Producto de manera no temporal. “CPU” significa un núcleo (o core) físico o virtual al que se le asigna una instancia de un Producto, en soporte de un número indeterminado de Usuarios Nominales en el entorno especificado en una orden.<br />
+                                        2.3 Teen Titans proporcionará cada Producto al Cliente mediante su puesta a disposición del Cliente a través de descarga electrónica. El Cliente puede hacer copias adicionales de los archivos descargados que contienen los Productos para fines de archivo.<br />
+                                        2.4 Teen Titans tendrá todos los derechos y titularidad de y sobre el producto. El producto es licenciado y no está a la venta. Cada parte tendrá y conservará todos los derechos sobre sus marcas registradas, logotipos y otros elementos de la marca. En el caso de que una de las partes conceda a la otra parte cualquier derecho o licencia sobre sus Marcas en relación con este Acuerdo, el uso por la otra parte de esas Marcas estará sujeto a las directrices que proporcione de forma razonable y por escrito la parte propietaria de las Marcas.
+
+                                    </p>
+                                        
+                                    <h2>3. Ciertas Obligaciones Y Restricciones</h2>
+                                    <p>
+                                        3.1 El Cliente es responsable del cumplimiento de este Acuerdo por parte de sus Usuarios Nominales. El Cliente no podrá (a) copiar, exhibir, distribuir o utilizar los Productos de cualquier manera o para cualquier propósito que no esté expresamente autorizado bajo el presente Acuerdo; o (b) crear trabajos derivados o modificar los Productos de cualquier otra forma; o (c) aplicar ingeniería inversa, descompilar o desmontar los Productos o la metadata creada por los Productos, excepto a efectos de interoperabilidad tal, por el que se aprueba el texto refundido de la Ley de Propiedad Intelectual; o (d) revelar los resultados de cualquier prueba de evaluación comparativa sin el previo consentimiento de Teen Titans; o (e) utilizar los Productos de manera que vulneren los derechos de privacidad de cualquier persona conferidos por la legislación, normativa o regulación aplicable.
+
+                                    </p>
+                                    <h2>
+                                        4. Protección De Datos.
+
+                                    </h2>
+                                    <p>
+                                        <a href="https://atos.net/en/terms-of-use">Consulte los Términos y Condiciones de Atos</a>
+                                    </p>
+                                    <h2>
+                                        5. Cesión
+                                    </h2>
+                                    <p>
+                                        5.1 Este Acuerdo no podrá ser cedido o transferido, en todo o en parte, de cualquier forma por el Cliente, incluyendo por previsión legal, sin el consentimiento previo y por escrito de Teen Titans.
+
+                                    </p>
+                                    <h2>
+                                        6. Ley Aplicable
+                                        
+                                    </h2>
+                                    <p>
+                                        6.1 Cada parte es responsable del cumplimiento de todas las leyes, reglamentos, normas y regulaciones aplicables en el ejercicio de sus derechos y el cumplimiento de sus obligaciones bajo este Acuerdo. <br />
+                                        6.2 Este Acuerdo y la relación de las partes bajo el mismo, se regirá y será interpretado por las leyes de México, excluyendo sus normas sobre conflictos de leyes.
+
+                                    </p>
+                                    <h2>
+                                        7. Otras Estipulaciones
+
+                                    </h2>
+                                    <p>
+                                        7.1 Cada parte tratará la información confidencial de la otra parte con el mismo cuidado que trata su propia información confidencial y, tras la resolución de este Acuerdo, devolverá a la otra parte cualquier información confidencial de la otra parte que se encuentre bajo su control.
+                                    </p>
+
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class=" flex footer-container">
+        <p>© Atos SE 2022 all rights reserved <a href="https://atos.net/es-mx/privacidad">| Aviso de privacidad</a> </p>
+    </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
+    @*<script src="app.js"></script>*@
+    <script src="~/js/Index.js"></script>
+
+</body>
+</html>
+
+
