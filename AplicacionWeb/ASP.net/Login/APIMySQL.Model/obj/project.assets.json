@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Raul\\.nuget\\packages\\": {}
+    "C:\\Users\\aleja\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Raul\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Model\\APIMySQL.Model.csproj",
+      "projectUniqueName": "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Model\\APIMySQL.Model.csproj",
       "projectName": "APIMySQL.Model",
-      "projectPath": "C:\\Users\\Raul\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Model\\APIMySQL.Model.csproj",
-      "packagesPath": "C:\\Users\\Raul\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Raul\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Model\\obj\\",
+      "projectPath": "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Model\\APIMySQL.Model.csproj",
+      "packagesPath": "C:\\Users\\aleja\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aleja\\Documents\\GitHub\\web-development-TT\\AplicacionWeb\\ASP.net\\Login\\APIMySQL.Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Raul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aleja\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
